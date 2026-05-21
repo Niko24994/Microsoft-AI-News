@@ -7,6 +7,8 @@ const parser = new Parser({ timeout: 10000 });
 const NEWS_DIR = path.resolve('public/news');
 const MAX_AGE_DAYS = 180;
 
+// Blog-based tabs: product blog RSS feeds
+// Roadmap-based tabs: official M365 Roadmap RSS (real feature pipeline)
 const FEEDS = {
   powerplatform: [
     'https://www.microsoft.com/en-us/power-platform/blog/feed/',
@@ -19,23 +21,33 @@ const FEEDS = {
     'https://powerbi.microsoft.com/en-us/blog/feed/',
   ],
   copilot: [
-    'https://www.microsoft.com/en-us/microsoft-365/blog/feed/',
-    'https://blogs.microsoft.com/ai/feed/',
+    'https://www.microsoft.com/releasecommunications/api/v2/m365/rss',
   ],
   agents: [
-    'https://blogs.microsoft.com/ai/feed/',
-    'https://www.microsoft.com/en-us/power-platform/blog/feed/',
+    'https://www.microsoft.com/releasecommunications/api/v2/m365/rss',
   ],
 };
 
-// Keywords that MUST appear in title — applies to all tabs
+// Blog tabs use keyword filter on title
+const BLOG_TABS = new Set(['powerplatform', 'fabric', 'powerbi']);
+
+// Keywords that MUST appear in title for blog-based tabs
 const ROADMAP_KEYWORDS = [
-  'preview', 'generally available', ' ga ', 'what\'s new', "what's new",
+  'preview', 'generally available', ' ga ', "what's new", "what's new",
   'feature summary', 'feature update', 'roadmap', 'upcoming', 'retiring',
   'deprecated', 'deprecation', 'release plan', 'public preview', 'private preview',
   'coming soon', 'now available', 'release notes', 'feature release',
   'monthly update', 'desktop update', 'service update',
 ];
+
+// Category/title keywords for M365 Roadmap RSS tabs
+const ROADMAP_RSS_FILTER = {
+  copilot: ['copilot'],
+  agents:  ['copilot studio', 'agent'],
+};
+
+// Status values in M365 Roadmap RSS categories
+const STATUS_VALUES = ['In development', 'Rolling out', 'Launched', 'Cancelled'];
 
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -57,18 +69,31 @@ async function fetchFeed(url) {
 async function fetchTab(tab) {
   console.log(`\n[${tab}] Lade Feeds…`);
   const urls = FEEDS[tab];
+  const isRoadmapRSS = !BLOG_TABS.has(tab);
   const allItems = [];
 
   for (const url of urls) {
     console.log(`  → ${url}`);
     const items = await fetchFeed(url);
     for (const item of items) {
+      const categories = item.categories || [];
+
+      // For M365 Roadmap RSS: show status (e.g. "In development") as source
+      let source;
+      if (isRoadmapRSS) {
+        source = categories.find(c => STATUS_VALUES.includes(c)) || 'Microsoft Roadmap';
+      } else {
+        source = item.creator || new URL(url).hostname;
+      }
+
       allItems.push({
         title: (item.title || '').trim(),
-        summary: (item.contentSnippet || item.summary || item.content || '').replace(/<[^>]+>/g, '').trim().slice(0, 400),
-        source: item.creator || new URL(url).hostname,
+        summary: (item.contentSnippet || item.description || item.summary || item.content || '')
+          .replace(/<[^>]+>/g, '').trim().slice(0, 400),
+        source,
         url: item.link || item.guid || '',
         date: item.isoDate || item.pubDate || new Date().toISOString(),
+        _categories: categories,
       });
     }
     await sleep(500);
@@ -77,13 +102,24 @@ async function fetchTab(tab) {
   // Sort: newest first
   allItems.sort((a, b) => new Date(b.date) - new Date(a.date));
 
-  // Only keep articles matching roadmap keywords in title
-  const filtered = allItems.filter(item => {
-    const title = (item.title || '').toLowerCase();
-    return ROADMAP_KEYWORDS.some(kw => title.includes(kw));
-  });
+  let filtered;
+  if (BLOG_TABS.has(tab)) {
+    // Blog tabs: only roadmap-relevant articles by title keyword
+    filtered = allItems.filter(item => {
+      const title = (item.title || '').toLowerCase();
+      return ROADMAP_KEYWORDS.some(kw => title.includes(kw));
+    });
+  } else {
+    // M365 Roadmap RSS tabs: filter by category or title keywords
+    const keywords = ROADMAP_RSS_FILTER[tab] || [];
+    filtered = allItems.filter(item => {
+      const catText = item._categories.join(' ').toLowerCase();
+      const title = (item.title || '').toLowerCase();
+      return keywords.some(kw => catText.includes(kw) || title.includes(kw));
+    });
+  }
 
-  const top = filtered.slice(0, 10);
+  const top = filtered.slice(0, 10).map(({ _categories, ...rest }) => rest);
   console.log(`  → ${top.length} Artikel ausgewählt`);
   return top;
 }
