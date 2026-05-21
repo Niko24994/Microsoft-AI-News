@@ -5,7 +5,6 @@ import path from 'path';
 
 const parser = new Parser({ timeout: 10000 });
 const NEWS_DIR = path.resolve('public/news');
-const MAX_ARTICLES_PER_TAB = 5;
 const MAX_AGE_DAYS = 180;
 
 const FEEDS = {
@@ -96,7 +95,7 @@ async function fetchTab(tab) {
     return b._score - a._score;
   });
 
-  const top = allItems.slice(0, MAX_ARTICLES_PER_TAB).map(({ _score, ...rest }) => rest);
+  const top = allItems.map(({ _score, ...rest }) => rest);
   console.log(`  → ${top.length} Artikel ausgewählt`);
   return top;
 }
