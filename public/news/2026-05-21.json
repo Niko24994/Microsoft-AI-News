@@ -1,7 +1,51 @@
 {
   "date": "2026-05-21",
-  "updated": "2026-05-21T21:10:18.204Z",
+  "updated": "2026-05-21T21:19:01.920Z",
   "tabs": {
+    "powerplatform": [
+      {
+        "title": "Was ist neu in der Power Platform: Mai 2026 Feature-Update",
+        "summary": "Power Apps allgemein verfügbar: Power Fx benutzerdefinierte Typen (UDTs) Benutzerdefinierte Typen (UDTs) sind ab Version 3.26044 allgemein verfügbar. Sie sind für alle neuen Apps aktiviert und können für vorhandene Apps über Einstellungen > Updates > neue > benutzerdefinierte Typen aktiviert werden. UDTs werden mit der Funktion Typ in der App definiert.\nDer Beitrag What's new in Power Platform: Mai 2026 Feature-Update erschien zuerst",
+        "source": "Tiffany Treacy",
+        "url": "https://www.microsoft.com/en-us/power-platform/blog/2026/05/14/whats-new-in-power-platform-may-2026-feature-update/",
+        "date": "2026-05-14T18:16:52.000Z"
+      },
+      {
+        "title": "Power Fx: Benutzerdefinierte Typen allgemein verfügbar",
+        "summary": "Benutzerdefinierte Typen (UDTs) sind jetzt allgemein verfügbar! Ab Power Apps Studio Version 3.26044 sind UDTs standardmäßig für neue Apps aktiviert und können für vorhandene Apps unter Einstellungen > Updates > Neu > Benutzerdefinierte Typen aktiviert werden.\nDer Beitrag Power Fx: User Defined Types Generally Available erschien zuerst auf dem Microsoft Power Platform Blog.",
+        "source": "Greg Lindhorst",
+        "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/power-fx-user-defined-types-generally-available/",
+        "date": "2026-05-13T18:59:00.000Z"
+      },
+      {
+        "title": "Agentenadministration: Datenadministrationsfähigkeiten jetzt in der öffentlichen Vorschau verfügbar",
+        "summary": "Mit Dataverse Admin Skills (dv-admin) können Power Platform-Administratoren die natürliche Sprache verwenden, um Dataverse-Umgebungen in großem Maßstab zu verwalten.\nDer Beitrag Agentic Administration: Dataverse Admin Skills now available in Public Preview erschien zuerst im Microsoft Power Platform Blog.",
+        "source": "Anirudha Bakore",
+        "url": "https://www.microsoft.com/en-us/power-platform/blog/2026/05/12/dataverse-agentic-administration/",
+        "date": "2026-05-12T15:33:42.000Z"
+      },
+      {
+        "title": "Benutzerdefinierte Tools und eine reichhaltige Benutzeroberfläche für App-basierte Unterhaltungen sind jetzt in der öffentlichen Vorschau verfügbar",
+        "summary": "Entdecken Sie, wie benutzerdefinierte Tools und umfangreiche, App-gestützte Benutzeroberflächen in Microsoft 365 Copilot die Konversation über Geschäftsanwendungen verbessern können. Diese öffentliche Vorschau stellt neue Wege vor, um App-Intelligenz an die Oberfläche zu bringen, Maßnahmen voranzutreiben und kontextbezogenere, intuitivere Interaktionen zu ermöglichen - direkt im Arbeitsfluss.\nDer Beitrag Custom tools and rich UI for app-based conversations are now in Public Preview appeared firs",
+        "source": "Hemant Gaur",
+        "url": "https://www.microsoft.com/en-us/power-platform/blog/2026/04/22/custom-tools-and-rich-ui-for-app-based-conversations-are-now-in-public-preview/",
+        "date": "2026-04-22T19:11:22.000Z"
+      },
+      {
+        "title": "Power Platform Monitor-Warnungen sind jetzt allgemein verfügbar",
+        "summary": "Wir freuen uns, Ihnen mitteilen zu können, dass Power Platform Monitor-Warnungen für Apps, Agenten und Flows jetzt allgemein verfügbar sind! Monitorwarnungen erfüllen die Zuverlässigkeits- und Reifegradstandards, die für die allgemeine Verfügbarkeit erforderlich sind, nachdem nachhaltige Investitionen zur Verbesserung der Qualität getätigt wurden.\nDer Beitrag Power Platform Monitor Alerts Are Now Generally Available erschien zuerst im Microsoft Power Platform Blog.",
+        "source": "Arjun Mayur",
+        "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/power-platform-monitor-alerts-are-now-generally-available/",
+        "date": "2026-04-08T17:12:51.000Z"
+      },
+      {
+        "title": "Was ist neu in der Power Platform: Feature-Update vom März 2026",
+        "summary": "Willkommen beim monatlichen Feature-Update der Power Platform! Wir werden diesen Blog verwenden, um Neuigkeiten aus dem letzten Monat in der Power Platform zu teilen, damit Sie eine Zusammenfassung der Produkt-, Community- und Lernaktualisierungen von der Power Platform an einem einfachen Ort finden können.\nDer Beitrag What's new in Power Platform: March 2026 feature update erschien zuerst im Microsoft Power Platform Blog.",
+        "source": "Tiffany Treacy",
+        "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-platform-march-2026-feature-update/",
+        "date": "2026-03-19T16:57:47.000Z"
+      }
+    ],
     "fabric": [
       {
         "title": "Neue Metadatensynchronisierung und mehr in SQL Analytics Endpoint (Vorschau)",
@@ -11,236 +55,6 @@
         "date": "2026-05-21T19:03:58.000Z"
       },
       {
-        "title": "Power BI-Mandantenmigration: Kompromisse, Risiken und Realitäten",
-        "summary": "Autor: Winnie Li, Cloud Solution Architect",
-        "source": "WinnieLi",
-        "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Power-BI-Tenant-Migration-Trade-offs-risks-and-realities/ba-p/5187013",
-        "date": "2026-05-21T19:01:58.000Z"
-      },
-      {
-        "title": "Fabric Jumpstart – Entdecken Sie, was mit Microsoft Fabric möglich ist",
-        "summary": "Miles Cole — Principal Program ManagerEdgar Cotte — Senior Program Manager",
-        "source": "milescole-msft",
-        "url": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Fabric-Jumpstart-Discover-what-s-possible-with-Microsoft-Fabric/ba-p/5182277",
-        "date": "2026-05-21T14:53:06.000Z"
-      },
-      {
-        "title": "Power BI Mai 2026 Funktionsübersicht",
-        "summary": "Autor: Katie Murray, Senior Program Manager - Power BI entwickelt sich mit Updates weiter, die es einfacher machen, Daten zu erkunden, Erkenntnisse zu generieren und ausgefeiltere Berichte zu erstellen. Die Veröffentlichung dieses Monats bringt Verbesserungen für Copilot- und KI-Erfahrungen, Berichts- und Modellierungsverbesserungen, neue Datenkonnektivitätsflüsse und Aktualisierungen von Visualisierungen, die Ihnen helfen, schneller von Daten zu Entscheidungen zu gelangen.",
-        "source": "murray-kp",
-        "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Power-BI-May-2026-Feature-Summary/ba-p/5182174",
-        "date": "2026-05-20T19:00:49.000Z"
-      },
-      {
-        "title": "Neue Power Query-Erfahrung in Power BI Desktop (Vorschau)",
-        "summary": "Verfasst von: Sara Lammini Rodriguez - Product Manager II, und Miguel Escobar - Senior Product Manager",
-        "source": "miguel",
-        "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/New-Power-Query-experience-in-Power-BI-Desktop-Preview/ba-p/5181129",
-        "date": "2026-05-20T17:30:00.000Z"
-      },
-      {
-        "title": "Verstehen Sie Ihren Speicher mit OneLake-Produktgrößenberichten (Vorschau)",
-        "summary": "Autor: Matt Basile - Senior Product Manager",
-        "source": "Mabasile_MSFT",
-        "url": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Understand-your-storage-with-OneLake-item-size-reporting-Preview/ba-p/5183716",
-        "date": "2026-05-20T17:19:32.000Z"
-      },
-      {
-        "title": "Notebook-Exportkontrollen in Microsoft Fabric",
-        "summary": "Autor: Santhosh Kumar Ravindran, Principal Product Manager - Verhindern Sie die Datenexfiltration, indem Sie die Möglichkeit einschränken, Notizbücher und umfangreiche DataFrames herunterzuladen. Diese Funktion stellt sicher, dass sensible Daten in reglementierten Umgebungen verbleiben, wodurch das Risiko eines unbefugten Zugriffs, einer Weitergabe oder eines Lecks außerhalb genehmigter Grenzen verringert wird.",
-        "source": "Santhosh_Ravin1",
-        "url": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Notebook-export-controls-in-Microsoft-Fabric/ba-p/5183984",
-        "date": "2026-05-20T17:00:00.000Z"
-      },
-      {
-        "title": "Verbindungsstring-Änderungen im Fabric Warehouse: Was für Audits zu erwarten ist (allgemein verfügbar)",
-        "summary": "Autor: Pradeep Srikakolapu, Senior Product Manager - Das Verbindungsverhalten im Fabric Warehouse wird immer deterministischer - und das hat wichtige Auswirkungen auf die Auditierung. Erfahren Sie, was sich ändert, warum einige Anmeldeereignisse möglicherweise nicht mehr dort angezeigt werden, wo Sie es erwarten, und wie Sie die vollständige Rückverfolgbarkeit gewährleisten können.",
-        "source": "pradeepsvs",
-        "url": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Connection-string-changes-in-Fabric-Warehouse-What-to-expect-for/ba-p/5185022",
-        "date": "2026-05-20T16:31:36.000Z"
-      },
-      {
-        "title": "Teile Einblicke in die Copilot-Exploration in Echtzeit-Dashboards (Vorschau)",
-        "summary": "Autor: Michal Bar - Principal Program Manager",
-        "source": "MichalBar",
-        "url": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Share-Copilot-exploration-insights-in-Real-Time-Dashboards/ba-p/5184081",
-        "date": "2026-05-20T16:00:00.000Z"
-      },
-      {
-        "title": "Erstellen Sie Support-Tickets aus Microsoft Fabric heraus (allgemein verfügbar)",
-        "summary": "Autor: Roy Rubinstein, Principal Lead TPM - Ab Mai 2026 können berechtigte Microsoft Fabric- und Power BI-Benutzer auf eine neue Ticketerstellungserfahrung in Fabric zugreifen. Der Vorgang zur Ticketerstellung befindet sich im Hilfebereich, genau dort, wo Sie Hilfe suchen. Bis Juni 2026 plant Microsoft, die Erstellung von Fabric- und Power BI-Tickets auf diese Erfahrung umzustellen. Während dieses Übergangs können Benutzer, die zuvor",
-        "source": "royr",
-        "url": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Create-support-tickets-from-within-Microsoft-Fabric-Generally/ba-p/5183100",
-        "date": "2026-05-19T21:00:00.000Z"
-      }
-    ],
-    "ai": [
-      {
-        "title": "Jenseits der Engine: 10 Open-Source-Projekte, die gestalten, wie Spiele tatsächlich gemacht werden",
-        "summary": "Sehen Sie sich diese 10 Open-Source-Tools an, mit denen Spieleentwickler Grafiken, Animationen, Levels, Audio, Dialoge, Debug-Benutzeroberflächen und Engine-fähige Assets erstellen können.\nDer Beitrag Beyond the engine: 10 open source projects shaping how games actually get made appeared first on The GitHub Blog.",
-        "source": "Natalie Guevara",
-        "url": "https://github.blog/open-source/gaming/beyond-the-engine-10-open-source-projects-shaping-how-games-actually-get-made/",
-        "date": "2026-05-21T18:00:00.000Z"
-      },
-      {
-        "title": "Aufbau des nächsten Kapitels von GitHub in Bezug auf Barrierefreiheit",
-        "summary": "Erfahre mehr über unser Update zur Barrierefreiheitsstrategie von GitHub und erfahre, wie du gemeinsam mit uns eine Kultur der Barrierefreiheit aufbauen kannst.\nDer Beitrag Building GitHub's next chapter in accessibility erschien zuerst auf The GitHub Blog.",
-        "source": "Natalie Guevara",
-        "url": "https://github.blog/open-source/building-githubs-next-chapter-in-accessibility/",
-        "date": "2026-05-21T16:00:00.000Z"
-      },
-      {
-        "title": "AdventHealth bringt Ganzkörperpflege mit OpenAI voran",
-        "summary": "AdventHealth nutzt ChatGPT für das Gesundheitswesen, um Arbeitsabläufe zu rationalisieren, den Verwaltungsaufwand zu reduzieren und mehr Zeit für die Patientenversorgung zu haben.",
-        "source": "openai.com",
-        "url": "https://openai.com/index/adventhealth",
-        "date": "2026-05-21T12:00:00.000Z"
-      },
-      {
-        "title": "Untersuchung des unbefugten Zugriffs auf GitHub-eigene Repositories",
-        "summary": "Wenn Auswirkungen festgestellt werden, werden die Kunden über etablierte Reaktions- und Benachrichtigungskanäle für Vorfälle benachrichtigt.\nDer Beitrag Investigating unauthorized access to GitHub-owned repositories erschien zuerst auf The GitHub Blog.",
-        "source": "Natalie Guevara",
-        "url": "https://github.blog/security/investigating-unauthorized-access-to-githubs-internal-repositories/",
-        "date": "2026-05-20T21:07:38.000Z"
-      },
-      {
-        "title": "Wie Ramp-Ingenieure die Codeüberprüfung mit Codex beschleunigen",
-        "summary": "Wie Rampeningenieure Codex mit GPT-5.5 verwenden, um Code zu überprüfen und Verbesserungen zu liefern, so dass sie in Minuten statt Stunden substanzielles Feedback erhalten können.",
-        "source": "openai.com",
-        "url": "https://openai.com/index/ramp",
-        "date": "2026-05-20T00:00:00.000Z"
-      },
-      {
-        "title": "Die nächste Phase der OpenAI-Bildung für Länder",
-        "summary": "OpenAI fördert die Bildung für Länder und erweitert die KI-Einführung in Schulen durch neue Partnerschaften, Lehrerausbildung und Tools zur Verbesserung der globalen Lernergebnisse.",
-        "source": "openai.com",
-        "url": "https://openai.com/index/the-next-phase-of-education-for-countries",
-        "date": "2026-05-20T00:00:00.000Z"
-      },
-      {
-        "title": "Ein OpenAI-Modell hat eine zentrale Vermutung in der diskreten Geometrie widerlegt",
-        "summary": "Ein OpenAI-Modell löste das 80 Jahre alte Einheitsentfernungsproblem, widerlegte eine wichtige Vermutung in der diskreten Geometrie und markierte einen Meilenstein in der KI-gesteuerten Mathematik.",
-        "source": "openai.com",
-        "url": "https://openai.com/index/model-disproves-discrete-geometry-conjecture",
-        "date": "2026-05-20T00:00:00.000Z"
-      },
-      {
-        "title": "Wir stellen vor: OpenAI für Singapur",
-        "summary": "OpenAI for Singapore startet eine mehrjährige KI-Partnerschaft, um den Einsatz zu erweitern, lokale Talente aufzubauen und Unternehmen und öffentliche Dienste mit KI zu unterstützen.",
-        "source": "openai.com",
-        "url": "https://openai.com/index/introducing-openai-for-singapore",
-        "date": "2026-05-19T20:30:00.000Z"
-      },
-      {
-        "title": "OlmoEarth v1.1: Eine effizientere Familie von Erdbeobachtungsmodellen",
-        "summary": "",
-        "source": "huggingface.co",
-        "url": "https://huggingface.co/blog/allenai/olmoearth-v1-1",
-        "date": "2026-05-19T18:38:09.000Z"
-      },
-      {
-        "title": "Förderung der Provenienz von Inhalten für ein sichereres, transparenteres KI-Ökosystem",
-        "summary": "OpenAI verbessert die Provenienz von KI-Inhalten mit Inhaltsanmeldeinformationen, SynthID und einem Verifizierungstool, das Menschen hilft, KI-generierte Medien zu identifizieren und ihnen zu vertrauen.",
-        "source": "openai.com",
-        "url": "https://openai.com/index/advancing-content-provenance",
-        "date": "2026-05-19T10:45:00.000Z"
-      }
-    ],
-    "usecase": [
-      {
-        "title": "Von KI-Piloten zu Enterprise Impact: Warum die Ausführung das neue Unterscheidungsmerkmal ist",
-        "summary": "Da sich das Tempo des Wandels beschleunigt, bewegen sich Unternehmen schnell von KI-Experimenten zu Transformationen im Unternehmensmaßstab. Führungskräfte priorisieren messbare Ergebnisse, schnellere Wertschöpfung und Wiederholbarkeit im gesamten Unternehmen. Aber viele stoßen auf die gleiche Realität: Die Herausforderung besteht nicht mehr darin, in KI zu investieren — sie skaliert die Akzeptanz und liefert konsistente,...\nDie Post",
-        "source": "Deb Cupp",
-        "url": "https://blogs.microsoft.com/blog/2026/05/21/from-ai-pilots-to-enterprise-impact-why-execution-is-the-new-differentiator/",
-        "date": "2026-05-21T11:02:33.000Z"
-      },
-      {
-        "title": "Sie sind nicht zu spät zur KI - Siesind zu früh zur Transformation der Grenzen",
-        "summary": "Die KI-Einführung beschleunigt sich - aber die Einführung allein ist keine Transformation. Branchenübergreifend gehen Führungskräfte über das Experimentieren hinaus und stehen vor einer tieferen Herausforderung: Wie man die Art und Weise, wie Arbeit erledigt, Entscheidungen getroffen und Werte in einer KI-gesteuerten Welt geschaffen werden, neu gestaltet.\nDer Beitrag You 're not late to AI- you' re early to Frontier Transformation erschien zuerst im Microsoft Cloud Blog.",
-        "source": "Toby Bowers",
-        "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2026/05/18/youre-not-late-to-ai-youre-early-to-frontier-transformation/",
-        "date": "2026-05-18T15:00:00.000Z"
-      },
-      {
-        "title": "Von KI-Ambition bis Frontier Transformation: Bereitschaft definiert die Führungskräfte",
-        "summary": "KI ist keine Frage der Möglichkeit mehr - es ist eine Frage der Bereitschaft. \nTrotz der weit verbreiteten Akzeptanz bleiben viele Unternehmen noch früh in ihrer KI-Reife, eingeschränkt durch fragmentierte Grundlagen, unklare Governance und begrenzte organisatorische Ausrichtung. Diese Lücken machen es schwierig, von Experimenten zu wiederholbaren, unternehmensweiten Auswirkungen überzugehen.\nDer Beitrag Von KI-Ambitionen zu Frontier Transformati",
-        "source": "Maria Bledsoe",
-        "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2026/05/14/from-ai-ambition-to-frontier-transformation-readiness-defines-the-leaders/",
-        "date": "2026-05-14T15:00:00.000Z"
-      },
-      {
-        "title": "Die Checkliste Ihres KI-Lenkungsausschusses 2026: Souveränität",
-        "summary": "Wenn Unternehmen KI skalieren, stellt sich in Gesprächen mit KI-Lenkungsausschüssen immer wieder eine Frage: Können wir schnell vorankommen, ohne die Kontrolle zu verlieren? Diese Spannung zeigt sich am deutlichsten, wenn KI-Systeme Grenzen überschreiten - sensible Daten berühren, unter unterschiedlichen Vorschriften arbeiten und Teams auf der ganzen Welt unterstützen.\nDer Beitrag Die Checkliste Ihres KI-Lenkungsausschusses für 2026: Souveränität erschien zuerst auf The Microso",
-        "source": "Jessica Hawk",
-        "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2026/05/07/your-ai-steering-committees-2026-checklist-sovereignty/",
-        "date": "2026-05-07T15:00:00.000Z"
-      },
-      {
-        "title": "Wie Frontier-Firmen das Betriebsmodell für das Zeitalter der KI neu aufbauen",
-        "summary": "Verbringen Sie jetzt Zeit mit jedem Software-Engineering-Team und Sie werden etwas sehen, das es wert ist, beachtet zu werden. In den letzten Jahren hat sich die Art und Weise, wie Software entwickelt wird, durch vier verschiedene Muster der Zusammenarbeit zwischen Mensch und Agent bewegt - und die gleichen Muster beginnen sich in anderen Funktionen des Unternehmens zu zeigen.\nDer Beitrag How Frontier Firms are rebuild the operating model for the age of AI appea",
-        "source": "Jared Spataro",
-        "url": "https://blogs.microsoft.com/blog/2026/05/05/how-frontier-firms-are-rebuilding-the-operating-model-for-the-age-of-ai/",
-        "date": "2026-05-05T16:57:48.000Z"
-      },
-      {
-        "title": "Wie Frontier-Firmen das Betriebsmodell für das Zeitalter der KI neu aufbauen",
-        "summary": "Aktualisiert am 11. Mai 2026: Der Beitrag wurde aktualisiert, um widerzuspiegeln, dass Plugins von Drittanbietern ab dem 12. Mai 2026 verfügbar sein werden. Verbringen Sie jetzt Zeit mit jedem Software-Engineering-Team und Sie werden etwas sehen, das es wert ist, beachtet zu werden. In den letzten Jahren hat sich die Art und Weise, wie Software erstellt wird, durch vier verschiedene Muster von Mensch-Agent bewegt...\nDer Beitrag How Frontier Firms are rebuilding the operating mod",
-        "source": "Jared Spataro",
-        "url": "https://blogs.microsoft.com/blog/2026/05/05/how-frontier-firms-are-rebuilding-the-operating-model-for-the-age-of-ai/",
-        "date": "2026-05-05T10:00:01.000Z"
-      },
-      {
-        "title": "Menschliche Ambitionen freisetzen, um das Geschäftswachstum mit KI voranzutreiben",
-        "summary": "Während sich unsere Kunden auf dem Weg zu Grenzunternehmen weiterentwickeln, nutzen sie KI nicht nur, um die Arbeitsabläufe zu optimieren, sondern auch, um ihr Geschäft auf der Grundlage des Wachstumsversprechens neu zu erfinden. Unternehmen können jetzt Kreativität freisetzen, Innovationen beschleunigen und Intelligenz demokratisieren, indem sie Copilots und Agenten direkt in die Tools einbinden, die die Menschen jeden Tag lieben und nutzen....\nDer Beitrag Menschlichen Ehrgeiz freisetzen, b zu fahren",
-        "source": "Judson Althoff",
-        "url": "https://blogs.microsoft.com/blog/2026/04/28/unlocking-human-ambition-to-drive-business-growth-with-ai/",
-        "date": "2026-04-28T17:34:47.000Z"
-      },
-      {
-        "title": "Microsoft Sovereign Private Cloud skaliert mit Azure Local auf Tausende von Knoten",
-        "summary": "Heute freue ich mich, Ihnen mitteilen zu können, dass Azure Local jetzt skaliert werden kann, um Bereitstellungen von bis zu Tausenden von Servern in einer einzigen souveränen Umgebung zu unterstützen, sodass Unternehmen viel größere Workloads lokal über Rechenzentren mit großem Platzbedarf, industrielle Umgebungen und Edge-Standorte ausführen können, während sie die Kontrolle innerhalb ihrer souveränen Grenzen behalten. Organisationen, die nationale Infrastruktur betreiben, r",
-        "source": "Douglas Phillips",
-        "url": "https://blogs.microsoft.com/blog/2026/04/27/microsoft-sovereign-private-cloud-scales-to-thousands-of-nodes-with-azure-local/",
-        "date": "2026-04-27T16:00:03.000Z"
-      },
-      {
-        "title": "Die nächste Phase der Microsoft-OpenAI-Partnerschaft",
-        "summary": "Geänderte Vereinbarung sorgt für langfristige Klarheit Das schnelle Innovationstempo erfordert, dass wir unsere Partnerschaft zum Nutzen unserer Kunden und beider Unternehmen weiterentwickeln. Heute geben wir eine geänderte Vereinbarung bekannt, um unsere Partnerschaft und die Art und Weise, wie wir zusammenarbeiten, zu vereinfachen, die auf Flexibilität, Sicherheit und einem Fokus auf die Bereitstellung der Vorteile von KI basiert...\nDer Beitrag Die nächste Phase der Microsoft-Ope",
-        "source": "Microsoft Corporate Blogs",
-        "url": "https://blogs.microsoft.com/blog/2026/04/27/the-next-phase-of-the-microsoft-openai-partnership/",
-        "date": "2026-04-27T13:00:02.000Z"
-      },
-      {
-        "title": "Cricket Australia nutzt KI-Insights, um Fans das Geschehen näher zu bringen",
-        "summary": "Als England und Australien am 5. Tag des fünften Tests der immer angespannten Ashes Cricket-Serie im Januar gegeneinander antreten mussten, hatte jeder Ball, der geworfen wurde, und jeder feste Riss Fans am Rande ihrer Sitze, sowohl auf dem Sydney Cricket Ground als auch rund um den Globus.\nDer Beitrag Cricket Australia uses AI Insights to bring fans closer to the action erschien zuerst auf The Microsoft Cloud Blog.",
-        "source": "Elliott Smith",
-        "url": "https://news.microsoft.com/source/asia/features/cricket-australia-uses-ai-insights-to-bring-fans-closer-to-the-action/",
-        "date": "2026-04-23T16:26:11.000Z"
-      }
-    ],
-    "roadmap": [
-      {
-        "title": "Neue Metadatensynchronisierung und mehr in SQL Analytics Endpoint (Vorschau)",
-        "summary": "Autor: Rakesh Krishnan, Principal Product Manager, Azure Data Spannende Änderungen am SQL Analytics Endpoint",
-        "source": "rakrish75",
-        "url": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/New-metadata-sync-and-more-in-SQL-Analytics-Endpoint-Preview/ba-p/5183137",
-        "date": "2026-05-21T19:03:58.000Z"
-      },
-      {
-        "title": "Power BI Mai 2026 Funktionsübersicht",
-        "summary": "Autor: Katie Murray, Senior Program Manager - Power BI entwickelt sich mit Updates weiter, die es einfacher machen, Daten zu erkunden, Erkenntnisse zu generieren und ausgefeiltere Berichte zu erstellen. Die Veröffentlichung dieses Monats bringt Verbesserungen für Copilot- und KI-Erfahrungen, Berichts- und Modellierungsverbesserungen, neue Datenkonnektivitätsflüsse und Aktualisierungen von Visualisierungen, die Ihnen helfen, schneller von Daten zu Entscheidungen zu gelangen.",
-        "source": "murray-kp",
-        "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Power-BI-May-2026-Feature-Summary/ba-p/5182174",
-        "date": "2026-05-20T19:00:49.000Z"
-      },
-      {
-        "title": "Neue Power Query-Erfahrung in Power BI Desktop (Vorschau)",
-        "summary": "Verfasst von: Sara Lammini Rodriguez - Product Manager II, und Miguel Escobar - Senior Product Manager",
-        "source": "miguel",
-        "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/New-Power-Query-experience-in-Power-BI-Desktop-Preview/ba-p/5181129",
-        "date": "2026-05-20T17:30:00.000Z"
-      },
-      {
         "title": "Verstehen Sie Ihren Speicher mit OneLake-Produktgrößenberichten (Vorschau)",
         "summary": "Autor: Matt Basile - Senior Product Manager",
         "source": "Mabasile_MSFT",
@@ -267,13 +81,6 @@
         "source": "royr",
         "url": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Create-support-tickets-from-within-Microsoft-Fabric-Generally/ba-p/5183100",
         "date": "2026-05-19T21:00:00.000Z"
-      },
-      {
-        "title": "Outbound Access Protection für semantische Modelle (Vorschau)",
-        "summary": "Autor: Kay Unkroth, Principl Program Manager - Outbound Access Protection (OAP) ist eine Netzwerksicherheits- und Governance-Funktion auf Arbeitsbereichsebene, die ausgehenden Datenverkehr aus einem Arbeitsbereich standardmäßig blockiert und es Ihnen ermöglicht, nur die Ziele zuzulassen, denen Sie ausdrücklich vertrauen. Mit dieser Vorschau können Sie OAP nun auf semantische Modelle erweitern. Power BI-Berichte sind noch nicht Teil dieser Vorschau; die Berichtsunterstützung kommt i",
-        "source": "kayu",
-        "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Outbound-Access-Protection-for-semantic-models-Preview/ba-p/5184917",
-        "date": "2026-05-19T17:00:00.000Z"
       },
       {
         "title": "Ressourcenprofile in Microsoft Fabric Data Engineering (Vorschau)",
@@ -283,11 +90,150 @@
         "date": "2026-05-18T21:00:00.000Z"
       },
       {
+        "title": "Benutzerdefinierte Autorisierung für API für GraphQL in Microsoft Fabric (Vorschau)",
+        "summary": "Autor: Sunitha Muthukrishna - Principal Product Manager",
+        "source": "mk_sunitha",
+        "url": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Custom-authorization-for-API-for-GraphQL-in-Microsoft-Fabric/ba-p/5182352",
+        "date": "2026-05-14T21:00:00.000Z"
+      },
+      {
+        "title": "Der Datenagent unterstützt jetzt Eventhouse-Funktionen, materialisierte Ansichten und Verknüpfungen (Vorschau)",
+        "summary": "Autor: Shreyas Canchi Radhakrishna - Produktmanager",
+        "source": "msft-shreyas",
+        "url": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Data-Agent-Now-Supports-Eventhouse-Functions-Materialized-Views/ba-p/5181801",
+        "date": "2026-05-14T20:55:21.000Z"
+      },
+      {
+        "title": "Service Principal Support für Data Agents in Fabric (Vorschau)",
+        "summary": "Amir Jafari - Principal Product ManagerJoanne Wong - Senior Product Marketing Manager",
+        "source": "AmirJafari",
+        "url": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Service-Principal-Support-for-Data-Agents-in-Fabric-Preview/ba-p/5181634",
+        "date": "2026-05-13T18:45:00.000Z"
+      },
+      {
+        "title": "Fabric Eventstream kann jetzt Business-Events veröffentlichen (Vorschau)",
+        "summary": "Autor: Roberto Cervantes Rivero - Senior Product Manager",
+        "source": "robece-msft",
+        "url": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Fabric-Eventstream-can-now-publish-Business-Events-Preview/ba-p/5180050",
+        "date": "2026-05-13T17:00:00.000Z"
+      }
+    ],
+    "powerbi": [
+      {
+        "title": "Power BI Mai 2026 Funktionsübersicht",
+        "summary": "Autor: Katie Murray, Senior Program Manager - Power BI entwickelt sich mit Updates weiter, die es einfacher machen, Daten zu erkunden, Erkenntnisse zu generieren und ausgefeiltere Berichte zu erstellen. Die Veröffentlichung dieses Monats bringt Verbesserungen für Copilot- und KI-Erfahrungen, Berichts- und Modellierungsverbesserungen, neue Datenkonnektivitätsflüsse und Aktualisierungen von Visualisierungen, die Ihnen helfen, schneller von Daten zu Entscheidungen zu gelangen.",
+        "source": "murray-kp",
+        "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Power-BI-May-2026-Feature-Summary/ba-p/5182174",
+        "date": "2026-05-20T19:00:49.000Z"
+      },
+      {
+        "title": "Neue Power Query-Erfahrung in Power BI Desktop (Vorschau)",
+        "summary": "Verfasst von: Sara Lammini Rodriguez - Product Manager II, und Miguel Escobar - Senior Product Manager",
+        "source": "miguel",
+        "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/New-Power-Query-experience-in-Power-BI-Desktop-Preview/ba-p/5181129",
+        "date": "2026-05-20T17:30:00.000Z"
+      },
+      {
+        "title": "Outbound Access Protection für semantische Modelle (Vorschau)",
+        "summary": "Autor: Kay Unkroth, Principl Program Manager - Outbound Access Protection (OAP) ist eine Netzwerksicherheits- und Governance-Funktion auf Arbeitsbereichsebene, die ausgehenden Datenverkehr aus einem Arbeitsbereich standardmäßig blockiert und es Ihnen ermöglicht, nur die Ziele zuzulassen, denen Sie ausdrücklich vertrauen. Mit dieser Vorschau können Sie OAP nun auf semantische Modelle erweitern. Power BI-Berichte sind noch nicht Teil dieser Vorschau; die Berichtsunterstützung kommt i",
+        "source": "kayu",
+        "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Outbound-Access-Protection-for-semantic-models-Preview/ba-p/5184917",
+        "date": "2026-05-19T17:00:00.000Z"
+      },
+      {
         "title": "Power BI April 2026 Funktionsübersicht",
         "summary": "Willkommen zum April-Power BI-Update! Das Power BI-Update vom April 2026 bringt kontinuierliche Verbesserungen in den Bereichen Copilot und KI, Berichterstattung, Grafik und Modellierung. Diese Version bietet mehr Flexibilität bei der Arbeit mit Layouts und Grafiken, erweiterte Copilot-Erlebnisse - insbesondere auf Mobilgeräten - und mehrere Vorschaufunktionen, die die Leistung und die Erstellung von Workflows weiter verbessern. Sie finden auch",
         "source": "kamurray",
         "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Power-BI-April-2026-Feature-Summary/ba-p/5173904",
         "date": "2026-05-14T21:15:35.000Z"
+      },
+      {
+        "title": "REST-API für DAX-Abfragen ausführen (Vorschau)",
+        "summary": "Autor: Kay Unkroth - Principal Program Manager",
+        "source": "kayu",
+        "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Execute-DAX-Queries-REST-API-Preview/ba-p/5177697",
+        "date": "2026-05-07T17:47:39.000Z"
+      },
+      {
+        "title": "Bereich für semantische Modelleinstellungen (Vorschau)",
+        "summary": "Autor: Kay Unkroth - Principal Program Manager",
+        "source": "kayu",
+        "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Semantic-model-settings-pane-Preview/ba-p/5177694",
+        "date": "2026-05-06T18:04:07.000Z"
+      },
+      {
+        "title": "Moderne visuelle Tooltips in Power BI (allgemein verfügbar)",
+        "summary": "Das neueste Update von Power BI führt mit der allgemeinen Verfügbarkeit moderner visueller Tooltips eine Verbesserung der Art und Weise ein, wie Benutzer mit Berichten interagieren. Alle Power BI-Berichte - von Power BI Desktop bis hin zu Power BI-Berichten im Web, in der mobilen App, in Teams und eingebettet in jede Website - verwenden jetzt die aktualisierten visuellen Tooltips, um die Berichtsinteraktionen mit der integrierten Aktionen-Fußzeile und der Berichterstellung zu vereinfachen f",
+        "source": "jacindaeng",
+        "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Modern-Visual-Tooltips-in-Power-BI-Generally-Available/ba-p/5173946",
+        "date": "2026-04-30T07:37:00.000Z"
+      },
+      {
+        "title": "Translytische Aufgabenflüsse (allgemein verfügbar)",
+        "summary": "Translytische Aufgabenflüsse bringen interaktive Power BI-Berichte auf die nächste Ebene, auf der Benutzer Datensätze aktualisieren, Anmerkungen hinzufügen und Aktionen in externen Systemen auslösen können, ohne den Bericht zu verlassen.\r\n\r\nMit translytischen Aufgabenabläufen werden Report-Verbraucher zu aktiven Teilnehmern. Anstatt Daten anzuzeigen und dann zu einer anderen Anwendung zu wechseln, um Maßnahmen zu ergreifen, können Benutzer ihren gesamten Workflow mit",
+        "source": "DataZoe",
+        "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Translytical-Task-Flows-Generally-Available/ba-p/5173907",
+        "date": "2026-04-20T16:00:00.000Z"
+      },
+      {
+        "title": "Chatten Sie mit Copilot in einem Bericht über die mobile Power BI-App (Vorschau)",
+        "summary": "Wenn Sie es noch nicht getan haben, schauen Sie sich Arun Ulags Hero-Blog „FabCon und SQLCon 2026: Vereinheitlichung von Datenbanken und Fabric auf einer einzigen, vollständigen Plattform“ an, um einen vollständigen Überblick über alle unsere FabCon- und SQLCon-Ankündigungen sowohl für Fabric als auch für unsere Datenbankangebote zu erhalten. \r\n\r\n\r\n\r\nDie nächste Entwicklung von In-Report Copilot in der mobilen App ist jetzt in der Vorschau verfügbar: eine vollständige Konversations-Chat-Erfahrung, mit der Sie",
+        "source": "emininberg",
+        "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Chat-with-Copilot-inside-a-report-on-the-Power-BI-mobile-app/ba-p/5173913",
+        "date": "2026-03-30T17:30:00.000Z"
+      },
+      {
+        "title": "TMDL-Ansicht im Web (Vorschau)",
+        "summary": "Wenn Sie es noch nicht getan haben, schauen Sie sich Arun Ulags Hero-Blog „FabCon und SQLCon 2026: Vereinheitlichung von Datenbanken und Fabric auf einer einzigen, vollständigen Plattform“ an, um einen vollständigen Überblick über alle unsere FabCon- und SQLCon-Ankündigungen sowohl für Fabric als auch für unsere Datenbankangebote zu erhalten. \r\n\r\n\r\n\r\nTMDL View im Web wird in den kommenden Wochen verfügbar sein und bietet ein leistungsstarkes semantisches Code-First-Modellierungserlebnis direkt für Sie",
+        "source": "saralam",
+        "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/TMDL-View-on-the-Web-Preview/ba-p/5173917",
+        "date": "2026-03-20T21:15:00.000Z"
+      }
+    ],
+    "copilot": [
+      {
+        "title": "Microsoft Agent 365, jetzt allgemein verfügbar, erweitert Funktionen und Integrationen",
+        "summary": "Microsoft Agent 365 hilft Ihnen, die Kontrolle über die Zersiedelung von Agenten als Ihre Kontrollebene zu übernehmen, um Agenten und ihre Interaktionen zu beobachten, zu steuern und zu sichern.\nDer Beitrag Microsoft Agent 365, der jetzt allgemein verfügbar ist, erweitert die Funktionen und Integrationen, die zuerst im Microsoft 365 Blog erschienen sind.",
+        "source": "Nirav Shah, Rob Lefferts and Jason Roszak",
+        "url": "https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/",
+        "date": "2026-05-01T15:00:00.000Z"
+      },
+      {
+        "title": "Die Agentenfähigkeiten von Copilot in Word, Excel und PowerPoint sind in der Regel verfügbar",
+        "summary": "Vom ersten Entwurf bis zur endgültigen Politur fungiert Copilot als echter Mitarbeiter, der Maßnahmen ergreift, während Sie die Kontrolle behalten.\nDer Beitrag Die Agentenfähigkeiten von Copilot in Word, Excel und PowerPoint sind in der Regel verfügbar erschien zuerst im Microsoft 365 Blog.",
+        "source": "Sumit Chauhan",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/04/22/copilots-agentic-capabilities-in-word-excel-and-powerpoint-are-generally-available/",
+        "date": "2026-04-23T00:00:00.000Z"
+      }
+    ],
+    "agents": [
+      {
+        "title": "Was ist neu in der Power Platform: Mai 2026 Feature-Update",
+        "summary": "Power Apps allgemein verfügbar: Power Fx benutzerdefinierte Typen (UDTs) Benutzerdefinierte Typen (UDTs) sind ab Version 3.26044 allgemein verfügbar. Sie sind für alle neuen Apps aktiviert und können für vorhandene Apps über Einstellungen > Updates > neue > benutzerdefinierte Typen aktiviert werden. UDTs werden mit der Funktion Typ in der App definiert.\nDer Beitrag What's new in Power Platform: Mai 2026 Feature-Update erschien zuerst",
+        "source": "Tiffany Treacy",
+        "url": "https://www.microsoft.com/en-us/power-platform/blog/2026/05/14/whats-new-in-power-platform-may-2026-feature-update/",
+        "date": "2026-05-14T18:16:52.000Z"
+      },
+      {
+        "title": "Power Fx: Benutzerdefinierte Typen allgemein verfügbar",
+        "summary": "Benutzerdefinierte Typen (UDTs) sind jetzt allgemein verfügbar! Ab Power Apps Studio Version 3.26044 sind UDTs standardmäßig für neue Apps aktiviert und können für vorhandene Apps unter Einstellungen > Updates > Neu > Benutzerdefinierte Typen aktiviert werden.\nDer Beitrag Power Fx: User Defined Types Generally Available erschien zuerst auf dem Microsoft Power Platform Blog.",
+        "source": "Greg Lindhorst",
+        "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/power-fx-user-defined-types-generally-available/",
+        "date": "2026-05-13T18:59:00.000Z"
+      },
+      {
+        "title": "Agentenadministration: Datenadministrationsfähigkeiten jetzt in der öffentlichen Vorschau verfügbar",
+        "summary": "Mit Dataverse Admin Skills (dv-admin) können Power Platform-Administratoren die natürliche Sprache verwenden, um Dataverse-Umgebungen in großem Maßstab zu verwalten.\nDer Beitrag Agentic Administration: Dataverse Admin Skills now available in Public Preview erschien zuerst im Microsoft Power Platform Blog.",
+        "source": "Anirudha Bakore",
+        "url": "https://www.microsoft.com/en-us/power-platform/blog/2026/05/12/dataverse-agentic-administration/",
+        "date": "2026-05-12T15:33:42.000Z"
+      },
+      {
+        "title": "Benutzerdefinierte Tools und eine reichhaltige Benutzeroberfläche für App-basierte Unterhaltungen sind jetzt in der öffentlichen Vorschau verfügbar",
+        "summary": "Entdecken Sie, wie benutzerdefinierte Tools und umfangreiche, App-gestützte Benutzeroberflächen in Microsoft 365 Copilot die Konversation über Geschäftsanwendungen verbessern können. Diese öffentliche Vorschau stellt neue Wege vor, um App-Intelligenz an die Oberfläche zu bringen, Maßnahmen voranzutreiben und kontextbezogenere, intuitivere Interaktionen zu ermöglichen - direkt im Arbeitsfluss.\nDer Beitrag Custom tools and rich UI for app-based conversations are now in Public Preview appeared firs",
+        "source": "Hemant Gaur",
+        "url": "https://www.microsoft.com/en-us/power-platform/blog/2026/04/22/custom-tools-and-rich-ui-for-app-based-conversations-are-now-in-public-preview/",
+        "date": "2026-04-22T19:11:22.000Z"
       }
     ]
   }
