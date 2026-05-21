@@ -1,6 +1,6 @@
 {
   "date": "2026-05-21",
-  "updated": "2026-05-21T21:19:01.920Z",
+  "updated": "2026-05-21T21:23:41.224Z",
   "tabs": {
     "powerplatform": [
       {
@@ -207,13 +207,6 @@
       }
     ],
     "agents": [
-      {
-        "title": "Was ist neu in der Power Platform: Mai 2026 Feature-Update",
-        "summary": "Power Apps allgemein verfügbar: Power Fx benutzerdefinierte Typen (UDTs) Benutzerdefinierte Typen (UDTs) sind ab Version 3.26044 allgemein verfügbar. Sie sind für alle neuen Apps aktiviert und können für vorhandene Apps über Einstellungen > Updates > neue > benutzerdefinierte Typen aktiviert werden. UDTs werden mit der Funktion Typ in der App definiert.\nDer Beitrag What's new in Power Platform: Mai 2026 Feature-Update erschien zuerst",
-        "source": "Tiffany Treacy",
-        "url": "https://www.microsoft.com/en-us/power-platform/blog/2026/05/14/whats-new-in-power-platform-may-2026-feature-update/",
-        "date": "2026-05-14T18:16:52.000Z"
-      },
       {
         "title": "Power Fx: Benutzerdefinierte Typen allgemein verfügbar",
         "summary": "Benutzerdefinierte Typen (UDTs) sind jetzt allgemein verfügbar! Ab Power Apps Studio Version 3.26044 sind UDTs standardmäßig für neue Apps aktiviert und können für vorhandene Apps unter Einstellungen > Updates > Neu > Benutzerdefinierte Typen aktiviert werden.\nDer Beitrag Power Fx: User Defined Types Generally Available erschien zuerst auf dem Microsoft Power Platform Blog.",
