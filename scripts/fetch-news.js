@@ -89,10 +89,11 @@ async function fetchTab(tab) {
     await sleep(500);
   }
 
-  // Sort: priority score desc, then date desc
+  // Sort: date desc (newest first), score as tiebreaker
   allItems.sort((a, b) => {
-    if (b._score !== a._score) return b._score - a._score;
-    return new Date(b.date) - new Date(a.date);
+    const dateDiff = new Date(b.date) - new Date(a.date);
+    if (dateDiff !== 0) return dateDiff;
+    return b._score - a._score;
   });
 
   const top = allItems.slice(0, MAX_ARTICLES_PER_TAB).map(({ _score, ...rest }) => rest);
