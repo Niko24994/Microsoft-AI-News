@@ -1,42 +1,42 @@
 {
   "date": "2026-05-21",
-  "updated": "2026-05-21T20:33:44.609Z",
+  "updated": "2026-05-21T20:39:00.923Z",
   "tabs": {
     "fabric": [
       {
-        "title": "Datenflüsse: Danke für acht Jahre Gen1 - und warum Gen2 die Zukunft ist",
-        "summary": "Aktualisiert am 20. April 2026: Vielen Dank für all das Engagement zu diesem Thema seit der ursprünglichen Veröffentlichung dieses Blogposts am 2. April 2026. Wir haben mehrere wiederkehrende Fragen gesehen und möchten unsere Position zu einigen wichtigen Punkten klären. \r\n\r\n\r\nDataflow Gen1 wird weiterhin unterstützt, befindet sich jedoch in einem veralteten Zustand und erhält keine zukünftigen Innovationen. Wir verstehen, dass viele Kunden wichtige,",
-        "source": "millopis",
-        "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Dataflows-Thank-you-for-eight-years-of-Gen1-and-why-Gen2-is-the/ba-p/5173910",
-        "date": "2026-04-02T16:00:00.000Z"
+        "title": "Neue Metadatensynchronisierung und mehr in SQL Analytics Endpoint (Vorschau)",
+        "summary": "Autor: Rakesh Krishnan, Principal Product Manager, Azure Data Spannende Änderungen am SQL Analytics Endpoint",
+        "source": "rakrish75",
+        "url": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/New-metadata-sync-and-more-in-SQL-Analytics-Endpoint-Preview/ba-p/5183137",
+        "date": "2026-05-21T19:03:58.000Z"
       },
       {
-        "title": "Power BI April 2026 Funktionsübersicht",
-        "summary": "Willkommen zum April-Power BI-Update! Das Power BI-Update vom April 2026 bringt kontinuierliche Verbesserungen in den Bereichen Copilot und KI, Berichterstattung, Grafik und Modellierung. Diese Version bietet mehr Flexibilität bei der Arbeit mit Layouts und Grafiken, erweiterte Copilot-Erlebnisse - insbesondere auf Mobilgeräten - und mehrere Vorschaufunktionen, die die Leistung und die Erstellung von Workflows weiter verbessern. Sie finden auch",
-        "source": "kamurray",
-        "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Power-BI-April-2026-Feature-Summary/ba-p/5173904",
-        "date": "2026-05-14T21:15:35.000Z"
+        "title": "Power BI-Mandantenmigration: Kompromisse, Risiken und Realitäten",
+        "summary": "Autor: Winnie Li, Cloud Solution Architect",
+        "source": "WinnieLi",
+        "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Power-BI-Tenant-Migration-Trade-offs-risks-and-realities/ba-p/5187013",
+        "date": "2026-05-21T19:01:58.000Z"
       },
       {
-        "title": "Tauchen Sie tief in zusammengesetzte semantische Modelle mit Direct Lake und Importtabellen ein",
-        "summary": "Mit zusammengesetzten semantischen Modellen, die Direct Lake-Tabellen mit Importtabellen mischen und jetzt in der öffentlichen Vorschau verfügbar sind, ist es jetzt noch einfacher, Ihre Datenarbeit zu erledigen. Der Direct Lake on OneLake-Tabellen-Speichermodus könnte bereits Tabellen aus anderen Fabric-Datenquellen wie Lakehouses, Warehouses, SQL-Datenbanken in Fabric und gespiegelten Datenbanken mischen. Und mit diesem Update wird die Flexibilität jetzt um ein Vielfaches erweitert",
-        "source": "DataZoe",
-        "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Deep-dive-into-composite-semantic-models-with-Direct-Lake-and/ba-p/5173943",
-        "date": "2026-04-30T07:36:58.000Z"
+        "title": "Fabric Jumpstart – Entdecken Sie, was mit Microsoft Fabric möglich ist",
+        "summary": "Miles Cole — Principal Program ManagerEdgar Cotte — Senior Program Manager",
+        "source": "milescole-msft",
+        "url": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Fabric-Jumpstart-Discover-what-s-possible-with-Microsoft-Fabric/ba-p/5182277",
+        "date": "2026-05-21T14:53:06.000Z"
       },
       {
-        "title": "Translytische Aufgabenflüsse (allgemein verfügbar)",
-        "summary": "Translytische Aufgabenflüsse bringen interaktive Power BI-Berichte auf die nächste Ebene, auf der Benutzer Datensätze aktualisieren, Anmerkungen hinzufügen und Aktionen in externen Systemen auslösen können, ohne den Bericht zu verlassen.\r\n\r\nMit translytischen Aufgabenabläufen werden Report-Verbraucher zu aktiven Teilnehmern. Anstatt Daten anzuzeigen und dann zu einer anderen Anwendung zu wechseln, um Maßnahmen zu ergreifen, können Benutzer ihren gesamten Workflow mit",
-        "source": "DataZoe",
-        "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Translytical-Task-Flows-Generally-Available/ba-p/5173907",
-        "date": "2026-04-20T16:00:00.000Z"
+        "title": "Power BI Mai 2026 Funktionsübersicht",
+        "summary": "Autor: Katie Murray, Senior Program Manager - Power BI entwickelt sich mit Updates weiter, die es einfacher machen, Daten zu erkunden, Erkenntnisse zu generieren und ausgefeiltere Berichte zu erstellen. Die Veröffentlichung dieses Monats bringt Verbesserungen für Copilot- und KI-Erfahrungen, Berichts- und Modellierungsverbesserungen, neue Datenkonnektivitätsflüsse und Aktualisierungen von Visualisierungen, die Ihnen helfen, schneller von Daten zu Entscheidungen zu gelangen.",
+        "source": "murray-kp",
+        "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Power-BI-May-2026-Feature-Summary/ba-p/5182174",
+        "date": "2026-05-20T19:00:49.000Z"
       },
       {
-        "title": "Power BI März 2026 Funktionsübersicht",
-        "summary": "Willkommen bei der Power BI März 2026 Feature Summary - und willkommen bei FabCon!\r\n\r\nWährend die FabCon beginnt, spiegelt das Update dieses Monats die Dynamik wider, die wir bei Power BI und den aktuellen Gesprächen mit Kunden sehen. Der März bringt eine Reihe durchdachter Verbesserungen in den Bereichen Copilot, Berichterstattung, Modellierung und Datenkonnektivität mit sich - mit dem Schwerpunkt darauf, das tägliche Erstellen von Texten reibungsloser zu gestalten und visuelle Elemente besser auszudrücken",
-        "source": "kamurray",
-        "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Power-BI-March-2026-Feature-Summary/ba-p/5173928",
-        "date": "2026-03-18T13:07:49.000Z"
+        "title": "Neue Power Query-Erfahrung in Power BI Desktop (Vorschau)",
+        "summary": "Verfasst von: Sara Lammini Rodriguez - Product Manager II, und Miguel Escobar - Senior Product Manager",
+        "source": "miguel",
+        "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/New-Power-Query-experience-in-Power-BI-Desktop-Preview/ba-p/5181129",
+        "date": "2026-05-20T17:30:00.000Z"
       }
     ],
     "ai": [
@@ -78,20 +78,6 @@
     ],
     "usecase": [
       {
-        "title": "Microsoft Sovereign Private Cloud skaliert mit Azure Local auf Tausende von Knoten",
-        "summary": "Heute freue ich mich, Ihnen mitteilen zu können, dass Azure Local jetzt skaliert werden kann, um Bereitstellungen von bis zu Tausenden von Servern in einer einzigen souveränen Umgebung zu unterstützen, sodass Unternehmen viel größere Workloads lokal über Rechenzentren mit großem Platzbedarf, industrielle Umgebungen und Edge-Standorte ausführen können, während sie die Kontrolle innerhalb ihrer souveränen Grenzen behalten. Organisationen, die nationale Infrastruktur betreiben, r",
-        "source": "Douglas Phillips",
-        "url": "https://blogs.microsoft.com/blog/2026/04/27/microsoft-sovereign-private-cloud-scales-to-thousands-of-nodes-with-azure-local/",
-        "date": "2026-04-27T16:00:03.000Z"
-      },
-      {
-        "title": "Beschleunigung der Frontier-Transformation mit Microsoft-Partnern",
-        "summary": "KI ist schnell vom Experimentieren zur Produktion übergegangen. Kunden wünschen sich vom ersten Tag an messbare Geschäftsergebnisse sowie Sicherheit, Governance und verantwortungsvolle KI. Microsoft-Partner sind ein bedeutendes Unterscheidungsmerkmal, um diese Ziele zu erreichen. Sie verwandeln Ideen in einsetzbare Lösungen, indem sie die wertvollsten Anwendungsfälle priorisieren und die richtigen Daten- und Sicherheitsgrundlagen schaffen...\nDie p",
-        "source": "Nicole Dezen",
-        "url": "https://blogs.microsoft.com/blog/2026/04/21/accelerating-frontier-transformation-with-microsoft-partners/",
-        "date": "2026-04-21T17:00:03.000Z"
-      },
-      {
         "title": "Von KI-Piloten zu Enterprise Impact: Warum die Ausführung das neue Unterscheidungsmerkmal ist",
         "summary": "Da sich das Tempo des Wandels beschleunigt, bewegen sich Unternehmen schnell von KI-Experimenten zu Transformationen im Unternehmensmaßstab. Führungskräfte priorisieren messbare Ergebnisse, schnellere Wertschöpfung und Wiederholbarkeit im gesamten Unternehmen. Aber viele stoßen auf die gleiche Realität: Die Herausforderung besteht nicht mehr darin, in KI zu investieren — sie skaliert die Akzeptanz und liefert konsistente,...\nDie Post",
         "source": "Deb Cupp",
@@ -111,6 +97,20 @@
         "source": "Jessica Hawk",
         "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2026/05/07/your-ai-steering-committees-2026-checklist-sovereignty/",
         "date": "2026-05-07T15:00:00.000Z"
+      },
+      {
+        "title": "Wie Frontier-Firmen das Betriebsmodell für das Zeitalter der KI neu aufbauen",
+        "summary": "Verbringen Sie jetzt Zeit mit jedem Software-Engineering-Team und Sie werden etwas sehen, das es wert ist, beachtet zu werden. In den letzten Jahren hat sich die Art und Weise, wie Software entwickelt wird, durch vier verschiedene Muster der Zusammenarbeit zwischen Mensch und Agent bewegt - und die gleichen Muster beginnen sich in anderen Funktionen des Unternehmens zu zeigen.\nDer Beitrag How Frontier Firms are rebuild the operating model for the age of AI appea",
+        "source": "Jared Spataro",
+        "url": "https://blogs.microsoft.com/blog/2026/05/05/how-frontier-firms-are-rebuilding-the-operating-model-for-the-age-of-ai/",
+        "date": "2026-05-05T16:57:48.000Z"
+      },
+      {
+        "title": "Wie Frontier-Firmen das Betriebsmodell für das Zeitalter der KI neu aufbauen",
+        "summary": "Aktualisiert am 11. Mai 2026: Der Beitrag wurde aktualisiert, um widerzuspiegeln, dass Plugins von Drittanbietern ab dem 12. Mai 2026 verfügbar sein werden. Verbringen Sie jetzt Zeit mit jedem Software-Engineering-Team und Sie werden etwas sehen, das es wert ist, beachtet zu werden. In den letzten Jahren hat sich die Art und Weise, wie Software erstellt wird, durch vier verschiedene Muster von Mensch-Agent bewegt...\nDer Beitrag How Frontier Firms are rebuilding the operating mod",
+        "source": "Jared Spataro",
+        "url": "https://blogs.microsoft.com/blog/2026/05/05/how-frontier-firms-are-rebuilding-the-operating-model-for-the-age-of-ai/",
+        "date": "2026-05-05T10:00:01.000Z"
       }
     ]
   }
