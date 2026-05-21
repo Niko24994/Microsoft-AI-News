@@ -1,6 +1,6 @@
 {
   "date": "2026-05-21",
-  "updated": "2026-05-21T21:23:41.224Z",
+  "updated": "2026-05-21T21:38:12.580Z",
   "tabs": {
     "powerplatform": [
       {
@@ -192,41 +192,146 @@
     ],
     "copilot": [
       {
-        "title": "Microsoft Agent 365, jetzt allgemein verfügbar, erweitert Funktionen und Integrationen",
-        "summary": "Microsoft Agent 365 hilft Ihnen, die Kontrolle über die Zersiedelung von Agenten als Ihre Kontrollebene zu übernehmen, um Agenten und ihre Interaktionen zu beobachten, zu steuern und zu sichern.\nDer Beitrag Microsoft Agent 365, der jetzt allgemein verfügbar ist, erweitert die Funktionen und Integrationen, die zuerst im Microsoft 365 Blog erschienen sind.",
-        "source": "Nirav Shah, Rob Lefferts and Jason Roszak",
-        "url": "https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/",
-        "date": "2026-05-01T15:00:00.000Z"
+        "title": "Microsoft Copilot (Microsoft 365): Work IQ-APIs: Zugriff auf Researcher-Agenten",
+        "summary": "Ermöglicht es Entwicklern, den Researcher-Agenten über den Work IQ-Endpunkt aufzurufen, um mehrstufige Analysen, tiefes Denken und Synthese über Unternehmensinhalte hinweg als Teil von Agenten-Workflows durchzuführen.\nGA-Datum: Juli CY2026\nVorschaudatum: Juni CY2026",
+        "source": "In development",
+        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=559018",
+        "date": "2026-05-18T22:30:51.000Z"
       },
       {
-        "title": "Die Agentenfähigkeiten von Copilot in Word, Excel und PowerPoint sind in der Regel verfügbar",
-        "summary": "Vom ersten Entwurf bis zur endgültigen Politur fungiert Copilot als echter Mitarbeiter, der Maßnahmen ergreift, während Sie die Kontrolle behalten.\nDer Beitrag Die Agentenfähigkeiten von Copilot in Word, Excel und PowerPoint sind in der Regel verfügbar erschien zuerst im Microsoft 365 Blog.",
-        "source": "Sumit Chauhan",
-        "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/04/22/copilots-agentic-capabilities-in-word-excel-and-powerpoint-are-generally-available/",
-        "date": "2026-04-23T00:00:00.000Z"
+        "title": "Microsoft Copilot (Microsoft 365): Holen Sie sich umsetzbare Vorschläge von Copilot auf Ihrer Copilot-Seite",
+        "summary": "Fordern Sie Feedback von Copilot auf Ihrer Seite an, indem Sie \"Vorgeschlagene Änderungen\" im Menü \"Copilot-Verknüpfungen\" auswählen. Copilot analysiert die Inhalte auf Ihrer Seite und gibt umsetzbare Vorschläge dazu, was Sie ändern können, um die Klarheit und Qualität Ihrer schriftlichen Inhalte zu verbessern. Sie können dann Vorschläge direkt auf die Seite anwenden.\nGA-Datum: Juni CY2026\nVorschaudatum: Mai CY2026",
+        "source": "In development",
+        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=562351",
+        "date": "2026-05-15T22:00:42.000Z"
+      },
+      {
+        "title": "Microsoft Copilot (Microsoft 365): Copilot People Connectors führt die Aufnahme von Personendaten mit differenzierter Zugriffskontrolle ein",
+        "summary": "Der Copilot People Connector unterstützt jetzt den Import von Personendaten mit Zugriffskontrollen in Microsoft 365. Diese Version ermöglicht es Unternehmen, Personendaten von externen Systemen zusammen mit zugehörigen Zugriffssteuerungslisten (ACLs) in Microsoft 365 zu übertragen, um sicherzustellen, dass Copilot die in Quellsystemen definierten Berechtigungen einhält. Die importierten Daten können auf bestimmte Personen und Gruppen ausgeweitet werden, so dass",
+        "source": "In development",
+        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=561326",
+        "date": "2026-05-15T22:00:42.000Z"
+      },
+      {
+        "title": "Microsoft Copilot Studio: MCP-kompatible Tools in Agenten-Workflows verwenden",
+        "summary": "Integrieren Sie proprietäre Systeme, dynamische Wissensquellen und benutzerdefinierte Aktionen mit MCP-Unterstützung in Ihre Agenten-Workflows, um die Erweiterbarkeit zu beschleunigen und gleichzeitig die Workflow-Zuverlässigkeit zu erhalten. Diese Integration verbessert die Wiederverwendung über Agenten und Workflows hinweg, reduziert die Duplizierung von Integrationen und umfasst ein aufstrebendes offenes und erweiterbares Agenten-Ökosystem.\nGA-Datum: Juni CY2026\nVorschaudatum: Mai CY2026",
+        "source": "In development",
+        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=562221",
+        "date": "2026-05-15T18:00:35.000Z"
+      },
+      {
+        "title": "Microsoft Copilot Studio: Optimieren Sie Ihre Workflows mit Computernutzung",
+        "summary": "Fügen Sie belastbare, KI-gestützte UI-Automatisierung direkt in Ihre Workflows mit Computernutzungstools ein. Hersteller können wiederverwendbare, zielorientierte Automatisierungen erstellen, die sich dynamisch an Website- oder App-Änderungen anpassen, während Administratoren die Governance durch Zugriffskontrollen, gehostete Browserverwaltung und Berechtigungen auf Umweltebene aufrechterhalten.\nGA-Datum: Oktober CY2026\nVorschaudatum: April CY2026",
+        "source": "In development",
+        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=562220",
+        "date": "2026-05-15T18:00:35.000Z"
+      },
+      {
+        "title": "Microsoft Viva: Agentenmetriken für benutzerdefinierte Berichte in der Insights Analyst Workbench",
+        "summary": "Verschaffen Sie sich mit flexiblen Self-Service-Analysen tiefere Einblicke in die Einführung von Copilot-Agenten. Insights Global- und Partitionsanalysten können auf granulare Agentennutzungsmetriken mit Agenten- und Organisationsattributen zugreifen und diese kombinieren, um Agentenakzeptanztrends aufzudecken, Berichte zu exportieren und anzupassen und fundiertere Entscheidungen zu treffen, ohne sich auf vordefinierte Dashboards verlassen zu müssen.\r\nGA-Datum: September CY2026\nVorschau da",
+        "source": "In development",
+        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=562412",
+        "date": "2026-05-14T23:15:59.000Z"
+      },
+      {
+        "title": "Microsoft Copilot Studio: Agenten als Workflow-Schritte mit dem Agent-Knoten aufrufen",
+        "summary": "Fügen Sie Ihrem Workflow einen Agent-Knoten hinzu, um Daten zu argumentieren, Tools aufzurufen und eine Antwort zurückzugeben - alles in einem einzigen Schritt. Mit dem Agent-Knoten können Sie Argumentation direkt in Ihren Workflow einbetten. Dies bedeutet weniger manuelle Übergaben, schnellere Bearbeitungszeiten und Workflows, die differenzierte Entscheidungen ohne zusätzlichen Entwicklungsaufwand bewältigen können, und hilft Teams, ihre End-to-End-Prozesse stärker zu automatisieren und",
+        "source": "In development",
+        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=562222",
+        "date": "2026-05-14T23:15:59.000Z"
+      },
+      {
+        "title": "Microsoft Copilot (Microsoft 365): Dynamic Tool Discovery for Declarative Agents and Federated Copilot Connectors",
+        "summary": "Wir führen die dynamische Toolerkennung für deklarative Agenten in Microsoft 365 Copilot ein. Entwickler können jetzt Tools auf ihren MCP-Servern hinzufügen, aktualisieren oder zurückziehen, ohne den Agenten erneut zu veröffentlichen - so erhalten Endbenutzer sofort die neuesten Agentenfunktionen, ohne dass ein Bereitstellungszyklus dazwischen liegt. Die Unterstützung für föderierte Copilot-Steckverbinder wird den deklarativen Agenten zu einem späteren Zeitpunkt schnell folgen. Dynamische",
+        "source": "In development",
+        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=561855",
+        "date": "2026-05-13T23:00:44.000Z"
+      },
+      {
+        "title": "Microsoft Copilot (Microsoft 365): Copilot in PowerPoint für Government Clouds",
+        "summary": "Mit Copilot in PowerPoint können Sie Präsentationen durch natürliche Konversation direkt in Ihrer Präsentation erstellen, bearbeiten und verfeinern. Sie können eine neue Präsentation starten oder auf einer bestehenden aufbauen, indem Sie Copilot bitten, Folien zu generieren, Inhalte zu aktualisieren, Layouts zu verbessern und das Design zu optimieren, während Formatierung, Struktur und Branding erhalten bleiben. Copilot verwendet Ihre Dateien, Besprechungen, E-Mails und mehr, um C",
+        "source": "In development",
+        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=561322",
+        "date": "2026-05-13T23:00:44.000Z"
+      },
+      {
+        "title": "Microsoft Viva: Neue Copilot-Metriken in benutzerdefinierten Abfragen und Berichten - Viva Advanced Analysis",
+        "summary": "Wichtige Microsoft 365 Copilot-Metriken in benutzerdefinierten Personenabfragen und Berichten haben Werte, die bis zu 2-3 Tage ab dem aktuellen Datum alt sind. Dadurch erhalten Analysten in der Viva Advanced-Analyse eine frischere Copilot-Nutzungsanalyse.\nGA-Datum: Juni CY2026",
+        "source": "In development",
+        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=562017",
+        "date": "2026-05-12T23:00:33.000Z"
       }
     ],
     "agents": [
       {
-        "title": "Power Fx: Benutzerdefinierte Typen allgemein verfügbar",
-        "summary": "Benutzerdefinierte Typen (UDTs) sind jetzt allgemein verfügbar! Ab Power Apps Studio Version 3.26044 sind UDTs standardmäßig für neue Apps aktiviert und können für vorhandene Apps unter Einstellungen > Updates > Neu > Benutzerdefinierte Typen aktiviert werden.\nDer Beitrag Power Fx: User Defined Types Generally Available erschien zuerst auf dem Microsoft Power Platform Blog.",
-        "source": "Greg Lindhorst",
-        "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/power-fx-user-defined-types-generally-available/",
-        "date": "2026-05-13T18:59:00.000Z"
+        "title": "Microsoft Teams: Dolmetscher-Agent-Support in Teams Rooms auf Android",
+        "summary": "Der Dolmetscheragent fungiert als Übersetzer in Microsoft Teams-Meetings und ermöglicht es den Teilnehmern, dem Meeting in der von ihnen gewählten Sprache mit Echtzeitübersetzung zuzuhören, so dass das Sprechen verschiedener Sprachen kein Hindernis für ein effektives Verständnis und eine effektive Zusammenarbeit darstellt. Es ist jetzt in Teams Rooms auf Android verfügbar, das für Teams Rooms Pro lizenziert ist.\nGA-Datum: August CY2026",
+        "source": "In development",
+        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=562665",
+        "date": "2026-05-20T23:15:13.000Z"
       },
       {
-        "title": "Agentenadministration: Datenadministrationsfähigkeiten jetzt in der öffentlichen Vorschau verfügbar",
-        "summary": "Mit Dataverse Admin Skills (dv-admin) können Power Platform-Administratoren die natürliche Sprache verwenden, um Dataverse-Umgebungen in großem Maßstab zu verwalten.\nDer Beitrag Agentic Administration: Dataverse Admin Skills now available in Public Preview erschien zuerst im Microsoft Power Platform Blog.",
-        "source": "Anirudha Bakore",
-        "url": "https://www.microsoft.com/en-us/power-platform/blog/2026/05/12/dataverse-agentic-administration/",
-        "date": "2026-05-12T15:33:42.000Z"
+        "title": "Microsoft Copilot (Microsoft 365): Work IQ-APIs: Zugriff auf Researcher-Agenten",
+        "summary": "Ermöglicht es Entwicklern, den Researcher-Agenten über den Work IQ-Endpunkt aufzurufen, um mehrstufige Analysen, tiefes Denken und Synthese über Unternehmensinhalte hinweg als Teil von Agenten-Workflows durchzuführen.\nGA-Datum: Juli CY2026\nVorschaudatum: Juni CY2026",
+        "source": "In development",
+        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=559018",
+        "date": "2026-05-18T22:30:51.000Z"
       },
       {
-        "title": "Benutzerdefinierte Tools und eine reichhaltige Benutzeroberfläche für App-basierte Unterhaltungen sind jetzt in der öffentlichen Vorschau verfügbar",
-        "summary": "Entdecken Sie, wie benutzerdefinierte Tools und umfangreiche, App-gestützte Benutzeroberflächen in Microsoft 365 Copilot die Konversation über Geschäftsanwendungen verbessern können. Diese öffentliche Vorschau stellt neue Wege vor, um App-Intelligenz an die Oberfläche zu bringen, Maßnahmen voranzutreiben und kontextbezogenere, intuitivere Interaktionen zu ermöglichen - direkt im Arbeitsfluss.\nDer Beitrag Custom tools and rich UI for app-based conversations are now in Public Preview appeared firs",
-        "source": "Hemant Gaur",
-        "url": "https://www.microsoft.com/en-us/power-platform/blog/2026/04/22/custom-tools-and-rich-ui-for-app-based-conversations-are-now-in-public-preview/",
-        "date": "2026-04-22T19:11:22.000Z"
+        "title": "Microsoft Copilot Studio: MCP-kompatible Tools in Agenten-Workflows verwenden",
+        "summary": "Integrieren Sie proprietäre Systeme, dynamische Wissensquellen und benutzerdefinierte Aktionen mit MCP-Unterstützung in Ihre Agenten-Workflows, um die Erweiterbarkeit zu beschleunigen und gleichzeitig die Workflow-Zuverlässigkeit zu erhalten. Diese Integration verbessert die Wiederverwendung über Agenten und Workflows hinweg, reduziert die Duplizierung von Integrationen und umfasst ein aufstrebendes offenes und erweiterbares Agenten-Ökosystem.\nGA-Datum: Juni CY2026\nVorschaudatum: Mai CY2026",
+        "source": "In development",
+        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=562221",
+        "date": "2026-05-15T18:00:35.000Z"
+      },
+      {
+        "title": "Microsoft Copilot Studio: Optimieren Sie Ihre Workflows mit Computernutzung",
+        "summary": "Fügen Sie belastbare, KI-gestützte UI-Automatisierung direkt in Ihre Workflows mit Computernutzungstools ein. Hersteller können wiederverwendbare, zielorientierte Automatisierungen erstellen, die sich dynamisch an Website- oder App-Änderungen anpassen, während Administratoren die Governance durch Zugriffskontrollen, gehostete Browserverwaltung und Berechtigungen auf Umweltebene aufrechterhalten.\nGA-Datum: Oktober CY2026\nVorschaudatum: April CY2026",
+        "source": "In development",
+        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=562220",
+        "date": "2026-05-15T18:00:35.000Z"
+      },
+      {
+        "title": "Microsoft Viva: Agentenmetriken für benutzerdefinierte Berichte in der Insights Analyst Workbench",
+        "summary": "Verschaffen Sie sich mit flexiblen Self-Service-Analysen tiefere Einblicke in die Einführung von Copilot-Agenten. Insights Global- und Partitionsanalysten können auf granulare Agentennutzungsmetriken mit Agenten- und Organisationsattributen zugreifen und diese kombinieren, um Agentenakzeptanztrends aufzudecken, Berichte zu exportieren und anzupassen und fundiertere Entscheidungen zu treffen, ohne sich auf vordefinierte Dashboards verlassen zu müssen.\r\nGA-Datum: September CY2026\nVorschau da",
+        "source": "In development",
+        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=562412",
+        "date": "2026-05-14T23:15:59.000Z"
+      },
+      {
+        "title": "Microsoft Copilot Studio: Agenten als Workflow-Schritte mit dem Agent-Knoten aufrufen",
+        "summary": "Fügen Sie Ihrem Workflow einen Agent-Knoten hinzu, um Daten zu argumentieren, Tools aufzurufen und eine Antwort zurückzugeben - alles in einem einzigen Schritt. Mit dem Agent-Knoten können Sie Argumentation direkt in Ihren Workflow einbetten. Dies bedeutet weniger manuelle Übergaben, schnellere Bearbeitungszeiten und Workflows, die differenzierte Entscheidungen ohne zusätzlichen Entwicklungsaufwand bewältigen können, und hilft Teams, ihre End-to-End-Prozesse stärker zu automatisieren und",
+        "source": "In development",
+        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=562222",
+        "date": "2026-05-14T23:15:59.000Z"
+      },
+      {
+        "title": "Microsoft Copilot (Microsoft 365): Dynamic Tool Discovery for Declarative Agents and Federated Copilot Connectors",
+        "summary": "We're introducing dynamic tool discovery for declarative agents in Microsoft 365 Copilot. Developers can now add, update, or retire tools on their MCP servers without republishing the agent - so end users get the latest agent capabilities immediately, with no deployment cycle in between. Support for federated Copilot connectors will be a fast follow to declarative agents at a later stage. Dynamic ",
+        "source": "In development",
+        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=561855",
+        "date": "2026-05-13T23:00:44.000Z"
+      },
+      {
+        "title": "Microsoft Copilot (Microsoft 365): SharePoint list support in Agent Builder",
+        "summary": "Agent Builder now supports using a SharePoint list as a knowledge source for agents in Microsoft 365 Copilot. Makers can ground an agent in structured list data so users can ask questions and get responses based on information stored in a selected SharePoint list. For this release, each agent can reference one SharePoint list with up to 20,000 items, alongside other knowledge source types. Support",
+        "source": "In development",
+        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=561920",
+        "date": "2026-05-12T23:00:33.000Z"
+      },
+      {
+        "title": "Microsoft Copilot (Microsoft 365): Work IQ APIs – Unified REST Endpoint for Agents and Workflows",
+        "summary": "Introduces a new REST endpoint for Work IQ that serves as a unified entry point for invoking agents and workflows, providing a consistent, scalable alternative to legacy Copilot Chat endpoints.\nGA date: June CY2026\nPreview date: May CY2026",
+        "source": "In development",
+        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=559021",
+        "date": "2026-05-05T23:00:02.000Z"
+      },
+      {
+        "title": "Microsoft Copilot (Microsoft 365): Work IQ APIs - Endpoints: Declarative Agent Access",
+        "summary": "Enables programmatic access to first‑party and tenant‑defined declarative agents via the Work IQ endpoint, allowing applications to trigger specialized agents for domain‑specific tasks within broader workflows.\nGA date: June CY2026\nPreview date: April CY2026",
+        "source": "In development",
+        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=559019",
+        "date": "2026-05-05T23:00:02.000Z"
       }
     ]
   }
