@@ -14,20 +14,21 @@ const FEEDS = {
     'https://blog.fabric.microsoft.com/en-us/blog/feed/',
     'https://www.microsoft.com/en-us/power-platform/blog/feed/',
     'https://www.microsoft.com/en-us/power-platform/blog/power-automate/feed/',
-    'https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?board=MicrosoftPowerPlatformBlog',
     'https://www.microsoft.com/en-us/microsoft-365/blog/feed/',
-    'https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?board=MicrosoftCopilotBlog',
+    'https://azure.microsoft.com/en-us/blog/feed/',
+    'https://devblogs.microsoft.com/powerbi/feed/',
   ],
   ai: [
-    'https://www.anthropic.com/rss.xml',
     'https://openai.com/blog/rss.xml',
     'https://github.blog/feed/',
     'https://huggingface.co/blog/feed.xml',
+    'https://feeds.feedburner.com/blogspot/gJZg',
   ],
   usecase: [
-    'https://customers.microsoft.com/en-us/feed',
-    'https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?board=MicrosoftDataandAIBlog',
-    'https://techcommunity.microsoft.com/plugins/custom/microsoft/o365/custom-blog-rss?board=MicrosoftCopilotBlog',
+    'https://azure.microsoft.com/en-us/blog/feed/',
+    'https://devblogs.microsoft.com/powerbi/feed/',
+    'https://www.microsoft.com/en-us/industry/blog/feed/',
+    'https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=MicrosoftFabricBlog',
   ],
 };
 
@@ -50,8 +51,11 @@ function sleep(ms) {
 }
 
 async function fetchFeed(url) {
+  const timeout = new Promise((_, reject) =>
+    setTimeout(() => reject(new Error('Timeout nach 8s')), 8000)
+  );
   try {
-    const feed = await parser.parseURL(url);
+    const feed = await Promise.race([parser.parseURL(url), timeout]);
     return feed.items || [];
   } catch (err) {
     console.warn(`  [WARN] Feed nicht erreichbar: ${url} — ${err.message}`);
