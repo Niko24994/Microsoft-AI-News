@@ -27,6 +27,13 @@ const FEEDS = {
     'https://www.microsoft.com/en-us/industry/blog/feed/',
     'https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=MicrosoftFabricBlog',
   ],
+  roadmap: [
+    'https://powerbi.microsoft.com/en-us/blog/feed/',
+    'https://blog.fabric.microsoft.com/en-us/blog/feed/',
+    'https://www.microsoft.com/en-us/power-platform/blog/feed/',
+    'https://www.microsoft.com/en-us/power-platform/blog/power-automate/feed/',
+    'https://www.microsoft.com/en-us/microsoft-365/blog/feed/',
+  ],
 };
 
 // Priority keywords for fabric and usecase tabs
@@ -42,6 +49,14 @@ const PRIORITY_KEYWORDS = {
     'manufacturing', 'use case', 'customer story',
   ],
 };
+
+// Keywords that MUST appear in title for roadmap tab
+const ROADMAP_KEYWORDS = [
+  'preview', 'generally available', ' ga ', 'what\'s new', "what's new",
+  'feature summary', 'feature update', 'roadmap', 'upcoming', 'retiring',
+  'deprecated', 'deprecation', 'release plan', 'public preview', 'private preview',
+  'coming soon', 'now available', 'release notes', 'feature release',
+];
 
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -95,7 +110,15 @@ async function fetchTab(tab) {
     return b._score - a._score;
   });
 
-  const top = allItems.map(({ _score, ...rest }) => rest);
+  // For roadmap tab: only keep articles matching roadmap keywords in title
+  const result = tab === 'roadmap'
+    ? allItems.filter(item => {
+        const title = (item.title || '').toLowerCase();
+        return ROADMAP_KEYWORDS.some(kw => title.includes(kw));
+      })
+    : allItems;
+
+  const top = result.map(({ _score, ...rest }) => rest);
   console.log(`  → ${top.length} Artikel ausgewählt`);
   return top;
 }

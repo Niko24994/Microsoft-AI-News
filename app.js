@@ -15,6 +15,7 @@
     fabric:  $('panel-fabric'),
     ai:      $('panel-ai'),
     usecase: $('panel-usecase'),
+    roadmap: $('panel-roadmap'),
   };
 
   // ── Date formatting ──────────────────────────────────────
@@ -144,6 +145,7 @@
     renderPanel('fabric',  tabs.fabric  || []);
     renderPanel('ai',      tabs.ai      || []);
     renderPanel('usecase', tabs.usecase || []);
+    renderPanel('roadmap', tabs.roadmap || []);
 
     if (dayData.updated) {
       updatedLabel.textContent = 'Stand: ' + formatTimestamp(dayData.updated);
