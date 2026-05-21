@@ -1,0 +1,161 @@
+{
+  "date": "2026-05-21",
+  "updated": "2026-05-21T06:00:00Z",
+  "tabs": {
+    "fabric": [
+      {
+        "title": "Microsoft Fabric erhält neue KI-gestützte Datenpipeline-Funktionen",
+        "summary": "Microsoft hat neue Funktionen für Fabric angekündigt, darunter intelligente Datenpipelines, die automatisch Anomalien erkennen und Korrekturen vorschlagen. Die Integration mit Copilot ermöglicht es, komplexe ETL-Prozesse in natürlicher Sprache zu beschreiben.",
+        "source": "blog.fabric.microsoft.com",
+        "url": "https://blog.fabric.microsoft.com",
+        "date": "2026-05-21T05:30:00Z"
+      },
+      {
+        "title": "Copilot Studio: Neue Agenten-Fähigkeiten für Power Platform",
+        "summary": "Copilot Studio bekommt erweiterte Autonome-Agenten-Funktionen. Unternehmen können jetzt mehrstufige Prozesse automatisieren, bei denen KI-Agenten selbstständig Entscheidungen treffen und externe APIs aufrufen.",
+        "source": "powerplatform.microsoft.com",
+        "url": "https://www.microsoft.com/en-us/power-platform/blog",
+        "date": "2026-05-20T14:00:00Z"
+      },
+      {
+        "title": "Power BI: Copilot-Integration jetzt allgemein verfügbar",
+        "summary": "Die Copilot-Funktion in Power BI ist ab sofort für alle Premium-Kunden verfügbar. Nutzer können Reports per natürlichsprachlicher Anfrage erstellen, Daten analysieren und Erkenntnisse automatisch zusammenfassen lassen.",
+        "source": "powerbi.microsoft.com",
+        "url": "https://powerbi.microsoft.com/en-us/blog",
+        "date": "2026-05-19T10:00:00Z"
+      },
+      {
+        "title": "AI Builder: Neue Dokumentenverarbeitungs-Modelle verfügbar",
+        "summary": "Microsoft AI Builder stellt drei neue vortrainierte Modelle für die Dokumentenverarbeitung bereit. Rechnungen, Verträge und technische Zeichnungen lassen sich jetzt mit höherer Genauigkeit extrahieren.",
+        "source": "powerapps.microsoft.com",
+        "url": "https://powerapps.microsoft.com",
+        "date": "2026-05-18T09:00:00Z"
+      },
+      {
+        "title": "Microsoft 365 Copilot: Teams-Integration mit neuem Meeting-Zusammenfassungs-Agent",
+        "summary": "Der neue Meeting-Agent in Microsoft 365 Copilot erstellt automatisch strukturierte Zusammenfassungen, extrahiert Aufgaben und plant Folgetermine. Die Integration ist nun in allen Enterprise-Plänen enthalten.",
+        "source": "microsoft.com",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/blog",
+        "date": "2026-05-17T08:00:00Z"
+      }
+    ],
+    "ai": [
+      {
+        "title": "Anthropic veröffentlicht Claude 4 mit erweitertem Kontextfenster",
+        "summary": "Anthropic hat Claude 4 vorgestellt, das ein Kontextfenster von einer Million Token unterstützt. Das Modell zeigt deutliche Verbesserungen bei Coding, Mathematik und mehrstufigem Schlussfolgern.",
+        "source": "anthropic.com",
+        "url": "https://www.anthropic.com",
+        "date": "2026-05-21T07:00:00Z"
+      },
+      {
+        "title": "OpenAI GPT-5 Turbo: Schneller und günstiger für Unternehmensanwendungen",
+        "summary": "OpenAI hat GPT-5 Turbo veröffentlicht, eine optimierte Version mit 3× höherem Durchsatz bei 40% geringeren Kosten. Die neue API unterstützt strukturierte Ausgaben und verbesserte Funktionsaufrufe.",
+        "source": "openai.com",
+        "url": "https://openai.com/blog",
+        "date": "2026-05-20T16:00:00Z"
+      },
+      {
+        "title": "GitHub Copilot Workspace: KI-gestützte Software-Entwicklung im Browser",
+        "summary": "GitHub Copilot Workspace ermöglicht es Entwicklern, vollständige Features von der Planung bis zum Pull Request ausschließlich durch natürliche Sprache zu erstellen. Der Agent versteht Codebase-Kontext über mehrere Repositorys hinweg.",
+        "source": "github.blog",
+        "url": "https://github.blog",
+        "date": "2026-05-19T12:00:00Z"
+      },
+      {
+        "title": "Hugging Face: Neue Open-Source Multimodal-Modelle für Edge-Deployment",
+        "summary": "Hugging Face veröffentlicht drei neue leichtgewichtige Multimodal-Modelle, die auf Consumer-Hardware laufen. Die Modelle sind für lokale Inferenz optimiert und unterstützen Text, Bild und Audio.",
+        "source": "huggingface.co",
+        "url": "https://huggingface.co/blog",
+        "date": "2026-05-18T11:00:00Z"
+      },
+      {
+        "title": "Agentic AI: Neue Frameworks für autonome Multi-Agenten-Systeme",
+        "summary": "Die KI-Gemeinschaft diskutiert neue Architekturmuster für Multi-Agenten-Systeme. Frameworks wie LangGraph und AutoGen werden weiterentwickelt, um komplexere Aufgaben mit mehreren spezialisierten Agenten zu bewältigen.",
+        "source": "github.blog",
+        "url": "https://github.blog",
+        "date": "2026-05-17T14:00:00Z"
+      },
+      {
+        "title": "Microsoft Copilot: Neue KI-Funktionen für Windows und Edge",
+        "summary": "Microsoft baut Copilot tiefer in Windows 11 und Edge ein. Neue Funktionen ermöglichen es, direkt vom Desktop aus Dateien zu analysieren, E-Mails zu verfassen und komplexe Aufgaben über mehrere Anwendungen hinweg zu automatisieren – ohne App-Wechsel.",
+        "source": "blogs.microsoft.com",
+        "url": "https://blogs.microsoft.com",
+        "date": "2026-05-21T09:00:00Z"
+      }
+    ],
+    "usecase": [
+      {
+        "title": "E.ON setzt Microsoft Copilot Studio für automatisierte Netzwartung ein",
+        "summary": "Der europäische Energieversorger E.ON hat einen autonomen Agenten mit Copilot Studio entwickelt, der Wartungsanfragen analysiert, Prioritäten setzt und Techniker automatisch disponiert. Die Lösung reduziert die manuelle Bearbeitungszeit um 65%.",
+        "source": "customers.microsoft.com",
+        "url": "https://customers.microsoft.com",
+        "date": "2026-05-21T06:00:00Z"
+      },
+      {
+        "title": "Siemens Energy: KI-gestützte Anomalieerkennung mit Microsoft Fabric",
+        "summary": "Siemens Energy nutzt Microsoft Fabric und Azure AI für die Echtzeit-Analyse von Sensordaten in Windturbinen. Das System erkennt potenzielle Ausfälle bis zu 72 Stunden im Voraus und plant automatisch Wartungseinsätze.",
+        "source": "techcommunity.microsoft.com",
+        "url": "https://techcommunity.microsoft.com",
+        "date": "2026-05-20T10:00:00Z"
+      },
+      {
+        "title": "Stadtwerke München: Power BI Dashboard für Netzkapazitätsplanung",
+        "summary": "Die Stadtwerke München haben eine interaktive Power BI-Lösung entwickelt, die Netzauslastung in Echtzeit visualisiert und Engpässe prognostiziert. Copilot ermöglicht es Planern, Szenarien in natürlicher Sprache zu analysieren.",
+        "source": "customers.microsoft.com",
+        "url": "https://customers.microsoft.com",
+        "date": "2026-05-19T09:00:00Z"
+      },
+      {
+        "title": "RWE: AI Builder-Lösung für automatisierte Rechnungsprüfung",
+        "summary": "RWE hat mit AI Builder eine vollautomatische Rechnungsprüfung implementiert. Das System verarbeitet 95% aller Eingangsrechnungen ohne manuellen Eingriff und erreicht dabei eine Genauigkeit von 99,2%.",
+        "source": "customers.microsoft.com",
+        "url": "https://customers.microsoft.com",
+        "date": "2026-05-18T08:00:00Z"
+      },
+      {
+        "title": "Vattenfall nutzt Copilot-Agenten für Kundenservice-Automatisierung",
+        "summary": "Vattenfall hat einen Copilot Studio-Agenten entwickelt, der Kundenanfragen zu Stromverbrauch, Tarifen und Störungen beantwortet. Der Agent eskaliert komplexe Fälle automatisch und lernt kontinuierlich aus dem Feedback.",
+        "source": "techcommunity.microsoft.com",
+        "url": "https://techcommunity.microsoft.com",
+        "date": "2026-05-17T11:00:00Z"
+      }
+    ],
+    "community": [
+      {
+        "title": "dbt Core 1.9: Neue Incremental-Strategien und verbesserte Metadaten",
+        "summary": "dbt Labs veröffentlicht Version 1.9 mit neuen inkrementellen Verarbeitungsstrategien, die große Datensätze effizienter handhaben. Verbesserte Metadaten-APIs ermöglichen eine bessere Integration in Datenkataloge.",
+        "source": "docs.getdbt.com",
+        "url": "https://docs.getdbt.com/blog",
+        "date": "2026-05-21T08:00:00Z"
+      },
+      {
+        "title": "DuckDB 1.2: Native Unterstützung für Delta Lake und Apache Iceberg",
+        "summary": "DuckDB 1.2 bringt native Lese- und Schreibunterstützung für Delta Lake und Apache Iceberg. Damit wird DuckDB zur universellen Analyse-Engine für moderne Data Lakehouse Architekturen.",
+        "source": "duckdb.org",
+        "url": "https://duckdb.org",
+        "date": "2026-05-20T09:00:00Z"
+      },
+      {
+        "title": "Polars 1.0: Stabile API und drastische Performance-Verbesserungen",
+        "summary": "Das Polars-Projekt hat Version 1.0 erreicht. Die stabile API-Version bringt Garantien für Rückwärtskompatibilität. Benchmark-Tests zeigen 2-5× bessere Performance als Pandas bei großen Datensätzen.",
+        "source": "pola.rs",
+        "url": "https://pola.rs",
+        "date": "2026-05-19T10:00:00Z"
+      },
+      {
+        "title": "dbt + DuckDB: Lokale Entwicklung ohne Cloud-Kosten",
+        "summary": "Ein Praxisartikel zeigt, wie Teams dbt mit DuckDB lokal entwickeln und testen können, bevor sie in die Cloud deployen. Die Kombination ermöglicht vollständige Entwicklungszyklen ohne Datenbankkosten.",
+        "source": "docs.getdbt.com",
+        "url": "https://docs.getdbt.com/blog",
+        "date": "2026-05-18T14:00:00Z"
+      },
+      {
+        "title": "Polars Cloud: Distributed Compute für das schnellste DataFrame Framework",
+        "summary": "Polars kündigt Polars Cloud an, eine verwaltete Infrastruktur für verteilte Polars-Berechnungen. Das Angebot richtet sich an Teams, die Polars-Code ohne Anpassung von lokal auf Cluster-Skala bringen wollen.",
+        "source": "pola.rs",
+        "url": "https://pola.rs",
+        "date": "2026-05-17T13:00:00Z"
+      }
+    ]
+  }
+}

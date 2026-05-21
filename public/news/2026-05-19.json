@@ -1,0 +1,154 @@
+{
+  "date": "2026-05-19",
+  "updated": "2026-05-19T06:00:00Z",
+  "tabs": {
+    "fabric": [
+      {
+        "title": "Microsoft Fabric: Verbesserte OneLake-Integration mit Azure Data Factory",
+        "summary": "OneLake in Microsoft Fabric erhält eine verbesserte native Integration mit Azure Data Factory. Bestehende ADF-Pipelines können jetzt direkt in Fabric-Workspaces migriert werden, ohne Daten zu verschieben.",
+        "source": "blog.fabric.microsoft.com",
+        "url": "https://blog.fabric.microsoft.com",
+        "date": "2026-05-19T05:30:00Z"
+      },
+      {
+        "title": "Power Apps: Low-Code KI-Komponenten für Unternehmensanwendungen",
+        "summary": "Microsoft stellt neue vorgefertigte KI-Komponenten für Power Apps vor. Entwickler können Dokumentenscanner, Bildanalyse und Sprachverarbeitung per Drag-and-Drop in Apps einbinden.",
+        "source": "powerapps.microsoft.com",
+        "url": "https://powerapps.microsoft.com",
+        "date": "2026-05-18T11:00:00Z"
+      },
+      {
+        "title": "Microsoft Purview: Datenkatalog-Integration mit Fabric",
+        "summary": "Microsoft Purview ist jetzt tief in Fabric integriert. Datenkataloge, Lineage-Tracking und Compliance-Richtlinien werden automatisch auf alle Fabric-Artefakte angewendet.",
+        "source": "techcommunity.microsoft.com",
+        "url": "https://techcommunity.microsoft.com",
+        "date": "2026-05-17T10:00:00Z"
+      },
+      {
+        "title": "Azure Synapse Analytics: Migration zu Microsoft Fabric",
+        "summary": "Microsoft veröffentlicht ein detailliertes Migrations-Toolkit für den Wechsel von Azure Synapse Analytics zu Microsoft Fabric. Automatisierte Assessment-Tools identifizieren Migrationshürden.",
+        "source": "azure.microsoft.com",
+        "url": "https://azure.microsoft.com",
+        "date": "2026-05-16T09:00:00Z"
+      },
+      {
+        "title": "Power BI Embedded: Neue White-Label-Optionen für ISVs",
+        "summary": "Power BI Embedded erhält neue Anpassungsoptionen für unabhängige Softwareanbieter. Vollständiges White-Labeling ermöglicht nahtlose Integration von Analytics in Produkte ohne sichtbare Microsoft-Branding-Elemente.",
+        "source": "powerbi.microsoft.com",
+        "url": "https://powerbi.microsoft.com/en-us/blog",
+        "date": "2026-05-15T08:00:00Z"
+      }
+    ],
+    "ai": [
+      {
+        "title": "Mistral AI: Neues offenes Modell mit 32B Parametern",
+        "summary": "Mistral AI veröffentlicht ein neues offenes Sprachmodell mit 32 Milliarden Parametern. Das Modell ist für kommerzielle Nutzung freigegeben und übertrifft viele proprietäre Modelle bei Code-Aufgaben.",
+        "source": "mistral.ai",
+        "url": "https://mistral.ai",
+        "date": "2026-05-19T08:00:00Z"
+      },
+      {
+        "title": "Google Gemini 2.5: Multimodale Verbesserungen für Enterprise",
+        "summary": "Google Gemini 2.5 bringt verbesserte multimodale Fähigkeiten für Enterprise-Kunden. Video-Analyse, Dokumentenverarbeitung und Code-Generierung wurden signifikant verbessert.",
+        "source": "deepmind.google",
+        "url": "https://deepmind.google",
+        "date": "2026-05-18T14:00:00Z"
+      },
+      {
+        "title": "GitHub Copilot Enterprise: Codebase-übergreifendes Verständnis",
+        "summary": "GitHub Copilot Enterprise kann jetzt komplette Repositories analysieren und kontextbewusste Vorschläge über alle Dateien hinweg machen. Die Lösung versteht Architekturmuster und Coding-Standards des jeweiligen Projekts.",
+        "source": "github.blog",
+        "url": "https://github.blog",
+        "date": "2026-05-17T12:00:00Z"
+      },
+      {
+        "title": "Hugging Face: Neue Evaluierungs-Benchmarks für LLMs",
+        "summary": "Hugging Face veröffentlicht neue standardisierte Benchmarks zur Bewertung von LLMs in unternehmenstypischen Aufgaben. Fokus liegt auf Faktentreue, Konsistenz und Sicherheit bei sensiblen Daten.",
+        "source": "huggingface.co",
+        "url": "https://huggingface.co/blog",
+        "date": "2026-05-16T11:00:00Z"
+      },
+      {
+        "title": "KI-Agenten: Neue Sicherheitsstandards für autonome Systeme",
+        "summary": "Die KI-Industrie arbeitet an gemeinsamen Sicherheitsstandards für autonome Agenten. Neue Protokolle definieren, welche Aktionen KI-Agenten ohne menschliche Genehmigung ausführen dürfen.",
+        "source": "anthropic.com",
+        "url": "https://www.anthropic.com",
+        "date": "2026-05-15T10:00:00Z"
+      }
+    ],
+    "usecase": [
+      {
+        "title": "Innogy: Digitaler Zwilling des Stromnetzes mit Azure und Fabric",
+        "summary": "Innogy hat einen digitalen Zwilling seines gesamten Verteilnetzes mit Azure Digital Twins und Microsoft Fabric aufgebaut. Der Zwilling simuliert Lastflüsse und optimiert Schalthandlungen in Echtzeit.",
+        "source": "customers.microsoft.com",
+        "url": "https://customers.microsoft.com",
+        "date": "2026-05-19T06:00:00Z"
+      },
+      {
+        "title": "Thyssenkrupp: KI-gestützte Qualitätssicherung in der Stahlproduktion",
+        "summary": "Thyssenkrupp nutzt Azure AI und Power BI für die automatische Qualitätskontrolle in der Stahlproduktion. Computer Vision erkennt Oberflächendefekte mit 99,5% Genauigkeit bei 40% geringerem Ausschuss.",
+        "source": "customers.microsoft.com",
+        "url": "https://customers.microsoft.com",
+        "date": "2026-05-18T09:00:00Z"
+      },
+      {
+        "title": "GASAG: Power Automate für automatisiertes Zählerablesungs-Management",
+        "summary": "GASAG hat mit Power Automate und AI Builder eine vollautomatische Verarbeitung von Zählerstandsmeldungen implementiert. OCR erkennt Handschrift und Fotos, Plausibilitätsprüfungen erfolgen automatisch.",
+        "source": "techcommunity.microsoft.com",
+        "url": "https://techcommunity.microsoft.com",
+        "date": "2026-05-17T08:00:00Z"
+      },
+      {
+        "title": "Westnetz: Fabric-basierte Netzausbau-Steuerung für die Energiewende",
+        "summary": "Westnetz koordiniert den Netzausbau für die Energiewende mit einer Microsoft Fabric-Plattform. Genehmigungsverfahren, Bauprojekte und Ressourcenplanung sind in einem integrierten System zusammengeführt.",
+        "source": "customers.microsoft.com",
+        "url": "https://customers.microsoft.com",
+        "date": "2026-05-16T07:00:00Z"
+      },
+      {
+        "title": "Uniper: KI-basierte Energiepreisprognose mit Azure ML und Fabric",
+        "summary": "Uniper prognostiziert Energiepreise mit Azure Machine Learning und Fabric-Datenpipelines. Das Modell verarbeitet Wetterdaten, historische Preise und Lastprofile für präzisere Handelsentscheidungen.",
+        "source": "techcommunity.microsoft.com",
+        "url": "https://techcommunity.microsoft.com",
+        "date": "2026-05-15T09:00:00Z"
+      }
+    ],
+    "community": [
+      {
+        "title": "dbt: Best Practices für modulare Data Modeling Patterns",
+        "summary": "dbt Labs veröffentlicht aktualisierte Best Practices für modulares Data Modeling. Staging, Intermediate und Mart-Layer-Konzepte werden mit konkreten Beispielen für verschiedene Branchen erläutert.",
+        "source": "docs.getdbt.com",
+        "url": "https://docs.getdbt.com/blog",
+        "date": "2026-05-19T08:00:00Z"
+      },
+      {
+        "title": "DuckDB: Community-Erweiterungen für spezialisierte Use Cases",
+        "summary": "Das DuckDB-Extension-Ökosystem wächst schnell. Neue Community-Erweiterungen fügen Unterstützung für Excel-Dateien, GeoJSON-Daten und Apache Kafka-Streams direkt in SQL-Abfragen hinzu.",
+        "source": "duckdb.org",
+        "url": "https://duckdb.org",
+        "date": "2026-05-18T10:00:00Z"
+      },
+      {
+        "title": "Polars: Neue Streaming-API für Out-of-Core-Berechnungen",
+        "summary": "Polars stellt eine neue Streaming-API vor, die Datensätze verarbeitet, die nicht in den Arbeitsspeicher passen. Die API ist nahtlos in die bestehende Polars-Syntax integriert und erfordert minimale Code-Änderungen.",
+        "source": "pola.rs",
+        "url": "https://pola.rs",
+        "date": "2026-05-17T12:00:00Z"
+      },
+      {
+        "title": "Open Source Data Stack: dbt + DuckDB + Polars als lokale Alternative",
+        "summary": "Ein Praxisbericht zeigt, wie Teams mit dbt, DuckDB und Polars einen vollständigen modernen Data Stack lokal betreiben. Die Kombination eignet sich hervorragend für Prototyping und kleinere Produktivworkloads.",
+        "source": "docs.getdbt.com",
+        "url": "https://docs.getdbt.com/blog",
+        "date": "2026-05-16T14:00:00Z"
+      },
+      {
+        "title": "Apache Iceberg: Neue Table Format Spezifikation v3",
+        "summary": "Die Apache Iceberg Community hat die Spezifikation v3 veröffentlicht. Neue Features umfassen Zeilen-Level Deletes ohne Rewriting, verbesserte Partition Evolution und native Unterstützung für Encryption.",
+        "source": "duckdb.org",
+        "url": "https://duckdb.org",
+        "date": "2026-05-15T11:00:00Z"
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "newsfeed",
+  "version": "1.0.0",
+  "description": "Statischer News-Feed mit täglicher GitHub Actions Aktualisierung",
+  "type": "module",
+  "scripts": {
+    "fetch": "node scripts/fetch-news.js"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2",
+    "rss-parser": "^3.13.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

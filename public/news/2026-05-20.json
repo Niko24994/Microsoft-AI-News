@@ -1,0 +1,154 @@
+{
+  "date": "2026-05-20",
+  "updated": "2026-05-20T06:00:00Z",
+  "tabs": {
+    "fabric": [
+      {
+        "title": "Microsoft Fabric GA: Neue SQL Analytics-Endpunkte",
+        "summary": "Microsoft Fabric erhält neue SQL Analytics-Endpunkte, die direkten SQL-Zugriff auf Lakehouse-Daten ohne Datenkopiierung ermöglichen. T-SQL-Kompatibilität erleichtert die Migration bestehender SQL-Workloads.",
+        "source": "blog.fabric.microsoft.com",
+        "url": "https://blog.fabric.microsoft.com",
+        "date": "2026-05-20T05:30:00Z"
+      },
+      {
+        "title": "Power Automate: KI-gestützte Prozessautomatisierung mit Process Mining",
+        "summary": "Power Automate integriert Process Mining direkt in die Plattform. KI analysiert Prozessprotokolle, identifiziert Optimierungspotenziale und schlägt Automatisierungen vor, die mit einem Klick implementiert werden können.",
+        "source": "powerautomate.microsoft.com",
+        "url": "https://powerautomate.microsoft.com",
+        "date": "2026-05-19T12:00:00Z"
+      },
+      {
+        "title": "Dataverse: Neue Vektorspeicher-Funktionen für KI-Anwendungen",
+        "summary": "Microsoft Dataverse erhält native Vektorspeicher-Unterstützung. Entwickler können jetzt Embeddings direkt in Dataverse speichern und semantische Suchanfragen über Power Apps und Power Automate ausführen.",
+        "source": "powerapps.microsoft.com",
+        "url": "https://powerapps.microsoft.com",
+        "date": "2026-05-18T10:00:00Z"
+      },
+      {
+        "title": "Copilot in Power BI: Automatische Berichterstellung aus natürlicher Sprache",
+        "summary": "Power BI Copilot kann jetzt vollständige Berichte aus einer einzigen natürlichsprachlichen Beschreibung erstellen. Visuals werden automatisch ausgewählt, konfiguriert und sinnvoll angeordnet.",
+        "source": "powerbi.microsoft.com",
+        "url": "https://powerbi.microsoft.com/en-us/blog",
+        "date": "2026-05-17T09:00:00Z"
+      },
+      {
+        "title": "Fabric Eventhouse: Echtzeitanalysen für IoT und Streaming-Daten",
+        "summary": "Microsoft Fabric Eventhouse für Echtzeit-Analytik ist jetzt allgemein verfügbar. Die Lösung verarbeitet Millionen von Events pro Sekunde und bietet Sub-Sekunden-Abfragezeiten für IoT-Daten und Log-Analysen.",
+        "source": "blog.fabric.microsoft.com",
+        "url": "https://blog.fabric.microsoft.com",
+        "date": "2026-05-16T08:00:00Z"
+      }
+    ],
+    "ai": [
+      {
+        "title": "Google DeepMind: AlphaCode 3 löst competitive Programming-Probleme",
+        "summary": "Google DeepMinds AlphaCode 3 erreicht menschliche Spitzenleistung bei competitive Programming-Wettbewerben. Das Modell löst 85% der Aufgaben auf Codeforces, die nur die besten 1% menschlicher Programmierer lösen.",
+        "source": "deepmind.google",
+        "url": "https://deepmind.google",
+        "date": "2026-05-20T07:00:00Z"
+      },
+      {
+        "title": "Meta LLaMA 4: Open-Source-Modell übertrifft proprietäre Modelle",
+        "summary": "Meta veröffentlicht LLaMA 4 unter einer permissiven Open-Source-Lizenz. Benchmarks zeigen, dass das Modell bei vielen Aufgaben mit GPT-5 und Claude 4 konkurriert und auf Standard-Hardware läuft.",
+        "source": "ai.meta.com",
+        "url": "https://ai.meta.com",
+        "date": "2026-05-19T14:00:00Z"
+      },
+      {
+        "title": "GitHub Actions + Copilot: CI/CD-Pipelines mit KI-Unterstützung",
+        "summary": "GitHub integriert Copilot direkt in Actions-Workflows. KI schlägt automatisch Optimierungen für Build-Zeiten vor, erkennt Sicherheitslücken in Pipelines und kann fehlgeschlagene Builds selbstständig debuggen.",
+        "source": "github.blog",
+        "url": "https://github.blog",
+        "date": "2026-05-18T12:00:00Z"
+      },
+      {
+        "title": "Hugging Face Inference Endpoints: Neue GPU-Typen und Auto-Scaling",
+        "summary": "Hugging Face Inference Endpoints unterstützt jetzt H100-GPUs und bietet intelligentes Auto-Scaling basierend auf Anfragelast. Die Kosten für Inferenz sinken durch bessere Hardware-Auslastung um bis zu 60%.",
+        "source": "huggingface.co",
+        "url": "https://huggingface.co/blog",
+        "date": "2026-05-17T11:00:00Z"
+      },
+      {
+        "title": "KI-Sicherheit: NIST veröffentlicht neue Leitlinien für KI-Risikomanagement",
+        "summary": "Das NIST hat aktualisierte Leitlinien für das KI-Risikomanagement in Unternehmen veröffentlicht. Der Rahmen umfasst Governance, Bias-Prüfung, Robustheitstests und Anforderungen an die Erklärbarkeit von KI-Entscheidungen.",
+        "source": "openai.com",
+        "url": "https://openai.com/blog",
+        "date": "2026-05-16T10:00:00Z"
+      }
+    ],
+    "usecase": [
+      {
+        "title": "EnBW: Predictive Maintenance mit Microsoft Fabric und Azure ML",
+        "summary": "EnBW hat eine Predictive-Maintenance-Lösung auf Microsoft Fabric implementiert. Sensordaten von 12.000 Transformatoren werden in Echtzeit analysiert. Ungeplante Ausfälle konnten um 40% reduziert werden.",
+        "source": "customers.microsoft.com",
+        "url": "https://customers.microsoft.com",
+        "date": "2026-05-20T06:00:00Z"
+      },
+      {
+        "title": "Deutsche Bahn: Copilot Studio für intelligentes Incident Management",
+        "summary": "Die Deutsche Bahn setzt Copilot Studio für die automatische Klassifizierung und Weiterleitung von Störungsmeldungen ein. Der Agent analysiert Beschreibungen, prüft historische Daten und leitet kritische Fälle priorisiert weiter.",
+        "source": "techcommunity.microsoft.com",
+        "url": "https://techcommunity.microsoft.com",
+        "date": "2026-05-19T09:00:00Z"
+      },
+      {
+        "title": "Bayernwerk: KI-gestützte Netzplanung mit Power Platform",
+        "summary": "Bayernwerk hat Power Platform-Lösungen für die Netzausbauplanung implementiert. Power Apps ermöglicht mobiles Außendienstmanagement, während Fabric die Datenintegration aus SCADA-Systemen übernimmt.",
+        "source": "customers.microsoft.com",
+        "url": "https://customers.microsoft.com",
+        "date": "2026-05-18T08:00:00Z"
+      },
+      {
+        "title": "Eon: Self-Service Analytics für 15.000 Mitarbeitende",
+        "summary": "E.ON hat eine unternehmensweite Self-Service Analytics-Plattform auf Basis von Power BI und Fabric aufgebaut. 15.000 Mitarbeitende nutzen aktiv Berichte und Dashboards ohne IT-Unterstützung.",
+        "source": "customers.microsoft.com",
+        "url": "https://customers.microsoft.com",
+        "date": "2026-05-17T07:00:00Z"
+      },
+      {
+        "title": "Wasser Hamburg: Fabric für Echtzeit-Wassernetz-Monitoring",
+        "summary": "Hamburg Wasser überwacht sein gesamtes Wassernetz mit Microsoft Fabric und Power BI in Echtzeit. Druckabfälle und potenzielle Lecks werden automatisch erkannt und Reparatureinsätze proaktiv geplant.",
+        "source": "techcommunity.microsoft.com",
+        "url": "https://techcommunity.microsoft.com",
+        "date": "2026-05-16T09:00:00Z"
+      }
+    ],
+    "community": [
+      {
+        "title": "dbt Semantic Layer: Universelle Metriken für alle BI-Tools",
+        "summary": "Der dbt Semantic Layer ermöglicht es, Geschäftsmetriken einmalig in dbt zu definieren und in allen angebundenen BI-Tools konsistent zu nutzen. Power BI, Tableau und Looker werden unterstützt.",
+        "source": "docs.getdbt.com",
+        "url": "https://docs.getdbt.com/blog",
+        "date": "2026-05-20T08:00:00Z"
+      },
+      {
+        "title": "DuckDB-Wasm: Vollständige Analytik direkt im Browser",
+        "summary": "DuckDB-Wasm ermöglicht komplexe SQL-Analysen vollständig im Browser ohne Server-Backend. Neue Versionen unterstützen jetzt auch Parquet-Dateien direkt von S3 und Azure Blob Storage.",
+        "source": "duckdb.org",
+        "url": "https://duckdb.org",
+        "date": "2026-05-19T09:00:00Z"
+      },
+      {
+        "title": "Polars vs Pandas: Performance-Vergleich bei Enterprise-Datensätzen",
+        "summary": "Eine detaillierte Benchmark-Studie vergleicht Polars und Pandas bei typischen Enterprise-Workloads. Polars ist bei Groupby-Operationen 8× schneller, bei Joins 12× und benötigt dabei 40% weniger Arbeitsspeicher.",
+        "source": "pola.rs",
+        "url": "https://pola.rs",
+        "date": "2026-05-18T11:00:00Z"
+      },
+      {
+        "title": "dbt Cloud: Neue Kooperationsfunktionen für Data Teams",
+        "summary": "dbt Cloud erhält neue Kollaborationsfunktionen: gemeinsame Umgebungen, integrierte Code-Reviews und automatische Dokumentationserstellung. Slack-Integration benachrichtigt Teams bei fehlgeschlagenen Modellen.",
+        "source": "docs.getdbt.com",
+        "url": "https://docs.getdbt.com/blog",
+        "date": "2026-05-17T14:00:00Z"
+      },
+      {
+        "title": "Apache Arrow Flight: Hochgeschwindigkeits-Datentransfer zwischen Systemen",
+        "summary": "Apache Arrow Flight SQL wird zum Standard für Hochgeschwindigkeits-Datentransfers zwischen Analyse-Tools. DuckDB und Polars unterstützen jetzt beide nativ Arrow Flight für nahtlose Integration.",
+        "source": "duckdb.org",
+        "url": "https://duckdb.org",
+        "date": "2026-05-16T12:00:00Z"
+      }
+    ]
+  }
+}

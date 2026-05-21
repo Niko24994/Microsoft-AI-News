@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Microsoft &amp; AI News</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="brand">
+        <span class="brand-icon">◈</span>
+        <span class="brand-name">Microsoft &amp; AI News</span>
+      </div>
+      <div class="header-controls">
+        <span class="updated-label" id="updatedLabel"></span>
+        <div class="date-picker-wrap">
+          <label for="datePicker" class="sr-only">Datum auswählen</label>
+          <select id="datePicker" class="date-picker" aria-label="Datum auswählen"></select>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="tabs" role="tablist" aria-label="News-Bereiche">
+    <button class="tab active" role="tab" aria-selected="true"  data-tab="fabric"    aria-controls="panel-fabric">Fabric &amp; Power Platform</button>
+    <button class="tab"        role="tab" aria-selected="false" data-tab="ai"        aria-controls="panel-ai">KI &amp; Tools</button>
+    <button class="tab"        role="tab" aria-selected="false" data-tab="usecase"   aria-controls="panel-usecase">Use Cases</button>
+  </nav>
+
+  <main>
+    <div id="panel-fabric"  class="tab-panel active" role="tabpanel" aria-labelledby="tab-fabric"></div>
+    <div id="panel-ai"      class="tab-panel"        role="tabpanel" aria-labelledby="tab-ai"></div>
+    <div id="panel-usecase" class="tab-panel"        role="tabpanel" aria-labelledby="tab-usecase"></div>
+    <div id="errorBox"        class="error-box hidden"></div>
+    <div id="loadingSpinner"  class="spinner hidden" aria-live="polite" aria-label="Wird geladen…">
+      <span class="spinner-ring"></span>
+    </div>
+  </main>
+
+  <footer>
+    <span>Daten aus öffentlichen RSS-Feeds · Übersetzt mit MyMemory · Gehostet auf GitHub Pages · Internes Tool · Kein öffentliches Angebot</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
