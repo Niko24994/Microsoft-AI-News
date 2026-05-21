@@ -28,13 +28,7 @@ jobs:
         run: node scripts/fetch-news.js
 
       - name: Commit and push changes
-        run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add public/news/
-          if git diff --cached --quiet; then
-            echo "Keine Änderungen – kein Commit nötig"
-          else
-            git commit -m "chore: daily news update [skip ci]"
-            git push "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git"
-          fi
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: daily news update [skip ci]"
+          file_pattern: "public/news/*.json"
