@@ -1,6 +1,6 @@
 {
   "date": "2026-05-21",
-  "updated": "2026-05-21T21:06:38.948Z",
+  "updated": "2026-05-21T21:10:18.204Z",
   "tabs": {
     "fabric": [
       {
@@ -155,6 +155,13 @@
         "date": "2026-05-21T11:02:33.000Z"
       },
       {
+        "title": "Sie sind nicht zu spät zur KI - Siesind zu früh zur Transformation der Grenzen",
+        "summary": "Die KI-Einführung beschleunigt sich - aber die Einführung allein ist keine Transformation. Branchenübergreifend gehen Führungskräfte über das Experimentieren hinaus und stehen vor einer tieferen Herausforderung: Wie man die Art und Weise, wie Arbeit erledigt, Entscheidungen getroffen und Werte in einer KI-gesteuerten Welt geschaffen werden, neu gestaltet.\nDer Beitrag You 're not late to AI- you' re early to Frontier Transformation erschien zuerst im Microsoft Cloud Blog.",
+        "source": "Toby Bowers",
+        "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2026/05/18/youre-not-late-to-ai-youre-early-to-frontier-transformation/",
+        "date": "2026-05-18T15:00:00.000Z"
+      },
+      {
         "title": "Von KI-Ambition bis Frontier Transformation: Bereitschaft definiert die Führungskräfte",
         "summary": "KI ist keine Frage der Möglichkeit mehr - es ist eine Frage der Bereitschaft. \nTrotz der weit verbreiteten Akzeptanz bleiben viele Unternehmen noch früh in ihrer KI-Reife, eingeschränkt durch fragmentierte Grundlagen, unklare Governance und begrenzte organisatorische Ausrichtung. Diese Lücken machen es schwierig, von Experimenten zu wiederholbaren, unternehmensweiten Auswirkungen überzugehen.\nDer Beitrag Von KI-Ambitionen zu Frontier Transformati",
         "source": "Maria Bledsoe",
@@ -162,8 +169,8 @@
         "date": "2026-05-14T15:00:00.000Z"
       },
       {
-        "title": "Die Checkliste Ihres KI-Lenkungsausschusses 2026: Souveränität",
-        "summary": "Wenn Unternehmen KI skalieren, stellt sich in Gesprächen mit KI-Lenkungsausschüssen immer wieder eine Frage: Können wir schnell vorankommen, ohne die Kontrolle zu verlieren? Diese Spannung zeigt sich am deutlichsten, wenn KI-Systeme Grenzen überschreiten - sensible Daten berühren, unter unterschiedlichen Vorschriften arbeiten und Teams auf der ganzen Welt unterstützen.\nDer Beitrag Die Checkliste Ihres KI-Lenkungsausschusses für 2026: Souveränität  erschien zuerst auf The Micros",
+        "title": "Die Checkliste Ihres KI-Lenkungsausschusses 2026: Souveränität",
+        "summary": "Wenn Unternehmen KI skalieren, stellt sich in Gesprächen mit KI-Lenkungsausschüssen immer wieder eine Frage: Können wir schnell vorankommen, ohne die Kontrolle zu verlieren? Diese Spannung zeigt sich am deutlichsten, wenn KI-Systeme Grenzen überschreiten - sensible Daten berühren, unter unterschiedlichen Vorschriften arbeiten und Teams auf der ganzen Welt unterstützen.\nDer Beitrag Die Checkliste Ihres KI-Lenkungsausschusses für 2026: Souveränität erschien zuerst auf The Microso",
         "source": "Jessica Hawk",
         "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2026/05/07/your-ai-steering-committees-2026-checklist-sovereignty/",
         "date": "2026-05-07T15:00:00.000Z"
@@ -209,13 +216,6 @@
         "source": "Elliott Smith",
         "url": "https://news.microsoft.com/source/asia/features/cricket-australia-uses-ai-insights-to-bring-fans-closer-to-the-action/",
         "date": "2026-04-23T16:26:11.000Z"
-      },
-      {
-        "title": "Beschleunigung der Frontier-Transformation mit Microsoft-Partnern",
-        "summary": "KI ist schnell vom Experimentieren zur Produktion übergegangen. Kunden wünschen sich vom ersten Tag an messbare Geschäftsergebnisse sowie Sicherheit, Governance und verantwortungsvolle KI. Microsoft-Partner sind ein bedeutendes Unterscheidungsmerkmal, um diese Ziele zu erreichen. Sie verwandeln Ideen in einsetzbare Lösungen, indem sie die wertvollsten Anwendungsfälle priorisieren und die richtigen Daten- und Sicherheitsgrundlagen schaffen...\nDie p",
-        "source": "Nicole Dezen",
-        "url": "https://blogs.microsoft.com/blog/2026/04/21/accelerating-frontier-transformation-with-microsoft-partners/",
-        "date": "2026-04-21T17:00:03.000Z"
       }
     ],
     "roadmap": [
