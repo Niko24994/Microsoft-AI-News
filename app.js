@@ -123,6 +123,7 @@
   // ── Render one tab panel ─────────────────────────────────
   function renderPanel(tab, articles) {
     const panel = panels[tab];
+    if (!panel) return;
     panel.innerHTML = '';
 
     if (!articles || articles.length === 0) {
