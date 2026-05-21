@@ -4,7 +4,7 @@
   const INDEX_URL = './public/news/index.json';
   const cache = {};
   let currentDate = null;
-  let currentTab = 'fabric';
+  let currentTab = 'roadmap';
 
   const $ = (id) => document.getElementById(id);
   const datePicker   = $('datePicker');
