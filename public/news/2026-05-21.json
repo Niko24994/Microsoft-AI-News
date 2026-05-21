@@ -1,6 +1,6 @@
 {
   "date": "2026-05-21",
-  "updated": "2026-05-21T20:41:40.836Z",
+  "updated": "2026-05-21T21:06:38.948Z",
   "tabs": {
     "fabric": [
       {
@@ -37,6 +37,41 @@
         "source": "miguel",
         "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/New-Power-Query-experience-in-Power-BI-Desktop-Preview/ba-p/5181129",
         "date": "2026-05-20T17:30:00.000Z"
+      },
+      {
+        "title": "Verstehen Sie Ihren Speicher mit OneLake-Produktgrößenberichten (Vorschau)",
+        "summary": "Autor: Matt Basile - Senior Product Manager",
+        "source": "Mabasile_MSFT",
+        "url": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Understand-your-storage-with-OneLake-item-size-reporting-Preview/ba-p/5183716",
+        "date": "2026-05-20T17:19:32.000Z"
+      },
+      {
+        "title": "Notebook-Exportkontrollen in Microsoft Fabric",
+        "summary": "Autor: Santhosh Kumar Ravindran, Principal Product Manager - Verhindern Sie die Datenexfiltration, indem Sie die Möglichkeit einschränken, Notizbücher und umfangreiche DataFrames herunterzuladen. Diese Funktion stellt sicher, dass sensible Daten in reglementierten Umgebungen verbleiben, wodurch das Risiko eines unbefugten Zugriffs, einer Weitergabe oder eines Lecks außerhalb genehmigter Grenzen verringert wird.",
+        "source": "Santhosh_Ravin1",
+        "url": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Notebook-export-controls-in-Microsoft-Fabric/ba-p/5183984",
+        "date": "2026-05-20T17:00:00.000Z"
+      },
+      {
+        "title": "Verbindungsstring-Änderungen im Fabric Warehouse: Was für Audits zu erwarten ist (allgemein verfügbar)",
+        "summary": "Autor: Pradeep Srikakolapu, Senior Product Manager - Das Verbindungsverhalten im Fabric Warehouse wird immer deterministischer - und das hat wichtige Auswirkungen auf die Auditierung. Erfahren Sie, was sich ändert, warum einige Anmeldeereignisse möglicherweise nicht mehr dort angezeigt werden, wo Sie es erwarten, und wie Sie die vollständige Rückverfolgbarkeit gewährleisten können.",
+        "source": "pradeepsvs",
+        "url": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Connection-string-changes-in-Fabric-Warehouse-What-to-expect-for/ba-p/5185022",
+        "date": "2026-05-20T16:31:36.000Z"
+      },
+      {
+        "title": "Teile Einblicke in die Copilot-Exploration in Echtzeit-Dashboards (Vorschau)",
+        "summary": "Autor: Michal Bar - Principal Program Manager",
+        "source": "MichalBar",
+        "url": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Share-Copilot-exploration-insights-in-Real-Time-Dashboards/ba-p/5184081",
+        "date": "2026-05-20T16:00:00.000Z"
+      },
+      {
+        "title": "Erstellen Sie Support-Tickets aus Microsoft Fabric heraus (allgemein verfügbar)",
+        "summary": "Autor: Roy Rubinstein, Principal Lead TPM - Ab Mai 2026 können berechtigte Microsoft Fabric- und Power BI-Benutzer auf eine neue Ticketerstellungserfahrung in Fabric zugreifen. Der Vorgang zur Ticketerstellung befindet sich im Hilfebereich, genau dort, wo Sie Hilfe suchen. Bis Juni 2026 plant Microsoft, die Erstellung von Fabric- und Power BI-Tickets auf diese Erfahrung umzustellen. Während dieses Übergangs können Benutzer, die zuvor",
+        "source": "royr",
+        "url": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Create-support-tickets-from-within-Microsoft-Fabric-Generally/ba-p/5183100",
+        "date": "2026-05-19T21:00:00.000Z"
       }
     ],
     "ai": [
@@ -74,6 +109,41 @@
         "source": "openai.com",
         "url": "https://openai.com/index/ramp",
         "date": "2026-05-20T00:00:00.000Z"
+      },
+      {
+        "title": "Die nächste Phase der OpenAI-Bildung für Länder",
+        "summary": "OpenAI fördert die Bildung für Länder und erweitert die KI-Einführung in Schulen durch neue Partnerschaften, Lehrerausbildung und Tools zur Verbesserung der globalen Lernergebnisse.",
+        "source": "openai.com",
+        "url": "https://openai.com/index/the-next-phase-of-education-for-countries",
+        "date": "2026-05-20T00:00:00.000Z"
+      },
+      {
+        "title": "Ein OpenAI-Modell hat eine zentrale Vermutung in der diskreten Geometrie widerlegt",
+        "summary": "Ein OpenAI-Modell löste das 80 Jahre alte Einheitsentfernungsproblem, widerlegte eine wichtige Vermutung in der diskreten Geometrie und markierte einen Meilenstein in der KI-gesteuerten Mathematik.",
+        "source": "openai.com",
+        "url": "https://openai.com/index/model-disproves-discrete-geometry-conjecture",
+        "date": "2026-05-20T00:00:00.000Z"
+      },
+      {
+        "title": "Wir stellen vor: OpenAI für Singapur",
+        "summary": "OpenAI for Singapore startet eine mehrjährige KI-Partnerschaft, um den Einsatz zu erweitern, lokale Talente aufzubauen und Unternehmen und öffentliche Dienste mit KI zu unterstützen.",
+        "source": "openai.com",
+        "url": "https://openai.com/index/introducing-openai-for-singapore",
+        "date": "2026-05-19T20:30:00.000Z"
+      },
+      {
+        "title": "OlmoEarth v1.1: Eine effizientere Familie von Erdbeobachtungsmodellen",
+        "summary": "",
+        "source": "huggingface.co",
+        "url": "https://huggingface.co/blog/allenai/olmoearth-v1-1",
+        "date": "2026-05-19T18:38:09.000Z"
+      },
+      {
+        "title": "Förderung der Provenienz von Inhalten für ein sichereres, transparenteres KI-Ökosystem",
+        "summary": "OpenAI verbessert die Provenienz von KI-Inhalten mit Inhaltsanmeldeinformationen, SynthID und einem Verifizierungstool, das Menschen hilft, KI-generierte Medien zu identifizieren und ihnen zu vertrauen.",
+        "source": "openai.com",
+        "url": "https://openai.com/index/advancing-content-provenance",
+        "date": "2026-05-19T10:45:00.000Z"
       }
     ],
     "usecase": [
@@ -111,6 +181,113 @@
         "source": "Jared Spataro",
         "url": "https://blogs.microsoft.com/blog/2026/05/05/how-frontier-firms-are-rebuilding-the-operating-model-for-the-age-of-ai/",
         "date": "2026-05-05T10:00:01.000Z"
+      },
+      {
+        "title": "Menschliche Ambitionen freisetzen, um das Geschäftswachstum mit KI voranzutreiben",
+        "summary": "Während sich unsere Kunden auf dem Weg zu Grenzunternehmen weiterentwickeln, nutzen sie KI nicht nur, um die Arbeitsabläufe zu optimieren, sondern auch, um ihr Geschäft auf der Grundlage des Wachstumsversprechens neu zu erfinden. Unternehmen können jetzt Kreativität freisetzen, Innovationen beschleunigen und Intelligenz demokratisieren, indem sie Copilots und Agenten direkt in die Tools einbinden, die die Menschen jeden Tag lieben und nutzen....\nDer Beitrag Menschlichen Ehrgeiz freisetzen, b zu fahren",
+        "source": "Judson Althoff",
+        "url": "https://blogs.microsoft.com/blog/2026/04/28/unlocking-human-ambition-to-drive-business-growth-with-ai/",
+        "date": "2026-04-28T17:34:47.000Z"
+      },
+      {
+        "title": "Microsoft Sovereign Private Cloud skaliert mit Azure Local auf Tausende von Knoten",
+        "summary": "Heute freue ich mich, Ihnen mitteilen zu können, dass Azure Local jetzt skaliert werden kann, um Bereitstellungen von bis zu Tausenden von Servern in einer einzigen souveränen Umgebung zu unterstützen, sodass Unternehmen viel größere Workloads lokal über Rechenzentren mit großem Platzbedarf, industrielle Umgebungen und Edge-Standorte ausführen können, während sie die Kontrolle innerhalb ihrer souveränen Grenzen behalten. Organisationen, die nationale Infrastruktur betreiben, r",
+        "source": "Douglas Phillips",
+        "url": "https://blogs.microsoft.com/blog/2026/04/27/microsoft-sovereign-private-cloud-scales-to-thousands-of-nodes-with-azure-local/",
+        "date": "2026-04-27T16:00:03.000Z"
+      },
+      {
+        "title": "Die nächste Phase der Microsoft-OpenAI-Partnerschaft",
+        "summary": "Geänderte Vereinbarung sorgt für langfristige Klarheit Das schnelle Innovationstempo erfordert, dass wir unsere Partnerschaft zum Nutzen unserer Kunden und beider Unternehmen weiterentwickeln. Heute geben wir eine geänderte Vereinbarung bekannt, um unsere Partnerschaft und die Art und Weise, wie wir zusammenarbeiten, zu vereinfachen, die auf Flexibilität, Sicherheit und einem Fokus auf die Bereitstellung der Vorteile von KI basiert...\nDer Beitrag Die nächste Phase der Microsoft-Ope",
+        "source": "Microsoft Corporate Blogs",
+        "url": "https://blogs.microsoft.com/blog/2026/04/27/the-next-phase-of-the-microsoft-openai-partnership/",
+        "date": "2026-04-27T13:00:02.000Z"
+      },
+      {
+        "title": "Cricket Australia nutzt KI-Insights, um Fans das Geschehen näher zu bringen",
+        "summary": "Als England und Australien am 5. Tag des fünften Tests der immer angespannten Ashes Cricket-Serie im Januar gegeneinander antreten mussten, hatte jeder Ball, der geworfen wurde, und jeder feste Riss Fans am Rande ihrer Sitze, sowohl auf dem Sydney Cricket Ground als auch rund um den Globus.\nDer Beitrag Cricket Australia uses AI Insights to bring fans closer to the action erschien zuerst auf The Microsoft Cloud Blog.",
+        "source": "Elliott Smith",
+        "url": "https://news.microsoft.com/source/asia/features/cricket-australia-uses-ai-insights-to-bring-fans-closer-to-the-action/",
+        "date": "2026-04-23T16:26:11.000Z"
+      },
+      {
+        "title": "Beschleunigung der Frontier-Transformation mit Microsoft-Partnern",
+        "summary": "KI ist schnell vom Experimentieren zur Produktion übergegangen. Kunden wünschen sich vom ersten Tag an messbare Geschäftsergebnisse sowie Sicherheit, Governance und verantwortungsvolle KI. Microsoft-Partner sind ein bedeutendes Unterscheidungsmerkmal, um diese Ziele zu erreichen. Sie verwandeln Ideen in einsetzbare Lösungen, indem sie die wertvollsten Anwendungsfälle priorisieren und die richtigen Daten- und Sicherheitsgrundlagen schaffen...\nDie p",
+        "source": "Nicole Dezen",
+        "url": "https://blogs.microsoft.com/blog/2026/04/21/accelerating-frontier-transformation-with-microsoft-partners/",
+        "date": "2026-04-21T17:00:03.000Z"
+      }
+    ],
+    "roadmap": [
+      {
+        "title": "Neue Metadatensynchronisierung und mehr in SQL Analytics Endpoint (Vorschau)",
+        "summary": "Autor: Rakesh Krishnan, Principal Product Manager, Azure Data Spannende Änderungen am SQL Analytics Endpoint",
+        "source": "rakrish75",
+        "url": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/New-metadata-sync-and-more-in-SQL-Analytics-Endpoint-Preview/ba-p/5183137",
+        "date": "2026-05-21T19:03:58.000Z"
+      },
+      {
+        "title": "Power BI Mai 2026 Funktionsübersicht",
+        "summary": "Autor: Katie Murray, Senior Program Manager - Power BI entwickelt sich mit Updates weiter, die es einfacher machen, Daten zu erkunden, Erkenntnisse zu generieren und ausgefeiltere Berichte zu erstellen. Die Veröffentlichung dieses Monats bringt Verbesserungen für Copilot- und KI-Erfahrungen, Berichts- und Modellierungsverbesserungen, neue Datenkonnektivitätsflüsse und Aktualisierungen von Visualisierungen, die Ihnen helfen, schneller von Daten zu Entscheidungen zu gelangen.",
+        "source": "murray-kp",
+        "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Power-BI-May-2026-Feature-Summary/ba-p/5182174",
+        "date": "2026-05-20T19:00:49.000Z"
+      },
+      {
+        "title": "Neue Power Query-Erfahrung in Power BI Desktop (Vorschau)",
+        "summary": "Verfasst von: Sara Lammini Rodriguez - Product Manager II, und Miguel Escobar - Senior Product Manager",
+        "source": "miguel",
+        "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/New-Power-Query-experience-in-Power-BI-Desktop-Preview/ba-p/5181129",
+        "date": "2026-05-20T17:30:00.000Z"
+      },
+      {
+        "title": "Verstehen Sie Ihren Speicher mit OneLake-Produktgrößenberichten (Vorschau)",
+        "summary": "Autor: Matt Basile - Senior Product Manager",
+        "source": "Mabasile_MSFT",
+        "url": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Understand-your-storage-with-OneLake-item-size-reporting-Preview/ba-p/5183716",
+        "date": "2026-05-20T17:19:32.000Z"
+      },
+      {
+        "title": "Verbindungsstring-Änderungen im Fabric Warehouse: Was für Audits zu erwarten ist (allgemein verfügbar)",
+        "summary": "Autor: Pradeep Srikakolapu, Senior Product Manager - Das Verbindungsverhalten im Fabric Warehouse wird immer deterministischer - und das hat wichtige Auswirkungen auf die Auditierung. Erfahren Sie, was sich ändert, warum einige Anmeldeereignisse möglicherweise nicht mehr dort angezeigt werden, wo Sie es erwarten, und wie Sie die vollständige Rückverfolgbarkeit gewährleisten können.",
+        "source": "pradeepsvs",
+        "url": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Connection-string-changes-in-Fabric-Warehouse-What-to-expect-for/ba-p/5185022",
+        "date": "2026-05-20T16:31:36.000Z"
+      },
+      {
+        "title": "Teile Einblicke in die Copilot-Exploration in Echtzeit-Dashboards (Vorschau)",
+        "summary": "Autor: Michal Bar - Principal Program Manager",
+        "source": "MichalBar",
+        "url": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Share-Copilot-exploration-insights-in-Real-Time-Dashboards/ba-p/5184081",
+        "date": "2026-05-20T16:00:00.000Z"
+      },
+      {
+        "title": "Erstellen Sie Support-Tickets aus Microsoft Fabric heraus (allgemein verfügbar)",
+        "summary": "Autor: Roy Rubinstein, Principal Lead TPM - Ab Mai 2026 können berechtigte Microsoft Fabric- und Power BI-Benutzer auf eine neue Ticketerstellungserfahrung in Fabric zugreifen. Der Vorgang zur Ticketerstellung befindet sich im Hilfebereich, genau dort, wo Sie Hilfe suchen. Bis Juni 2026 plant Microsoft, die Erstellung von Fabric- und Power BI-Tickets auf diese Erfahrung umzustellen. Während dieses Übergangs können Benutzer, die zuvor",
+        "source": "royr",
+        "url": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Create-support-tickets-from-within-Microsoft-Fabric-Generally/ba-p/5183100",
+        "date": "2026-05-19T21:00:00.000Z"
+      },
+      {
+        "title": "Outbound Access Protection für semantische Modelle (Vorschau)",
+        "summary": "Autor: Kay Unkroth, Principl Program Manager - Outbound Access Protection (OAP) ist eine Netzwerksicherheits- und Governance-Funktion auf Arbeitsbereichsebene, die ausgehenden Datenverkehr aus einem Arbeitsbereich standardmäßig blockiert und es Ihnen ermöglicht, nur die Ziele zuzulassen, denen Sie ausdrücklich vertrauen. Mit dieser Vorschau können Sie OAP nun auf semantische Modelle erweitern. Power BI-Berichte sind noch nicht Teil dieser Vorschau; die Berichtsunterstützung kommt i",
+        "source": "kayu",
+        "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Outbound-Access-Protection-for-semantic-models-Preview/ba-p/5184917",
+        "date": "2026-05-19T17:00:00.000Z"
+      },
+      {
+        "title": "Ressourcenprofile in Microsoft Fabric Data Engineering (Vorschau)",
+        "summary": "Autor: Santhosh Kumar Ravindran - Principal Product Manager",
+        "source": "Santhosh_Ravin1",
+        "url": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Resource-Profiles-in-Microsoft-Fabric-Data-Engineering-Preview/ba-p/5182862",
+        "date": "2026-05-18T21:00:00.000Z"
+      },
+      {
+        "title": "Power BI April 2026 Funktionsübersicht",
+        "summary": "Willkommen zum April-Power BI-Update! Das Power BI-Update vom April 2026 bringt kontinuierliche Verbesserungen in den Bereichen Copilot und KI, Berichterstattung, Grafik und Modellierung. Diese Version bietet mehr Flexibilität bei der Arbeit mit Layouts und Grafiken, erweiterte Copilot-Erlebnisse - insbesondere auf Mobilgeräten - und mehrere Vorschaufunktionen, die die Leistung und die Erstellung von Workflows weiter verbessern. Sie finden auch",
+        "source": "kamurray",
+        "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Power-BI-April-2026-Feature-Summary/ba-p/5173904",
+        "date": "2026-05-14T21:15:35.000Z"
       }
     ]
   }
