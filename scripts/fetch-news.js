@@ -191,6 +191,7 @@ async function main() {
   updateIndex(today);
 
   console.log('\n=== Fertig ===');
+  process.exit(0);
 }
 
 main().catch((err) => {
