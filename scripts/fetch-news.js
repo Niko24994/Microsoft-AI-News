@@ -111,14 +111,14 @@ async function fetchTab(tab) {
   });
 
   // For roadmap tab: only keep articles matching roadmap keywords in title
-  const result = tab === 'roadmap'
+  const filtered = tab === 'roadmap'
     ? allItems.filter(item => {
         const title = (item.title || '').toLowerCase();
         return ROADMAP_KEYWORDS.some(kw => title.includes(kw));
       })
     : allItems;
 
-  const top = result.map(({ _score, ...rest }) => rest);
+  const top = filtered.slice(0, 10).map(({ _score, ...rest }) => rest);
   console.log(`  → ${top.length} Artikel ausgewählt`);
   return top;
 }
