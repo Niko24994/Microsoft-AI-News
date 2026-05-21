@@ -143,15 +143,13 @@ async function translateText(text) {
 
 async function translateArticles(articles) {
   if (articles.length === 0) return articles;
-  console.log(`  → Übersetze ${articles.length} Artikel via MyMemory…`);
+  console.log(`  → Übersetze ${articles.length} Titel via MyMemory…`);
 
   const results = [];
   for (const article of articles) {
-    const title   = await translateText(article.title);
-    await sleep(400);
-    const summary = await translateText(article.summary);
-    await sleep(400);
-    results.push({ ...article, title, summary });
+    const title = await translateText(article.title);
+    await sleep(500);
+    results.push({ ...article, title });
   }
   return results;
 }
