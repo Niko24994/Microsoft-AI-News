@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Microsoft &amp; AI News</title>
+  <title>Microsoft Roadmaps</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -14,7 +14,7 @@
     <div class="header-inner">
       <div class="brand">
         <span class="brand-icon">◈</span>
-        <span class="brand-name">Microsoft &amp; AI News</span>
+        <span class="brand-name">Microsoft Roadmaps</span>
       </div>
       <div class="header-controls">
         <span class="updated-label" id="updatedLabel"></span>
@@ -26,18 +26,20 @@
     </div>
   </header>
 
-  <nav class="tabs" role="tablist" aria-label="News-Bereiche">
-    <button class="tab active" role="tab" aria-selected="true"  data-tab="roadmap"   aria-controls="panel-roadmap">Roadmap &amp; Updates</button>
-    <button class="tab"        role="tab" aria-selected="false" data-tab="fabric"    aria-controls="panel-fabric">Fabric &amp; Power Platform</button>
-    <button class="tab"        role="tab" aria-selected="false" data-tab="ai"        aria-controls="panel-ai">KI &amp; Tools</button>
-    <button class="tab"        role="tab" aria-selected="false" data-tab="usecase"   aria-controls="panel-usecase">Use Cases</button>
+  <nav class="tabs" role="tablist" aria-label="Roadmap-Bereiche">
+    <button class="tab active" role="tab" aria-selected="true"  data-tab="powerplatform" aria-controls="panel-powerplatform">Power Platform</button>
+    <button class="tab"        role="tab" aria-selected="false" data-tab="fabric"        aria-controls="panel-fabric">Fabric</button>
+    <button class="tab"        role="tab" aria-selected="false" data-tab="powerbi"       aria-controls="panel-powerbi">Power BI</button>
+    <button class="tab"        role="tab" aria-selected="false" data-tab="copilot"       aria-controls="panel-copilot">Microsoft Copilot</button>
+    <button class="tab"        role="tab" aria-selected="false" data-tab="agents"        aria-controls="panel-agents">Microsoft Agents</button>
   </nav>
 
   <main>
-    <div id="panel-roadmap" class="tab-panel active" role="tabpanel" aria-labelledby="tab-roadmap"></div>
-    <div id="panel-fabric"  class="tab-panel"        role="tabpanel" aria-labelledby="tab-fabric"></div>
-    <div id="panel-ai"      class="tab-panel"        role="tabpanel" aria-labelledby="tab-ai"></div>
-    <div id="panel-usecase" class="tab-panel"        role="tabpanel" aria-labelledby="tab-usecase"></div>
+    <div id="panel-powerplatform" class="tab-panel active" role="tabpanel" aria-labelledby="tab-powerplatform"></div>
+    <div id="panel-fabric"        class="tab-panel"        role="tabpanel" aria-labelledby="tab-fabric"></div>
+    <div id="panel-powerbi"       class="tab-panel"        role="tabpanel" aria-labelledby="tab-powerbi"></div>
+    <div id="panel-copilot"       class="tab-panel"        role="tabpanel" aria-labelledby="tab-copilot"></div>
+    <div id="panel-agents"        class="tab-panel"        role="tabpanel" aria-labelledby="tab-agents"></div>
     <div id="errorBox"        class="error-box hidden"></div>
     <div id="loadingSpinner"  class="spinner hidden" aria-live="polite" aria-label="Wird geladen…">
       <span class="spinner-ring"></span>
@@ -45,7 +47,7 @@
   </main>
 
   <footer>
-    <span>Daten aus öffentlichen RSS-Feeds · Übersetzt mit MyMemory · Gehostet auf GitHub Pages · Internes Tool · Kein öffentliches Angebot</span>
+    <span>Roadmap-Daten aus öffentlichen Microsoft RSS-Feeds · Übersetzt mit MyMemory · Gehostet auf GitHub Pages · Internes Tool · Kein öffentliches Angebot</span>
   </footer>
 
   <script src="app.js"></script>

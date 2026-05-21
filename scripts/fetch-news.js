@@ -8,54 +8,33 @@ const NEWS_DIR = path.resolve('public/news');
 const MAX_AGE_DAYS = 180;
 
 const FEEDS = {
-  fabric: [
-    'https://powerbi.microsoft.com/en-us/blog/feed/',
-    'https://blog.fabric.microsoft.com/en-us/blog/feed/',
+  powerplatform: [
     'https://www.microsoft.com/en-us/power-platform/blog/feed/',
     'https://www.microsoft.com/en-us/power-platform/blog/power-automate/feed/',
+  ],
+  fabric: [
+    'https://blog.fabric.microsoft.com/en-us/blog/feed/',
+  ],
+  powerbi: [
+    'https://powerbi.microsoft.com/en-us/blog/feed/',
+  ],
+  copilot: [
     'https://www.microsoft.com/en-us/microsoft-365/blog/feed/',
     'https://blogs.microsoft.com/ai/feed/',
   ],
-  ai: [
-    'https://raw.githubusercontent.com/taobojlen/anthropic-rss-feed/main/anthropic_news_rss.xml',
-    'https://openai.com/blog/rss.xml',
-    'https://github.blog/feed/',
-    'https://huggingface.co/blog/feed.xml',
-  ],
-  usecase: [
-    'https://blogs.microsoft.com/feed/',
-    'https://www.microsoft.com/en-us/industry/blog/feed/',
-    'https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=MicrosoftFabricBlog',
-  ],
-  roadmap: [
-    'https://powerbi.microsoft.com/en-us/blog/feed/',
-    'https://blog.fabric.microsoft.com/en-us/blog/feed/',
+  agents: [
+    'https://blogs.microsoft.com/ai/feed/',
     'https://www.microsoft.com/en-us/power-platform/blog/feed/',
-    'https://www.microsoft.com/en-us/power-platform/blog/power-automate/feed/',
-    'https://www.microsoft.com/en-us/microsoft-365/blog/feed/',
   ],
 };
 
-// Priority keywords for fabric and usecase tabs
-const PRIORITY_KEYWORDS = {
-  fabric: [
-    'copilot studio', 'microsoft 365 copilot', 'copilot in power bi', 'copilot in fabric',
-    'autonomous agent', 'ai builder', 'power platform', 'fabric', 'power bi', 'sql',
-    'dataflow', 'pipeline', 'lakehouse', 'synapse',
-  ],
-  usecase: [
-    'copilot studio', 'autonomous agent', 'ai builder', 'power platform', 'fabric',
-    'power bi', 'energy', 'utility', 'versorger', 'netzbetreiber', 'industrial',
-    'manufacturing', 'use case', 'customer story',
-  ],
-};
-
-// Keywords that MUST appear in title for roadmap tab
+// Keywords that MUST appear in title — applies to all tabs
 const ROADMAP_KEYWORDS = [
   'preview', 'generally available', ' ga ', 'what\'s new', "what's new",
   'feature summary', 'feature update', 'roadmap', 'upcoming', 'retiring',
   'deprecated', 'deprecation', 'release plan', 'public preview', 'private preview',
   'coming soon', 'now available', 'release notes', 'feature release',
+  'monthly update', 'desktop update', 'service update',
 ];
 
 function sleep(ms) {
@@ -75,13 +54,6 @@ async function fetchFeed(url) {
   }
 }
 
-function scoreArticle(item, tab) {
-  const keywords = PRIORITY_KEYWORDS[tab];
-  if (!keywords) return 0;
-  const text = `${item.title || ''} ${item.contentSnippet || item.content || ''}`.toLowerCase();
-  return keywords.reduce((score, kw) => (text.includes(kw) ? score + 1 : score), 0);
-}
-
 async function fetchTab(tab) {
   console.log(`\n[${tab}] Lade Feeds…`);
   const urls = FEEDS[tab];
@@ -97,28 +69,21 @@ async function fetchTab(tab) {
         source: item.creator || new URL(url).hostname,
         url: item.link || item.guid || '',
         date: item.isoDate || item.pubDate || new Date().toISOString(),
-        _score: scoreArticle(item, tab),
       });
     }
     await sleep(500);
   }
 
-  // Sort: date desc (newest first), score as tiebreaker
-  allItems.sort((a, b) => {
-    const dateDiff = new Date(b.date) - new Date(a.date);
-    if (dateDiff !== 0) return dateDiff;
-    return b._score - a._score;
+  // Sort: newest first
+  allItems.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+  // Only keep articles matching roadmap keywords in title
+  const filtered = allItems.filter(item => {
+    const title = (item.title || '').toLowerCase();
+    return ROADMAP_KEYWORDS.some(kw => title.includes(kw));
   });
 
-  // For roadmap tab: only keep articles matching roadmap keywords in title
-  const filtered = tab === 'roadmap'
-    ? allItems.filter(item => {
-        const title = (item.title || '').toLowerCase();
-        return ROADMAP_KEYWORDS.some(kw => title.includes(kw));
-      })
-    : allItems;
-
-  const top = filtered.slice(0, 10).map(({ _score, ...rest }) => rest);
+  const top = filtered.slice(0, 10);
   console.log(`  → ${top.length} Artikel ausgewählt`);
   return top;
 }
@@ -189,7 +154,7 @@ function updateIndex(today) {
 
 async function main() {
   const today = new Date().toISOString().slice(0, 10);
-  console.log(`\n=== News Fetch: ${today} ===`);
+  console.log(`\n=== Roadmap Fetch: ${today} ===`);
 
   fs.mkdirSync(NEWS_DIR, { recursive: true });
 
@@ -197,7 +162,7 @@ async function main() {
   for (const tab of Object.keys(FEEDS)) {
     const raw = await fetchTab(tab);
     tabs[tab] = await translateArticles(raw);
-    await sleep(1000); // Rate-Limit-Pause zwischen Tabs
+    await sleep(1000);
   }
 
   const output = {

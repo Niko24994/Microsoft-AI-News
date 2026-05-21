@@ -4,7 +4,7 @@
   const INDEX_URL = './public/news/index.json';
   const cache = {};
   let currentDate = null;
-  let currentTab = 'roadmap';
+  let currentTab = 'powerplatform';
 
   const $ = (id) => document.getElementById(id);
   const datePicker   = $('datePicker');
@@ -12,10 +12,11 @@
   const errorBox     = $('errorBox');
   const spinner      = $('loadingSpinner');
   const panels = {
-    fabric:  $('panel-fabric'),
-    ai:      $('panel-ai'),
-    usecase: $('panel-usecase'),
-    roadmap: $('panel-roadmap'),
+    powerplatform: $('panel-powerplatform'),
+    fabric:        $('panel-fabric'),
+    powerbi:       $('panel-powerbi'),
+    copilot:       $('panel-copilot'),
+    agents:        $('panel-agents'),
   };
 
   // ── Date formatting ──────────────────────────────────────
@@ -142,10 +143,11 @@
   // ── Render all tabs from a day object ────────────────────
   function renderDay(dayData) {
     const tabs = dayData.tabs || {};
-    renderPanel('fabric',  tabs.fabric  || []);
-    renderPanel('ai',      tabs.ai      || []);
-    renderPanel('usecase', tabs.usecase || []);
-    renderPanel('roadmap', tabs.roadmap || []);
+    renderPanel('powerplatform', tabs.powerplatform || []);
+    renderPanel('fabric',        tabs.fabric        || []);
+    renderPanel('powerbi',       tabs.powerbi       || []);
+    renderPanel('copilot',       tabs.copilot       || []);
+    renderPanel('agents',        tabs.agents        || []);
 
     if (dayData.updated) {
       updatedLabel.textContent = 'Stand: ' + formatTimestamp(dayData.updated);
