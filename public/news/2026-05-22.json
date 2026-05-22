@@ -1,6 +1,6 @@
 {
   "date": "2026-05-22",
-  "updated": "2026-05-22T19:53:15.186Z",
+  "updated": "2026-05-22T19:57:53.814Z",
   "tabs": {
     "copilot": [
       {
@@ -8914,30 +8914,12 @@
         "date": "2026-05-06T18:04:07.000Z"
       },
       {
-        "title": "Microsoft Agent 365, now generally available, expands capabilities and integrations",
-        "summary": "Microsoft Agent 365 helps you take control of agent sprawl as your control plane to observe, govern, and secure agents and their interactions.\nThe post Microsoft Agent 365, now generally available, expands capabilities and integrations appeared first on Microsoft 365 Blog.",
-        "source": "Nirav Shah, Rob Lefferts and Jason Roszak",
-        "product": "Microsoft 365",
-        "url": "https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/",
-        "date": "2026-05-01T15:00:00.000Z",
-        "isNew": true
-      },
-      {
         "title": "Modern Visual Tooltips in Power BI (Generally Available)",
         "summary": "Power BI’s latest update introduces an enhancement to how users interact with reports with the general availability of modern visual tooltips. All Power BI reports—from Power BI Desktop to Power BI reports in the web, in the mobile app, in Teams, and embedded in any website—now use the updated visual tooltips, making report interactions easier with the built-in actions footer and report creation faster with tooltip styling and colors coming from the report theme.\r\n\r\n\r\n\r\n  By default, visual tool",
         "source": "jacindaeng",
         "product": "Power BI",
         "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Modern-Visual-Tooltips-in-Power-BI-Generally-Available/ba-p/5173946",
         "date": "2026-04-30T07:37:00.000Z"
-      },
-      {
-        "title": "Copilot’s agentic capabilities in Word, Excel, and PowerPoint are generally available",
-        "summary": "From first draft to final polish, Copilot acts as a true collaborator, taking action while you stay in control.\nThe post Copilot’s agentic capabilities in Word, Excel, and PowerPoint are generally available appeared first on Microsoft 365 Blog.",
-        "source": "Sumit Chauhan",
-        "product": "Microsoft 365",
-        "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/04/22/copilots-agentic-capabilities-in-word-excel-and-powerpoint-are-generally-available/",
-        "date": "2026-04-23T00:00:00.000Z",
-        "isNew": true
       },
       {
         "title": "Custom tools and rich UI for app-based conversations are now in Public Preview",
@@ -8962,6 +8944,15 @@
         "product": "Power Automate",
         "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/power-platform-monitor-alerts-are-now-generally-available/",
         "date": "2026-04-08T17:12:51.000Z"
+      },
+      {
+        "title": "Public Preview: Your business apps, now part of every conversation",
+        "summary": "Bring your Power Apps into Microsoft 365 Copilot. In public preview, makers can enable conversational access to model-driven app data with Grids and Forms, with Custom Tools coming soon.\nThe post Public Preview: Your business apps, now part of every conversation appeared first on Microsoft Power Platform Blog.",
+        "source": "Claudio Romano",
+        "product": "Power Apps",
+        "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/public-preview-your-business-apps-now-part-of-every-conversation/",
+        "date": "2026-04-02T20:53:19.000Z",
+        "isNew": true
       },
       {
         "title": "Chat with Copilot inside a report on the Power BI mobile app (Preview)",
@@ -9006,6 +8997,15 @@
         "isNew": true
       },
       {
+        "title": "New quality updates to modern controls in canvas apps",
+        "summary": "This release delivers quality and reliability improvements across nine modern controls in canvas apps, including Combo Box, Text Input, and Date Picker. Focused on real‑world performance, consistent behavior, and production readiness, these updates strengthen the foundation makers rely on as canvas apps evolve alongside AI.\nThe post New quality updates to modern controls in canvas apps appeared first on Microsoft Power Platform Blog.",
+        "source": "Yogesh Gupta",
+        "product": "Power Apps",
+        "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/new-quality-updates-to-modern-controls-in-canvas-apps/",
+        "date": "2026-02-25T17:30:00.000Z",
+        "isNew": true
+      },
+      {
         "title": "Input slicer: Filter reports and collect user input (Generally Available)",
         "summary": "Previously known as the \"text slicer\" while in preview, this visual lets you type or paste values directly into a slicer to filter your report—no scrolling or searching through long lists required.\r\n\r\nWhat you can do with the input slicer\r\n\r\nReport consumers can quickly filter the report to what they are looking for using the input slicer. If you've ever needed to filter a report by a specific order ID, customer name, or product code, the input slicer is designed for exactly that. Instead of sel",
         "source": "DataZoe",
@@ -9021,6 +9021,15 @@
         "product": "Power BI",
         "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Power-BI-February-2026-Feature-Summary/ba-p/5173936",
         "date": "2026-02-24T16:00:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "What’s new in Power Platform: February 2026 feature update",
+        "summary": "Apps, agents and Copilot Public preview: M365 Copilot chat in model-driven apps Copilot chat is now available directly inside apps built with Power Apps, bringing the intelligence of Microsoft 365 Copilot into the flow of business processes.\nThe post What’s new in Power Platform: February 2026 feature update appeared first on Microsoft Power Platform Blog.",
+        "source": "Tiffany Treacy",
+        "product": "Power Apps",
+        "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-platform-february-2026-feature-update/",
+        "date": "2026-02-17T16:09:57.000Z",
         "isNew": true
       },
       {
