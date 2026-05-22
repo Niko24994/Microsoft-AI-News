@@ -6,9 +6,10 @@
   let currentDate = null;
   let currentTab = 'powerplatform';
 
-  // Tabs using real M365 Roadmap RSS — support status filtering
+  // Tabs using real M365 Roadmap RSS — support status filtering + search
   const ROADMAP_TABS = new Set(['copilot', 'agents']);
   const activeFilters = {};
+  const searchQueries  = {};
 
   const $ = (id) => document.getElementById(id);
   const datePicker   = $('datePicker');
@@ -141,21 +142,61 @@
     gridEl.appendChild(frag);
   }
 
-  // ── Apply status filter and re-render grid ───────────────
+  // ── Apply status filter + search and re-render grid ────────
   function applyFilter(tab, allArticles) {
     const panel = panels[tab];
     if (!panel) return;
     const filter = activeFilters[tab] || '';
-    const filtered = filter ? allArticles.filter(a => a.status === filter) : allArticles;
+    const query  = (searchQueries[tab] || '').toLowerCase().trim();
 
-    // Update button active states
+    let filtered = allArticles;
+    if (filter) filtered = filtered.filter(a => a.status === filter);
+    if (query)  filtered = filtered.filter(a =>
+      (a.title   || '').toLowerCase().includes(query) ||
+      (a.summary || '').toLowerCase().includes(query)
+    );
+
+    // Update status button active states
     panel.querySelectorAll('.status-btn').forEach(btn => {
       const isAll = !btn.dataset.status;
       btn.classList.toggle('active', isAll ? !filter : btn.dataset.status === filter);
     });
 
+    // Update result count in search box placeholder area
+    const countEl = panel.querySelector('.search-count');
+    if (countEl) countEl.textContent = `${filtered.length} result${filtered.length !== 1 ? 's' : ''}`;
+
     const grid = panel.querySelector('.card-grid');
     if (grid) fillGrid(grid, filtered);
+  }
+
+  // ── Build search box ─────────────────────────────────────
+  function createSearchBox(tab, allArticles) {
+    const wrap = document.createElement('div');
+    wrap.className = 'search-wrap';
+
+    const input = document.createElement('input');
+    input.type = 'text';
+    input.className = 'search-input';
+    input.placeholder = 'Search features…';
+    input.value = searchQueries[tab] || '';
+    input.setAttribute('aria-label', 'Search features');
+
+    const count = document.createElement('span');
+    count.className = 'search-count';
+    count.textContent = `${allArticles.length} result${allArticles.length !== 1 ? 's' : ''}`;
+
+    let debounce;
+    input.addEventListener('input', () => {
+      clearTimeout(debounce);
+      debounce = setTimeout(() => {
+        searchQueries[tab] = input.value;
+        applyFilter(tab, allArticles);
+      }, 200);
+    });
+
+    wrap.append(input, count);
+    return wrap;
   }
 
   // ── Build status filter bar ──────────────────────────────
@@ -195,6 +236,7 @@
 
     if (ROADMAP_TABS.has(tab)) {
       activeFilters[tab] = '';   // reset filter on new data
+      searchQueries[tab]  = '';  // reset search on new data
 
       if (!articles || articles.length === 0) {
         const empty = document.createElement('p');
@@ -204,6 +246,7 @@
         return;
       }
 
+      panel.appendChild(createSearchBox(tab, articles));
       panel.appendChild(createFilterBar(tab, articles));
       const grid = document.createElement('div');
       grid.className = 'card-grid';

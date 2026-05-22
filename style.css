@@ -166,6 +166,38 @@ main {
   gap: 1rem;
 }
 
+/* ── Search Box ───────────────────────────────────────────── */
+.search-wrap {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+}
+
+.search-input {
+  flex: 1;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text-primary);
+  font-family: var(--font);
+  font-size: .875rem;
+  padding: .5rem 1rem;
+  transition: border-color .15s, box-shadow .15s;
+  max-width: 420px;
+}
+.search-input::placeholder { color: var(--text-muted); }
+.search-input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
+.search-count {
+  font-size: .78rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
 /* ── Status Filter Bar ────────────────────────────────────── */
 .status-filter {
   display: flex;
