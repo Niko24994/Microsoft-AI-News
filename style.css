@@ -283,6 +283,42 @@ main {
   transform: translateY(-1px);
 }
 
+/* "NEW" badge — top-right corner */
+.card { position: relative; }
+.new-badge {
+  position: absolute;
+  top: .6rem;
+  right: .75rem;
+  background: #1f4a8a;
+  color: #58a6ff;
+  border: 1px solid #388bfd;
+  font-size: .62rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  padding: .1rem .45rem;
+  border-radius: 20px;
+}
+
+/* Roadmap dates row (Preview / GA) */
+.roadmap-dates {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: .25rem;
+}
+.roadmap-date-item {
+  font-size: .78rem;
+  color: var(--text-secondary);
+}
+.roadmap-date-label {
+  font-size: .67rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: var(--text-muted);
+  margin-right: .25rem;
+}
+
 .card-meta {
   display: flex;
   align-items: center;

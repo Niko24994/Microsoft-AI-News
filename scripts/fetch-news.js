@@ -50,6 +50,37 @@ function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+// Parse "Preview date: June CY2026" and "GA date: July CY2026" from roadmap descriptions
+function parseRoadmapDates(text) {
+  const t = text || '';
+  const MY = '[A-Za-z]+\\s+(?:CY)?20\\d{2}';        // e.g. "June CY2026" or "July 2026"
+  const clean = s => s.replace(/CY/i, '').trim();
+
+  const previewMatch = t.match(new RegExp(
+    `(?:preview\\s+(?:date|available)|preview)\\s*:?\\s*(${MY})`, 'i'
+  ));
+  const gaMatch = t.match(new RegExp(
+    `(?:ga\\s+date|general\\s+availability|rollout\\s+start(?:s)?)\\s*:?\\s*(${MY})`, 'i'
+  ));
+
+  const result = {};
+  if (previewMatch) result.previewDate = clean(previewMatch[1]);
+  if (gaMatch)      result.gaDate      = clean(gaMatch[1]);
+  return result;
+}
+
+// Build a Set of all article URLs from a saved JSON file (for "new" detection)
+function loadUrlSet(filePath) {
+  try {
+    const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+    const urls = new Set();
+    for (const articles of Object.values(data.tabs || {})) {
+      for (const a of articles) { if (a.url) urls.add(a.url); }
+    }
+    return urls;
+  } catch { return new Set(); }
+}
+
 async function fetchFeed(url) {
   const timeout = new Promise((_, reject) =>
     setTimeout(() => reject(new Error('Timeout after 8s')), 8000)
@@ -80,15 +111,20 @@ async function fetchRoadmapTab(tabKey) {
     const status = categories.find(c => STATUS_VALUES.includes(c)) || null;
     const source = categories.find(c => !NON_PRODUCT_CATS.has(c)) || 'Microsoft 365 Roadmap';
 
+    const summary = (item.contentSnippet || item.description || '')
+      .replace(/<[^>]+>/g, '').trim().slice(0, 600);
     const entry = {
-      title:   (item.title || '').trim(),
-      summary: (item.contentSnippet || item.description || '')
-        .replace(/<[^>]+>/g, '').trim().slice(0, 600),
+      title:  (item.title || '').trim(),
+      summary,
       source,
-      url:     item.link || item.guid || '',
-      date:    item.isoDate || item.pubDate || new Date().toISOString(),
+      url:    item.link || item.guid || '',
+      date:   item.isoDate || item.pubDate || new Date().toISOString(),
     };
     if (status) entry.status = status;
+    // Parse Preview / GA dates from description text
+    const parsedDates = parseRoadmapDates(summary);
+    if (parsedDates.previewDate) entry.previewDate = parsedDates.previewDate;
+    if (parsedDates.gaDate)      entry.gaDate      = parsedDates.gaDate;
     result.push(entry);
   }
 
@@ -168,11 +204,25 @@ async function main() {
   console.log(`\n=== Roadmap Fetch: ${today} ===`);
   fs.mkdirSync(NEWS_DIR, { recursive: true });
 
+  // Load yesterday's URLs to detect new articles
+  const yesterday = new Date();
+  yesterday.setDate(yesterday.getDate() - 1);
+  const yesterdayPath = path.join(NEWS_DIR, `${yesterday.toISOString().slice(0, 10)}.json`);
+  const yesterdayUrls = loadUrlSet(yesterdayPath);
+  console.log(`  [NEW] Comparing against ${yesterdayUrls.size} articles from yesterday`);
+
   const tabs = {
     copilot:      await fetchRoadmapTab('copilot'),
     agents:       await fetchRoadmapTab('agents'),
     releasenotes: await fetchReleaseNotes(),
   };
+
+  // Mark articles that didn't exist yesterday
+  for (const articles of Object.values(tabs)) {
+    for (const a of articles) {
+      if (a.url && !yesterdayUrls.has(a.url)) a.isNew = true;
+    }
+  }
 
   const output = { date: today, updated: new Date().toISOString(), tabs };
   const outPath = path.join(NEWS_DIR, `${today}.json`);

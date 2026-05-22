@@ -55,6 +55,14 @@
     const card = document.createElement('article');
     card.className = 'card';
 
+    // "New" indicator ribbon
+    if (article.isNew) {
+      const newBadge = document.createElement('span');
+      newBadge.className = 'new-badge';
+      newBadge.textContent = 'NEW';
+      card.appendChild(newBadge);
+    }
+
     const meta = document.createElement('div');
     meta.className = 'card-meta';
 
@@ -97,6 +105,25 @@
     summary.textContent = article.summary || '';
 
     card.append(meta, title, summary);
+
+    // Parsed roadmap dates (Preview / GA)
+    if (article.previewDate || article.gaDate) {
+      const dates = document.createElement('div');
+      dates.className = 'roadmap-dates';
+      if (article.previewDate) {
+        const p = document.createElement('span');
+        p.className = 'roadmap-date-item';
+        p.innerHTML = `<span class="roadmap-date-label">Preview</span> ${article.previewDate}`;
+        dates.appendChild(p);
+      }
+      if (article.gaDate) {
+        const g = document.createElement('span');
+        g.className = 'roadmap-date-item';
+        g.innerHTML = `<span class="roadmap-date-label">GA</span> ${article.gaDate}`;
+        dates.appendChild(g);
+      }
+      card.appendChild(dates);
+    }
 
     if (article.url) {
       const link = document.createElement('a');
