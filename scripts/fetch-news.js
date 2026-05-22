@@ -20,11 +20,11 @@ const ROADMAP_FEEDS = {
 
 // Release Notes tabs — product blog feeds, each tagged with a product label
 const RELEASE_FEEDS = [
-  { url: 'https://blog.fabric.microsoft.com/en-us/blog/feed/',                              product: 'Fabric' },
-  { url: 'https://powerbi.microsoft.com/en-us/blog/feed/',                                  product: 'Power BI' },
-  { url: 'https://www.microsoft.com/en-us/power-platform/blog/feed/',                       product: 'Power Platform' },
-  { url: 'https://www.microsoft.com/en-us/power-platform/blog/power-automate/feed/',        product: 'Power Automate' },
-  { url: 'https://www.microsoft.com/en-us/microsoft-365/blog/feed/',                        product: 'Microsoft 365' },
+  { url: 'https://blog.fabric.microsoft.com/en-us/blog/feed/',                       product: 'Fabric' },
+  { url: 'https://powerbi.microsoft.com/en-us/blog/feed/',                           product: 'Power BI' },
+  { url: 'https://www.microsoft.com/en-us/power-platform/blog/feed/',                product: 'Power Platform' },
+  { url: 'https://www.microsoft.com/en-us/power-platform/blog/power-automate/feed/', product: 'Power Automate' },
+  { url: 'https://powerapps.microsoft.com/en-us/blog/feed/',                         product: 'Power Apps' },
 ];
 
 // Keywords that must appear in title for release notes articles
