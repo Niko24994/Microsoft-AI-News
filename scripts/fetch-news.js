@@ -29,11 +29,17 @@ const RELEASE_FEEDS = [
 
 // Keywords that must appear in title for release notes articles
 const RELEASE_KEYWORDS = [
+  // Explicit roadmap / release terms
   'preview', 'generally available', ' ga ', "what's new", "what's new",
   'feature summary', 'feature update', 'roadmap', 'upcoming', 'retiring',
   'deprecated', 'deprecation', 'release plan', 'public preview', 'private preview',
   'coming soon', 'now available', 'release notes', 'feature release',
   'monthly update', 'desktop update', 'service update', 'update',
+  // Announcement-style titles (Power Automate / Power Apps style)
+  'introducing', 'announcing', 'announced', 'new in', 'now in',
+  'launching', 'launched', 'available in', 'rolling out', 'general availability',
+  'new feature', 'new connector', 'new capability', 'new experience',
+  'enhanced', 'enhancements', 'improved', 'improvements',
 ];
 
 const STATUS_VALUES = ['In development', 'Rolling out', 'Launched', 'Cancelled'];
