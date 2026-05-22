@@ -241,6 +241,30 @@ main {
 .status-launched       { background: rgba(35,134,54,.15);   color: #3fb950; }
 .status-cancelled      { background: rgba(248,81,73,.12);   color: #f85149; }
 
+/* ── Product Badge (Release Notes) ───────────────────────── */
+.product-badge {
+  font-size: .67rem;
+  font-weight: 700;
+  padding: .1rem .55rem;
+  border-radius: 20px;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.product-fabric         { background: rgba(162,93,220,.18); color: #c792ea; }
+.product-power-bi       { background: rgba(243,186,47,.15); color: #f3ba2f; }
+.product-power-platform { background: rgba(0,174,234,.15);  color: #00aeea; }
+.product-power-automate { background: rgba(0,128,255,.15);  color: #4da6ff; }
+.product-microsoft-365  { background: rgba(234,67,53,.12);  color: #ea4335; }
+
+/* Filter bar product buttons inherit status-btn styling,
+   active state uses product colour */
+.product-btn.product-fabric.active         { background: rgba(162,93,220,.18); border-color: #c792ea; color: #c792ea; }
+.product-btn.product-power-bi.active       { background: rgba(243,186,47,.15); border-color: #f3ba2f; color: #f3ba2f; }
+.product-btn.product-power-platform.active { background: rgba(0,174,234,.15);  border-color: #00aeea; color: #00aeea; }
+.product-btn.product-power-automate.active { background: rgba(0,128,255,.15);  border-color: #4da6ff; color: #4da6ff; }
+.product-btn.product-microsoft-365.active  { background: rgba(234,67,53,.12);  border-color: #ea4335; color: #ea4335; }
+
 /* ── News Card ────────────────────────────────────────────── */
 .card {
   background: var(--bg-card);

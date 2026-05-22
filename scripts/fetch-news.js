@@ -6,45 +6,38 @@ const parser = new Parser({ timeout: 10000 });
 const NEWS_DIR = path.resolve('public/news');
 const MAX_AGE_DAYS = 180;
 
-const FEEDS = {
-  powerplatform: [
-    'https://www.microsoft.com/en-us/power-platform/blog/feed/',
-    'https://www.microsoft.com/en-us/power-platform/blog/power-automate/feed/',
-  ],
-  fabric: [
-    'https://blog.fabric.microsoft.com/en-us/blog/feed/',
-  ],
-  powerbi: [
-    'https://powerbi.microsoft.com/en-us/blog/feed/',
-  ],
-  copilot: [
-    'https://www.microsoft.com/releasecommunications/api/v2/m365/rss',
-  ],
-  agents: [
-    'https://www.microsoft.com/releasecommunications/api/v2/m365/rss',
-  ],
+// Roadmap RSS tabs — real M365 feature pipeline
+const ROADMAP_FEEDS = {
+  copilot: {
+    url: 'https://www.microsoft.com/releasecommunications/api/v2/m365/rss',
+    keywords: ['copilot'],
+  },
+  agents: {
+    url: 'https://www.microsoft.com/releasecommunications/api/v2/m365/rss',
+    keywords: ['copilot studio', 'agent'],
+  },
 };
 
-// Blog tabs: filter by roadmap keywords in title
-const BLOG_TABS = new Set(['powerplatform', 'fabric', 'powerbi']);
+// Release Notes tabs — product blog feeds, each tagged with a product label
+const RELEASE_FEEDS = [
+  { url: 'https://blog.fabric.microsoft.com/en-us/blog/feed/',                              product: 'Fabric' },
+  { url: 'https://powerbi.microsoft.com/en-us/blog/feed/',                                  product: 'Power BI' },
+  { url: 'https://www.microsoft.com/en-us/power-platform/blog/feed/',                       product: 'Power Platform' },
+  { url: 'https://www.microsoft.com/en-us/power-platform/blog/power-automate/feed/',        product: 'Power Automate' },
+  { url: 'https://www.microsoft.com/en-us/microsoft-365/blog/feed/',                        product: 'Microsoft 365' },
+];
 
-const ROADMAP_KEYWORDS = [
+// Keywords that must appear in title for release notes articles
+const RELEASE_KEYWORDS = [
   'preview', 'generally available', ' ga ', "what's new", "what's new",
   'feature summary', 'feature update', 'roadmap', 'upcoming', 'retiring',
   'deprecated', 'deprecation', 'release plan', 'public preview', 'private preview',
   'coming soon', 'now available', 'release notes', 'feature release',
-  'monthly update', 'desktop update', 'service update',
+  'monthly update', 'desktop update', 'service update', 'update',
 ];
-
-// Category keywords for M365 Roadmap RSS tabs
-const ROADMAP_RSS_FILTER = {
-  copilot: ['copilot'],
-  agents:  ['copilot studio', 'agent'],
-};
 
 const STATUS_VALUES = ['In development', 'Rolling out', 'Launched', 'Cancelled'];
 
-// Categories that are NOT product names (platform/availability/region)
 const NON_PRODUCT_CATS = new Set([
   ...STATUS_VALUES,
   'Worldwide (Standard Multi-Tenant)', 'GCC', 'GCC High', 'DoD',
@@ -54,7 +47,7 @@ const NON_PRODUCT_CATS = new Set([
 ]);
 
 function sleep(ms) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
+  return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 async function fetchFeed(url) {
@@ -70,65 +63,75 @@ async function fetchFeed(url) {
   }
 }
 
-async function fetchTab(tab) {
-  console.log(`\n[${tab}] Loading feeds…`);
-  const urls = FEEDS[tab];
-  const isRoadmapRSS = !BLOG_TABS.has(tab);
+// Fetch one M365 Roadmap RSS tab (copilot or agents)
+async function fetchRoadmapTab(tabKey) {
+  const { url, keywords } = ROADMAP_FEEDS[tabKey];
+  console.log(`\n[${tabKey}] Loading roadmap RSS…`);
+  console.log(`  → ${url}`);
+  const items = await fetchFeed(url);
+
+  const result = [];
+  for (const item of items) {
+    const categories = item.categories || [];
+    const catText    = categories.join(' ').toLowerCase();
+    const titleText  = (item.title || '').toLowerCase();
+    if (!keywords.some(kw => catText.includes(kw) || titleText.includes(kw))) continue;
+
+    const status = categories.find(c => STATUS_VALUES.includes(c)) || null;
+    const source = categories.find(c => !NON_PRODUCT_CATS.has(c)) || 'Microsoft 365 Roadmap';
+
+    const entry = {
+      title:   (item.title || '').trim(),
+      summary: (item.contentSnippet || item.description || '')
+        .replace(/<[^>]+>/g, '').trim().slice(0, 600),
+      source,
+      url:     item.link || item.guid || '',
+      date:    item.isoDate || item.pubDate || new Date().toISOString(),
+    };
+    if (status) entry.status = status;
+    result.push(entry);
+  }
+
+  result.sort((a, b) => new Date(b.date) - new Date(a.date));
+  console.log(`  → ${result.length} items`);
+  return result;
+}
+
+// Fetch all release notes blogs (combined, tagged by product)
+async function fetchReleaseNotes() {
+  console.log('\n[releasenotes] Loading blog feeds…');
   const allItems = [];
 
-  for (const url of urls) {
-    console.log(`  → ${url}`);
+  for (const { url, product } of RELEASE_FEEDS) {
+    console.log(`  → ${url} [${product}]`);
     const items = await fetchFeed(url);
     for (const item of items) {
-      const categories = item.categories || [];
-
-      let source, status;
-      if (isRoadmapRSS) {
-        status = categories.find(c => STATUS_VALUES.includes(c)) || null;
-        source = categories.find(c => !NON_PRODUCT_CATS.has(c)) || 'Microsoft 365 Roadmap';
-      } else {
-        source = item.creator || new URL(url).hostname;
-        status = null;
-      }
-
-      const entry = {
+      const title = (item.title || '').toLowerCase();
+      if (!RELEASE_KEYWORDS.some(kw => title.includes(kw))) continue;
+      allItems.push({
         title:   (item.title || '').trim(),
-        summary: (item.contentSnippet || item.description || item.summary || item.content || '')
+        summary: (item.contentSnippet || item.summary || item.content || '')
           .replace(/<[^>]+>/g, '').trim().slice(0, 500),
-        source,
+        source:  item.creator || new URL(url).hostname,
+        product,
         url:     item.link || item.guid || '',
         date:    item.isoDate || item.pubDate || new Date().toISOString(),
-        _categories: categories,
-      };
-      if (status) entry.status = status;
-
-      allItems.push(entry);
+      });
     }
     await sleep(300);
   }
 
-  // Sort newest first
-  allItems.sort((a, b) => new Date(b.date) - new Date(a.date));
+  // Deduplicate by URL
+  const seen = new Set();
+  const unique = allItems.filter(a => {
+    if (!a.url || seen.has(a.url)) return false;
+    seen.add(a.url);
+    return true;
+  });
 
-  let filtered;
-  if (BLOG_TABS.has(tab)) {
-    filtered = allItems.filter(item => {
-      const title = (item.title || '').toLowerCase();
-      return ROADMAP_KEYWORDS.some(kw => title.includes(kw));
-    });
-  } else {
-    const keywords = ROADMAP_RSS_FILTER[tab] || [];
-    filtered = allItems.filter(item => {
-      const catText = item._categories.join(' ').toLowerCase();
-      const title   = (item.title || '').toLowerCase();
-      return keywords.some(kw => catText.includes(kw) || title.includes(kw));
-    });
-  }
-
-  // Remove internal field before saving
-  const result = filtered.map(({ _categories, ...rest }) => rest);
-  console.log(`  → ${result.length} articles selected`);
-  return result;
+  unique.sort((a, b) => new Date(b.date) - new Date(a.date));
+  console.log(`  → ${unique.length} release notes`);
+  return unique;
 }
 
 function deleteOldFiles() {
@@ -163,14 +166,13 @@ function updateIndex(today) {
 async function main() {
   const today = new Date().toISOString().slice(0, 10);
   console.log(`\n=== Roadmap Fetch: ${today} ===`);
-
   fs.mkdirSync(NEWS_DIR, { recursive: true });
 
-  const tabs = {};
-  for (const tab of Object.keys(FEEDS)) {
-    tabs[tab] = await fetchTab(tab);
-    await sleep(500);
-  }
+  const tabs = {
+    copilot:      await fetchRoadmapTab('copilot'),
+    agents:       await fetchRoadmapTab('agents'),
+    releasenotes: await fetchReleaseNotes(),
+  };
 
   const output = { date: today, updated: new Date().toISOString(), tabs };
   const outPath = path.join(NEWS_DIR, `${today}.json`);
@@ -179,7 +181,6 @@ async function main() {
 
   deleteOldFiles();
   updateIndex(today);
-
   console.log('\n=== Done ===');
   process.exit(0);
 }
