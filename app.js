@@ -6,6 +6,10 @@
   let currentDate = null;
   let currentTab = 'powerplatform';
 
+  // Tabs using real M365 Roadmap RSS — support status filtering
+  const ROADMAP_TABS = new Set(['copilot', 'agents']);
+  const activeFilters = {};
+
   const $ = (id) => document.getElementById(id);
   const datePicker   = $('datePicker');
   const updatedLabel = $('updatedLabel');
@@ -22,33 +26,23 @@
   // ── Date formatting ──────────────────────────────────────
   function formatDateLong(isoDate) {
     const [y, m, d] = isoDate.split('-').map(Number);
-    return new Date(y, m - 1, d).toLocaleDateString('de-DE', {
+    return new Date(y, m - 1, d).toLocaleDateString('en-GB', {
       day: 'numeric', month: 'long', year: 'numeric',
-    });
-  }
-
-  function formatDateShort(isoDate) {
-    const [y, m, d] = isoDate.split('-').map(Number);
-    return new Date(y, m - 1, d).toLocaleDateString('de-DE', {
-      day: '2-digit', month: '2-digit', year: 'numeric',
     });
   }
 
   function formatTimestamp(isoString) {
     const d = new Date(isoString);
-    return d.toLocaleDateString('de-DE', {
-      day: 'numeric', month: 'long', year: 'numeric',
-    }) + ', ' + d.toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit' }) + ' Uhr';
+    return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })
+      + ', ' + d.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
   }
 
   function formatArticleDate(isoString) {
     try {
-      return new Date(isoString).toLocaleDateString('de-DE', {
+      return new Date(isoString).toLocaleDateString('en-GB', {
         day: 'numeric', month: 'short', year: 'numeric',
       });
-    } catch {
-      return '';
-    }
+    } catch { return ''; }
   }
 
   // ── UI helpers ───────────────────────────────────────────
@@ -67,7 +61,7 @@
     spinner.classList.toggle('hidden', !on);
   }
 
-  // ── Build date picker options ────────────────────────────
+  // ── Date picker ──────────────────────────────────────────
   function buildDatePicker(dates, selected) {
     datePicker.innerHTML = '';
     for (const d of dates) {
@@ -79,7 +73,12 @@
     }
   }
 
-  // ── Render a single news card ────────────────────────────
+  // ── Status badge CSS class ───────────────────────────────
+  function statusClass(status) {
+    return 'status-' + (status || '').toLowerCase().replace(/\s+/g, '-');
+  }
+
+  // ── Build a single news card ─────────────────────────────
   function createCard(article) {
     const card = document.createElement('article');
     card.className = 'card';
@@ -90,12 +89,19 @@
     const source = document.createElement('span');
     source.className = 'card-source';
     source.textContent = article.source || '';
+    meta.appendChild(source);
+
+    if (article.status) {
+      const badge = document.createElement('span');
+      badge.className = `status-badge ${statusClass(article.status)}`;
+      badge.textContent = article.status;
+      meta.appendChild(badge);
+    }
 
     const date = document.createElement('span');
     date.className = 'card-date';
     date.textContent = formatArticleDate(article.date);
-
-    meta.append(source, date);
+    meta.appendChild(date);
 
     const title = document.createElement('h2');
     title.className = 'card-title';
@@ -113,11 +119,72 @@
       link.href = article.url;
       link.target = '_blank';
       link.rel = 'noopener noreferrer';
-      link.textContent = 'Artikel lesen';
+      link.textContent = 'Read more';
       card.appendChild(link);
     }
 
     return card;
+  }
+
+  // ── Fill a card grid element ─────────────────────────────
+  function fillGrid(gridEl, articles) {
+    gridEl.innerHTML = '';
+    if (!articles || articles.length === 0) {
+      const empty = document.createElement('p');
+      empty.className = 'empty-state';
+      empty.textContent = 'No articles available.';
+      gridEl.appendChild(empty);
+      return;
+    }
+    const frag = document.createDocumentFragment();
+    for (const a of articles) frag.appendChild(createCard(a));
+    gridEl.appendChild(frag);
+  }
+
+  // ── Apply status filter and re-render grid ───────────────
+  function applyFilter(tab, allArticles) {
+    const panel = panels[tab];
+    if (!panel) return;
+    const filter = activeFilters[tab] || '';
+    const filtered = filter ? allArticles.filter(a => a.status === filter) : allArticles;
+
+    // Update button active states
+    panel.querySelectorAll('.status-btn').forEach(btn => {
+      const isAll = !btn.dataset.status;
+      btn.classList.toggle('active', isAll ? !filter : btn.dataset.status === filter);
+    });
+
+    const grid = panel.querySelector('.card-grid');
+    if (grid) fillGrid(grid, filtered);
+  }
+
+  // ── Build status filter bar ──────────────────────────────
+  function createFilterBar(tab, articles) {
+    const ORDER = ['In development', 'Rolling out', 'Launched', 'Cancelled'];
+    const present = ORDER.filter(s => articles.some(a => a.status === s));
+
+    const bar = document.createElement('div');
+    bar.className = 'status-filter';
+
+    // "All" button
+    const allBtn = document.createElement('button');
+    allBtn.className = 'status-btn active';
+    allBtn.textContent = `All (${articles.length})`;
+    allBtn.addEventListener('click', () => { activeFilters[tab] = ''; applyFilter(tab, articles); });
+    bar.appendChild(allBtn);
+
+    // Per-status buttons
+    for (const status of present) {
+      const count = articles.filter(a => a.status === status).length;
+      const btn = document.createElement('button');
+      btn.className = `status-btn ${statusClass(status)}`;
+      btn.textContent = `${status} (${count})`;
+      btn.dataset.status = status;
+      btn.addEventListener('click', () => { activeFilters[tab] = status; applyFilter(tab, articles); });
+      bar.appendChild(btn);
+    }
+
+    return bar;
   }
 
   // ── Render one tab panel ─────────────────────────────────
@@ -126,22 +193,32 @@
     if (!panel) return;
     panel.innerHTML = '';
 
-    if (!articles || articles.length === 0) {
-      const empty = document.createElement('p');
-      empty.className = 'empty-state';
-      empty.textContent = 'Keine Artikel verfügbar.';
-      panel.appendChild(empty);
-      return;
-    }
+    if (ROADMAP_TABS.has(tab)) {
+      activeFilters[tab] = '';   // reset filter on new data
 
-    const fragment = document.createDocumentFragment();
-    for (const article of articles) {
-      fragment.appendChild(createCard(article));
+      if (!articles || articles.length === 0) {
+        const empty = document.createElement('p');
+        empty.className = 'empty-state';
+        empty.textContent = 'No articles available.';
+        panel.appendChild(empty);
+        return;
+      }
+
+      panel.appendChild(createFilterBar(tab, articles));
+      const grid = document.createElement('div');
+      grid.className = 'card-grid';
+      panel.appendChild(grid);
+      fillGrid(grid, articles);
+
+    } else {
+      const grid = document.createElement('div');
+      grid.className = 'card-grid';
+      fillGrid(grid, articles);
+      panel.appendChild(grid);
     }
-    panel.appendChild(fragment);
   }
 
-  // ── Render all tabs from a day object ────────────────────
+  // ── Render all tabs from a day's data ────────────────────
   function renderDay(dayData) {
     const tabs = dayData.tabs || {};
     renderPanel('powerplatform', tabs.powerplatform || []);
@@ -151,20 +228,15 @@
     renderPanel('agents',        tabs.agents        || []);
 
     if (dayData.updated) {
-      updatedLabel.textContent = 'Stand: ' + formatTimestamp(dayData.updated);
+      updatedLabel.textContent = 'Updated: ' + formatTimestamp(dayData.updated);
     }
   }
 
-  // ── Load a day (with in-memory cache) ────────────────────
+  // ── Load a day (with cache) ──────────────────────────────
   async function loadDay(dateStr) {
-    if (cache[dateStr]) {
-      renderDay(cache[dateStr]);
-      return;
-    }
-
+    if (cache[dateStr]) { renderDay(cache[dateStr]); return; }
     setLoading(true);
     clearError();
-
     try {
       const res = await fetch(`./public/news/${dateStr}.json`);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
@@ -172,59 +244,54 @@
       cache[dateStr] = data;
       renderDay(data);
     } catch (err) {
-      showError(`Daten für ${formatDateLong(dateStr)} konnten nicht geladen werden. (${err.message})`);
+      showError(`Could not load data for ${formatDateLong(dateStr)}. (${err.message})`);
     } finally {
       setLoading(false);
     }
   }
 
-  // ── Tab switching ─────────────────────────────────────────
+  // ── Tab switching ────────────────────────────────────────
   function activateTab(tab) {
     currentTab = tab;
-    document.querySelectorAll('.tab').forEach((btn) => {
+    document.querySelectorAll('.tab').forEach(btn => {
       const isActive = btn.dataset.tab === tab;
       btn.classList.toggle('active', isActive);
       btn.setAttribute('aria-selected', String(isActive));
     });
     Object.entries(panels).forEach(([key, panel]) => {
-      panel.classList.toggle('active', key === tab);
+      if (panel) panel.classList.toggle('active', key === tab);
     });
   }
 
-  // ── Event: tab click ─────────────────────────────────────
-  document.querySelectorAll('.tab').forEach((btn) => {
+  // ── Events ───────────────────────────────────────────────
+  document.querySelectorAll('.tab').forEach(btn => {
     btn.addEventListener('click', () => activateTab(btn.dataset.tab));
   });
 
-  // ── Event: date picker change ─────────────────────────────
   datePicker.addEventListener('change', async () => {
     const d = datePicker.value;
-    if (d && d !== currentDate) {
-      currentDate = d;
-      await loadDay(d);
-    }
+    if (d && d !== currentDate) { currentDate = d; await loadDay(d); }
   });
 
   // ── Bootstrap ────────────────────────────────────────────
   async function init() {
     setLoading(true);
     clearError();
-
     let index;
     try {
       const res = await fetch(INDEX_URL);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       index = await res.json();
     } catch (err) {
-      showError('Index konnte nicht geladen werden. Bitte Seite neu laden. (' + err.message + ')');
+      showError('Could not load index. Please reload. (' + err.message + ')');
       return;
     }
 
-    const dates = index.dates || [];
+    const dates  = index.dates  || [];
     const latest = index.latest || (dates[0] ?? null);
 
     if (dates.length === 0 || !latest) {
-      showError('Noch keine Daten vorhanden. Bitte den GitHub Actions Workflow manuell starten.');
+      showError('No data yet. Please trigger the GitHub Actions workflow manually.');
       setLoading(false);
       return;
     }

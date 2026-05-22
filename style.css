@@ -157,7 +157,57 @@ main {
 
 /* ── Tab Panels ───────────────────────────────────────────── */
 .tab-panel { display: none; }
-.tab-panel.active { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+.tab-panel.active { display: flex; flex-direction: column; gap: 1.25rem; }
+
+/* ── Card Grid ────────────────────────────────────────────── */
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+/* ── Status Filter Bar ────────────────────────────────────── */
+.status-filter {
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+  padding-bottom: .25rem;
+}
+
+.status-btn {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  color: var(--text-secondary);
+  font-family: var(--font);
+  font-size: .78rem;
+  font-weight: 500;
+  padding: .3rem .9rem;
+  cursor: pointer;
+  transition: all .15s;
+  white-space: nowrap;
+}
+.status-btn:hover { border-color: var(--accent); color: var(--text-primary); }
+.status-btn.active {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* ── Status Badge (on cards) ──────────────────────────────── */
+.status-badge {
+  font-size: .67rem;
+  font-weight: 700;
+  padding: .1rem .55rem;
+  border-radius: 20px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.status-in-development { background: rgba(56,139,253,.15);  color: #58a6ff; }
+.status-rolling-out    { background: rgba(210,153,34,.15);  color: #e3b341; }
+.status-launched       { background: rgba(35,134,54,.15);   color: #3fb950; }
+.status-cancelled      { background: rgba(248,81,73,.12);   color: #f85149; }
 
 /* ── News Card ────────────────────────────────────────────── */
 .card {
@@ -282,15 +332,11 @@ footer {
 
 /* ── Responsive ───────────────────────────────────────────── */
 @media (min-width: 640px) {
-  .tab-panel.active {
-    grid-template-columns: 1fr 1fr;
-  }
+  .card-grid { grid-template-columns: 1fr 1fr; }
 }
 
 @media (min-width: 900px) {
-  .tab-panel.active {
-    grid-template-columns: repeat(3, 1fr);
-  }
+  .card-grid { grid-template-columns: repeat(3, 1fr); }
 }
 
 @media (max-width: 480px) {
