@@ -1,6 +1,6 @@
 {
   "date": "2026-05-22",
-  "updated": "2026-05-22T19:57:53.814Z",
+  "updated": "2026-05-22T20:02:55.541Z",
   "tabs": {
     "copilot": [
       {
@@ -8914,6 +8914,15 @@
         "date": "2026-05-06T18:04:07.000Z"
       },
       {
+        "title": "Introducing business skills: Teach agents how your organization works",
+        "summary": "Business skills in Dataverse can capture your organization’s processes, policies, and domain expertise as natural-language instructions that AI agents discover and follow.\nThe post Introducing business skills: Teach agents how your organization works  appeared first on Microsoft Power Platform Blog.",
+        "source": "Prithvi Khosla",
+        "product": "Power Platform",
+        "url": "https://www.microsoft.com/en-us/power-platform/blog/2026/05/01/business-skills/",
+        "date": "2026-05-01T18:05:46.000Z",
+        "isNew": true
+      },
+      {
         "title": "Modern Visual Tooltips in Power BI (Generally Available)",
         "summary": "Power BI’s latest update introduces an enhancement to how users interact with reports with the general availability of modern visual tooltips. All Power BI reports—from Power BI Desktop to Power BI reports in the web, in the mobile app, in Teams, and embedded in any website—now use the updated visual tooltips, making report interactions easier with the built-in actions footer and report creation faster with tooltip styling and colors coming from the report theme.\r\n\r\n\r\n\r\n  By default, visual tool",
         "source": "jacindaeng",
@@ -8997,6 +9006,15 @@
         "isNew": true
       },
       {
+        "title": "New enhancements to work queues that will transform how your teams manage and monitor automated workflows.",
+        "summary": "A Unified Control Center for Queue Monitoring and SLA Tracking Work queues in Power Automate are structured lists that let you assign, track, and manage work items across users or automations in an organized, scalable way.\nThe post New enhancements to work queues that will transform how your teams manage and monitor automated workflows. appeared first on Microsoft Power Platform Blog.",
+        "source": "Tristan Dehove",
+        "product": "Power Automate",
+        "url": "https://www.microsoft.com/en-us/power-platform/blog/power-automate/new-enhancements-to-work-queues-that-will-transform-how-your-teams-manage-and-monitor-automated-workflows/",
+        "date": "2026-03-04T16:00:00.000Z",
+        "isNew": true
+      },
+      {
         "title": "New quality updates to modern controls in canvas apps",
         "summary": "This release delivers quality and reliability improvements across nine modern controls in canvas apps, including Combo Box, Text Input, and Date Picker. Focused on real‑world performance, consistent behavior, and production readiness, these updates strengthen the foundation makers rely on as canvas apps evolve alongside AI.\nThe post New quality updates to modern controls in canvas apps appeared first on Microsoft Power Platform Blog.",
         "source": "Yogesh Gupta",
@@ -9048,6 +9066,15 @@
         "product": "Power BI",
         "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Power-BI-Report-Server-January-2026-Feature-Summary/ba-p/5173949",
         "date": "2026-01-21T17:00:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Announcing major DLP enhancements for Power Automate and Copilot Studio",
+        "summary": "DLP (Data Loss Prevention) for Power Automate enables administrators to manage data access from both cloud and desktop Power Automate flows, as well as agent flows in Copilot Studio. Administrators configure Data policies to permit or restrict connectors and actions from being accessed by flows.\nThe post Announcing major DLP enhancements for Power Automate and Copilot Studio appeared first on Microsoft Power Platform Blog.",
+        "source": "Tristan Dehove",
+        "product": "Power Automate",
+        "url": "https://www.microsoft.com/en-us/power-platform/blog/power-automate/announcing-major-dlp-enhancements-for-power-automate-and-copilot-studio/",
+        "date": "2025-07-01T15:16:04.000Z",
         "isNew": true
       }
     ]
