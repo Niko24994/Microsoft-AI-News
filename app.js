@@ -4,7 +4,7 @@
   const INDEX_URL = './public/news/index.json';
   const cache = {};
   let currentDate = null;
-  let currentTab  = 'releasenotes';
+  let currentTab  = 'summary';
 
   // Tabs with real M365 Roadmap data → status filter + search
   const ROADMAP_TABS  = new Set(['copilot', 'agents']);
@@ -20,6 +20,7 @@
   const errorBox     = $('errorBox');
   const spinner      = $('loadingSpinner');
   const panels = {
+    summary:       $('panel-summary'),
     copilot:       $('panel-copilot'),
     agents:        $('panel-agents'),
     releasenotes:  $('panel-releasenotes'),
@@ -270,6 +271,121 @@
     return bar;
   }
 
+  // ── Summary panel (This Month) ───────────────────────────────
+  function renderSummaryPanel(dayData) {
+    const panel = panels.summary;
+    if (!panel) return;
+    panel.innerHTML = '';
+
+    const tabs = dayData.tabs || {};
+    const now  = new Date();
+    const monthLabel = now.toLocaleDateString('en-GB', { month: 'long', year: 'numeric' });
+
+    // Update tab button label to current month name
+    const summaryBtn = document.querySelector('.tab[data-tab="summary"]');
+    if (summaryBtn) summaryBtn.textContent = monthLabel;
+
+    function isThisMonth(iso) {
+      try {
+        const d = new Date(iso);
+        return d.getFullYear() === now.getFullYear() && d.getMonth() === now.getMonth();
+      } catch { return false; }
+    }
+
+    const rn = tabs.releasenotes || [];
+    const co = tabs.copilot      || [];
+    const ag = tabs.agents       || [];
+
+    // Copilot: merge Copilot Studio wave-plan items + copilot tab, dedupe by url/title
+    const copilotSeen = new Set();
+    const copilotItems = [
+      ...rn.filter(a => a.product === 'Copilot Studio' && isThisMonth(a.date)),
+      ...co.filter(a => isThisMonth(a.date)),
+    ].filter(a => {
+      const key = a.url || a.title;
+      if (copilotSeen.has(key)) return false;
+      copilotSeen.add(key);
+      return true;
+    });
+
+    const SECTIONS = [
+      { key: 'Fabric',         color: '#f3ba2f', items: rn.filter(a => a.product === 'Fabric'         && isThisMonth(a.date)) },
+      { key: 'Power Platform', color: '#818cf8', items: rn.filter(a => (a.product === 'Power Platform' || a.product === 'Power Platform Admin') && isThisMonth(a.date)) },
+      { key: 'Power Apps',     color: '#a78bfa', items: rn.filter(a => a.product === 'Power Apps'     && isThisMonth(a.date)) },
+      { key: 'Power Automate', color: '#38bdf8', items: rn.filter(a => a.product === 'Power Automate' && isThisMonth(a.date)) },
+      { key: 'Power BI',       color: '#f59e0b', items: rn.filter(a => a.product === 'Power BI'       && isThisMonth(a.date)) },
+      { key: 'Dataverse',      color: '#34d399', items: rn.filter(a => a.product === 'Dataverse'      && isThisMonth(a.date)) },
+      { key: 'Copilot',        color: '#c084fc', items: copilotItems },
+      { key: 'Agents',         color: '#fb7185', items: ag.filter(a => isThisMonth(a.date)) },
+    ];
+
+    const grid = document.createElement('div');
+    grid.className = 'summary-grid';
+    let anyContent = false;
+
+    for (const sec of SECTIONS) {
+      if (!sec.items.length) continue;
+      anyContent = true;
+
+      const box = document.createElement('div');
+      box.className = 'summary-section';
+      box.style.setProperty('--sec-color', sec.color);
+
+      const h3 = document.createElement('h3');
+      h3.className = 'summary-section-heading';
+      h3.innerHTML = `${sec.key} <span class="summary-count">${sec.items.length}</span>`;
+      box.appendChild(h3);
+
+      const ul = document.createElement('ul');
+      ul.className = 'summary-list';
+
+      for (const a of sec.items) {
+        const li = document.createElement('li');
+        li.className = 'summary-item';
+
+        if (a.url) {
+          const link = document.createElement('a');
+          link.href = a.url;
+          link.target = '_blank';
+          link.rel = 'noopener noreferrer';
+          link.textContent = a.title;
+          li.appendChild(link);
+        } else {
+          const span = document.createElement('span');
+          span.textContent = a.title;
+          li.appendChild(span);
+        }
+
+        if (a.planned) {
+          const badge = document.createElement('span');
+          badge.className = 'summary-planned-badge';
+          badge.textContent = 'Planned';
+          li.appendChild(badge);
+        }
+
+        const dateEl = document.createElement('span');
+        dateEl.className = 'summary-item-date';
+        dateEl.textContent = formatArticleDate(a.date);
+        li.appendChild(dateEl);
+
+        ul.appendChild(li);
+      }
+
+      box.appendChild(ul);
+      grid.appendChild(box);
+    }
+
+    if (!anyContent) {
+      const p = document.createElement('p');
+      p.className = 'empty-state';
+      p.textContent = `No updates found for ${monthLabel} yet.`;
+      panel.appendChild(p);
+      return;
+    }
+
+    panel.appendChild(grid);
+  }
+
   // ── Render one panel ─────────────────────────────────────
   function renderPanel(tab, articles) {
     const panel = panels[tab];
@@ -303,6 +419,7 @@
   // ── Render all tabs ──────────────────────────────────────
   function renderDay(dayData) {
     const tabs = dayData.tabs || {};
+    renderSummaryPanel(dayData);
     renderPanel('copilot',       tabs.copilot       || []);
     renderPanel('agents',        tabs.agents        || []);
     renderPanel('releasenotes',  tabs.releasenotes  || []);

@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Microsoft Roadmaps</title>
+  <title>Microsoft Roadmaps & Releases</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=20260526c" />
+  <link rel="stylesheet" href="style.css?v=20260526d" />
 </head>
 <body>
   <header>
     <div class="header-inner">
       <div class="brand">
         <span class="brand-icon">◈</span>
-        <span class="brand-name">Microsoft Roadmaps</span>
+        <span class="brand-name">Microsoft Roadmaps & Releases</span>
       </div>
       <div class="header-controls">
         <span class="updated-label" id="updatedLabel"></span>
@@ -27,14 +27,16 @@
   </header>
 
   <nav class="tabs" role="tablist" aria-label="Roadmap areas">
-    <button class="tab active" role="tab" aria-selected="true"  data-tab="releasenotes"  aria-controls="panel-releasenotes">Release Notes</button>
+    <button class="tab active" role="tab" aria-selected="true"  data-tab="summary"       aria-controls="panel-summary">This Month</button>
+    <button class="tab"        role="tab" aria-selected="false" data-tab="releasenotes"  aria-controls="panel-releasenotes">Release Notes</button>
     <button class="tab"        role="tab" aria-selected="false" data-tab="fabricroadmap" aria-controls="panel-fabricroadmap">Fabric Roadmap</button>
     <button class="tab"        role="tab" aria-selected="false" data-tab="copilot"       aria-controls="panel-copilot">Microsoft Copilot</button>
     <button class="tab"        role="tab" aria-selected="false" data-tab="agents"        aria-controls="panel-agents">Microsoft Agents</button>
   </nav>
 
   <main>
-    <div id="panel-releasenotes"  class="tab-panel active" role="tabpanel"></div>
+    <div id="panel-summary"       class="tab-panel active" role="tabpanel"></div>
+    <div id="panel-releasenotes"  class="tab-panel"        role="tabpanel"></div>
     <div id="panel-fabricroadmap" class="tab-panel"        role="tabpanel"></div>
     <div id="panel-copilot"       class="tab-panel"        role="tabpanel"></div>
     <div id="panel-agents"        class="tab-panel"        role="tabpanel"></div>
@@ -48,6 +50,6 @@
     <span>Data from public Microsoft RSS feeds · Hosted on GitHub Pages · Internal tool · Not a public offering</span>
   </footer>
 
-  <script src="app.js?v=20260526c"></script>
+  <script src="app.js?v=20260526d"></script>
 </body>
 </html>
