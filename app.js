@@ -99,13 +99,15 @@
       meta.appendChild(badge);
     }
 
-    // Date — for roadmap items label it clearly so users know it's the "added" date
+    // For release notes: date stays inline in meta
+    // For roadmap items: date goes on its own line below meta to keep badge row short
     const date = document.createElement('span');
     date.className = 'card-date';
     date.textContent = isRoadmap
       ? 'Added ' + formatArticleDate(article.date)
       : formatArticleDate(article.date);
-    meta.appendChild(date);
+
+    if (!isRoadmap) meta.appendChild(date);
 
     const title = document.createElement('h2');
     title.className = 'card-title';
@@ -115,7 +117,11 @@
     summary.className = 'card-summary';
     summary.textContent = article.summary || '';
 
-    card.append(meta, title, summary);
+    if (isRoadmap) {
+      card.append(meta, date, title, summary);
+    } else {
+      card.append(meta, title, summary);
+    }
 
     // Parsed roadmap dates (Preview / GA)
     if (article.previewDate || article.gaDate) {
