@@ -1,6 +1,8 @@
 {
   "date": "2026-05-26",
-  "updated": "2026-05-26T13:30:54.453Z",
+  "updated": "2026-05-26T13:49:06.325Z",
+  "wave": "261",
+  "waveLabel": "2026 Release Wave 1",
   "tabs": {
     "copilot": [
       {
@@ -7930,6 +7932,15 @@
         "date": "2026-05-12T17:26:00.000Z"
       },
       {
+        "title": "Power Apps MCP server introduces closed-loop learning for enterprise agents",
+        "summary": "Building agents is fast. Teaching them how your organization works has been the hard part. Introducing closed-loop learning on the Power Apps MCP server: every correction calibrates the agent to your business, automatically.\nThe post Power Apps MCP server introduces closed-loop learning for enterprise agents appeared first on Microsoft Power Platform Blog.",
+        "source": "Srihari Srinivasa",
+        "product": "Power Platform",
+        "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/power-apps-mcp-server-introduces-closed-loop-learning-for-enterprise-agents/",
+        "date": "2026-05-12T16:00:00.000Z",
+        "isNew": true
+      },
+      {
         "title": "Agentic Administration: Dataverse Admin Skills now available in Public Preview",
         "summary": "Dataverse Admin Skills (dv-admin) lets Power Platform admins use natural language to manage Dataverse environments at scale.\nThe post Agentic Administration: Dataverse Admin Skills now available in Public Preview appeared first on Microsoft Power Platform Blog.",
         "source": "Anirudha Bakore",
@@ -7994,6 +8005,15 @@
         "date": "2026-04-30T07:37:00.000Z"
       },
       {
+        "title": "More Secure SharePoint Integration in Power Pages with Site‑Scoped Permissions",
+        "summary": "Strong security and governance are essential for any external-facing web presence. Power Pages now strengthens this with enhanced SharePoint permission management shifting from broad site collection access to precise, site-level controls. Key improvements This change ensures that Power Pages site only has access to the SharePoint resources it truly needs nothing more.\nThe post More Secure SharePoint Integration in Power Pages with Site‑Scoped Permissions appeared first on Microsoft Power Platfor",
+        "source": "Nagesh Bhat",
+        "product": "Power Pages",
+        "url": "https://www.microsoft.com/en-us/power-platform/blog/power-pages/more-secure-sharepoint-integration-in-power-pages-with-site%e2%80%91scoped-permissions/",
+        "date": "2026-04-23T13:25:07.000Z",
+        "isNew": true
+      },
+      {
         "title": "Custom tools and rich UI for app-based conversations are now in Public Preview",
         "summary": "Discover how custom tools and rich, app‑powered UI experiences can elevate business app conversations in Microsoft 365 Copilot. This public preview introduces new ways to surface app intelligence, drive action, and deliver more contextual, intuitive interactions - directly within the flow of work.\nThe post Custom tools and rich UI for app-based conversations are now in Public Preview appeared first on Microsoft Power Platform Blog.",
         "source": "Hemant Gaur",
@@ -8008,6 +8028,15 @@
         "product": "Power BI",
         "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Translytical-Task-Flows-Generally-Available/ba-p/5173907",
         "date": "2026-04-20T16:00:00.000Z"
+      },
+      {
+        "title": "Build your server-side logic with AI: new Power Pages Agentic Code skills",
+        "summary": "We’re introducing three new skills for the Power Pages agentic code plugin for GitHub Copilot and Claude Code CLI that together unlock a missing capability in AI‑assisted site building: server‑side logic.\nThe post Build your server-side logic with AI: new Power Pages Agentic Code skills appeared first on Microsoft Power Platform Blog.",
+        "source": "Neeraj Nandwana",
+        "product": "Power Pages",
+        "url": "https://www.microsoft.com/en-us/power-platform/blog/power-pages/build-your-server-side-logic-with-ai-new-power-pages-agentic-code-skills/",
+        "date": "2026-04-16T08:28:27.000Z",
+        "isNew": true
       },
       {
         "title": "Power Platform Monitor Alerts Are Now Generally Available",
@@ -8026,12 +8055,48 @@
         "date": "2026-04-02T20:53:19.000Z"
       },
       {
+        "title": "​Building trustworthy AI: A practical framework for adaptive governance",
+        "summary": "If governance is just a list of things people can’t do, that’s not governance—it's a backlog of workarounds waiting to happen.\nThe post ​Building trustworthy AI: A practical framework for adaptive governance appeared first on Microsoft Power Platform Blog.",
+        "source": "Ryan Jones",
+        "product": "Power Apps",
+        "url": "https://www.microsoft.com/en-us/power-platform/blog/2026/04/01/building-trustworthy-ai-a-practical-framework-for-adaptive-governance/",
+        "date": "2026-04-01T15:00:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Announcing General Availability (GA) of Server Logic in Power Pages",
+        "summary": "We’re pleased to announce that server logic in Power Pages is now generally available (GA). This release marks a major milestone, delivering native server-side capabilities with the maturity, governance, and extensibility required to support enterprise-grade production workloads. First introduced in preview, Server logic was designed to simplify how makers and developers implement server-side operations.\nThe post Announcing General Availability (GA) of Server Logic in Power Pages appeared first ",
+        "source": "Nagesh Bhat",
+        "product": "Power Pages",
+        "url": "https://www.microsoft.com/en-us/power-platform/blog/power-pages/announcing-general-availability-ga-of-server-logic-in-power-pages/",
+        "date": "2026-04-01T07:49:06.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Generative AI Search and Data Summarization Now Available in Power Pages for U.S. Government Clouds",
+        "summary": "Generative AI capabilities in Power Pages continue to expand across Microsoft cloud environments. Generative AI Search Summarization and Data Summarization are now available in U.S. Government cloud environments, including Government Community Cloud (GCC) and GCC High.\nThe post Generative AI Search and Data Summarization Now Available in Power Pages for U.S. Government Clouds appeared first on Microsoft Power Platform Blog.",
+        "source": "Nagesh Bhat",
+        "product": "Power Pages",
+        "url": "https://www.microsoft.com/en-us/power-platform/blog/power-pages/generative-ai-search-and-data-summarization-now-available-in-power-pages-for-u-s-government-clouds/",
+        "date": "2026-04-01T06:58:53.000Z",
+        "isNew": true
+      },
+      {
         "title": "Chat with Copilot inside a report on the Power BI mobile app (Preview)",
         "summary": "If you haven’t already, check out Arun Ulag’s hero blog “FabCon and SQLCon 2026: Unifying databases and Fabric on a single, complete platform” for a complete look at all of our FabCon and SQLCon announcements across both Fabric and our database offerings. \r\n\r\n\r\n\r\nThe next evolution of in-report Copilot on the mobile app is now available in preview: a full conversational chat experience that lets you summarize, inquire, and analyze report data directly from your phone and tablet.\r\n\r\nPreviously, i",
         "source": "emininberg",
         "product": "Power BI",
         "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Chat-with-Copilot-inside-a-report-on-the-Power-BI-mobile-app/ba-p/5173913",
         "date": "2026-03-30T17:30:00.000Z"
+      },
+      {
+        "title": "Prevent accidental exposure of non-production Power Pages sites with new admin governance controls",
+        "summary": "While makers are building or testing Power Pages sites in trial or developer environments, there’s always a risk that these sites could accidentally be made public, exposing incomplete or sensitive content to external users.\nThe post Prevent accidental exposure of non-production Power Pages sites with new admin governance controls appeared first on Microsoft Power Platform Blog.",
+        "source": "Ritwik Ganni",
+        "product": "Power Pages",
+        "url": "https://www.microsoft.com/en-us/power-platform/blog/power-pages/prevent-accidental-exposure-of-non-production-power-pages-sites-with-new-admin-governance-controls/",
+        "date": "2026-03-26T18:22:18.000Z",
+        "isNew": true
       },
       {
         "title": "TMDL View on the Web (Preview)",
@@ -8050,6 +8115,15 @@
         "date": "2026-03-19T16:57:47.000Z"
       },
       {
+        "title": "2026 release wave 1 plans for Microsoft Dynamics 365, Microsoft Power Platform, and Copilot Studio offerings",
+        "summary": "We’re excited to publish the 2026 release wave 1 plans for Microsoft Dynamics 365, Microsoft Power Platform, and Role-based agents in Microsoft 365 Copilot.\nThe post 2026 release wave 1 plans for Microsoft Dynamics 365, Microsoft Power Platform, and Copilot Studio offerings appeared first on Microsoft Power Platform Blog.",
+        "source": "Ryan Martin",
+        "product": "Power Automate",
+        "url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/03/18/2026-release-wave-1-plans-for-microsoft-dynamics-365-microsoft-power-platform-and-copilot-studio-offerings/",
+        "date": "2026-03-18T16:29:54.000Z",
+        "isNew": true
+      },
+      {
         "title": "Deep Dive into Modern Visual Defaults and Customizing Theme Improvements (Preview)",
         "summary": "If you haven’t already, check out Arun Ulag’s hero blog “FabCon and SQLCon 2026: Unifying databases and Fabric on a single, complete platform” for a complete look at all of our FabCon and SQLCon announcements across both Fabric and our database offerings. \r\n\r\n\r\n\r\nPower BI Desktop visuals now start with a modern look. This preview introduces an updated base theme aligned with Fluent 2, featuring subtitles, uniform padding, style presets, and a grey canvas background at 1920x1080 by default. Chart",
         "source": "DataZoe",
@@ -8066,12 +8140,39 @@
         "date": "2026-03-18T13:07:49.000Z"
       },
       {
+        "title": "Infuse intelligent experiences into Power Pages sites with the new Agent API",
+        "summary": "We’re excited to introduce the Agent API for Power Pages, a new capability that enables site creators to build custom chat and other user experiences and integrate these seamlessly with their custom-built Microsoft Copilot Studio agents. This enhancement gives organizations more flexibility for integrating intelligence into their web experiences.\nThe post Infuse intelligent experiences into Power Pages sites with the new Agent API appeared first on Microsoft Power Platform Blog.",
+        "source": "Nagesh Bhat",
+        "product": "Power Pages",
+        "url": "https://www.microsoft.com/en-us/power-platform/blog/power-pages/infuse-intelligent-experiences-into-power-pages-sites-with-the-new-agent-api/",
+        "date": "2026-03-12T06:29:31.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Seamlessly embed Copilot Studio agents into Power Pages",
+        "summary": "Agents help deliver intelligent, conversational experiences for your site users directly within your websites. With the latest enhancements to agent integration in Power Pages, you now have more flexibility to configure authentication, manage access, and validate agent experiences more easily.\nThe post Seamlessly embed Copilot Studio agents into Power Pages appeared first on Microsoft Power Platform Blog.",
+        "source": "Nagesh Bhat",
+        "product": "Power Pages",
+        "url": "https://www.microsoft.com/en-us/power-platform/blog/power-pages/seamlessly-embed-copilot-studio-agents-into-power-pages/",
+        "date": "2026-03-09T16:03:05.000Z",
+        "isNew": true
+      },
+      {
         "title": "New enhancements to work queues that will transform how your teams manage and monitor automated workflows.",
         "summary": "A Unified Control Center for Queue Monitoring and SLA Tracking Work queues in Power Automate are structured lists that let you assign, track, and manage work items across users or automations in an organized, scalable way.\nThe post New enhancements to work queues that will transform how your teams manage and monitor automated workflows. appeared first on Microsoft Power Platform Blog.",
         "source": "Tristan Dehove",
         "product": "Power Automate",
         "url": "https://www.microsoft.com/en-us/power-platform/blog/power-automate/new-enhancements-to-work-queues-that-will-transform-how-your-teams-manage-and-monitor-automated-workflows/",
         "date": "2026-03-04T16:00:00.000Z"
+      },
+      {
+        "title": "Improve Power Pages security by activating Web Application Firewall independently",
+        "summary": "We are introducing two important enhancements to Web Application Firewall (WAF) in Microsoft Power Pages that make it easier to protect your sites and ensure production environments start secure by default.\nThe post Improve Power Pages security by activating Web Application Firewall independently appeared first on Microsoft Power Platform Blog.",
+        "source": "Nagesh Bhat",
+        "product": "Power Pages",
+        "url": "https://www.microsoft.com/en-us/power-platform/blog/power-pages/improve-power-pages-security-by-activating-web-application-firewall-independently/",
+        "date": "2026-03-02T21:19:15.000Z",
+        "isNew": true
       },
       {
         "title": "New quality updates to modern controls in canvas apps",
@@ -8088,6 +8189,15 @@
         "product": "Power BI",
         "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Input-slicer-Filter-reports-and-collect-user-input-Generally/ba-p/5173933",
         "date": "2026-02-24T19:00:00.000Z"
+      },
+      {
+        "title": "Build Power Pages sites with AI using agentic coding tools (preview)",
+        "summary": "We’re pleased to introduce the public preview of the Power Pages plugin for GitHub Copilot CLI and Claude Code. With this plugin, you simply describe the site you want in natural language. The plugin takes care of everything else, from project scaffolding and Dataverse setup to API integrations, permissions, and deployment.\nThe post Build Power Pages sites with AI using agentic coding tools (preview) appeared first on Microsoft Power Platform Blog.",
+        "source": "Neeraj Nandwana",
+        "product": "Power Pages",
+        "url": "https://www.microsoft.com/en-us/power-platform/blog/power-pages/build-power-pages-sites-with-ai-using-agentic-coding-tools-preview/",
+        "date": "2026-02-24T17:12:21.000Z",
+        "isNew": true
       },
       {
         "title": "Power BI February 2026 Feature Summary",
@@ -8114,6 +8224,15 @@
         "date": "2026-02-10T16:00:00.000Z"
       },
       {
+        "title": "Breaking down the facts about secure development with Power Platform",
+        "summary": "Today, organizations are being measured by how quickly they can innovate. Whether it’s launching new digital experiences, streamlining operations, or responding to customer needs in real time, the ability to move fast has always been a competitive differentiator. And it only grew on importance in the agentic era. But speed alone isn’t enough.\nThe post Breaking down the facts about secure development with Power Platform appeared first on Microsoft Power Platform Blog.",
+        "source": "Joe Unwin and Justin Tung",
+        "product": "Power Automate",
+        "url": "https://www.microsoft.com/en-us/power-platform/blog/2026/01/26/breaking-down-the-facts-about-secure-development-with-power-platform/",
+        "date": "2026-01-26T16:15:41.000Z",
+        "isNew": true
+      },
+      {
         "title": "Power BI Report Server January 2026 Feature Summary",
         "summary": "Welcome to January 2026 Power BI Report Server feature summary! These updates bring new capabilities and enhancements across Reporting and Visualizations, maintaining our commitment to delivering powerful, flexible, and enterprise-ready reporting solutions.\r\n\r\nFor more information on how to find your report server product key, refer to the documentation.\r\n\r\nVisualizations features\r\n\r\nThis release includes a variety of new and updated visuals from Microsoft partners and the broader community. The",
         "source": "dniwenshuti",
@@ -8122,12 +8241,851 @@
         "date": "2026-01-21T17:00:00.000Z"
       },
       {
+        "title": "Take Charge and Stay Ahead with Power Platform Monitor Alerts",
+        "summary": "Stay ahead with Power Platform Monitor Alerts (public preview). Admins set custom health thresholds to proactively monitor their resources and get notifications when that threshold is violated—no setup required.\nThe post Take Charge and Stay Ahead with Power Platform Monitor Alerts appeared first on Microsoft Power Platform Blog.",
+        "source": "Arjun Mayur",
+        "product": "Power Automate",
+        "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/take-charge-and-stay-ahead-with-power-platform-monitor-alerts/",
+        "date": "2025-08-18T15:00:40.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Effortless Visibility and Operational Insights for All with Monitor",
+        "summary": "Monitor delivers visibility and actionable insights for makers and admins, no setup required. Track the health of canvas apps, model-driven apps, and flows in real time, and resolve issues before they impact your business.\nThe post Effortless Visibility and Operational Insights for All with Monitor appeared first on Microsoft Power Platform Blog.",
+        "source": "Arjun Mayur",
+        "product": "Power Automate",
+        "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/effortless-visibility-and-operational-insights-for-all-with-monitor/",
+        "date": "2025-08-11T15:00:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "2025 release wave 2 plans for Microsoft Dynamics 365, Microsoft Power Platform, and Role-based Microsoft Copilot offerings",
+        "summary": "The 2025 release wave 2 for Microsoft Dynamics 365, Microsoft Power Platform, and Copilot offerings introduces new capabilities that help organizations harness the potential of AI.\nThe post 2025 release wave 2 plans for Microsoft Dynamics 365, Microsoft Power Platform, and Role-based Microsoft Copilot offerings appeared first on Microsoft Power Platform Blog.",
+        "source": "Ryan Martin",
+        "product": "Power Automate",
+        "url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2025/07/16/2025-release-wave-2-plans-for-microsoft-dynamics-365-microsoft-power-platform-and-role-based-microsoft-copilot-offerings/",
+        "date": "2025-07-16T16:00:00.000Z",
+        "isNew": true
+      },
+      {
         "title": "Announcing major DLP enhancements for Power Automate and Copilot Studio",
         "summary": "DLP (Data Loss Prevention) for Power Automate enables administrators to manage data access from both cloud and desktop Power Automate flows, as well as agent flows in Copilot Studio. Administrators configure Data policies to permit or restrict connectors and actions from being accessed by flows.\nThe post Announcing major DLP enhancements for Power Automate and Copilot Studio appeared first on Microsoft Power Platform Blog.",
         "source": "Tristan Dehove",
         "product": "Power Automate",
         "url": "https://www.microsoft.com/en-us/power-platform/blog/power-automate/announcing-major-dlp-enhancements-for-power-automate-and-copilot-studio/",
         "date": "2025-07-01T15:16:04.000Z"
+      },
+      {
+        "title": "Empowering a New Era of Agent-Based Experiences: Upwork and Microsoft Power Platform Partnership",
+        "summary": "We are entering a new era of work—one where low code and agent-based experiences are reshaping how we create and collaborate. As the tides of technological advancement sweep across industries, two transformative forces are reshaping the way we work: the rise of AI Agent experiences and the expansion of the gig economy within tech.\nThe post Empowering a New Era of Agent-Based Experiences: Upwork and Microsoft Power Platform Partnership appeared first on Microsoft Power Platform Blog.",
+        "source": "David Abu",
+        "product": "Power Automate",
+        "url": "https://www.microsoft.com/en-us/power-platform/blog/2025/06/16/empowering-a-new-era-of-agent-based-experiences-upwork-and-microsoft-power-platform-partnership/",
+        "date": "2025-06-16T07:00:00.000Z",
+        "isNew": true
+      }
+    ],
+    "releasewave": [
+      {
+        "title": "Enable online mode to access Dataverse for canvas apps",
+        "summary": "Switch seamlessly from offline to online mode in canvas apps to access Dataverse data when connected, ensuring real-time updates and better user experience.",
+        "source": "Release Wave Plan",
+        "product": "Power Apps",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-apps/toggle-sync-offline-database-server-only-wi-fi-canvas-apps",
+        "date": "2026-05-21T20:20:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Download wrapped apps directly from Dataverse",
+        "summary": "Download custom branded app binaries like APK and IPA files directly from Dataverse, simplifying app management and distribution without Azure Blob Storage.",
+        "source": "Release Wave Plan",
+        "product": "Power Apps",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-apps/download-wrapped-apps-directly-dataverse",
+        "date": "2026-05-21T20:20:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Use generative pages globally",
+        "summary": "Generative pages are available globally and can adapt to your user's preferred language and regional formatting.",
+        "source": "Release Wave Plan",
+        "product": "Power Apps",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-apps/use-generative-pages-globally",
+        "date": "2026-05-21T20:20:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Direct SharePoint List Integration for the new Power Apps experience",
+        "summary": "Connect existing SharePoint lists directly from the multi-agent workspace.",
+        "source": "Release Wave Plan",
+        "product": "Power Apps",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-apps/direct-sharepoint-list-integration-new-power-apps-experience",
+        "date": "2026-05-21T20:20:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Configure offline profiles using FetchXML editor",
+        "summary": "Access the FetchXML editor in Power Apps to design efficient offline profiles with advanced filtering and improved performance.",
+        "source": "Release Wave Plan",
+        "product": "Power Apps",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-apps/configure-offline-profile-using-fetchxml-editor",
+        "date": "2026-05-21T20:20:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Use CLI to discover, create, and wire connectors in code apps",
+        "summary": "Use CLI commands to quickly find, create, and add connections when building Power Apps code apps, reducing setup time and manual configuration.",
+        "source": "Release Wave Plan",
+        "product": "Power Apps",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-apps/use-cli-discover-create-wire-connectors-code-apps",
+        "date": "2026-05-21T20:20:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Discover what's driving engagement with the Usage page",
+        "summary": "Identify high-impact resources that are delivering value in your organization.",
+        "source": "Release Wave Plan",
+        "product": "Power Apps",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-apps/discover-whats-driving-engagement-usage-page",
+        "date": "2026-05-21T20:20:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Simplify wrap setup within wizard Azure integration",
+        "summary": "Configure Azure Key Vault, Blob Storage, and automatic signing directly within the Wrap wizard, eliminating complex manual setup steps in the Azure portal.",
+        "source": "Release Wave Plan",
+        "product": "Power Apps",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-apps/simplify-wrap-setup-within-wizard-azure-integration",
+        "date": "2026-05-21T20:20:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Create and visualize custom KPIs in the process intelligence experience",
+        "summary": "Create, edit, and visualize custom metrics and KPIs in the process intelligence experience to analyze, monitor, and improve your specific business goals.",
+        "source": "Release Wave Plan",
+        "product": "Power Automate",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-automate/create-visualize-custom-kpis-process-intelligence-studio",
+        "date": "2026-05-21T20:20:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Configure site analytics and server logging",
+        "summary": "Enable and track native site analytics in Power Pages and allow integration with external analytics and telemetry services.",
+        "source": "Release Wave Plan",
+        "product": "Power Pages",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-pages/configure-site-analytics-server-logging",
+        "date": "2026-05-21T20:20:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Configure authentication with security agent",
+        "summary": "Easily configure roles and permissions for your site and get recommendations to prevent excessive or incorrect access with the security agent in Power Pages.",
+        "source": "Release Wave Plan",
+        "product": "Power Pages",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-pages/configure-roles-permissions-streamline-authorization-websites-using-security-agent",
+        "date": "2026-05-21T20:20:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Give read-only analytics access to users",
+        "summary": "Grant team members limited access to agent analytics with the Analyst role for viewing analytics.",
+        "source": "Release Wave Plan",
+        "product": "Copilot Studio",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/microsoft-copilot-studio/give-read-only-analytics-access-users",
+        "date": "2026-05-21T20:20:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Define custom metrics for analytics",
+        "summary": "Use custom metrics in Microsoft Copilot Studio to define, test, and iterate on performance analysis for agent outcomes and business impact.",
+        "source": "Release Wave Plan",
+        "product": "Copilot Studio",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/microsoft-copilot-studio/define-custom-metrics-analytics",
+        "date": "2026-05-21T20:20:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Get Microsoft 365 Copilot agent suggestions based on your work in Copilot Studio",
+        "summary": "Use Microsoft 365 Copilot memory and your Copilot Studio work to generate new, suggested agents you can use to extend Microsoft 365 Copilot.",
+        "source": "Release Wave Plan",
+        "product": "Copilot Studio",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/microsoft-copilot-studio/get-365-copilot-agent-suggestions-based-work-copilot-studio",
+        "date": "2026-05-21T20:20:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Explore and visualize data with data exploration agent",
+        "summary": "Learn how to find, filter, sort, and visualize data using natural language in model-driven apps with the data exploration agent.",
+        "source": "Release Wave Plan",
+        "product": "Power Apps",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-apps/find-records-filter-views-using-natural-language",
+        "date": "2026-05-14T18:47:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Visualize the data in your view easily with Copilot",
+        "summary": "Analyze and get insights from the data in your view with AI-generated visualization by Copilot.",
+        "source": "Release Wave Plan",
+        "product": "Power Apps",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-apps/visualize-data-view-easily-copilot",
+        "date": "2026-05-14T18:47:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Enhanced experience for form filling with Copilot",
+        "summary": "Copilot assists you in filling out forms quickly by using images, files, and emails, providing an enhanced experience for form filling.",
+        "source": "Release Wave Plan",
+        "product": "Power Apps",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-apps/enhanced-experience-form-filling-copilot",
+        "date": "2026-05-14T18:47:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Use Microsoft 365 Copilot in model-driven apps",
+        "summary": "Microsoft 365 Copilot is now available in model-driven apps, bringing conversational AI with full support for custom agents.",
+        "source": "Release Wave Plan",
+        "product": "Power Apps",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-apps/use-365-copilot-model-driven-apps",
+        "date": "2026-05-14T18:47:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Fill forms faster with smart paste",
+        "summary": "The Copilot form fill assistance feature, available in model-driven apps, now provides better suggestions based on context.",
+        "source": "Release Wave Plan",
+        "product": "Power Apps",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-apps/get-better-suggestions-using-form-fill-assistance",
+        "date": "2026-05-14T18:47:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Use Microsoft 365 Copilot in canvas apps",
+        "summary": "Microsoft 365 Copilot is now available in canvas apps, bringing conversational AI with full support for custom agents.",
+        "source": "Release Wave Plan",
+        "product": "Power Apps",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-apps/use-365-copilot-chat-canvas-apps",
+        "date": "2026-05-14T18:47:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Restore accidentally deleted flows",
+        "summary": "Restore accidentally deleted flows from the Power Automate portal. This feature is available to flow owners, co-owners, and environment admins.",
+        "source": "Release Wave Plan",
+        "product": "Power Automate",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-automate/restore-accidentally-deleted-flows",
+        "date": "2026-05-14T18:47:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Analyze processes using object-centric process mining",
+        "summary": "Object-centric process mining analyzes complex processes with multiple interacting objects, revealing dependencies and bottlenecks traditional methods miss.",
+        "source": "Release Wave Plan",
+        "product": "Power Automate",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-automate/analyze-processes-using-object-centric-process-mining",
+        "date": "2026-05-14T18:47:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Export object-centric process mining data to Microsoft Fabric semantic model",
+        "summary": "Publish results of your object-centric process analytics to a Microsoft Fabric semantic model.",
+        "source": "Release Wave Plan",
+        "product": "Power Automate",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-automate/export-object-centric-process-mining-data-fabric-semantic-model",
+        "date": "2026-05-14T18:47:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Automate PowerPoint presentations in desktop flows",
+        "summary": "Automate PowerPoint presentations with Power Automate Desktop to create, edit, and save slides seamlessly as part of your workflow process.",
+        "source": "Release Wave Plan",
+        "product": "Power Automate",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-automate/automate-powerpoint-presentations-desktop-flows",
+        "date": "2026-05-14T18:47:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Get support for normalized schema import for data ingestion",
+        "summary": "Power Automate process mining can ingest data in a normalized data structure format and doesn't require a single table event log approach.",
+        "source": "Release Wave Plan",
+        "product": "Power Automate",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-automate/get-support-normalized-schema-import-data-ingestion",
+        "date": "2026-05-14T18:47:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Debug flows using variable default values",
+        "summary": "Speed up desktop flow troubleshooting by setting default values for variables directly in the designer and testing scenarios without restarting runs.",
+        "source": "Release Wave Plan",
+        "product": "Power Automate",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-automate/debug-flows-using-variable-default-values",
+        "date": "2026-05-14T18:47:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Run Python scripts using current Python versions in desktop flows",
+        "summary": "Run Python scripts with the latest versions in Power Automate for desktop to access extensive libraries and create more sophisticated automation solutions.",
+        "source": "Release Wave Plan",
+        "product": "Power Automate",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-automate/run-python-scripts-using-current-python-versions-desktop-flows",
+        "date": "2026-05-14T18:47:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Automate administrator-level desktop applications in unattended runs",
+        "summary": "You can automate desktop applications requiring administrator rights in unattended mode, enabling broader automation coverage for privileged scenarios.",
+        "source": "Release Wave Plan",
+        "product": "Power Automate",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-automate/automate-administrator-level-desktop-applications-unattended-runs",
+        "date": "2026-05-14T18:47:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "View machine and flow utilization in dashboards",
+        "summary": "Monitor flow and machine performance in Automation Center dashboards to improve resource visibility and identify opportunities to optimize efficiency.",
+        "source": "Release Wave Plan",
+        "product": "Power Automate",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-automate/view-machine-utilization-dashboards",
+        "date": "2026-05-14T18:47:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "View unattended run video logs in portal",
+        "summary": "Users can access video logs for unattended desktop flow runs directly from the portal, improving troubleshooting without needing local machine access.",
+        "source": "Release Wave Plan",
+        "product": "Power Automate",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-automate/view-unattended-run-video-logs-portal",
+        "date": "2026-05-14T18:47:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Create and manage custom dashboard tiles",
+        "summary": "Users can add and personalize custom tiles in Automation Center dashboards to visualize relevant metrics and gain insights tailored to their needs.",
+        "source": "Release Wave Plan",
+        "product": "Power Automate",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-automate/create-manage-custom-dashboard-tiles",
+        "date": "2026-05-14T18:47:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Visualize desktop flows with flow chart view",
+        "summary": "The new flow‑chart view lets users build desktop flows visually with connected nodes, making complex automations easier to design, navigate, and understand.",
+        "source": "Release Wave Plan",
+        "product": "Power Automate",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-automate/visualize-desktop-flows-chart-view",
+        "date": "2026-05-14T18:47:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Connect to local AI models from desktop flows",
+        "summary": "Invoke locally hosted AI models through desktop flows using OpenAI-compatible APIs to create intelligent automation within your environment.",
+        "source": "Release Wave Plan",
+        "product": "Power Automate",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-automate/connect-local-ai-models-desktop-flows",
+        "date": "2026-05-14T18:47:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Manage external authentication providers with granular controls",
+        "summary": "Manage external authentication providers for Power Pages sites to enforce enterprise security and compliance standards.",
+        "source": "Release Wave Plan",
+        "product": "Power Pages",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-pages/manage-external-authentication-provider-governance",
+        "date": "2026-05-14T18:47:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Detect threats and risks with admin security agent",
+        "summary": "Security agent enables admins to identify threats, content violations, and risks with alerts, automation, and insights across Power Pages websites.",
+        "source": "Release Wave Plan",
+        "product": "Power Pages",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-pages/detect-threats-violations-risks-using-admin-trust-security-compliance-agent",
+        "date": "2026-05-14T18:47:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Analyze quality of responses that use generative AI",
+        "summary": "Determining the quality of responses helps you understand how well your agents answer questions that use generative AI.",
+        "source": "Release Wave Plan",
+        "product": "Copilot Studio",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/microsoft-copilot-studio/analyze-quality-responses-that-use-generative-ai",
+        "date": "2026-05-14T18:47:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Enforce the modern, refreshed look in model-driven apps",
+        "summary": "Experience a consistent, modern interface across all model-driven apps as legacy admin settings to disable the new look are retired.",
+        "source": "Release Wave Plan",
+        "product": "Power Apps",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-apps/enforce-modern-refreshed-look-model-driven-apps",
+        "date": "2026-04-29T17:39:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Improved Power Automate licensing dashboard",
+        "summary": "The enhanced Power Automate licensing dashboard in the Power Platform admin center provides capacity license consumption and consolidated usage reporting.",
+        "source": "Release Wave Plan",
+        "product": "Power Automate",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-automate/improved-power-automate-licensing-dashboard",
+        "date": "2026-04-29T17:39:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Use code interpreter on SharePoint sources in agent conversations",
+        "summary": "Code interpreter enables agents to answer analytical questions by reasoning over Excel and CSV files uploaded to SharePoint document libraries.",
+        "source": "Release Wave Plan",
+        "product": "Copilot Studio",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/microsoft-copilot-studio/use-code-interpreter-sharepoint-sources-agent-conversations",
+        "date": "2026-04-29T17:39:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Use streamlined header and navigation for better viewing",
+        "summary": "Header and navigation refresh improves usability of apps with a modern header, streamlined sitemap, and condensed page headers.",
+        "source": "Release Wave Plan",
+        "product": "Power Apps",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-apps/use-streamlined-header-navigation-better-view",
+        "date": "2026-04-22T23:15:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Enhance row summaries in model-driven apps",
+        "summary": "Row summaries now offer security role targeting, support for US Gov clouds, and allow Dynamics 365–shipped summaries to be accessed from view pages.",
+        "source": "Release Wave Plan",
+        "product": "Power Apps",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-apps/enhance-row-summaries-model-driven-apps",
+        "date": "2026-04-22T23:15:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Enable push notifications in custom branded apps",
+        "summary": "Effortlessly configure push notifications for wrapped apps to keep users informed and engaged using Power Automate and Dataverse triggers.",
+        "source": "Release Wave Plan",
+        "product": "Power Apps",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-apps/enable-push-notifications-custom-branded-apps",
+        "date": "2026-04-22T23:15:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Add AI record summary to model-driven apps",
+        "summary": "Enhance apps with AI record summaries in model-driven apps, adding business context to help users access key information and work more efficiently.",
+        "source": "Release Wave Plan",
+        "product": "Power Apps",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-apps/add-ai-record-summary-model-driven-apps",
+        "date": "2026-04-22T23:15:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Share Process license capacity across workflows",
+        "summary": "Create and manage flow groups that share Process licenses with up to 25 cloud flows in Power Automate.",
+        "source": "Release Wave Plan",
+        "product": "Power Automate",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-automate/share-process-license-capacity-across-workflows",
+        "date": "2026-04-22T23:15:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Schedule desktop flows directly",
+        "summary": "Schedule desktop flows directly in Power Automate without requiring cloud flows, offers a unified easy‑to‑manage schedule.",
+        "source": "Release Wave Plan",
+        "product": "Power Automate",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-automate/schedule-desktop-flows-directly",
+        "date": "2026-04-22T23:15:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "View property value expanded inline in the new cloud flow designer",
+        "summary": "Insert actions, view property values, and run output results with an inline expanded view in the new cloud flow designer.",
+        "source": "Release Wave Plan",
+        "product": "Power Automate",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-automate/view-property-value-expanded-inline-new-cloud-designer",
+        "date": "2026-04-22T23:15:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Build better forms with integrated Power Apps",
+        "summary": "Launch interactive Microsoft Power Apps directly from the desktop flow for richer more reliable data collection and event‑driven attended automation.",
+        "source": "Release Wave Plan",
+        "product": "Power Automate",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-automate/build-better-forms-integrated-power-apps",
+        "date": "2026-04-22T23:15:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Test subflows with test suite",
+        "summary": "Power Automate desktop test suite adds subflow test cases so you can validate desktop flows automatically and prevent regressions during deployment.",
+        "source": "Release Wave Plan",
+        "product": "Power Automate",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-automate/test-subflows-test-suite",
+        "date": "2026-04-22T23:15:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Capture a VM image on a hosted machine to use as a template",
+        "summary": "Capture a VM image from a hosted machine to use as a VM image template for other hosted machines or hosted machine groups.",
+        "source": "Release Wave Plan",
+        "product": "Power Automate",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-automate/capture-vm-image-hosted-machine-use-as-template",
+        "date": "2026-04-22T23:15:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Enable Process Intelligence Studio in object-centric process mining",
+        "summary": "In Process Intelligence Studio in OCPM, you build the exact analysis you need using tabs for context, layouts, tiles, and filters that work the way you do.",
+        "source": "Release Wave Plan",
+        "product": "Power Automate",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-automate/enable-process-intelligence-studio-object-centric-process-mining",
+        "date": "2026-04-22T23:15:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Video logs for unattended runs",
+        "summary": "Capture and review a video before an unattended desktop flow failure with optional closed captions showing executed actions, enabling faster debugging.",
+        "source": "Release Wave Plan",
+        "product": "Power Automate",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-automate/video-logs-unattended-runs",
+        "date": "2026-04-22T23:15:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Unify Power Pages authorization by merging web role with Dataverse security role",
+        "summary": "Converge Power Pages web roles and site users with Dataverse security roles and system users to simplify authorization and eliminate extra user management.",
+        "source": "Release Wave Plan",
+        "product": "Power Pages",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-pages/unify-power-pages-authorization-merging-web-role-dataverse-security-role",
+        "date": "2026-04-22T23:15:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Use Dynamics 365 portals with Bootstrap 5 and enhanced data model",
+        "summary": "Experience faster provisioning and enhanced ALM for Dynamics 365 portals with the enhanced data model and Bootstrap 5 support.",
+        "source": "Release Wave Plan",
+        "product": "Power Pages",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-pages/use-dynamics-365-portals-bootstrap-5-enhanced-data-model",
+        "date": "2026-04-22T23:15:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Create and delete websites using Power Platform CLI",
+        "summary": "Professional developers will have command line support using Power Platform CLI for actions like create and delete websites.",
+        "source": "Release Wave Plan",
+        "product": "Power Pages",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-pages/perform-website-actions-using-power-platform-cli",
+        "date": "2026-04-22T23:15:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Support Power BI embed token v2 for Power Pages",
+        "summary": "With this release, Power Pages supports Power BI Embed Token v2, enabling advanced embedding scenarios with better scalability and security.",
+        "source": "Release Wave Plan",
+        "product": "Power Pages",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-pages/support-power-bi-embed-token-v2-power-pages",
+        "date": "2026-04-22T23:15:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Enhance OpenID Connect with encrypted token support",
+        "summary": "Support encrypted ID tokens to enable integration with identity providers that require token-level encryption for secure authentication scenarios.",
+        "source": "Release Wave Plan",
+        "product": "Power Pages",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-pages/enhance-openid-connect-encrypted-token-support",
+        "date": "2026-04-22T23:15:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Add SharePoint lists as a knowledge source",
+        "summary": "When selecting SharePoint, makers can now select SharePoint lists to create agents in Microsoft Copilot Studio.",
+        "source": "Release Wave Plan",
+        "product": "Copilot Studio",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/microsoft-copilot-studio/add-sharepoint-lists-as-knowledge-source",
+        "date": "2026-04-22T23:15:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Use MCP-compliant tools in agent workflows",
+        "summary": "Use MCP-compliant tools in agent workflows.",
+        "source": "Release Wave Plan",
+        "product": "Copilot Studio",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/microsoft-copilot-studio/use-mcp-compliant-tools-agent-workflows",
+        "date": "2026-04-22T23:15:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Create agents optimized for Microsoft 365 and Microsoft 365 Copilot users",
+        "summary": "Use Agent Builder features and capabilities in Copilot Studio to create agents optimized for Microsoft 365 and Microsoft 365 Copilot.",
+        "source": "Release Wave Plan",
+        "product": "Copilot Studio",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/microsoft-copilot-studio/create-agents-optimized-365-365-copilot-users",
+        "date": "2026-04-22T23:15:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Evaluate agents for Microsoft 365 Copilot in Copilot Studio",
+        "summary": "Evaluate, monitor, and validate declarative agents with automated, repeatable testing across their full lifecycle.",
+        "source": "Release Wave Plan",
+        "product": "Copilot Studio",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/microsoft-copilot-studio/evaluate-agents-365-copilot-copilot-studio",
+        "date": "2026-04-22T23:15:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Enforce safe sharing by detecting credential oversharing",
+        "summary": "Prevents unsafe agent sharing by detecting the use of maker credentials and enforcing safe‑sharing policies before publishing or sharing.",
+        "source": "Release Wave Plan",
+        "product": "Copilot Studio",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/microsoft-copilot-studio/enforce-safe-sharing-detecting-credential-oversharing",
+        "date": "2026-04-22T23:15:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Invoke agents as workflow steps with the agent node",
+        "summary": "Add an agent node to your workflow to reason over data, call tools, and return a response, all within a single step.",
+        "source": "Release Wave Plan",
+        "product": "Copilot Studio",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/microsoft-copilot-studio/invoke-agents-as-workflow-steps-agent-node",
+        "date": "2026-04-22T23:15:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "See a unified view of errors, warnings, and governance notifications",
+        "summary": "Improve maker clarity in governed environments by centralizing agent errors and visually surfacing blocked components early with clear policy explanations.",
+        "source": "Release Wave Plan",
+        "product": "Copilot Studio",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/microsoft-copilot-studio/see-unified-view-errors-warnings-governance-notifications",
+        "date": "2026-04-22T23:15:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Evaluate the entirety of multi-turn conversations",
+        "summary": "Evaluate multi-turn conversations to assess agent quality across the full dialogue.",
+        "source": "Release Wave Plan",
+        "product": "Copilot Studio",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/microsoft-copilot-studio/evaluate-entirety-multi-turn-conversations",
+        "date": "2026-04-22T23:15:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Analyze user sentiment from agent conversations",
+        "summary": "Provides the overall sentiment of users in sessions by analyzing the language, style, and tone of voice of user messages across the conversation with the agent.",
+        "source": "Release Wave Plan",
+        "product": "Copilot Studio",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/microsoft-copilot-studio/analyze-user-sentiment-agent-conversations",
+        "date": "2026-04-22T23:15:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Block the use of maker-provided credentials for authentication",
+        "summary": "Control if an agent can use the maker-provided credentials for authentication of tools, or if the agent must use the end-user's credentials.",
+        "source": "Release Wave Plan",
+        "product": "Copilot Studio",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/microsoft-copilot-studio/block-use-maker-provided-credentials-authentication",
+        "date": "2026-04-22T23:15:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Build generative pages using external codegen tools",
+        "summary": "This feature lets developers build and edit generative pages directly from codegen tools, connecting to Microsoft Dataverse for seamless testing and deployment.",
+        "source": "Release Wave Plan",
+        "product": "Power Apps",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-apps/build-generative-pages-using-external-codegen-tools",
+        "date": "2026-04-16T00:05:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Enable secure server-side logic in Power Pages",
+        "summary": "Securely execute server-side JavaScript in Power Pages to integrate with APIs, perform data operations, and enhance site functionality.",
+        "source": "Release Wave Plan",
+        "product": "Power Pages",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-pages/enable-secure-server-side-logic-power-pages",
+        "date": "2026-04-16T00:05:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Supervise autonomous agents with agent feed",
+        "summary": "Agent feed enables real-time supervision of autonomous agents in Power Apps, helping users monitor runs, complete human-in-the-loop tasks, and stay in control.",
+        "source": "Release Wave Plan",
+        "product": "Power Apps",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-apps/supervise-autonomous-agents-agent-feed",
+        "date": "2026-04-09T18:18:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Build Power Pages sites faster with AI coding tools",
+        "summary": "Accelerate site development with AI coding tools that understand web roles, table permissions, web APIs, and Power Pages security best practices.",
+        "source": "Release Wave Plan",
+        "product": "Power Pages",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-pages/build-power-pages-sites-faster-ai-coding-tools",
+        "date": "2026-04-09T18:18:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Control Power Pages components using client APIs",
+        "summary": "Power Pages client APIs let you interact with forms, lists, and user actions directly in the browser for dynamic site customization.",
+        "source": "Release Wave Plan",
+        "product": "Power Pages",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-pages/control-power-pages-components-using-client-apis",
+        "date": "2026-04-09T18:18:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "See evaluation results in real time",
+        "summary": "Stream evaluation progress, partial results, and final outcomes in real time, without waiting for full execution to complete.",
+        "source": "Release Wave Plan",
+        "product": "Copilot Studio",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/microsoft-copilot-studio/see-evaluation-results-real-time",
+        "date": "2026-04-09T18:18:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Enhance search in grid filters and lookups",
+        "summary": "This update brings a modern search experience to grids and lookups, offering faster performance, better matching, fuzzy results, and clearer hit highlighting.",
+        "source": "Release Wave Plan",
+        "product": "Power Apps",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-apps/enhance-search-grid-filters-lookups",
+        "date": "2026-04-02T17:21:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Analyze your processes in the process intelligence experience",
+        "summary": "Build the exact analysis you need using tabs for context, flexible layouts, powerful tiles, and filters that work the way you do.",
+        "source": "Release Wave Plan",
+        "product": "Power Automate",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-automate/analyze-processes-process-intelligence-studio",
+        "date": "2026-04-02T17:21:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Strengthen security of Copilot Studio agents with additional threat protection",
+        "summary": "Extend security at runtime for Copilot Studio agents against prompt injection and other types of threats.",
+        "source": "Release Wave Plan",
+        "product": "Copilot Studio",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/microsoft-copilot-studio/strengthen-security-copilot-studio-agents-additional-threat-protection",
+        "date": "2026-04-02T17:21:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Power Apps - Enable enterprise scale",
+        "summary": "Enhance Power Apps Studio with capabilities that allow building large scale and complex enterprise apps.",
+        "source": "Release Wave Plan",
+        "product": "Power Apps",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-apps/enable-enterprise-scale",
+        "date": "2026-03-18T14:56:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Enable version control for desktop flows",
+        "summary": "Track and manage changes to desktop flows in Power Automate for desktop with version control.",
+        "source": "Release Wave Plan",
+        "product": "Power Automate",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-automate/enable-version-control-desktop-flows",
+        "date": "2026-03-18T14:56:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Reference previous prompts in Copilot for Power Automate desktop",
+        "summary": "Reference previous prompts in Copilot to streamline automation creation, reduce redundancy, and allow context-aware interactions.",
+        "source": "Release Wave Plan",
+        "product": "Power Automate",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-automate/reference-previous-prompts-copilot-power-automate-desktop",
+        "date": "2026-03-18T14:56:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Power Automate - Process mining",
+        "summary": "Optimize operations and uncover opportunities for automation with process mining and task mining for Power Automate.",
+        "source": "Release Wave Plan",
+        "product": "Power Automate",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-automate/process-mining",
+        "date": "2026-03-18T14:56:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Power Automate - Cloud flows",
+        "summary": "Quickly automate across a variety of systems through advanced AI and extensive connectivity in Power Automate.",
+        "source": "Release Wave Plan",
+        "product": "Power Automate",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-automate/cloud-flows",
+        "date": "2026-03-18T14:56:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Power Automate - Desktop flows",
+        "summary": "Use the new desktop flows features to automate tasks on your Windows PC within Power Automate.",
+        "source": "Release Wave Plan",
+        "product": "Power Automate",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-automate/desktop-flows",
+        "date": "2026-03-18T14:56:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Power Pages - Design studio",
+        "summary": "Power Pages design studio gives makers a simplified no-code and low-code experience to create a website.",
+        "source": "Release Wave Plan",
+        "product": "Power Pages",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-pages/design-studio",
+        "date": "2026-03-18T14:56:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Power Pages - Professional developer experiences",
+        "summary": "Developers can build advanced customizations and configurations with their websites.",
+        "source": "Release Wave Plan",
+        "product": "Power Pages",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-pages/professional-developer-experiences",
+        "date": "2026-03-18T14:56:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Power Pages - Administration and governance",
+        "summary": "Administration and governance capabilities enable administrators to efficiently manage, configure, and maintain websites.",
+        "source": "Release Wave Plan",
+        "product": "Power Pages",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-pages/administration-governance",
+        "date": "2026-03-18T14:56:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Automate web and desktop apps with computer use",
+        "summary": "Automate interactions with websites and apps with the computer use tool (CUA) and natural language in Copilot Studio.",
+        "source": "Release Wave Plan",
+        "product": "Copilot Studio",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/microsoft-copilot-studio/automate-web-desktop-apps-computer-use",
+        "date": "2026-03-18T14:56:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Group files with instructions to guide agent answers",
+        "summary": "Organize files into a knowledge source and guide agents to find the most relevant content, improving accuracy and contextual responses.",
+        "source": "Release Wave Plan",
+        "product": "Copilot Studio",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/microsoft-copilot-studio/group-files-instructions-guide-agent-answers",
+        "date": "2026-03-18T14:56:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Microsoft Copilot Studio - Copilot and AI innovation",
+        "summary": "Use industry leading generative AI capabilities in Microsoft Copilot Studio to do the work so you and your team don't have to.",
+        "source": "Release Wave Plan",
+        "product": "Copilot Studio",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/microsoft-copilot-studio/copilot-ai-innovation",
+        "date": "2026-03-18T14:56:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Microsoft Copilot Studio - Copilot configuration",
+        "summary": "Copilot configuration customizes and configures how your organization or business uses Microsoft Copilot Studio copilots.",
+        "source": "Release Wave Plan",
+        "product": "Copilot Studio",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/microsoft-copilot-studio/copilot-configuration",
+        "date": "2026-03-18T14:56:00.000Z",
+        "isNew": true
+      },
+      {
+        "title": "Microsoft Copilot Studio - Core authoring",
+        "summary": "Use the Microsoft Copilot Studio conversational editor to construct your dialogs with rich content, variables, and powerful entity types.",
+        "source": "Release Wave Plan",
+        "product": "Copilot Studio",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/microsoft-copilot-studio/core-authoring",
+        "date": "2026-03-18T14:56:00.000Z",
+        "isNew": true
       }
     ]
   }
