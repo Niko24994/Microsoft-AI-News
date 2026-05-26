@@ -54,7 +54,7 @@
   // ── Build a single card ──────────────────────────────────
   function createCard(article, isRoadmap) {
     const card = document.createElement('article');
-    card.className = 'card';
+    card.className = isRoadmap ? 'card card--roadmap' : 'card';
 
     const meta = document.createElement('div');
     meta.className = 'card-meta';

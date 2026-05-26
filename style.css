@@ -264,46 +264,44 @@ main {
 .product-dataverse             { background: rgba(0,120,212,.15);   color: #4da6ff; }
 .product-power-platform-admin  { background: rgba(16,124,16,.15);   color: #54b054; }
 
-/* Fabric Roadmap category badges */
-.product-power-bi                              { background: rgba(243,186,47,.15);  color: #f3ba2f; }
-.product-data-engineering,
-.product-data-factory,
-.product-data-science,
-.product-data-warehouse,
-.product-real-time-intelligence,
-.product-fabric-developer-experiences,
-.product-fabric-ecosystem,
-.product-administration-governance-and-security,
-.product-cosmos-db,
-.product-onelake,
-.product-iq,
-.product-databases                             { background: rgba(0,164,120,.15);   color: #00c896; }
+/* Fabric Roadmap category badges — each category gets a distinct colour */
+.product-power-bi                               { background: rgba(243,186,47,.15);  color: #f3ba2f; }
+.product-data-engineering                       { background: rgba(0,206,209,.15);   color: #00ced1; }
+.product-data-factory                           { background: rgba(255,127,80,.15);  color: #ff7f50; }
+.product-data-science                           { background: rgba(162,93,220,.18);  color: #c792ea; }
+.product-data-warehouse                         { background: rgba(0,164,120,.15);   color: #00c896; }
+.product-real-time-intelligence                 { background: rgba(248,113,113,.15); color: #f87171; }
+.product-fabric-developer-experiences           { background: rgba(129,140,248,.15); color: #818cf8; }
+.product-fabric-ecosystem                       { background: rgba(35,134,54,.15);   color: #3fb950; }
+.product-administration-governance-and-security { background: rgba(56,139,253,.15);  color: #58a6ff; }
+.product-cosmos-db                              { background: rgba(210,153,34,.15);  color: #e3b341; }
+.product-onelake                                { background: rgba(74,222,128,.15);  color: #4ade80; }
+.product-iq                                     { background: rgba(56,189,248,.15);  color: #38bdf8; }
+.product-databases                              { background: rgba(148,163,184,.15); color: #94a3b8; }
 
-/* Filter bar product buttons inherit status-btn styling,
-   active state uses product colour */
-.product-btn.product-fabric.active         { background: rgba(162,93,220,.18); border-color: #c792ea; color: #c792ea; }
-.product-btn.product-power-bi.active       { background: rgba(243,186,47,.15); border-color: #f3ba2f; color: #f3ba2f; }
-.product-btn.product-power-platform.active { background: rgba(0,174,234,.15);  border-color: #00aeea; color: #00aeea; }
-.product-btn.product-power-automate.active { background: rgba(0,128,255,.15);  border-color: #4da6ff; color: #4da6ff; }
-.product-btn.product-power-apps.active     { background: rgba(174,0,255,.15);  border-color: #c47bff; color: #c47bff; }
-.product-btn.product-power-pages.active    { background: rgba(0,183,195,.15);  border-color: #00b7c3; color: #00b7c3; }
-.product-btn.product-copilot-studio.active { background: rgba(75,0,210,.15);   border-color: #9b72f0; color: #9b72f0; }
-.product-btn.product-microsoft-365.active        { background: rgba(234,67,53,.12);  border-color: #ea4335; color: #ea4335; }
-.product-btn.product-dataverse.active             { background: rgba(0,120,212,.15);  border-color: #4da6ff; color: #4da6ff; }
-.product-btn.product-power-platform-admin.active  { background: rgba(16,124,16,.15);  border-color: #54b054; color: #54b054; }
-.product-btn.product-power-bi.active              { background: rgba(243,186,47,.15); border-color: #f3ba2f; color: #f3ba2f; }
-.product-btn.product-data-engineering.active,
-.product-btn.product-data-factory.active,
-.product-btn.product-data-science.active,
-.product-btn.product-data-warehouse.active,
-.product-btn.product-real-time-intelligence.active,
-.product-btn.product-fabric-developer-experiences.active,
-.product-btn.product-fabric-ecosystem.active,
-.product-btn.product-administration-governance-and-security.active,
-.product-btn.product-cosmos-db.active,
-.product-btn.product-onelake.active,
-.product-btn.product-iq.active,
-.product-btn.product-databases.active             { background: rgba(0,164,120,.15);  border-color: #00c896; color: #00c896; }
+/* Filter bar product buttons — active state uses matching product colour */
+.product-btn.product-fabric.active                              { background: rgba(162,93,220,.18);  border-color: #c792ea; color: #c792ea; }
+.product-btn.product-power-bi.active                            { background: rgba(243,186,47,.15);  border-color: #f3ba2f; color: #f3ba2f; }
+.product-btn.product-power-platform.active                      { background: rgba(0,174,234,.15);   border-color: #00aeea; color: #00aeea; }
+.product-btn.product-power-automate.active                      { background: rgba(0,128,255,.15);   border-color: #4da6ff; color: #4da6ff; }
+.product-btn.product-power-apps.active                          { background: rgba(174,0,255,.15);   border-color: #c47bff; color: #c47bff; }
+.product-btn.product-power-pages.active                         { background: rgba(0,183,195,.15);   border-color: #00b7c3; color: #00b7c3; }
+.product-btn.product-copilot-studio.active                      { background: rgba(75,0,210,.15);    border-color: #9b72f0; color: #9b72f0; }
+.product-btn.product-microsoft-365.active                       { background: rgba(234,67,53,.12);   border-color: #ea4335; color: #ea4335; }
+.product-btn.product-dataverse.active                           { background: rgba(0,120,212,.15);   border-color: #4da6ff; color: #4da6ff; }
+.product-btn.product-power-platform-admin.active                { background: rgba(16,124,16,.15);   border-color: #54b054; color: #54b054; }
+.product-btn.product-data-engineering.active                    { background: rgba(0,206,209,.15);   border-color: #00ced1; color: #00ced1; }
+.product-btn.product-data-factory.active                        { background: rgba(255,127,80,.15);  border-color: #ff7f50; color: #ff7f50; }
+.product-btn.product-data-science.active                        { background: rgba(162,93,220,.18);  border-color: #c792ea; color: #c792ea; }
+.product-btn.product-data-warehouse.active                      { background: rgba(0,164,120,.15);   border-color: #00c896; color: #00c896; }
+.product-btn.product-real-time-intelligence.active              { background: rgba(248,113,113,.15); border-color: #f87171; color: #f87171; }
+.product-btn.product-fabric-developer-experiences.active        { background: rgba(129,140,248,.15); border-color: #818cf8; color: #818cf8; }
+.product-btn.product-fabric-ecosystem.active                    { background: rgba(35,134,54,.15);   border-color: #3fb950; color: #3fb950; }
+.product-btn.product-administration-governance-and-security.active { background: rgba(56,139,253,.15); border-color: #58a6ff; color: #58a6ff; }
+.product-btn.product-cosmos-db.active                           { background: rgba(210,153,34,.15);  border-color: #e3b341; color: #e3b341; }
+.product-btn.product-onelake.active                             { background: rgba(74,222,128,.15);  border-color: #4ade80; color: #4ade80; }
+.product-btn.product-iq.active                                  { background: rgba(56,189,248,.15);  border-color: #38bdf8; color: #38bdf8; }
+.product-btn.product-databases.active                           { background: rgba(148,163,184,.15); border-color: #94a3b8; color: #94a3b8; }
 
 /* ── News Card ────────────────────────────────────────────── */
 .card {
@@ -374,6 +372,23 @@ main {
   align-items: center;
   gap: .5rem;
   flex-wrap: wrap;
+}
+
+/* Roadmap cards (Copilot + Agents): force badges onto one line */
+.card--roadmap .card-meta {
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+/* Source chip shrinks to make room for badges */
+.card--roadmap .card-source {
+  flex: 1 1 auto;
+  min-width: 0;
+  max-width: 160px;
+}
+/* Badges never shrink */
+.card--roadmap .status-badge,
+.card--roadmap .new-badge {
+  flex-shrink: 0;
 }
 
 .card-source {
