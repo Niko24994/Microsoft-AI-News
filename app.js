@@ -55,16 +55,16 @@
     const card = document.createElement('article');
     card.className = 'card';
 
-    // "New" indicator ribbon
+    const meta = document.createElement('div');
+    meta.className = 'card-meta';
+
+    // "New" badge — inline at start of meta row
     if (article.isNew) {
       const newBadge = document.createElement('span');
       newBadge.className = 'new-badge';
       newBadge.textContent = 'NEW';
-      card.appendChild(newBadge);
+      meta.appendChild(newBadge);
     }
-
-    const meta = document.createElement('div');
-    meta.className = 'card-meta';
 
     // Source chip
     const source = document.createElement('span');

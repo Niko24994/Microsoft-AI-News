@@ -289,12 +289,8 @@ main {
   transform: translateY(-1px);
 }
 
-/* "NEW" badge — top-right corner */
-.card { position: relative; }
+/* "NEW" badge — inline in card-meta */
 .new-badge {
-  position: absolute;
-  top: .6rem;
-  right: .75rem;
   background: #1f4a8a;
   color: #58a6ff;
   border: 1px solid #388bfd;
@@ -303,6 +299,7 @@ main {
   letter-spacing: .08em;
   padding: .1rem .45rem;
   border-radius: 20px;
+  white-space: nowrap;
 }
 
 /* "PLANNED" badge for Release Wave features — inline in card-meta, amber */
