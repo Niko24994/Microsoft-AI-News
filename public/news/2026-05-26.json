@@ -1,6 +1,6 @@
 {
   "date": "2026-05-26",
-  "updated": "2026-05-26T20:41:20.453Z",
+  "updated": "2026-05-26T20:58:35.903Z",
   "wave": "261",
   "waveLabel": "2026 Release Wave 1",
   "tabs": {
@@ -53,43 +53,6 @@
         "isNew": true
       },
       {
-        "title": "Microsoft Purview: Insider Risk Management - Microsoft Fabric, Cloud storage, cloud service activities as triggers",
-        "summary": "With this update, the indicators belonging to cloud storage apps (Box, Dropbox, Google Drive), cloud services (Azure, Amazon Web Services) and Microsoft Fabric (Power BI, Lakehouse) will be supported as triggers in Data leaks policy. With triggers, customers can define the conditions for bringing the user into the scope of a policy while the respective indicators are used to determine risk score.\r\n\r\nMicrosoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider R",
-        "source": "Microsoft Purview",
-        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=560399",
-        "date": "2026-04-15T22:45:13.000Z",
-        "status": "In development",
-        "isNew": true
-      },
-      {
-        "title": "Microsoft Purview: Data Lifecycle Management - Power Automate integration with records management",
-        "summary": "Initiate a Power Automate workflow when the item reaches the end of its retention period. For example, execute a complex disposition approval process or move the file to an archive.\nGA date: June CY2026",
-        "source": "Microsoft Purview",
-        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=558859",
-        "date": "2026-03-20T20:00:10.000Z",
-        "status": "In development",
-        "gaDate": "June 2026",
-        "isNew": true
-      },
-      {
-        "title": "Microsoft Purview: Insider Risk Management-New Microsoft Fabric lakehouse risk indicators",
-        "summary": "With this update, Insider Risk Management extends its risk-detection capabilities to Microsoft Fabric lakehouses (in addition to Power BI which is supported today) by offering ready-to-use risk indicators based on user activities in Fabric lakehouses. Organizations can use these new indicators in data theft and data leaks policies. Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their ow",
-        "source": "Microsoft Purview",
-        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=543243",
-        "date": "2025-12-19T23:00:49.000Z",
-        "status": "Launched",
-        "isNew": true
-      },
-      {
-        "title": "Microsoft Purview: Insider Risk Management-New quick policies to detect data theft from Microsoft Fabric & non-Microsoft 365 data sources",
-        "summary": "We are adding to Insider Risk Management a pre-configured quick policy template to detect data theft from Microsoft Fabric and non-Microsoft 365 data sources like Box, Dropbox, Google Drive, Azure and Amazon Web Services (AWS). This will enable admins to create scenario-specific policies, with little configurations needed, to get started faster. All scenario based quick policies can be found in the Policies page > Create Policies. Additional tuning post deployment to meet individual alert volume needs can be expected. Microsoft Purview Insider Risk Management correlates various signals to iden",
-        "source": "Microsoft Purview",
-        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=543244",
-        "date": "2025-12-19T23:00:49.000Z",
-        "status": "Launched",
-        "isNew": true
-      },
-      {
         "title": "Microsoft Copilot (Microsoft 365): Larger file upload support in Copilot Studio agent builder",
         "summary": "Copilot Studio agent builder in Microsoft 365 will support larger file uploads of up to 512 MB.\nGA date: September CY2025",
         "source": "M365 Copilot",
@@ -97,15 +60,6 @@
         "date": "2025-08-12T23:00:16.000Z",
         "status": "Launched",
         "gaDate": "September 2025"
-      },
-      {
-        "title": "Microsoft Purview compliance portal: Insider Risk Management - Microsoft Fabric risk indicators in Insider Risk Management",
-        "summary": "With this update, Insider Risk Management extends its risk detection capabilities to Microsoft Fabric products by offering ready-to-use risk indicators based on activities that may lead to a data security incident in Power BI. Organizations can use these new indicators in data theft and data leaks policies.  \r\n\r\nMicrosoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, ",
-        "source": "Microsoft Purview",
-        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=475859",
-        "date": "2025-01-17T23:15:23.000Z",
-        "status": "In development",
-        "isNew": true
       },
       {
         "title": "Microsoft Viva: Copilot Studio agents report in Viva Insights analyst workbench",
@@ -116,45 +70,6 @@
         "status": "Launched",
         "previewDate": "June 2025",
         "gaDate": "July 2025"
-      },
-      {
-        "title": "Microsoft Purview compliance portal: Information Protection - Sensitivity labels protection policy support for Microsoft Fabric",
-        "summary": "Your organization can now apply sensitivity labels in Microsoft Purview Information Protection to Microsoft Fabric workspaces. This new functionality will allow users to manually label Fabric items with their sensitivity level and then apply access control protections based upon the protection policies set by administrators.\nGA date: June CY2025\nPreview date: October CY2024",
-        "source": "Microsoft Purview",
-        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=420331",
-        "date": "2024-10-04T23:15:50.000Z",
-        "status": "In development",
-        "previewDate": "October 2024",
-        "gaDate": "June 2025",
-        "isNew": true
-      },
-      {
-        "title": "Microsoft Purview compliance portal: Data Loss Prevention - Trigger Power automate workflows as outcome of DLP rule match",
-        "summary": "This introduces a new DLP rule action to trigger custom Power automate workflows when a DLP rule is violated.\nGA date: March CY2026",
-        "source": "Microsoft Purview",
-        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=380721",
-        "date": "2024-01-31T01:00:33.000Z",
-        "status": "In development",
-        "gaDate": "March 2026",
-        "isNew": true
-      },
-      {
-        "title": "Microsoft Purview | Communication Compliance: Integration with Power Automate (GCC-High and DoD)",
-        "summary": "Communication Compliance integration with Power Automate allows organizations to configure Power Automate flows to automate tasks for Communication Compliance cases and users. Microsoft Purview Communication Compliance provides the tools to help organizations detect regulatory compliance violations (e.g. SEC or FINRA), such as sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in by an admin, and audit logs a",
-        "source": "Microsoft Purview",
-        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=85606",
-        "date": "2021-09-07T23:21:08.000Z",
-        "status": "In development",
-        "isNew": true
-      },
-      {
-        "title": "Microsoft Purview | Communication Compliance: Integration with Power Automate",
-        "summary": "Currently in public preview, Communication Compliance integration with Power Automate allows organizations to configure Power Automate flows to automate tasks for Communication Compliance cases and users. Microsoft Purview Communication Compliance provides the tools to help organizations detect regulatory compliance violations (e.g. SEC or FINRA), such as sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in ",
-        "source": "Microsoft Purview",
-        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=85604",
-        "date": "2021-09-07T23:21:05.000Z",
-        "status": "Launched",
-        "isNew": true
       }
     ],
     "agents": [
@@ -254,14 +169,6 @@
         "isNew": true
       },
       {
-        "title": "Microsoft Purview: Data Security Triage Agent in Data Loss Prevention - Reasoning Trace and Confidence Score for agent-triaged alerts",
-        "summary": "This feature introduces confidence scoring and reasoning trace explainability into the Data Security Triage Agent in DLP, addressing a critical trust gap reported across multiple customers. Today, without transparency into why the agent makes a decision or how confident it is, analysts are forced to fall back to manual review — completely negating the automation value. The feature will surface a reasoning trace alongside each agent decision and a confidence score, giving analysts a clear signal of how reliable the agent's output is. This provides SOC teams with an auditable, explainable output",
-        "source": "Microsoft Purview",
-        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=560597",
-        "date": "2026-04-23T23:15:05.000Z",
-        "status": "In development"
-      },
-      {
         "title": "Microsoft Agent 365: Registry sync",
         "summary": "Connect to external AI platforms to discover agents created outside Microsoft and automatically sync them into the Agent 365 registry for more complete agent visibility and governance.\nGA date: July CY2026\nPreview date: May CY2026",
         "source": "Microsoft 365 admin center",
@@ -270,25 +177,6 @@
         "status": "In development",
         "previewDate": "May 2026",
         "gaDate": "July 2026"
-      },
-      {
-        "title": "Planner: Planner Agent chat",
-        "summary": "Introducing built-in Planner Agent chat with natural language Q&A, smart task discovery, and in-plan task management.\nGA date: May CY2026",
-        "source": "Planner",
-        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=560532",
-        "date": "2026-04-21T23:00:01.000Z",
-        "status": "In development",
-        "gaDate": "May 2026"
-      },
-      {
-        "title": "Microsoft Purview: Data Loss Prevention – Inline DLP for Prompts for Microsoft Foundry apps and agents",
-        "summary": "With Purview enabled in Microsoft Foundry, Purview admins can setup inline DLP policies to prompts on Foundry built apps and agents to ensure data loss prevention of sensitive data.  \nGA date: June CY2026\nPreview date: May CY2026",
-        "source": "Microsoft Purview",
-        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=558565",
-        "date": "2026-04-02T23:15:15.000Z",
-        "status": "In development",
-        "previewDate": "May 2026",
-        "gaDate": "June 2026"
       },
       {
         "title": "Microsoft Agent 365: the control plane for agents",
@@ -300,34 +188,6 @@
         "gaDate": "May 2026"
       },
       {
-        "title": "Microsoft Purview: Data Lifecycle Management - Power Automate integration with records management",
-        "summary": "Initiate a Power Automate workflow when the item reaches the end of its retention period. For example, execute a complex disposition approval process or move the file to an archive.\nGA date: June CY2026",
-        "source": "Microsoft Purview",
-        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=558859",
-        "date": "2026-03-20T20:00:10.000Z",
-        "status": "In development",
-        "gaDate": "June 2026",
-        "isNew": true
-      },
-      {
-        "title": "Microsoft Purview: Data Loss Prevention - Data Security Triage Agent summaries and categorizations for DLP alerts will be made available in DLP Alerts in Microsoft Defender XDR",
-        "summary": "Data Security Triage Agent summaries and categorizations for DLP alerts will be made available in DLP Alerts in Microsoft Defender XDR.\nGA date: August CY2026\nPreview date: April CY2026",
-        "source": "Microsoft Purview",
-        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=558860",
-        "date": "2026-03-17T22:45:46.000Z",
-        "status": "In development",
-        "previewDate": "April 2026",
-        "gaDate": "August 2026"
-      },
-      {
-        "title": "Microsoft Purview: Credential Scanning in Data Security Posture Agent",
-        "summary": "We're expanding the Data Security Posture Agent with a new credential scanning capability. Discover exposed credentials and data security risks across scoped locations. Assign scanning tasks to the agent, track progress across stages, and take action on prioritized findings. The agent scans selected data locations, analyzing scoped files to detect credentials, such as Microsoft Entra user credentials, private keys, and API tokens. Each finding includes a risk score, AI-generated insights, confidence score, and credential category so you can review, confirm, and act from a single task board vie",
-        "source": "Microsoft Purview",
-        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=558436",
-        "date": "2026-03-09T23:15:17.000Z",
-        "status": "In development"
-      },
-      {
         "title": "Microsoft Copilot (Microsoft 365): Share agents to Teams",
         "summary": "With this feature, users will be able to share their agent with a Microsoft Teams team. Users can search for and find teams in the agent sharing dialog box. Users can also send a notification to the main channel of that team to make members aware of an agent being shared with them, and as an easy way to install and start using the agent.\nGA date: March CY2026",
         "source": "M365 Copilot",
@@ -335,22 +195,6 @@
         "date": "2026-02-27T23:15:13.000Z",
         "status": "Launched",
         "gaDate": "March 2026"
-      },
-      {
-        "title": "Microsoft Purview: Insider Risk Management- Data Security Triage Agent in IRM Enhancements",
-        "summary": "The Data Security Triage Agent in Insider Risk Management is deploying enhancements such as improved user risk and activity explorer pattern summaries to support improved investigation accuracy, context, and decision quality. \r\n\r\nMicrosoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based acces",
-        "source": "Microsoft Purview",
-        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=557683",
-        "date": "2026-02-24T00:15:57.000Z",
-        "status": "In development"
-      },
-      {
-        "title": "Microsoft Purview: Data Loss Prevention – Enhancements to Data Security Triage Agent",
-        "summary": "Adding below enhancements to Data Security Triage Agent in MS Purview - Metadata supported Custom Instructions (DLP only) : Earlier the agent only supported custom instructions which are related to content (E.g. Focus on alerts related to financial information). Now we also support instructions related to metadata. (E.g. Focus on alerts related to financial information for user Adam in last 20 days) - Consolidated Agent settings : Earlier we had seperate controls for deployment configuration and triggers. We are now merging them into a single view as the settings can be altered anytime and it ",
-        "source": "Microsoft Purview",
-        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=557552",
-        "date": "2026-02-20T00:00:24.000Z",
-        "status": "Launched"
       },
       {
         "title": "Microsoft Copilot (Microsoft 365): Submit agent to Agent Store from Agent Builder",
@@ -380,56 +224,6 @@
         "gaDate": "February 2026"
       },
       {
-        "title": "Microsoft Purview: Insider Risk Management- Insider risk management for agents",
-        "summary": "As AI agents become deeply embedded in enterprise ecosystems, they are evolving beyond simple tools or workflows into a digital workforce. These agents can interpret intent, access and manipulate enterprise data, execute actions and even make real-time decisions. In many ways, they operate like human insiders only with machine-speed data processing capabilities. \r\n\r\nTo govern and protect these agents effectively, Microsoft Purview Insider Risk Management is being expanded to agents, with specific indicators and insider risk score built for agents based on agentic activities. \r\n\r\nMicrosoft Purv",
-        "source": "Microsoft Purview",
-        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=545063",
-        "date": "2026-01-06T23:45:19.000Z",
-        "status": "In development"
-      },
-      {
-        "title": "Microsoft Purview: Data Security Posture Management-Data Security Posture Agent in DSPM",
-        "summary": "The Data Security Posture Agent is designed to expand the capacity of data security admins as they proactively work to stay on top of a dynamic data and risk landscape within their organization. Its primary job is to help discover sensitive data across your data estate. This agent is designed to analyze and search documents, emails, and messages that match the natural-language discovery intent requested by the user and assess associated risks. By moving beyond traditional keyword and information-type analysis and harnessing the power of LLMs, this agent enables organizations to identify risks ",
-        "source": "Microsoft Purview",
-        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=542790",
-        "date": "2025-12-17T00:15:13.000Z",
-        "status": "In development"
-      },
-      {
-        "title": "Microsoft Purview: Insider Risk Management-Insider risk management for agents",
-        "summary": "As AI agents become deeply embedded in enterprise ecosystems, they are evolving beyond simple tools or workflows into a digital workforce. These agents can interpret intent, access and manipulate enterprise data, execute actions and even make real-time decisions. In many ways, they operate like human insiders only with machine-speed data processing capabilities. To govern and protect these agents effectively, Microsoft Purview Insider Risk Management is being expanded to agents, with specific indicators and insider risk score built for agents based on agentic activities. Microsoft Purview Insi",
-        "source": "Microsoft Purview",
-        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=516032",
-        "date": "2025-12-11T00:00:03.000Z",
-        "status": "In development"
-      },
-      {
-        "title": "Microsoft Purview: Data Security Triage agent in DLP is generally available worldwide",
-        "summary": "The Data Security Triage Agent creates an agent-managed alert queue that identifies and prioritizes the DLP and IRM alerts that pose the greatest risk to your organization. It delivers a summary and clear explanation for why each alert was prioritized, helping analysts focus on what matters most.\r\nFor this GA release, we’re introducing expanded coverage (which also includes Endpoint DLP alerts as well as alerts that leverage Custom SITs (Sensitive Information Types)) and support for Entra Agent ID.\nGA date: December CY2025",
-        "source": "Microsoft Purview",
-        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=542187",
-        "date": "2025-12-11T00:00:03.000Z",
-        "status": "Launched",
-        "gaDate": "December 2025"
-      },
-      {
-        "title": "Microsoft Purview: Data Security Posture Agent is now available in preview",
-        "summary": "The Data Security Posture Agent is designed to expand the capacity of data security admins as they proactively work to stay on top of a dynamic data and risk landscape within their organization. Its primary job is to help discover sensitive data across your data estate. This agent is designed to analyze and search documents, emails, and messages that match the natural-language discovery intent requested by the user and assess associated risks. By moving beyond traditional keyword and information-type analysis and harnessing the power of LLMs, this agent enables organizations to identify risks ",
-        "source": "Microsoft Purview",
-        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=542188",
-        "date": "2025-12-11T00:00:03.000Z",
-        "status": "In development"
-      },
-      {
-        "title": "Microsoft Purview: Data Loss Prevention-Data Security Triage Agent in Data Loss Prevention",
-        "summary": "The Data Security Triage Agent creates an agent-managed alert queue that identifies and prioritizes the DLP and IRM alerts that pose the greatest risk to your organization. It delivers a summary and clear explanation for why each alert was prioritized, helping analysts focus on what matters most.\r\nFor this GA release, we’re introducing expanded coverage (which also includes Endpoint DLP alerts as well as alerts that leverage Custom SITs (Sensitive Information Types)) and support for Entra Agent ID.\nGA date: December CY2025",
-        "source": "Microsoft Purview",
-        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=542190",
-        "date": "2025-12-11T00:00:03.000Z",
-        "status": "Launched",
-        "gaDate": "December 2025"
-      },
-      {
         "title": "Microsoft Copilot (Microsoft 365): SharePoint list agent",
         "summary": "Enables effortless list creation for Copilot users through prompts, with intelligent schema generation and setup. This agent helps teams to quickly transform structured information and Copilot responses to Microsoft Lists.\nGA date: February CY2026\nPreview date: December CY2025",
         "source": "SharePoint",
@@ -446,26 +240,6 @@
         "url": "https://www.microsoft.com/microsoft-365/roadmap?id=536578",
         "date": "2025-12-05T00:00:35.000Z",
         "status": "In development"
-      },
-      {
-        "title": "Microsoft Purview: Compliance Manager-Purview Compliance Manager integration with Microsoft Foundry for automated mapping of AI regulations and evaluation of Compliance controls for Foundry Agents",
-        "summary": "This feature in Purview Compliance Manager shall enable customers to automatically access the compliance posture of Agents created in AI Foundry. Customers can map Agents being created in AI Foundry to compliance regulations and assessments in Purview Compliance Manager and get to know the compliance status and improvement actions to be innovative and compliant.\nGA date: August CY2026\nPreview date: December CY2025",
-        "source": "Microsoft Purview",
-        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=536576",
-        "date": "2025-12-04T00:00:38.000Z",
-        "status": "In development",
-        "previewDate": "December 2025",
-        "gaDate": "August 2026"
-      },
-      {
-        "title": "Microsoft Purview: Purview SDK embedded in Agent Framework SDK",
-        "summary": "Purview SDK embedded in Agent Framework SDK enables developers to seamlessly integrate enterprise-grade security, compliance, and governance into the AI agents they build. This integration enables automatic classification and protection of sensitive data, prevents data leaks and oversharing, and provides visibility and control for regulatory compliance—empowering organizations to confidently and securely adopt AI agents in complex environments. \nGA date: May CY2026\nPreview date: November CY2025",
-        "source": "Microsoft Purview",
-        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=534609",
-        "date": "2025-11-26T00:45:03.000Z",
-        "status": "In development",
-        "previewDate": "November 2025",
-        "gaDate": "May 2026"
       },
       {
         "title": "Microsoft Copilot (Microsoft 365): Now smarter with visuals: Declarative Agents leverage embedded images for richer, more accurate answers",
@@ -485,26 +259,6 @@
         "status": "In development",
         "previewDate": "November 2025",
         "gaDate": "May 2026"
-      },
-      {
-        "title": "Microsoft Copilot (Microsoft 365): Project Manager Agent in M365 Copilot",
-        "summary": "The new Project Manager agent in Microsoft 365 will help you plan, organize, and manage work more efficiently. We’re starting with core task and plan management features to simplify project tracking and will introduce additional advanced project management capabilities over time. Updated May 21, 2026: We previously launched in Preview and GA is expected in June. We apologize for any inconvenience. \nGA date: June CY2026\nPreview date: March CY2026",
-        "source": "Planner",
-        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=516576",
-        "date": "2025-11-18T17:15:10.000Z",
-        "status": "In development",
-        "previewDate": "March 2026",
-        "gaDate": "June 2026"
-      },
-      {
-        "title": "Planner: Planner Agent in group-based basic plans",
-        "summary": "Planner Agent will now be available for M365 Copilot licensed users in all group-based Planner plans, including basic plans.\nGA date: March CY2026\nPreview date: March CY2025",
-        "source": "Planner",
-        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=511820",
-        "date": "2025-11-18T17:15:10.000Z",
-        "status": "Rolling out",
-        "previewDate": "March 2025",
-        "gaDate": "March 2026"
       },
       {
         "title": "SharePoint: Page Agent",
@@ -597,14 +351,6 @@
         "date": "2025-10-22T23:15:17.000Z",
         "status": "In development",
         "gaDate": "February 2026"
-      },
-      {
-        "title": "Microsoft Purview: Insider Risk Management-Data Security Alert Triage Agent in Insider Risk Management",
-        "summary": "Microsoft Purview Insider Risk Management (IRM) introduces the Security Copilot Alert Triage Agent in IRM that analyzes and prioritizes IRM alerts so analysts can understand and act on their most urgent alerts first. On top of prioritizing critical alerts for analysts to triage first, alert triage agent will provide a summary of findings to help users understand what are the riskiest activities that make this alert critical to review. IRM correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. IRM enables",
-        "source": "Microsoft Purview",
-        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=503764",
-        "date": "2025-10-22T23:15:17.000Z",
-        "status": "Launched"
       },
       {
         "title": "Microsoft Copilot (Microsoft 365): [Copilot Extensibility] Users in GCC-H will be able to use custom engine agents",
@@ -994,34 +740,6 @@
         "date": "2024-11-19T00:15:55.000Z",
         "status": "Launched",
         "gaDate": "January 2025"
-      },
-      {
-        "title": "Microsoft Purview compliance portal: Data Loss Prevention - Trigger Power automate workflows as outcome of DLP rule match",
-        "summary": "This introduces a new DLP rule action to trigger custom Power automate workflows when a DLP rule is violated.\nGA date: March CY2026",
-        "source": "Microsoft Purview",
-        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=380721",
-        "date": "2024-01-31T01:00:33.000Z",
-        "status": "In development",
-        "gaDate": "March 2026",
-        "isNew": true
-      },
-      {
-        "title": "Microsoft Purview | Communication Compliance: Integration with Power Automate (GCC-High and DoD)",
-        "summary": "Communication Compliance integration with Power Automate allows organizations to configure Power Automate flows to automate tasks for Communication Compliance cases and users. Microsoft Purview Communication Compliance provides the tools to help organizations detect regulatory compliance violations (e.g. SEC or FINRA), such as sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in by an admin, and audit logs a",
-        "source": "Microsoft Purview",
-        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=85606",
-        "date": "2021-09-07T23:21:08.000Z",
-        "status": "In development",
-        "isNew": true
-      },
-      {
-        "title": "Microsoft Purview | Communication Compliance: Integration with Power Automate",
-        "summary": "Currently in public preview, Communication Compliance integration with Power Automate allows organizations to configure Power Automate flows to automate tasks for Communication Compliance cases and users. Microsoft Purview Communication Compliance provides the tools to help organizations detect regulatory compliance violations (e.g. SEC or FINRA), such as sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in ",
-        "source": "Microsoft Purview",
-        "url": "https://www.microsoft.com/microsoft-365/roadmap?id=85604",
-        "date": "2021-09-07T23:21:05.000Z",
-        "status": "Launched",
-        "isNew": true
       }
     ],
     "releasenotes": [
@@ -2888,7 +2606,7 @@
         "product": "Administration, Governance and Security",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=administration%2Cgovernanceandsecurity#plan-ce38d70a-e401-f111-8406-000d3a36696c",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.816Z",
         "previewDate": "Q2 2026",
         "gaDate": "Q1 2026",
         "isNew": true
@@ -2900,7 +2618,7 @@
         "product": "Administration, Governance and Security",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=administration%2Cgovernanceandsecurity#plan-fa45364e-2402-f111-8406-000d3a376137",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.816Z",
         "gaDate": "Q1 2026",
         "isNew": true
       },
@@ -2911,7 +2629,7 @@
         "product": "Administration, Governance and Security",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=administration%2Cgovernanceandsecurity#plan-d2e07536-32b3-f011-bbd3-00224808fcf0",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.816Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -2922,7 +2640,7 @@
         "product": "Cosmos DB",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=cosmosdb#collapse1",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.816Z",
         "isNew": true
       },
       {
@@ -2932,7 +2650,7 @@
         "product": "Data Engineering",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=dataengineering#plan-1a98d2aa-7bba-f011-bbd2-0022480a2ecf",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.816Z",
         "previewDate": "Q2 2026",
         "gaDate": "Q1 2026",
         "isNew": true
@@ -2944,7 +2662,7 @@
         "product": "Data Engineering",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=dataengineering#plan-f152e5fd-1fbf-f011-bbd3-000d3a3740cc",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.816Z",
         "gaDate": "Q2 2026",
         "isNew": true
       },
@@ -2955,7 +2673,7 @@
         "product": "Data Engineering",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=dataengineering#plan-11fd2c23-e28c-ef11-ac21-00224804e9b4",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.816Z",
         "gaDate": "Q2 2026",
         "isNew": true
       },
@@ -2966,7 +2684,7 @@
         "product": "Data Engineering",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=dataengineering#plan-399f07f8-96ba-f011-bbd3-00224808fcf0",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.816Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -2977,7 +2695,7 @@
         "product": "Data Engineering",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=dataengineering#plan-bfd0bc17-7dba-f011-bbd2-0022480a2ecf",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.816Z",
         "gaDate": "Q2 2026",
         "isNew": true
       },
@@ -2988,7 +2706,7 @@
         "product": "Data Engineering",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=dataengineering#plan-f5495e72-de01-f111-8406-6045bd00f798",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.816Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -2999,7 +2717,7 @@
         "product": "Data Engineering",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=dataengineering#plan-f4f6862a-e001-f111-8406-6045bd00f798",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.816Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -3010,7 +2728,7 @@
         "product": "Data Engineering",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=dataengineering#plan-3665d185-5b43-f111-88b5-6045bd0a886d",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.816Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -3021,7 +2739,7 @@
         "product": "Data Engineering",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=dataengineering#plan-ac3295f6-95ba-f011-bbd3-00224808fcf0",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.816Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -3032,7 +2750,7 @@
         "product": "Data Engineering",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=dataengineering#plan-9f72b035-86ba-f011-bbd3-6045bd00f9db",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.816Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -3043,7 +2761,7 @@
         "product": "Data Factory",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datafactory#plan-385260b0-5b07-ef11-9f89-000d3a34b75c",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.816Z",
         "previewDate": "Q2 2026",
         "gaDate": "Q2 2026",
         "isNew": true
@@ -3055,7 +2773,7 @@
         "product": "Data Factory",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datafactory#plan-9da9331f-5629-f111-8341-000d3a36696c",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.816Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -3066,7 +2784,7 @@
         "product": "Data Factory",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datafactory#plan-d5aeaf0b-2701-f111-8406-000d3a376137",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.816Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -3077,7 +2795,7 @@
         "product": "Data Factory",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datafactory#plan-c4e7283e-6821-f011-998a-0022480939f0",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.816Z",
         "gaDate": "Q2 2026",
         "isNew": true
       },
@@ -3088,7 +2806,7 @@
         "product": "Data Factory",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datafactory#plan-46139b5a-c49d-f011-b41c-6045bd00f9db",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.816Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -3099,7 +2817,7 @@
         "product": "Data Factory",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datafactory#plan-fb27d618-16b1-f011-bbd3-000d3a30273e",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.816Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -3110,7 +2828,7 @@
         "product": "Data Factory",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datafactory#plan-45a4fc04-9ab3-f011-bbd3-000d3a30273e",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.816Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -3121,7 +2839,7 @@
         "product": "Data Factory",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datafactory#plan-34a3246d-5921-f011-9989-000d3a329ecb",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.816Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -3132,7 +2850,7 @@
         "product": "Data Factory",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datafactory#plan-d1f84414-4621-f011-998a-000d3a341dd9",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -3143,7 +2861,7 @@
         "product": "Data Factory",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datafactory#plan-37499ba5-5b21-f011-9989-000d3a5b0147",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -3154,7 +2872,7 @@
         "product": "Data Factory",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datafactory#plan-da6082f1-1a9e-f011-b41c-000d3a5b0efa",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -3165,7 +2883,7 @@
         "product": "Data Factory",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datafactory#plan-71ffb0dc-c99a-f011-b4cc-000d3a5b0efa",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -3176,7 +2894,7 @@
         "product": "Data Factory",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datafactory#plan-422e1a3d-056f-f011-bec2-00224804b6c3",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -3187,7 +2905,7 @@
         "product": "Data Factory",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datafactory#plan-99108f89-076f-f011-bec2-00224804b6c3",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -3198,7 +2916,7 @@
         "product": "Data Factory",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datafactory#plan-ef14c40e-0a6f-f011-bec2-00224804b6c3",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -3209,7 +2927,7 @@
         "product": "Data Factory",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datafactory#plan-f8636911-7191-ef11-ac21-002248098a98",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -3220,7 +2938,7 @@
         "product": "Data Factory",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datafactory#plan-754bc857-509d-f011-b41c-6045bd00f9db",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -3231,7 +2949,7 @@
         "product": "Data Factory",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datafactory#plan-d6e09340-c39d-f011-b41c-6045bd00f9db",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -3242,7 +2960,7 @@
         "product": "Data Factory",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datafactory#plan-24b8f3c2-c39d-f011-b41c-6045bd00f9db",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -3253,7 +2971,7 @@
         "product": "Data Factory",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datafactory#plan-67d0f235-4521-f011-9989-6045bd030c4d",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -3264,7 +2982,7 @@
         "product": "Data Science",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datascience#plan-db90d1e4-cbf0-f011-8407-002248096d54",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -3275,7 +2993,7 @@
         "product": "Data Warehouse",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datawarehouse#plan-725ed67e-0495-f011-b4cc-000d3a30273e",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q1 2026",
         "gaDate": "Q1 2026",
         "isNew": true
@@ -3287,7 +3005,7 @@
         "product": "Data Warehouse",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datawarehouse#plan-bfdf06d7-6166-ef11-bfe3-0022480abf3c",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q1 2026",
         "isNew": true
       },
@@ -3298,7 +3016,7 @@
         "product": "Data Warehouse",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datawarehouse#plan-c57ad776-e3b8-f011-bbd3-000d3a30273e",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -3309,7 +3027,7 @@
         "product": "Data Warehouse",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datawarehouse#plan-9b0e4fae-ecb8-f011-bbd3-000d3a30273e",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -3320,7 +3038,7 @@
         "product": "Data Warehouse",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datawarehouse#plan-512eea0a-39bf-f011-bbd3-00224808fcf0",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q2 2026",
         "isNew": true
       },
@@ -3331,7 +3049,7 @@
         "product": "Data Warehouse",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datawarehouse#plan-e45e0d20-dfb8-f011-bbd3-0022480b30e4",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -3342,7 +3060,7 @@
         "product": "Data Warehouse",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datawarehouse#plan-a59cad5e-ddb8-f011-bbd3-6045bd05dd14",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -3353,7 +3071,7 @@
         "product": "Data Warehouse",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datawarehouse#plan-d58f4693-ca80-ef11-ac21-6045bd062aa2",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -3364,7 +3082,7 @@
         "product": "Data Warehouse",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datawarehouse#plan-c418b243-333f-f111-88b5-6045bd0a8ec1",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -3375,7 +3093,7 @@
         "product": "Data Warehouse",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datawarehouse#plan-aceeae17-dfb8-f011-bbd3-000d3a30273e",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -3386,7 +3104,7 @@
         "product": "Data Warehouse",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datawarehouse#plan-ce7f2f21-9421-f011-9989-000d3a302e4a",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -3397,7 +3115,7 @@
         "product": "Data Warehouse",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datawarehouse#plan-e75dc0ae-3722-f011-9989-000d3a302e4a",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -3408,7 +3126,7 @@
         "product": "Data Warehouse",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datawarehouse#plan-b7e155c6-94bf-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -3419,7 +3137,7 @@
         "product": "Data Warehouse",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datawarehouse#plan-e240d768-fc21-f011-998a-0022480939f0",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -3430,7 +3148,7 @@
         "product": "Data Warehouse",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datawarehouse#plan-edb33b5b-7f5d-f011-bec2-0022480939f0",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -3441,7 +3159,7 @@
         "product": "Data Warehouse",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datawarehouse#plan-be34d186-0cb9-f011-bbd3-6045bd05dd14",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -3452,7 +3170,7 @@
         "product": "Data Warehouse",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datawarehouse#plan-64884d05-7482-ef11-ac21-6045bd062aa2",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -3463,7 +3181,7 @@
         "product": "Fabric Developer Experiences",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=fabricdeveloperexperiences#plan-d569f830-2abb-f011-bbd3-000d3a30273e",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q1 2026",
         "gaDate": "Q1 2026",
         "isNew": true
@@ -3475,7 +3193,7 @@
         "product": "Fabric Developer Experiences",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=fabricdeveloperexperiences#plan-5d62411a-20db-f011-8544-000d3a3740cc",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q1 2026",
         "isNew": true
       },
@@ -3486,7 +3204,7 @@
         "product": "Fabric Developer Experiences",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=fabricdeveloperexperiences#plan-1575ebb1-8af4-f011-8406-000d3a376137",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q1 2026",
         "isNew": true
       },
@@ -3497,7 +3215,7 @@
         "product": "Fabric Developer Experiences",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=fabricdeveloperexperiences#plan-35a5688b-91ba-f011-bbd3-00224808fcf0",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q1 2026",
         "isNew": true
       },
@@ -3508,7 +3226,7 @@
         "product": "Fabric Developer Experiences",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=fabricdeveloperexperiences#plan-6b0c4600-6823-f011-8c4e-0022480939f0",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q1 2026",
         "isNew": true
       },
@@ -3519,7 +3237,7 @@
         "product": "Fabric Developer Experiences",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=fabricdeveloperexperiences#plan-eeae4859-c029-f011-8c4e-0022480939f0",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q1 2026",
         "isNew": true
       },
@@ -3530,7 +3248,7 @@
         "product": "Fabric Developer Experiences",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=fabricdeveloperexperiences#plan-3bf3fb7e-b5b9-f011-bbd2-0022480a2ecf",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q1 2026",
         "isNew": true
       },
@@ -3541,7 +3259,7 @@
         "product": "Fabric Developer Experiences",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=fabricdeveloperexperiences#plan-2ffb8c93-29bb-f011-bbd3-6045bd00f9db",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q1 2026",
         "isNew": true
       },
@@ -3552,7 +3270,7 @@
         "product": "Fabric Developer Experiences",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=fabricdeveloperexperiences#plan-dd18e6e7-6fbb-f011-bbd3-6045bd00f9db",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q1 2026",
         "isNew": true
       },
@@ -3563,7 +3281,7 @@
         "product": "Fabric Developer Experiences",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=fabricdeveloperexperiences#plan-84cab79e-89ba-f011-bbd3-6045bd05dd14",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q1 2026",
         "isNew": true
       },
@@ -3574,7 +3292,7 @@
         "product": "Fabric Developer Experiences",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=fabricdeveloperexperiences#plan-153fef79-95ba-f011-bbd3-6045bd05dd14",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q1 2026",
         "isNew": true
       },
@@ -3585,7 +3303,7 @@
         "product": "Fabric Developer Experiences",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=fabricdeveloperexperiences#plan-4c239f36-96ba-f011-bbd3-6045bd05dd14",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q1 2026",
         "isNew": true
       },
@@ -3596,7 +3314,7 @@
         "product": "Fabric Developer Experiences",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=fabricdeveloperexperiences#plan-76396892-86db-f011-8544-000d3a3b0571",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q2 2026",
         "isNew": true
       },
@@ -3607,7 +3325,7 @@
         "product": "Fabric Developer Experiences",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=fabricdeveloperexperiences#plan-aac8c150-b4b9-f011-bbd2-0022480a2ecf",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q2 2026",
         "isNew": true
       },
@@ -3618,7 +3336,7 @@
         "product": "Fabric Ecosystem",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=fabricecosystem#plan-d6f8f431-d3b5-f011-bbd2-0022480a2ecf",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q4 2025",
         "gaDate": "Q1 2026",
         "isNew": true
@@ -3630,7 +3348,7 @@
         "product": "Fabric Ecosystem",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=fabricecosystem#plan-7946a34c-8d00-f111-8406-000d3a36696c",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q1 2026",
         "isNew": true
       },
@@ -3641,7 +3359,7 @@
         "product": "Fabric Ecosystem",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=fabricecosystem#plan-ab5d87c7-f86e-f011-bec3-0022480939f0",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q1 2026",
         "isNew": true
       },
@@ -3652,7 +3370,7 @@
         "product": "Fabric Ecosystem",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=fabricecosystem#plan-4660613a-9d00-f111-8406-6045bd0a886d",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q1 2026",
         "isNew": true
       },
@@ -3663,7 +3381,7 @@
         "product": "Fabric Ecosystem",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=fabricecosystem#plan-6a3dbbe1-9d00-f111-8406-6045bd0a886d",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q1 2026",
         "isNew": true
       },
@@ -3674,7 +3392,7 @@
         "product": "IQ",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=iq#plan-e7719142-2202-f111-8406-000d3a36696c",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q2 2026",
         "gaDate": "Q2 2026",
         "isNew": true
@@ -3686,7 +3404,7 @@
         "product": "IQ",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=iq#plan-ad7276d3-2202-f111-8406-000d3a36696c",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q2 2026",
         "isNew": true
       },
@@ -3697,7 +3415,7 @@
         "product": "IQ",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=iq#plan-3fc4034c-2302-f111-8406-000d3a36696c",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -3708,7 +3426,7 @@
         "product": "IQ",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=iq#plan-2365a2ad-2302-f111-8406-000d3a36696c",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q2 2026",
         "isNew": true
       },
@@ -3719,7 +3437,7 @@
         "product": "IQ",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=iq#plan-a23feddf-2302-f111-8406-000d3a36696c",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q2 2026",
         "isNew": true
       },
@@ -3730,7 +3448,7 @@
         "product": "IQ",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=iq#plan-fc241721-2402-f111-8406-000d3a36696c",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q2 2026",
         "isNew": true
       },
@@ -3741,7 +3459,7 @@
         "product": "IQ",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=iq#plan-2241e980-2402-f111-8406-000d3a36696c",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q2 2026",
         "isNew": true
       },
@@ -3752,7 +3470,7 @@
         "product": "IQ",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=iq#plan-bf4b5edc-820b-f111-8406-000d3a36696c",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q2 2026",
         "isNew": true
       },
@@ -3763,7 +3481,7 @@
         "product": "IQ",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=iq#plan-e7ec864d-0a03-f111-8406-6045bd00f798",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -3774,7 +3492,7 @@
         "product": "IQ",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=iq#plan-c0831fd2-0a03-f111-8406-6045bd00f798",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -3785,7 +3503,7 @@
         "product": "IQ",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=iq#plan-dbfb5522-a703-f111-8406-6045bd00f798",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -3796,7 +3514,7 @@
         "product": "IQ",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=iq#plan-419cfd8b-face-f011-bbd3-000d3a30273e",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q4 2026",
         "isNew": true
       },
@@ -3807,7 +3525,7 @@
         "product": "OneLake",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=onelake#plan-75ddcecb-b0a8-f011-bbd3-000d3a30273e",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q2 2026",
         "gaDate": "Q1 2026",
         "isNew": true
@@ -3819,7 +3537,7 @@
         "product": "OneLake",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=onelake#plan-4b2b2d21-2eba-f011-bbd3-000d3a3740cc",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -3830,7 +3548,7 @@
         "product": "OneLake",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=onelake#plan-bc53aecb-f0ba-f011-bbd3-000d3a3740cc",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -3841,7 +3559,7 @@
         "product": "OneLake",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=onelake#plan-bd4e72ca-f2ba-f011-bbd3-000d3a3740cc",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -3852,7 +3570,7 @@
         "product": "OneLake",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=onelake#plan-5d44c899-f7d1-f011-bbd3-00224808fcf0",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q2 2026",
         "isNew": true
       },
@@ -3863,7 +3581,7 @@
         "product": "OneLake",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=onelake#plan-ded7f959-0cc0-f011-bbd3-00224808fcf0",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -3874,7 +3592,7 @@
         "product": "Power BI",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=powerbi#plan-8cdaf195-c4c4-f011-bbd3-000d3a3740cc",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q2 2026",
         "gaDate": "Q2 2026",
         "isNew": true
@@ -3886,7 +3604,7 @@
         "product": "Power BI",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=powerbi#plan-4eb2c1c2-41c4-f011-bbd3-6045bd00f9db",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q2 2026",
         "isNew": true
       },
@@ -3897,7 +3615,7 @@
         "product": "Power BI",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=powerbi#plan-6ebbadfc-1dc5-f011-bbd3-6045bd00f9db",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q2 2026",
         "isNew": true
       },
@@ -3908,7 +3626,7 @@
         "product": "Power BI",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=powerbi#plan-92a6448b-20c5-f011-bbd3-6045bd00f9db",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -3919,7 +3637,7 @@
         "product": "Power BI",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=powerbi#plan-e48e6300-9a33-f111-88b4-6045bd00fc61",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q2 2026",
         "isNew": true
       },
@@ -3930,7 +3648,7 @@
         "product": "Power BI",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=powerbi#plan-c70db653-4d92-ef11-ac21-6045bd062aa2",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -3941,7 +3659,7 @@
         "product": "Power BI",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=powerbi#plan-653e4f5f-d01f-f111-8341-6045bd0a8ec1",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q2 2026",
         "isNew": true
       },
@@ -3952,7 +3670,7 @@
         "product": "Power BI",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=powerbi#plan-aa43ab07-d11f-f111-8341-6045bd0a8ec1",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q2 2026",
         "isNew": true
       },
@@ -3963,7 +3681,7 @@
         "product": "Power BI",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=powerbi#plan-3e7a7252-d11f-f111-8341-6045bd0a8ec1",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q2 2026",
         "isNew": true
       },
@@ -3974,7 +3692,7 @@
         "product": "Power BI",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=powerbi#plan-a7e979a9-d11f-f111-8341-6045bd0a8ec1",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q2 2026",
         "isNew": true
       },
@@ -3985,7 +3703,7 @@
         "product": "Power BI",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=powerbi#plan-48ffc4ba-fa13-f111-8406-002248085b3f",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -3996,7 +3714,7 @@
         "product": "Power BI",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=powerbi#plan-794f705f-21c5-f011-bbd3-6045bd00f9db",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -4007,7 +3725,7 @@
         "product": "Power BI",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=powerbi#plan-853c11fa-d11f-f111-8341-6045bd0a8ec1",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -4018,7 +3736,7 @@
         "product": "Power BI",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=powerbi#plan-ba851f2d-d21f-f111-8341-6045bd0a8ec1",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -4029,7 +3747,7 @@
         "product": "Power BI",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=powerbi#plan-15b7fc3d-d31f-f111-8341-6045bd0a8ec1",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -4040,7 +3758,7 @@
         "product": "Power BI",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=powerbi#plan-e326538e-d31f-f111-8341-6045bd0a8ec1",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q4 2026",
         "isNew": true
       },
@@ -4051,7 +3769,7 @@
         "product": "Power BI",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=powerbi#plan-6cda5cd3-d31f-f111-8341-6045bd0a8ec1",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q4 2026",
         "isNew": true
       },
@@ -4062,7 +3780,7 @@
         "product": "Real-Time Intelligence",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-261ebeae-e420-f011-9989-000d3a302e4a",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -4073,7 +3791,7 @@
         "product": "Real-Time Intelligence",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-1dbe5728-0aa4-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -4084,7 +3802,7 @@
         "product": "Real-Time Intelligence",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-2d60a7e8-b555-f011-877a-00224804ca88",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -4095,7 +3813,7 @@
         "product": "Real-Time Intelligence",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-92bffcc0-bf04-f111-8406-6045bd0066ad",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q2 2026",
         "isNew": true
       },
@@ -4106,7 +3824,7 @@
         "product": "Real-Time Intelligence",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-5a776051-c004-f111-8406-6045bd0066ad",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -4117,7 +3835,7 @@
         "product": "Real-Time Intelligence",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-d1728a35-5ef1-f011-8406-6045bd026004",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -4128,7 +3846,7 @@
         "product": "Real-Time Intelligence",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-816ee551-33a5-f011-bbd3-000d3a30273e",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -4139,7 +3857,7 @@
         "product": "Real-Time Intelligence",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-9493500e-e1ce-f011-bbd3-000d3a30273e",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -4150,7 +3868,7 @@
         "product": "Real-Time Intelligence",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-fc3ce8fd-6e2f-f011-8c4d-000d3a34671f",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -4161,7 +3879,7 @@
         "product": "Real-Time Intelligence",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-60246c0e-762f-f011-8c4d-000d3a34671f",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -4172,7 +3890,7 @@
         "product": "Real-Time Intelligence",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-403b7b13-0ca4-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -4183,7 +3901,7 @@
         "product": "Real-Time Intelligence",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-9258b059-23a6-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -4194,7 +3912,7 @@
         "product": "Real-Time Intelligence",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-ddb75e86-23a6-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -4205,7 +3923,7 @@
         "product": "Real-Time Intelligence",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-cde82016-24a6-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -4216,7 +3934,7 @@
         "product": "Real-Time Intelligence",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-123d1b43-24a6-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -4227,7 +3945,7 @@
         "product": "Real-Time Intelligence",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-b1a70168-24a6-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -4238,7 +3956,7 @@
         "product": "Real-Time Intelligence",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-194d37ea-2aa6-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -4249,7 +3967,7 @@
         "product": "Real-Time Intelligence",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-4a7a41b4-e2c0-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -4260,7 +3978,7 @@
         "product": "Real-Time Intelligence",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-dc8a0aee-e3c0-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -4271,7 +3989,7 @@
         "product": "Real-Time Intelligence",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-7c18efd5-e4c0-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -4282,7 +4000,7 @@
         "product": "Real-Time Intelligence",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-cb7b0382-4fb8-ef11-b8e9-002248098a98",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -4293,7 +4011,7 @@
         "product": "Real-Time Intelligence",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-28c0d541-e64c-ef11-a317-0022480abf3c",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -4304,7 +4022,7 @@
         "product": "Real-Time Intelligence",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-02b2d2a5-ecc0-f011-bbd3-6045bd05dd14",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -4315,7 +4033,7 @@
         "product": "Real-Time Intelligence",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-953fb7bc-2ca6-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q4 2026",
         "isNew": true
       },
@@ -4326,7 +4044,7 @@
         "product": "Databases",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-261ebeae-e420-f011-9989-000d3a302e4a",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -4337,7 +4055,7 @@
         "product": "Databases",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-1dbe5728-0aa4-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -4348,7 +4066,7 @@
         "product": "Databases",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-2d60a7e8-b555-f011-877a-00224804ca88",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -4359,7 +4077,7 @@
         "product": "Databases",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-92bffcc0-bf04-f111-8406-6045bd0066ad",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q2 2026",
         "isNew": true
       },
@@ -4370,7 +4088,7 @@
         "product": "Databases",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-5a776051-c004-f111-8406-6045bd0066ad",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -4381,7 +4099,7 @@
         "product": "Databases",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-d1728a35-5ef1-f011-8406-6045bd026004",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -4392,7 +4110,7 @@
         "product": "Databases",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-816ee551-33a5-f011-bbd3-000d3a30273e",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -4403,7 +4121,7 @@
         "product": "Databases",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-9493500e-e1ce-f011-bbd3-000d3a30273e",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -4414,7 +4132,7 @@
         "product": "Databases",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-fc3ce8fd-6e2f-f011-8c4d-000d3a34671f",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -4425,7 +4143,7 @@
         "product": "Databases",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-60246c0e-762f-f011-8c4d-000d3a34671f",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -4436,7 +4154,7 @@
         "product": "Databases",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-403b7b13-0ca4-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -4447,7 +4165,7 @@
         "product": "Databases",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-9258b059-23a6-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -4458,7 +4176,7 @@
         "product": "Databases",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-ddb75e86-23a6-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -4469,7 +4187,7 @@
         "product": "Databases",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-cde82016-24a6-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -4480,7 +4198,7 @@
         "product": "Databases",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-123d1b43-24a6-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:41:20.374Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -4491,7 +4209,7 @@
         "product": "Databases",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-b1a70168-24a6-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:41:20.375Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -4502,7 +4220,7 @@
         "product": "Databases",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-194d37ea-2aa6-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:41:20.375Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -4513,7 +4231,7 @@
         "product": "Databases",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-4a7a41b4-e2c0-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:41:20.375Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -4524,7 +4242,7 @@
         "product": "Databases",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-dc8a0aee-e3c0-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:41:20.375Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -4535,7 +4253,7 @@
         "product": "Databases",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-7c18efd5-e4c0-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:41:20.375Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -4546,7 +4264,7 @@
         "product": "Databases",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-cb7b0382-4fb8-ef11-b8e9-002248098a98",
-        "date": "2026-05-26T20:41:20.375Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -4557,7 +4275,7 @@
         "product": "Databases",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-28c0d541-e64c-ef11-a317-0022480abf3c",
-        "date": "2026-05-26T20:41:20.375Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -4568,7 +4286,7 @@
         "product": "Databases",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-02b2d2a5-ecc0-f011-bbd3-6045bd05dd14",
-        "date": "2026-05-26T20:41:20.375Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -4579,7 +4297,7 @@
         "product": "Databases",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-953fb7bc-2ca6-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:41:20.375Z",
+        "date": "2026-05-26T20:58:35.817Z",
         "gaDate": "Q4 2026",
         "isNew": true
       }
