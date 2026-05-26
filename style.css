@@ -240,6 +240,8 @@ main {
 .status-rolling-out    { background: rgba(210,153,34,.15);  color: #e3b341; }
 .status-launched       { background: rgba(35,134,54,.15);   color: #3fb950; }
 .status-cancelled      { background: rgba(248,81,73,.12);   color: #f85149; }
+.status-planned        { background: rgba(0,164,120,.15);   color: #00c896; }
+.status-try-now        { background: rgba(35,134,54,.15);   color: #3fb950; }
 
 /* ── Product Badge (Release Notes) ───────────────────────── */
 .product-badge {

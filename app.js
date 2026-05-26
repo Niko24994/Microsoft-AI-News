@@ -9,7 +9,7 @@
   // Tabs with real M365 Roadmap data → status filter + search
   const ROADMAP_TABS  = new Set(['copilot', 'agents']);
   // Product-filter tabs
-  const RELEASE_TABS  = new Set(['releasenotes']);
+  const RELEASE_TABS  = new Set(['releasenotes', 'fabricroadmap']);
 
   const activeFilters  = {};   // status or product filter per tab
   const searchQueries  = {};   // search string per tab
@@ -20,9 +20,10 @@
   const errorBox     = $('errorBox');
   const spinner      = $('loadingSpinner');
   const panels = {
-    copilot:      $('panel-copilot'),
-    agents:       $('panel-agents'),
-    releasenotes: $('panel-releasenotes'),
+    copilot:       $('panel-copilot'),
+    agents:        $('panel-agents'),
+    releasenotes:  $('panel-releasenotes'),
+    fabricroadmap: $('panel-fabricroadmap'),
   };
 
   // ── Date helpers ─────────────────────────────────────────
@@ -296,9 +297,10 @@
   // ── Render all tabs ──────────────────────────────────────
   function renderDay(dayData) {
     const tabs = dayData.tabs || {};
-    renderPanel('copilot',      tabs.copilot      || []);
-    renderPanel('agents',       tabs.agents       || []);
-    renderPanel('releasenotes', tabs.releasenotes || []);
+    renderPanel('copilot',       tabs.copilot       || []);
+    renderPanel('agents',        tabs.agents        || []);
+    renderPanel('releasenotes',  tabs.releasenotes  || []);
+    renderPanel('fabricroadmap', tabs.fabricroadmap || []);
 
     if (dayData.updated) updatedLabel.textContent = 'Updated: ' + formatTimestamp(dayData.updated);
   }
