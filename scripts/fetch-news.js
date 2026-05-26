@@ -7,31 +7,29 @@ const parser = new Parser({ timeout: 10000 });
 const NEWS_DIR = path.resolve('public/news');
 const MAX_AGE_DAYS = 180;
 
-// ── Power Platform source allowlist ─────────────────────────────────────────
-// After normalizeSource() these are the exact strings we want to keep in the
-// Copilot and Agents tabs.  Anything else (Teams, Outlook, Viva …) is dropped.
-const PP_ALLOWED_SOURCES = new Set([
-  'Copilot Studio',
-  'Power Platform',
-  'Power Apps',
-  'Power Automate',
-  'Power Pages',
-  'Power BI',
-  'Dataverse',
-  'Power Platform Admin',
-]);
-
 // ── M365 Roadmap tabs ────────────────────────────────────────────────────────
+// Keywords are checked against both item.categories and item.title (case-insensitive).
+// Using explicit PP/Fabric product names instead of just "copilot" keeps results
+// focused: Teams Copilot, Outlook Copilot etc. have none of these keywords.
 const ROADMAP_FEEDS = {
   copilot: {
-    url:          'https://www.microsoft.com/releasecommunications/api/v2/m365/rss',
-    keywords:     ['copilot'],
-    allowSources: PP_ALLOWED_SOURCES,   // Power Platform only
+    url:      'https://www.microsoft.com/releasecommunications/api/v2/m365/rss',
+    // Match anything that mentions a PP / Fabric product in title or categories
+    keywords: [
+      'copilot studio',
+      'power platform',
+      'power apps',
+      'power automate',
+      'power pages',
+      'power bi',
+      'dataverse',
+      'microsoft fabric',
+      'fabric copilot',
+    ],
   },
   agents: {
-    url:          'https://www.microsoft.com/releasecommunications/api/v2/m365/rss',
-    keywords:     ['copilot studio', 'agent'],
-    allowSources: PP_ALLOWED_SOURCES,   // Power Platform only
+    url:      'https://www.microsoft.com/releasecommunications/api/v2/m365/rss',
+    keywords: ['copilot studio', 'agent', 'power automate', 'power platform'],
   },
 };
 
@@ -192,8 +190,16 @@ async function fetchFeed(url) {
 
 // ── Fetch functions ──────────────────────────────────────────────────────────
 
+// Sources to always exclude — non-PP Microsoft 365 apps
+const ROADMAP_EXCLUDE_SOURCES = new Set([
+  'Microsoft Viva', 'PowerPoint', 'Outlook', 'Microsoft Teams', 'Word',
+  'OneNote', 'Microsoft Edge', 'OneDrive', 'Microsoft Clipchamp', 'Forms',
+  'Microsoft Kaizala', 'Microsoft Whiteboard', 'Microsoft To Do',
+  'Microsoft Planner', 'Yammer', 'Stream', 'Excel', 'Visio',
+]);
+
 async function fetchRoadmapTab(tabKey) {
-  const { url, keywords, allowSources } = ROADMAP_FEEDS[tabKey];
+  const { url, keywords } = ROADMAP_FEEDS[tabKey];
   console.log(`\n[${tabKey}] Loading roadmap RSS…`);
   console.log(`  → ${url}`);
   const items = await fetchFeed(url);
@@ -209,8 +215,8 @@ async function fetchRoadmapTab(tabKey) {
     const rawSource = categories.find(c => !NON_PRODUCT_CATS.has(c)) || 'Microsoft 365 Roadmap';
     const source    = normalizeSource(rawSource);
 
-    // Keep only Power Platform sources when an allowlist is defined
-    if (allowSources && !allowSources.has(source)) continue;
+    // Drop non-PP Microsoft 365 app sources
+    if (ROADMAP_EXCLUDE_SOURCES.has(rawSource) || ROADMAP_EXCLUDE_SOURCES.has(source)) continue;
 
     const summary = (item.contentSnippet || item.description || '')
       .replace(/<[^>]+>/g, '').trim().slice(0, 600);
