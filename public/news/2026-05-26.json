@@ -1,6 +1,6 @@
 {
   "date": "2026-05-26",
-  "updated": "2026-05-26T20:19:45.696Z",
+  "updated": "2026-05-26T20:23:08.123Z",
   "wave": "261",
   "waveLabel": "2026 Release Wave 1",
   "tabs": {
@@ -6954,7 +6954,7 @@
         "product": "Administration, Governance and Security",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=administration%2Cgovernanceandsecurity#plan-ce38d70a-e401-f111-8406-000d3a36696c",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q2 2026",
         "gaDate": "Q1 2026",
         "isNew": true
@@ -6966,7 +6966,7 @@
         "product": "Administration, Governance and Security",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=administration%2Cgovernanceandsecurity#plan-fa45364e-2402-f111-8406-000d3a376137",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q1 2026",
         "isNew": true
       },
@@ -6977,7 +6977,7 @@
         "product": "Administration, Governance and Security",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=administration%2Cgovernanceandsecurity#plan-d2e07536-32b3-f011-bbd3-00224808fcf0",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -6988,7 +6988,7 @@
         "product": "Cosmos DB",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=cosmosdb#collapse1",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "isNew": true
       },
       {
@@ -6998,7 +6998,7 @@
         "product": "Data Engineering",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=dataengineering#plan-1a98d2aa-7bba-f011-bbd2-0022480a2ecf",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q2 2026",
         "gaDate": "Q1 2026",
         "isNew": true
@@ -7010,7 +7010,7 @@
         "product": "Data Engineering",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=dataengineering#plan-f152e5fd-1fbf-f011-bbd3-000d3a3740cc",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q2 2026",
         "isNew": true
       },
@@ -7021,7 +7021,7 @@
         "product": "Data Engineering",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=dataengineering#plan-11fd2c23-e28c-ef11-ac21-00224804e9b4",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q2 2026",
         "isNew": true
       },
@@ -7032,7 +7032,7 @@
         "product": "Data Engineering",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=dataengineering#plan-399f07f8-96ba-f011-bbd3-00224808fcf0",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -7043,7 +7043,7 @@
         "product": "Data Engineering",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=dataengineering#plan-bfd0bc17-7dba-f011-bbd2-0022480a2ecf",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q2 2026",
         "isNew": true
       },
@@ -7054,7 +7054,7 @@
         "product": "Data Engineering",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=dataengineering#plan-f5495e72-de01-f111-8406-6045bd00f798",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -7065,7 +7065,7 @@
         "product": "Data Engineering",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=dataengineering#plan-f4f6862a-e001-f111-8406-6045bd00f798",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -7076,7 +7076,7 @@
         "product": "Data Engineering",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=dataengineering#plan-3665d185-5b43-f111-88b5-6045bd0a886d",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -7087,7 +7087,7 @@
         "product": "Data Engineering",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=dataengineering#plan-ac3295f6-95ba-f011-bbd3-00224808fcf0",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -7098,7 +7098,7 @@
         "product": "Data Engineering",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=dataengineering#plan-9f72b035-86ba-f011-bbd3-6045bd00f9db",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -7109,7 +7109,7 @@
         "product": "Data Factory",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datafactory#plan-385260b0-5b07-ef11-9f89-000d3a34b75c",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q2 2026",
         "gaDate": "Q2 2026",
         "isNew": true
@@ -7121,7 +7121,7 @@
         "product": "Data Factory",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datafactory#plan-9da9331f-5629-f111-8341-000d3a36696c",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -7132,7 +7132,7 @@
         "product": "Data Factory",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datafactory#plan-d5aeaf0b-2701-f111-8406-000d3a376137",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -7143,7 +7143,7 @@
         "product": "Data Factory",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datafactory#plan-c4e7283e-6821-f011-998a-0022480939f0",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q2 2026",
         "isNew": true
       },
@@ -7154,7 +7154,7 @@
         "product": "Data Factory",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datafactory#plan-46139b5a-c49d-f011-b41c-6045bd00f9db",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -7165,7 +7165,7 @@
         "product": "Data Factory",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datafactory#plan-fb27d618-16b1-f011-bbd3-000d3a30273e",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -7176,7 +7176,7 @@
         "product": "Data Factory",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datafactory#plan-45a4fc04-9ab3-f011-bbd3-000d3a30273e",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -7187,7 +7187,7 @@
         "product": "Data Factory",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datafactory#plan-34a3246d-5921-f011-9989-000d3a329ecb",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -7198,7 +7198,7 @@
         "product": "Data Factory",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datafactory#plan-d1f84414-4621-f011-998a-000d3a341dd9",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -7209,7 +7209,7 @@
         "product": "Data Factory",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datafactory#plan-37499ba5-5b21-f011-9989-000d3a5b0147",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -7220,7 +7220,7 @@
         "product": "Data Factory",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datafactory#plan-da6082f1-1a9e-f011-b41c-000d3a5b0efa",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -7231,7 +7231,7 @@
         "product": "Data Factory",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datafactory#plan-71ffb0dc-c99a-f011-b4cc-000d3a5b0efa",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -7242,7 +7242,7 @@
         "product": "Data Factory",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datafactory#plan-422e1a3d-056f-f011-bec2-00224804b6c3",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -7253,7 +7253,7 @@
         "product": "Data Factory",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datafactory#plan-99108f89-076f-f011-bec2-00224804b6c3",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -7264,7 +7264,7 @@
         "product": "Data Factory",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datafactory#plan-ef14c40e-0a6f-f011-bec2-00224804b6c3",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -7275,7 +7275,7 @@
         "product": "Data Factory",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datafactory#plan-f8636911-7191-ef11-ac21-002248098a98",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -7286,7 +7286,7 @@
         "product": "Data Factory",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datafactory#plan-754bc857-509d-f011-b41c-6045bd00f9db",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -7297,7 +7297,7 @@
         "product": "Data Factory",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datafactory#plan-d6e09340-c39d-f011-b41c-6045bd00f9db",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -7308,7 +7308,7 @@
         "product": "Data Factory",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datafactory#plan-24b8f3c2-c39d-f011-b41c-6045bd00f9db",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -7319,7 +7319,7 @@
         "product": "Data Factory",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datafactory#plan-67d0f235-4521-f011-9989-6045bd030c4d",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -7330,7 +7330,7 @@
         "product": "Data Science",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datascience#plan-db90d1e4-cbf0-f011-8407-002248096d54",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -7341,7 +7341,7 @@
         "product": "Data Warehouse",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datawarehouse#plan-725ed67e-0495-f011-b4cc-000d3a30273e",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q1 2026",
         "gaDate": "Q1 2026",
         "isNew": true
@@ -7353,7 +7353,7 @@
         "product": "Data Warehouse",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datawarehouse#plan-bfdf06d7-6166-ef11-bfe3-0022480abf3c",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q1 2026",
         "isNew": true
       },
@@ -7364,7 +7364,7 @@
         "product": "Data Warehouse",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datawarehouse#plan-c57ad776-e3b8-f011-bbd3-000d3a30273e",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -7375,7 +7375,7 @@
         "product": "Data Warehouse",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datawarehouse#plan-9b0e4fae-ecb8-f011-bbd3-000d3a30273e",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -7386,7 +7386,7 @@
         "product": "Data Warehouse",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datawarehouse#plan-512eea0a-39bf-f011-bbd3-00224808fcf0",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q2 2026",
         "isNew": true
       },
@@ -7397,7 +7397,7 @@
         "product": "Data Warehouse",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datawarehouse#plan-e45e0d20-dfb8-f011-bbd3-0022480b30e4",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -7408,7 +7408,7 @@
         "product": "Data Warehouse",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datawarehouse#plan-a59cad5e-ddb8-f011-bbd3-6045bd05dd14",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -7419,7 +7419,7 @@
         "product": "Data Warehouse",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datawarehouse#plan-d58f4693-ca80-ef11-ac21-6045bd062aa2",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -7430,7 +7430,7 @@
         "product": "Data Warehouse",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datawarehouse#plan-c418b243-333f-f111-88b5-6045bd0a8ec1",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -7441,7 +7441,7 @@
         "product": "Data Warehouse",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datawarehouse#plan-aceeae17-dfb8-f011-bbd3-000d3a30273e",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -7452,7 +7452,7 @@
         "product": "Data Warehouse",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datawarehouse#plan-ce7f2f21-9421-f011-9989-000d3a302e4a",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -7463,7 +7463,7 @@
         "product": "Data Warehouse",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datawarehouse#plan-e75dc0ae-3722-f011-9989-000d3a302e4a",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -7474,7 +7474,7 @@
         "product": "Data Warehouse",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datawarehouse#plan-b7e155c6-94bf-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -7485,7 +7485,7 @@
         "product": "Data Warehouse",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datawarehouse#plan-e240d768-fc21-f011-998a-0022480939f0",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -7496,7 +7496,7 @@
         "product": "Data Warehouse",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datawarehouse#plan-edb33b5b-7f5d-f011-bec2-0022480939f0",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -7507,7 +7507,7 @@
         "product": "Data Warehouse",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datawarehouse#plan-be34d186-0cb9-f011-bbd3-6045bd05dd14",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -7518,7 +7518,7 @@
         "product": "Data Warehouse",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=datawarehouse#plan-64884d05-7482-ef11-ac21-6045bd062aa2",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -7529,7 +7529,7 @@
         "product": "Fabric Developer Experiences",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=fabricdeveloperexperiences#plan-d569f830-2abb-f011-bbd3-000d3a30273e",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q1 2026",
         "gaDate": "Q1 2026",
         "isNew": true
@@ -7541,7 +7541,7 @@
         "product": "Fabric Developer Experiences",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=fabricdeveloperexperiences#plan-5d62411a-20db-f011-8544-000d3a3740cc",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q1 2026",
         "isNew": true
       },
@@ -7552,7 +7552,7 @@
         "product": "Fabric Developer Experiences",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=fabricdeveloperexperiences#plan-1575ebb1-8af4-f011-8406-000d3a376137",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q1 2026",
         "isNew": true
       },
@@ -7563,7 +7563,7 @@
         "product": "Fabric Developer Experiences",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=fabricdeveloperexperiences#plan-35a5688b-91ba-f011-bbd3-00224808fcf0",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q1 2026",
         "isNew": true
       },
@@ -7574,7 +7574,7 @@
         "product": "Fabric Developer Experiences",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=fabricdeveloperexperiences#plan-6b0c4600-6823-f011-8c4e-0022480939f0",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q1 2026",
         "isNew": true
       },
@@ -7585,7 +7585,7 @@
         "product": "Fabric Developer Experiences",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=fabricdeveloperexperiences#plan-eeae4859-c029-f011-8c4e-0022480939f0",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q1 2026",
         "isNew": true
       },
@@ -7596,7 +7596,7 @@
         "product": "Fabric Developer Experiences",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=fabricdeveloperexperiences#plan-3bf3fb7e-b5b9-f011-bbd2-0022480a2ecf",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q1 2026",
         "isNew": true
       },
@@ -7607,7 +7607,7 @@
         "product": "Fabric Developer Experiences",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=fabricdeveloperexperiences#plan-2ffb8c93-29bb-f011-bbd3-6045bd00f9db",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q1 2026",
         "isNew": true
       },
@@ -7618,7 +7618,7 @@
         "product": "Fabric Developer Experiences",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=fabricdeveloperexperiences#plan-dd18e6e7-6fbb-f011-bbd3-6045bd00f9db",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q1 2026",
         "isNew": true
       },
@@ -7629,7 +7629,7 @@
         "product": "Fabric Developer Experiences",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=fabricdeveloperexperiences#plan-84cab79e-89ba-f011-bbd3-6045bd05dd14",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q1 2026",
         "isNew": true
       },
@@ -7640,7 +7640,7 @@
         "product": "Fabric Developer Experiences",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=fabricdeveloperexperiences#plan-153fef79-95ba-f011-bbd3-6045bd05dd14",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q1 2026",
         "isNew": true
       },
@@ -7651,7 +7651,7 @@
         "product": "Fabric Developer Experiences",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=fabricdeveloperexperiences#plan-4c239f36-96ba-f011-bbd3-6045bd05dd14",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q1 2026",
         "isNew": true
       },
@@ -7662,7 +7662,7 @@
         "product": "Fabric Developer Experiences",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=fabricdeveloperexperiences#plan-76396892-86db-f011-8544-000d3a3b0571",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q2 2026",
         "isNew": true
       },
@@ -7673,7 +7673,7 @@
         "product": "Fabric Developer Experiences",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=fabricdeveloperexperiences#plan-aac8c150-b4b9-f011-bbd2-0022480a2ecf",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q2 2026",
         "isNew": true
       },
@@ -7684,7 +7684,7 @@
         "product": "Fabric Ecosystem",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=fabricecosystem#plan-d6f8f431-d3b5-f011-bbd2-0022480a2ecf",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q4 2025",
         "gaDate": "Q1 2026",
         "isNew": true
@@ -7696,7 +7696,7 @@
         "product": "Fabric Ecosystem",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=fabricecosystem#plan-7946a34c-8d00-f111-8406-000d3a36696c",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q1 2026",
         "isNew": true
       },
@@ -7707,7 +7707,7 @@
         "product": "Fabric Ecosystem",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=fabricecosystem#plan-ab5d87c7-f86e-f011-bec3-0022480939f0",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q1 2026",
         "isNew": true
       },
@@ -7718,7 +7718,7 @@
         "product": "Fabric Ecosystem",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=fabricecosystem#plan-4660613a-9d00-f111-8406-6045bd0a886d",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q1 2026",
         "isNew": true
       },
@@ -7729,7 +7729,7 @@
         "product": "Fabric Ecosystem",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=fabricecosystem#plan-6a3dbbe1-9d00-f111-8406-6045bd0a886d",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q1 2026",
         "isNew": true
       },
@@ -7740,7 +7740,7 @@
         "product": "IQ",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=iq#plan-e7719142-2202-f111-8406-000d3a36696c",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q2 2026",
         "gaDate": "Q2 2026",
         "isNew": true
@@ -7752,7 +7752,7 @@
         "product": "IQ",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=iq#plan-ad7276d3-2202-f111-8406-000d3a36696c",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q2 2026",
         "isNew": true
       },
@@ -7763,7 +7763,7 @@
         "product": "IQ",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=iq#plan-3fc4034c-2302-f111-8406-000d3a36696c",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -7774,7 +7774,7 @@
         "product": "IQ",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=iq#plan-2365a2ad-2302-f111-8406-000d3a36696c",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q2 2026",
         "isNew": true
       },
@@ -7785,7 +7785,7 @@
         "product": "IQ",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=iq#plan-a23feddf-2302-f111-8406-000d3a36696c",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q2 2026",
         "isNew": true
       },
@@ -7796,7 +7796,7 @@
         "product": "IQ",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=iq#plan-fc241721-2402-f111-8406-000d3a36696c",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q2 2026",
         "isNew": true
       },
@@ -7807,7 +7807,7 @@
         "product": "IQ",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=iq#plan-2241e980-2402-f111-8406-000d3a36696c",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q2 2026",
         "isNew": true
       },
@@ -7818,7 +7818,7 @@
         "product": "IQ",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=iq#plan-bf4b5edc-820b-f111-8406-000d3a36696c",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q2 2026",
         "isNew": true
       },
@@ -7829,7 +7829,7 @@
         "product": "IQ",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=iq#plan-e7ec864d-0a03-f111-8406-6045bd00f798",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -7840,7 +7840,7 @@
         "product": "IQ",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=iq#plan-c0831fd2-0a03-f111-8406-6045bd00f798",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -7851,7 +7851,7 @@
         "product": "IQ",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=iq#plan-dbfb5522-a703-f111-8406-6045bd00f798",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -7862,7 +7862,7 @@
         "product": "IQ",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=iq#plan-419cfd8b-face-f011-bbd3-000d3a30273e",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q4 2026",
         "isNew": true
       },
@@ -7873,7 +7873,7 @@
         "product": "OneLake",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=onelake#plan-75ddcecb-b0a8-f011-bbd3-000d3a30273e",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q2 2026",
         "gaDate": "Q1 2026",
         "isNew": true
@@ -7885,7 +7885,7 @@
         "product": "OneLake",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=onelake#plan-4b2b2d21-2eba-f011-bbd3-000d3a3740cc",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -7896,7 +7896,7 @@
         "product": "OneLake",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=onelake#plan-bc53aecb-f0ba-f011-bbd3-000d3a3740cc",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -7907,7 +7907,7 @@
         "product": "OneLake",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=onelake#plan-bd4e72ca-f2ba-f011-bbd3-000d3a3740cc",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -7918,7 +7918,7 @@
         "product": "OneLake",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=onelake#plan-5d44c899-f7d1-f011-bbd3-00224808fcf0",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q2 2026",
         "isNew": true
       },
@@ -7929,7 +7929,7 @@
         "product": "OneLake",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=onelake#plan-ded7f959-0cc0-f011-bbd3-00224808fcf0",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -7940,7 +7940,7 @@
         "product": "Power BI",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=powerbi#plan-8cdaf195-c4c4-f011-bbd3-000d3a3740cc",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q2 2026",
         "gaDate": "Q2 2026",
         "isNew": true
@@ -7952,7 +7952,7 @@
         "product": "Power BI",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=powerbi#plan-4eb2c1c2-41c4-f011-bbd3-6045bd00f9db",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q2 2026",
         "isNew": true
       },
@@ -7963,7 +7963,7 @@
         "product": "Power BI",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=powerbi#plan-6ebbadfc-1dc5-f011-bbd3-6045bd00f9db",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q2 2026",
         "isNew": true
       },
@@ -7974,7 +7974,7 @@
         "product": "Power BI",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=powerbi#plan-92a6448b-20c5-f011-bbd3-6045bd00f9db",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -7985,7 +7985,7 @@
         "product": "Power BI",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=powerbi#plan-e48e6300-9a33-f111-88b4-6045bd00fc61",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q2 2026",
         "isNew": true
       },
@@ -7996,7 +7996,7 @@
         "product": "Power BI",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=powerbi#plan-c70db653-4d92-ef11-ac21-6045bd062aa2",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -8007,7 +8007,7 @@
         "product": "Power BI",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=powerbi#plan-653e4f5f-d01f-f111-8341-6045bd0a8ec1",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q2 2026",
         "isNew": true
       },
@@ -8018,7 +8018,7 @@
         "product": "Power BI",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=powerbi#plan-aa43ab07-d11f-f111-8341-6045bd0a8ec1",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q2 2026",
         "isNew": true
       },
@@ -8029,7 +8029,7 @@
         "product": "Power BI",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=powerbi#plan-3e7a7252-d11f-f111-8341-6045bd0a8ec1",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q2 2026",
         "isNew": true
       },
@@ -8040,7 +8040,7 @@
         "product": "Power BI",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=powerbi#plan-a7e979a9-d11f-f111-8341-6045bd0a8ec1",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q2 2026",
         "isNew": true
       },
@@ -8051,7 +8051,7 @@
         "product": "Power BI",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=powerbi#plan-48ffc4ba-fa13-f111-8406-002248085b3f",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -8062,7 +8062,7 @@
         "product": "Power BI",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=powerbi#plan-794f705f-21c5-f011-bbd3-6045bd00f9db",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -8073,7 +8073,7 @@
         "product": "Power BI",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=powerbi#plan-853c11fa-d11f-f111-8341-6045bd0a8ec1",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -8084,7 +8084,7 @@
         "product": "Power BI",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=powerbi#plan-ba851f2d-d21f-f111-8341-6045bd0a8ec1",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -8095,7 +8095,7 @@
         "product": "Power BI",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=powerbi#plan-15b7fc3d-d31f-f111-8341-6045bd0a8ec1",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -8106,7 +8106,7 @@
         "product": "Power BI",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=powerbi#plan-e326538e-d31f-f111-8341-6045bd0a8ec1",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q4 2026",
         "isNew": true
       },
@@ -8117,7 +8117,7 @@
         "product": "Power BI",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=powerbi#plan-6cda5cd3-d31f-f111-8341-6045bd0a8ec1",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q4 2026",
         "isNew": true
       },
@@ -8128,7 +8128,7 @@
         "product": "Real-Time Intelligence",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-261ebeae-e420-f011-9989-000d3a302e4a",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -8139,7 +8139,7 @@
         "product": "Real-Time Intelligence",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-1dbe5728-0aa4-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -8150,7 +8150,7 @@
         "product": "Real-Time Intelligence",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-2d60a7e8-b555-f011-877a-00224804ca88",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -8161,7 +8161,7 @@
         "product": "Real-Time Intelligence",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-92bffcc0-bf04-f111-8406-6045bd0066ad",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q2 2026",
         "isNew": true
       },
@@ -8172,7 +8172,7 @@
         "product": "Real-Time Intelligence",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-5a776051-c004-f111-8406-6045bd0066ad",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -8183,7 +8183,7 @@
         "product": "Real-Time Intelligence",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-d1728a35-5ef1-f011-8406-6045bd026004",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -8194,7 +8194,7 @@
         "product": "Real-Time Intelligence",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-816ee551-33a5-f011-bbd3-000d3a30273e",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -8205,7 +8205,7 @@
         "product": "Real-Time Intelligence",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-9493500e-e1ce-f011-bbd3-000d3a30273e",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -8216,7 +8216,7 @@
         "product": "Real-Time Intelligence",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-fc3ce8fd-6e2f-f011-8c4d-000d3a34671f",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -8227,7 +8227,7 @@
         "product": "Real-Time Intelligence",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-60246c0e-762f-f011-8c4d-000d3a34671f",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -8238,7 +8238,7 @@
         "product": "Real-Time Intelligence",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-403b7b13-0ca4-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -8249,7 +8249,7 @@
         "product": "Real-Time Intelligence",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-9258b059-23a6-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -8260,7 +8260,7 @@
         "product": "Real-Time Intelligence",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-ddb75e86-23a6-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -8271,7 +8271,7 @@
         "product": "Real-Time Intelligence",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-cde82016-24a6-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -8282,7 +8282,7 @@
         "product": "Real-Time Intelligence",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-123d1b43-24a6-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -8293,7 +8293,7 @@
         "product": "Real-Time Intelligence",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-b1a70168-24a6-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -8304,7 +8304,7 @@
         "product": "Real-Time Intelligence",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-194d37ea-2aa6-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -8315,7 +8315,7 @@
         "product": "Real-Time Intelligence",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-4a7a41b4-e2c0-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -8326,7 +8326,7 @@
         "product": "Real-Time Intelligence",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-dc8a0aee-e3c0-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -8337,7 +8337,7 @@
         "product": "Real-Time Intelligence",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-7c18efd5-e4c0-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -8348,7 +8348,7 @@
         "product": "Real-Time Intelligence",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-cb7b0382-4fb8-ef11-b8e9-002248098a98",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -8359,7 +8359,7 @@
         "product": "Real-Time Intelligence",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-28c0d541-e64c-ef11-a317-0022480abf3c",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -8370,7 +8370,7 @@
         "product": "Real-Time Intelligence",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-02b2d2a5-ecc0-f011-bbd3-6045bd05dd14",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -8381,7 +8381,7 @@
         "product": "Real-Time Intelligence",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-953fb7bc-2ca6-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q4 2026",
         "isNew": true
       },
@@ -8392,7 +8392,7 @@
         "product": "Databases",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-261ebeae-e420-f011-9989-000d3a302e4a",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -8403,7 +8403,7 @@
         "product": "Databases",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-1dbe5728-0aa4-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -8414,7 +8414,7 @@
         "product": "Databases",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-2d60a7e8-b555-f011-877a-00224804ca88",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -8425,7 +8425,7 @@
         "product": "Databases",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-92bffcc0-bf04-f111-8406-6045bd0066ad",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q2 2026",
         "isNew": true
       },
@@ -8436,7 +8436,7 @@
         "product": "Databases",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-5a776051-c004-f111-8406-6045bd0066ad",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -8447,7 +8447,7 @@
         "product": "Databases",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-d1728a35-5ef1-f011-8406-6045bd026004",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q2 2026",
         "isNew": true
       },
@@ -8458,7 +8458,7 @@
         "product": "Databases",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-816ee551-33a5-f011-bbd3-000d3a30273e",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -8469,7 +8469,7 @@
         "product": "Databases",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-9493500e-e1ce-f011-bbd3-000d3a30273e",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -8480,7 +8480,7 @@
         "product": "Databases",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-fc3ce8fd-6e2f-f011-8c4d-000d3a34671f",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -8491,7 +8491,7 @@
         "product": "Databases",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-60246c0e-762f-f011-8c4d-000d3a34671f",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -8502,7 +8502,7 @@
         "product": "Databases",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-403b7b13-0ca4-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -8513,7 +8513,7 @@
         "product": "Databases",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-9258b059-23a6-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -8524,7 +8524,7 @@
         "product": "Databases",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-ddb75e86-23a6-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -8535,7 +8535,7 @@
         "product": "Databases",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-cde82016-24a6-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -8546,7 +8546,7 @@
         "product": "Databases",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-123d1b43-24a6-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -8557,7 +8557,7 @@
         "product": "Databases",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-b1a70168-24a6-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -8568,7 +8568,7 @@
         "product": "Databases",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-194d37ea-2aa6-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -8579,7 +8579,7 @@
         "product": "Databases",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-4a7a41b4-e2c0-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -8590,7 +8590,7 @@
         "product": "Databases",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-dc8a0aee-e3c0-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -8601,7 +8601,7 @@
         "product": "Databases",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-7c18efd5-e4c0-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -8612,7 +8612,7 @@
         "product": "Databases",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-cb7b0382-4fb8-ef11-b8e9-002248098a98",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "previewDate": "Q3 2026",
         "isNew": true
       },
@@ -8623,7 +8623,7 @@
         "product": "Databases",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-28c0d541-e64c-ef11-a317-0022480abf3c",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -8634,7 +8634,7 @@
         "product": "Databases",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-02b2d2a5-ecc0-f011-bbd3-6045bd05dd14",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q3 2026",
         "isNew": true
       },
@@ -8645,7 +8645,7 @@
         "product": "Databases",
         "status": "Planned",
         "url": "https://roadmap.fabric.microsoft.com/?product=real-timeintelligence#plan-953fb7bc-2ca6-f011-bbd3-000d3a5b0efa",
-        "date": "2026-05-26T20:19:45.611Z",
+        "date": "2026-05-26T20:23:08.032Z",
         "gaDate": "Q4 2026",
         "isNew": true
       }
