@@ -119,6 +119,9 @@ function normalizeSource(source) {
     'Microsoft SharePoint':              'SharePoint',
     'Microsoft Exchange':                'Exchange',
     'Microsoft Loop':                    'Loop',
+    'Microsoft 365 App':                 'M365 App',
+    'Microsoft 365 Apps':                'M365 Apps',
+    'Microsoft 365':                     'M365',
   };
   return MAP[source] || source;
 }
