@@ -1,6 +1,6 @@
 {
   "date": "2026-05-26",
-  "updated": "2026-05-26T15:36:18.064Z",
+  "updated": "2026-05-26T17:48:22.487Z",
   "wave": "261",
   "waveLabel": "2026 Release Wave 1",
   "tabs": {
@@ -5092,6 +5092,15 @@
     ],
     "releasenotes": [
       {
+        "title": "Custom Live Pools for Fabric Data Engineering (Preview)",
+        "summary": "Author: Santhosh Kumar Ravindran, Principal Product Manager - Custom Live Pools for Fabric Data Engineering is a new way to schedule and manage “ready to run” Spark capacity so your teams spend less time waiting for compute and more time delivering outcomes.",
+        "source": "Santhosh_Ravin1",
+        "product": "Fabric",
+        "url": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Custom-Live-Pools-for-Fabric-Data-Engineering-Preview/ba-p/5187356",
+        "date": "2026-05-26T17:00:00.000Z",
+        "isNew": true
+      },
+      {
         "title": "Enable online mode to access Dataverse for canvas apps",
         "summary": "Switch seamlessly from offline to online mode in canvas apps to access Dataverse data when connected, ensuring real-time updates and better user experience.",
         "source": "Release Wave Plan",
@@ -5663,22 +5672,6 @@
         "product": "Power BI",
         "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Execute-DAX-Queries-REST-API-Preview/ba-p/5177697",
         "date": "2026-05-07T17:47:39.000Z"
-      },
-      {
-        "title": "High Concurrency Support for the Fabric Livy API— Scalable Spark Automation (Preview)",
-        "summary": "Author: Avinanda Chattapadday — Senior Product Manager",
-        "source": "avinandac",
-        "product": "Fabric",
-        "url": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/High-Concurrency-Support-for-the-Fabric-Livy-API-Scalable-Spark/ba-p/5178390",
-        "date": "2026-05-06T21:00:00.000Z"
-      },
-      {
-        "title": "OneLake catalog is now natively available in Foundry (Generally Available)",
-        "summary": "Author: Miquella de Boer - Principal Product Manager Lead",
-        "source": "miquelladeboer",
-        "product": "Fabric",
-        "url": "https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/OneLake-catalog-is-now-natively-available-in-Foundry-Generally/ba-p/5178376",
-        "date": "2026-05-06T18:37:02.000Z"
       },
       {
         "title": "Semantic model settings pane (Preview)",
