@@ -305,6 +305,22 @@ main {
   border-radius: 20px;
 }
 
+/* "PLANNED" badge for Release Wave features — amber, top-right */
+.planned-badge {
+  position: absolute;
+  top: .6rem;
+  right: .75rem;
+  background: rgba(210,153,34,.18);
+  color: #e3b341;
+  border: 1px solid #e3b341;
+  font-size: .6rem;
+  font-weight: 800;
+  letter-spacing: .06em;
+  padding: .1rem .45rem;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
 /* Roadmap dates row (Preview / GA) */
 .roadmap-dates {
   display: flex;

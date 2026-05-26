@@ -8,8 +8,8 @@
 
   // Tabs with real M365 Roadmap data → status filter + search
   const ROADMAP_TABS  = new Set(['copilot', 'agents']);
-  // Product-filter tabs (blog posts + release wave plan)
-  const RELEASE_TABS  = new Set(['releasenotes', 'releasewave']);
+  // Product-filter tabs
+  const RELEASE_TABS  = new Set(['releasenotes']);
 
   const activeFilters  = {};   // status or product filter per tab
   const searchQueries  = {};   // search string per tab
@@ -23,7 +23,6 @@
     copilot:      $('panel-copilot'),
     agents:       $('panel-agents'),
     releasenotes: $('panel-releasenotes'),
-    releasewave:  $('panel-releasewave'),
   };
 
   // ── Date helpers ─────────────────────────────────────────
@@ -62,6 +61,14 @@
       newBadge.className = 'new-badge';
       newBadge.textContent = 'NEW';
       card.appendChild(newBadge);
+    }
+
+    // "Planned" ribbon for Release Wave features
+    if (article.planned) {
+      const plannedBadge = document.createElement('span');
+      plannedBadge.className = 'planned-badge';
+      plannedBadge.textContent = article.waveLabel || 'Planned';
+      card.appendChild(plannedBadge);
     }
 
     const meta = document.createElement('div');
@@ -290,13 +297,6 @@
     renderPanel('copilot',      tabs.copilot      || []);
     renderPanel('agents',       tabs.agents       || []);
     renderPanel('releasenotes', tabs.releasenotes || []);
-    renderPanel('releasewave',  tabs.releasewave  || []);
-
-    // Update Release Plan tab label to reflect the current wave
-    const waveTabBtn = $('tab-releasewave');
-    if (waveTabBtn && dayData.waveLabel) {
-      waveTabBtn.textContent = dayData.waveLabel;
-    }
 
     if (dayData.updated) updatedLabel.textContent = 'Updated: ' + formatTimestamp(dayData.updated);
   }

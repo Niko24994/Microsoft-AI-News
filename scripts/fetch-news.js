@@ -312,11 +312,19 @@ async function main() {
   const releaseNotesItems = await fetchReleaseNotes();
   const releasePlan       = await fetchReleasePlan();
 
+  // Merge Release Wave planned features into Release Notes
+  // Mark them with planned:true so the UI can show a badge
+  for (const item of releasePlan.items) {
+    item.planned    = true;
+    item.waveLabel  = releasePlan.label;   // e.g. "2026 Release Wave 1"
+  }
+  const mergedReleaseNotes = [...releaseNotesItems, ...releasePlan.items]
+    .sort((a, b) => new Date(b.date) - new Date(a.date));
+
   const tabs = {
     copilot:      copilotItems,
     agents:       agentsItems,
-    releasenotes: releaseNotesItems,
-    releasewave:  releasePlan.items,
+    releasenotes: mergedReleaseNotes,
   };
 
   // Mark articles new vs. yesterday
