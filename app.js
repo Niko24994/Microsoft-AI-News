@@ -63,14 +63,6 @@
       card.appendChild(newBadge);
     }
 
-    // "Planned" ribbon for Release Wave features
-    if (article.planned) {
-      const plannedBadge = document.createElement('span');
-      plannedBadge.className = 'planned-badge';
-      plannedBadge.textContent = article.waveLabel || 'Planned';
-      card.appendChild(plannedBadge);
-    }
-
     const meta = document.createElement('div');
     meta.className = 'card-meta';
 
@@ -86,6 +78,16 @@
       prod.className = `product-badge product-${slugify(article.product)}`;
       prod.textContent = article.product;
       meta.appendChild(prod);
+    }
+
+    // Planned badge — inline after product badge, shortened label
+    if (article.planned) {
+      const plannedBadge = document.createElement('span');
+      plannedBadge.className = 'planned-badge';
+      const label = article.waveLabel || 'Planned';
+      const m = label.match(/(\d{4})\s+Release\s+Wave\s+(\d)/i);
+      plannedBadge.textContent = m ? `${m[1]} W${m[2]}` : label;
+      meta.appendChild(plannedBadge);
     }
 
     // Status badge (roadmap)
