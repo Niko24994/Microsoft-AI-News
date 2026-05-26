@@ -6,7 +6,7 @@ const parser = new Parser({ timeout: 10000 });
 const NEWS_DIR = path.resolve('public/news');
 const MAX_AGE_DAYS = 180;
 
-// Roadmap RSS tabs — real M365 feature pipeline
+// ── M365 Roadmap tabs ────────────────────────────────────────────────────────
 const ROADMAP_FEEDS = {
   copilot: {
     url: 'https://www.microsoft.com/releasecommunications/api/v2/m365/rss',
@@ -18,9 +18,8 @@ const ROADMAP_FEEDS = {
   },
 };
 
-// Release Notes tabs — product blog feeds, each tagged with a product label
-// skipFilter: true → show all posts (used for dedicated sub-product blogs where
-// every post is product-relevant; keeps the filter only on the broader main blogs)
+// ── Release Notes: product blog feeds ───────────────────────────────────────
+// skipFilter: true → show all posts (focused sub-blogs only publish product content)
 const RELEASE_FEEDS = [
   { url: 'https://blog.fabric.microsoft.com/en-us/blog/feed/',                            product: 'Fabric' },
   { url: 'https://powerbi.microsoft.com/en-us/blog/feed/',                                product: 'Power BI' },
@@ -30,15 +29,12 @@ const RELEASE_FEEDS = [
   { url: 'https://www.microsoft.com/en-us/power-platform/blog/power-pages/feed/',         product: 'Power Pages',    skipFilter: true },
 ];
 
-// Keywords that must appear in title for release notes articles
 const RELEASE_KEYWORDS = [
-  // Explicit roadmap / release terms
   'preview', 'generally available', ' ga ', "what's new", "what's new",
   'feature summary', 'feature update', 'roadmap', 'upcoming', 'retiring',
   'deprecated', 'deprecation', 'release plan', 'public preview', 'private preview',
   'coming soon', 'now available', 'release notes', 'feature release',
   'monthly update', 'desktop update', 'service update', 'update',
-  // Announcement-style titles (Power Automate / Power Apps style)
   'introducing', 'introduces', 'announcing', 'announced', 'new in', 'now in',
   'launching', 'launched', 'available in', 'rolling out', 'general availability',
   'new feature', 'new connector', 'new capability', 'new experience',
@@ -46,6 +42,25 @@ const RELEASE_KEYWORDS = [
   'release wave',
 ];
 
+// ── Release Wave: official Microsoft release plan feature entries ─────────────
+// Each product has a scoped Learn RSS feed updated weekly by Microsoft.
+// Scope format: [product-slug]-[YY][W]  e.g. power-apps-261 = 2026 Wave 1
+const WAVE_PRODUCTS = [
+  { scope: 'power-apps',               product: 'Power Apps' },
+  { scope: 'power-automate',           product: 'Power Automate' },
+  { scope: 'power-pages',              product: 'Power Pages' },
+  { scope: 'microsoft-copilot-studio', product: 'Copilot Studio' },
+];
+
+// Title patterns that mark overview / investment-area items (not individual features)
+const WAVE_OVERVIEW_RE = [
+  /^new and planned features for /i,
+  /^overview of /i,
+  /^[a-z][a-z\s]+ - (building|enabling|enterprise scale|copilot for|govern)/i,
+  /\d{4} release wave \d features available in additional products/i,
+];
+
+// ── Roadmap status/category helpers ─────────────────────────────────────────
 const STATUS_VALUES = ['In development', 'Rolling out', 'Launched', 'Cancelled'];
 
 const NON_PRODUCT_CATS = new Set([
@@ -56,14 +71,38 @@ const NON_PRODUCT_CATS = new Set([
   'General Availability', 'Preview', 'Targeted Release', 'Current Channel',
 ]);
 
+// ── Helpers ──────────────────────────────────────────────────────────────────
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-// Parse "Preview date: June CY2026" and "GA date: July CY2026" from roadmap descriptions
+/**
+ * Calculate the current Microsoft release wave ID.
+ * Format: [2-digit year][wave]  →  "261" = 2026 Wave 1
+ *   April–September  → Wave 1 of the current year
+ *   October–December → Wave 2 of the current year
+ *   January–March    → Wave 2 of the previous year (still running)
+ */
+function getCurrentWave() {
+  const now   = new Date();
+  const year  = now.getFullYear();
+  const month = now.getMonth() + 1; // 1–12
+  if (month >= 4 && month <= 9) return `${year % 100}1`;
+  if (month >= 10)              return `${year % 100}2`;
+  return `${(year - 1) % 100}2`;   // Jan–Mar: previous year's Wave 2
+}
+
+/** Human-readable wave label, e.g. "261" → "2026 Release Wave 1" */
+function waveLabel(wave) {
+  const year  = `20${wave.slice(0, 2)}`;
+  const waveN = wave.slice(2);
+  return `${year} Release Wave ${waveN}`;
+}
+
+// Parse "Preview date: June CY2026" / "GA date: July CY2026" from roadmap text
 function parseRoadmapDates(text) {
-  const t = text || '';
-  const MY = '[A-Za-z]+\\s+(?:CY)?20\\d{2}';        // e.g. "June CY2026" or "July 2026"
+  const t     = text || '';
+  const MY    = '[A-Za-z]+\\s+(?:CY)?20\\d{2}';
   const clean = s => s.replace(/CY/i, '').trim();
 
   const previewMatch = t.match(new RegExp(
@@ -85,6 +124,7 @@ function loadUrlSet(filePath) {
     const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
     const urls = new Set();
     for (const articles of Object.values(data.tabs || {})) {
+      if (!Array.isArray(articles)) continue;
       for (const a of articles) { if (a.url) urls.add(a.url); }
     }
     return urls;
@@ -104,7 +144,8 @@ async function fetchFeed(url) {
   }
 }
 
-// Fetch one M365 Roadmap RSS tab (copilot or agents)
+// ── Fetch functions ──────────────────────────────────────────────────────────
+
 async function fetchRoadmapTab(tabKey) {
   const { url, keywords } = ROADMAP_FEEDS[tabKey];
   console.log(`\n[${tabKey}] Loading roadmap RSS…`);
@@ -123,6 +164,7 @@ async function fetchRoadmapTab(tabKey) {
 
     const summary = (item.contentSnippet || item.description || '')
       .replace(/<[^>]+>/g, '').trim().slice(0, 600);
+
     const entry = {
       title:  (item.title || '').trim(),
       summary,
@@ -131,7 +173,6 @@ async function fetchRoadmapTab(tabKey) {
       date:   item.isoDate || item.pubDate || new Date().toISOString(),
     };
     if (status) entry.status = status;
-    // Parse Preview / GA dates from description text
     const parsedDates = parseRoadmapDates(summary);
     if (parsedDates.previewDate) entry.previewDate = parsedDates.previewDate;
     if (parsedDates.gaDate)      entry.gaDate      = parsedDates.gaDate;
@@ -143,7 +184,6 @@ async function fetchRoadmapTab(tabKey) {
   return result;
 }
 
-// Fetch all release notes blogs (combined, tagged by product)
 async function fetchReleaseNotes() {
   console.log('\n[releasenotes] Loading blog feeds…');
   const allItems = [];
@@ -167,7 +207,6 @@ async function fetchReleaseNotes() {
     await sleep(300);
   }
 
-  // Deduplicate by URL
   const seen = new Set();
   const unique = allItems.filter(a => {
     if (!a.url || seen.has(a.url)) return false;
@@ -179,6 +218,50 @@ async function fetchReleaseNotes() {
   console.log(`  → ${unique.length} release notes`);
   return unique;
 }
+
+async function fetchReleasePlan() {
+  const wave = getCurrentWave();
+  const label = waveLabel(wave);
+  console.log(`\n[releasewave] Loading ${label} plan…`);
+  const allItems = [];
+
+  for (const { scope, product } of WAVE_PRODUCTS) {
+    const scopeId = `${scope}-${wave}`;
+    const url = `https://learn.microsoft.com/api/search/rss?locale=en-us&$filter=scopes%2Fany(t%3A%20t%20eq%20%27${scopeId}%27)`;
+    console.log(`  → ${product} [${scopeId}]`);
+    const items = await fetchFeed(url);
+
+    for (const item of items) {
+      const title = (item.title || '').trim();
+      // Skip overview / investment-area items (not individual features)
+      if (WAVE_OVERVIEW_RE.some(re => re.test(title))) continue;
+
+      allItems.push({
+        title,
+        summary: (item.contentSnippet || item.summary || item.content || '')
+          .replace(/<[^>]+>/g, '').trim().slice(0, 500),
+        source:  'Release Wave Plan',
+        product,
+        url:     item.link || item.guid || '',
+        date:    item.isoDate || item.pubDate || new Date().toISOString(),
+      });
+    }
+    await sleep(300);
+  }
+
+  const seen = new Set();
+  const unique = allItems.filter(a => {
+    if (!a.url || seen.has(a.url)) return false;
+    seen.add(a.url);
+    return true;
+  });
+
+  unique.sort((a, b) => new Date(b.date) - new Date(a.date));
+  console.log(`  → ${unique.length} planned features (${label})`);
+  return { items: unique, wave, label };
+}
+
+// ── Housekeeping ─────────────────────────────────────────────────────────────
 
 function deleteOldFiles() {
   const cutoff = new Date();
@@ -209,32 +292,43 @@ function updateIndex(today) {
   console.log(`\n[INDEX] ${dates.length} days available, latest: ${today}`);
 }
 
+// ── Main ─────────────────────────────────────────────────────────────────────
+
 async function main() {
   const today = new Date().toISOString().slice(0, 10);
   console.log(`\n=== Roadmap Fetch: ${today} ===`);
   fs.mkdirSync(NEWS_DIR, { recursive: true });
 
-  // Load yesterday's URLs to detect new articles
   const yesterday = new Date();
   yesterday.setDate(yesterday.getDate() - 1);
   const yesterdayPath = path.join(NEWS_DIR, `${yesterday.toISOString().slice(0, 10)}.json`);
   const yesterdayUrls = loadUrlSet(yesterdayPath);
   console.log(`  [NEW] Comparing against ${yesterdayUrls.size} articles from yesterday`);
 
+  const releasePlan = await fetchReleasePlan();
+
   const tabs = {
     copilot:      await fetchRoadmapTab('copilot'),
     agents:       await fetchRoadmapTab('agents'),
     releasenotes: await fetchReleaseNotes(),
+    releasewave:  releasePlan.items,
   };
 
-  // Mark articles that didn't exist yesterday
+  // Mark articles new vs. yesterday
   for (const articles of Object.values(tabs)) {
     for (const a of articles) {
       if (a.url && !yesterdayUrls.has(a.url)) a.isNew = true;
     }
   }
 
-  const output = { date: today, updated: new Date().toISOString(), tabs };
+  const output = {
+    date:       today,
+    updated:    new Date().toISOString(),
+    wave:       releasePlan.wave,       // e.g. "261"
+    waveLabel:  releasePlan.label,      // e.g. "2026 Release Wave 1"
+    tabs,
+  };
+
   const outPath = path.join(NEWS_DIR, `${today}.json`);
   fs.writeFileSync(outPath, JSON.stringify(output, null, 2));
   console.log(`\n[OK] Written: ${outPath}`);

@@ -8,8 +8,8 @@
 
   // Tabs with real M365 Roadmap data → status filter + search
   const ROADMAP_TABS  = new Set(['copilot', 'agents']);
-  // Release notes tab → product filter + search
-  const RELEASE_TABS  = new Set(['releasenotes']);
+  // Product-filter tabs (blog posts + release wave plan)
+  const RELEASE_TABS  = new Set(['releasenotes', 'releasewave']);
 
   const activeFilters  = {};   // status or product filter per tab
   const searchQueries  = {};   // search string per tab
@@ -23,6 +23,7 @@
     copilot:      $('panel-copilot'),
     agents:       $('panel-agents'),
     releasenotes: $('panel-releasenotes'),
+    releasewave:  $('panel-releasewave'),
   };
 
   // ── Date helpers ─────────────────────────────────────────
@@ -289,6 +290,13 @@
     renderPanel('copilot',      tabs.copilot      || []);
     renderPanel('agents',       tabs.agents       || []);
     renderPanel('releasenotes', tabs.releasenotes || []);
+    renderPanel('releasewave',  tabs.releasewave  || []);
+
+    // Update Release Plan tab label to reflect the current wave
+    const waveTabBtn = $('tab-releasewave');
+    if (waveTabBtn && dayData.waveLabel) {
+      waveTabBtn.textContent = dayData.waveLabel;
+    }
 
     if (dayData.updated) updatedLabel.textContent = 'Updated: ' + formatTimestamp(dayData.updated);
   }
