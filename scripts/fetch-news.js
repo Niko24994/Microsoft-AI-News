@@ -190,12 +190,14 @@ async function fetchFeed(url) {
 
 // ── Fetch functions ──────────────────────────────────────────────────────────
 
-// Sources to always exclude — non-PP Microsoft 365 apps
+// Sources to always exclude — non-PP Microsoft 365 apps and unrelated services
 const ROADMAP_EXCLUDE_SOURCES = new Set([
   'Microsoft Viva', 'PowerPoint', 'Outlook', 'Microsoft Teams', 'Word',
   'OneNote', 'Microsoft Edge', 'OneDrive', 'Microsoft Clipchamp', 'Forms',
   'Microsoft Kaizala', 'Microsoft Whiteboard', 'Microsoft To Do',
-  'Microsoft Planner', 'Yammer', 'Stream', 'Excel', 'Visio',
+  'Microsoft Planner', 'Planner', 'Yammer', 'Stream', 'Excel', 'Visio',
+  // Compliance / security products — not Power Platform
+  'Microsoft Purview', 'Microsoft Purview compliance portal',
 ]);
 
 async function fetchRoadmapTab(tabKey) {
