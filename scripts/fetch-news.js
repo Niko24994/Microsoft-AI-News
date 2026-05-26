@@ -382,33 +382,36 @@ const FABRIC_INVALID_PREFIXES = [
 // Extract feature items currently visible in the DOM for a given category.
 // Called repeatedly while scrolling to handle lazy-loaded / virtual-scrolled pages.
 function extractVisibleFeatures(catName, invalidTitles, invalidPrefixes) {
-  const results  = [];
-  const STATUS   = new Set(['Planned', 'Try Now']);
-  const allEls   = [...document.querySelectorAll('*')];
+  const results = [];
+  const STATUS  = new Set(['Planned', 'Try Now']);
+  const allEls  = [...document.querySelectorAll('*')];
 
-  // --- Strategy 1: badge-up ---
-  // Find elements whose visible text is exactly a status label.
-  // Allow up to 2 children (icon + text span inside the badge pill).
+  // Find badge elements: text is exactly a status label.
+  // Allow up to 2 children so badge pills with an inner icon/span are not skipped.
   const badges = allEls.filter(el => {
     const t = el.textContent.trim();
     return STATUS.has(t) && el.children.length <= 2;
   });
 
-  const seenByBadge = new Set();
+  const seen = new Set();
+
   for (const badge of badges) {
     const statusText = badge.textContent.trim();
 
-    // Walk up to find the row container (has meaningful text, not the whole page)
+    // Walk up to find the immediate row container.
+    // Keep the upper text-length limit tight (≤ 800 chars) so we never
+    // accidentally latch onto a section or page-level wrapper.
     let row = badge.parentElement;
     let found = false;
-    for (let i = 0; i < 12 && row; i++) {
+    for (let i = 0; i < 10 && row; i++) {
       const t = (row.innerText || '').trim();
-      if (t.length > 20 && t.length < 4000) { found = true; break; }
+      if (t.length > 20 && t.length <= 800) { found = true; break; }
       row = row.parentElement;
     }
     if (!found || !row) continue;
 
-    // Prefer the title from an anchor link inside the row (most reliable)
+    // Prefer the title from the first anchor link inside the row — the most
+    // reliable source since the Fabric Roadmap renders each title as a link.
     const rowLink = row.querySelector('a[href]');
     let title = null;
     if (rowLink) {
@@ -419,10 +422,11 @@ function extractVisibleFeatures(catName, invalidTitles, invalidPrefixes) {
       }
     }
 
-    // Fallback: first text line that doesn't look like a date or badge label
+    // Fallback: first meaningful text line in the row
     if (!title) {
       const isDateLike = s => /^Q[1-4]\s*\d{4}$|^\d{4}$|^H[12]\s/.test(s);
-      const isBadgeStr = s => ['planned','try now','public preview','general availability','preview','ga'].includes(s.toLowerCase());
+      const isBadgeStr = s =>
+        ['planned','try now','public preview','general availability','preview','ga'].includes(s.toLowerCase());
       const lines = (row.innerText || '').split('\n').map(l => l.trim()).filter(Boolean);
       title = lines.find(l =>
         l.length > 8 && !isDateLike(l) && !isBadgeStr(l) &&
@@ -432,8 +436,8 @@ function extractVisibleFeatures(catName, invalidTitles, invalidPrefixes) {
       );
     }
 
-    if (!title || seenByBadge.has(title)) continue;
-    seenByBadge.add(title);
+    if (!title || seen.has(title)) continue;
+    seen.add(title);
 
     const ft = row.innerText || '';
     const pm = ft.match(/Public Preview\s*(Q[1-4]\s*\d{4}|\d{4})/i);
@@ -447,51 +451,6 @@ function extractVisibleFeatures(catName, invalidTitles, invalidPrefixes) {
       gaDate:      gm ? gm[1].replace(/\s+/, ' ') : '',
       url:         rowLink ? rowLink.href : '',
     });
-  }
-
-  // --- Strategy 2: link-first ---
-  // If badge-up found very few items, also scan for links that sit inside a
-  // container with a status badge — catches items missed by strategy 1.
-  if (results.length < 10) {
-    const seenAll = new Set(seenByBadge);
-    const links = [...document.querySelectorAll('a[href]')];
-    for (const lk of links) {
-      const lt = lk.textContent.trim();
-      if (lt.length < 10 || lt.length > 250) continue;
-      if (STATUS.has(lt) || invalidTitles.includes(lt) || lt === catName) continue;
-      if (invalidPrefixes.some(p => lt.toLowerCase().startsWith(p))) continue;
-      if (seenAll.has(lt)) continue;
-
-      // Walk up to find a container that has a status badge somewhere inside
-      let container = lk.parentElement;
-      let statusText = null;
-      for (let i = 0; i < 10 && container; i++) {
-        const inner = container.textContent || '';
-        if (inner.includes('Planned') || inner.includes('Try Now')) {
-          const badgeEl = [...container.querySelectorAll('*')].find(el => {
-            const t = el.textContent.trim();
-            return STATUS.has(t) && el.children.length <= 2;
-          });
-          if (badgeEl) { statusText = badgeEl.textContent.trim(); break; }
-        }
-        container = container.parentElement;
-      }
-      if (!statusText || !container) continue;
-
-      seenAll.add(lt);
-      const ft = container.innerText || '';
-      const pm = ft.match(/Public Preview\s*(Q[1-4]\s*\d{4}|\d{4})/i);
-      const gm = ft.match(/General Availability\s*(Q[1-4]\s*\d{4}|\d{4})/i);
-
-      results.push({
-        title:       lt,
-        category:    catName,
-        status:      statusText,
-        previewDate: pm ? pm[1].replace(/\s+/, ' ') : '',
-        gaDate:      gm ? gm[1].replace(/\s+/, ' ') : '',
-        url:         lk.href,
-      });
-    }
   }
 
   return results;
