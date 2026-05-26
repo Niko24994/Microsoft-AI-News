@@ -447,6 +447,30 @@ footer {
   .card-grid { grid-template-columns: repeat(3, 1fr); }
 }
 
+/* ── Mobile (≤ 640px) ─────────────────────────────────────── */
+@media (max-width: 640px) {
+  /* Filter bar: scroll horizontally instead of wrapping into multiple rows */
+  .status-filter {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding-bottom: .4rem;
+    -webkit-overflow-scrolling: touch;
+  }
+  .status-filter::-webkit-scrollbar { display: none; }
+
+  /* Search: input fills full width, count sits below */
+  .search-wrap { flex-wrap: wrap; gap: .4rem; }
+  .search-input { max-width: 100%; }
+
+  /* Cards: slightly less padding */
+  .card { padding: .875rem 1rem; }
+  .card-title { font-size: .9rem; }
+  .card-summary { font-size: .8rem; }
+  .card-meta { gap: .375rem; }
+}
+
+/* ── Small phones (≤ 480px) ───────────────────────────────── */
 @media (max-width: 480px) {
   .brand-name { display: none; }
   .updated-label { display: none; }
@@ -454,4 +478,17 @@ footer {
   .header-inner { padding: 0 .75rem; }
   main { padding: 1rem .75rem 2rem; }
   .tabs { padding: 0 .75rem; }
+
+  /* Tighter card spacing */
+  .card { padding: .75rem .875rem; gap: .5rem; }
+  .card-title { font-size: .875rem; }
+  .card-summary { font-size: .78rem; line-height: 1.55; }
+
+  /* Badges slightly smaller */
+  .status-badge, .product-badge, .planned-badge, .new-badge {
+    font-size: .6rem;
+    padding: .08rem .45rem;
+  }
+  .card-source { font-size: .65rem; }
+  .card-date   { font-size: .67rem; }
 }
