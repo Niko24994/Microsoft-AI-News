@@ -46,10 +46,12 @@ const RELEASE_KEYWORDS = [
 // Each product has a scoped Learn RSS feed updated weekly by Microsoft.
 // Scope format: [product-slug]-[YY][W]  e.g. power-apps-261 = 2026 Wave 1
 const WAVE_PRODUCTS = [
-  { scope: 'power-apps',               product: 'Power Apps' },
-  { scope: 'power-automate',           product: 'Power Automate' },
-  { scope: 'power-pages',              product: 'Power Pages' },
-  { scope: 'microsoft-copilot-studio', product: 'Copilot Studio' },
+  { scope: 'power-apps',                            product: 'Power Apps' },
+  { scope: 'power-automate',                        product: 'Power Automate' },
+  { scope: 'power-pages',                           product: 'Power Pages' },
+  { scope: 'microsoft-copilot-studio',              product: 'Copilot Studio' },
+  { scope: 'data-platform',                         product: 'Dataverse' },
+  { scope: 'power-platform-governance-administration', product: 'Power Platform Admin' },
 ];
 
 // Title patterns that mark overview / investment-area items (not individual features)
