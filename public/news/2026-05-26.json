@@ -1,6 +1,6 @@
 {
   "date": "2026-05-26",
-  "updated": "2026-05-26T20:05:09.695Z",
+  "updated": "2026-05-26T20:12:52.960Z",
   "wave": "261",
   "waveLabel": "2026 Release Wave 1",
   "tabs": {
@@ -198,7 +198,7 @@
       {
         "title": "Microsoft Copilot (Microsoft 365): Additional meeting results in Copilot responses",
         "summary": "Today, Copilot can show up to 25 meeting results, which can limit visibility in larger calendars. We’re expanding this limit so you can see more relevant meetings at once making it easier to find, review, and act on the full context you need.\nGA date: June CY2026",
-        "source": "Microsoft 365",
+        "source": "M365",
         "url": "https://www.microsoft.com/microsoft-365/roadmap?id=559111",
         "date": "2026-04-28T22:45:03.000Z",
         "status": "In development",
@@ -225,7 +225,7 @@
       {
         "title": "Microsoft Copilot (Microsoft 365): Now smarter with visuals: Copilot Chat leverages embedded images for richer, more accurate answers.",
         "summary": "Copilot has been enhanced to interpret and ground responses using images embedded in files such as Word documents (.docx), PowerPoint presentations (.pptx), and PDFs. This capability allows Copilot to extract insights from visual elements like charts, diagrams, and screenshots, ensuring that answers are not only text-based but also informed by graphical context. By combining textual and visual understanding, Copilot delivers more comprehensive and contextually accurate responses for complex queries\nGA date: May CY2026",
-        "source": "Microsoft 365",
+        "source": "M365",
         "url": "https://www.microsoft.com/microsoft-365/roadmap?id=560540",
         "date": "2026-04-17T22:15:50.000Z",
         "status": "In development",
@@ -296,7 +296,7 @@
       {
         "title": "Microsoft 365: Companion apps - Copilot prompts in the Files app now available for Copilot Chat users",
         "summary": "The Files companion app, part of the Microsoft 365 companion apps suite on the Windows taskbar, now surfaces AI-powered Copilot file prompts for Copilot Chat users. Previously available only to Microsoft 365 Copilot licensees, this update extends contextual file prompts to Microsoft 365 Copilot Chat users, enabling them to discover and interact with relevant files through intelligent suggestions. Users can find their most relevant files faster and take action on them directly from the Files app. \nGA date: May CY2026",
-        "source": "Microsoft 365",
+        "source": "M365",
         "url": "https://www.microsoft.com/microsoft-365/roadmap?id=558595",
         "date": "2026-03-30T23:00:38.000Z",
         "status": "In development",
@@ -361,7 +361,7 @@
       {
         "title": "Microsoft Copilot (Microsoft 365): Create PowerPoint presentations from Copilot Notebooks",
         "summary": "Copilot Notebooks enables users to generate PowerPoint presentations directly from the content and references collected in a notebook. Using the notebook’s curated context, Copilot creates a structured, editable slide deck that users can open and refine in PowerPoint, helping turn research, notes, and insights into shareable presentations more quickly.\nGA date: May CY2026\nPreview date: March CY2026",
-        "source": "Microsoft 365",
+        "source": "M365",
         "url": "https://www.microsoft.com/microsoft-365/roadmap?id=558938",
         "date": "2026-03-20T22:00:36.000Z",
         "status": "In development",
@@ -371,7 +371,7 @@
       {
         "title": "Microsoft Copilot (Microsoft 365): Create Word documents from Copilot Notebooks",
         "summary": "Copilot Notebooks allows users to generate Word documents using the content and references gathered in a notebook. Copilot drafts a structured document grounded in the notebook’s context, which can be opened and edited in Word, helping users move from ideas and source material to a ready‑to‑use document with fewer manual steps.\nGA date: May CY2026\nPreview date: March CY2026",
-        "source": "Microsoft 365",
+        "source": "M365",
         "url": "https://www.microsoft.com/microsoft-365/roadmap?id=558934",
         "date": "2026-03-20T22:00:36.000Z",
         "status": "In development",
@@ -381,7 +381,7 @@
       {
         "title": "Microsoft Copilot (Microsoft 365): Take Screenshot in Copilot",
         "summary": "Give users a fast, built‑in way to capture screenshots and include them in Copilot prompts, helping them communicate visual context more easily and receive more accurate, actionable assistance.\nGA date: March CY2026",
-        "source": "Microsoft 365",
+        "source": "M365",
         "url": "https://www.microsoft.com/microsoft-365/roadmap?id=558105",
         "date": "2026-03-06T00:00:43.000Z",
         "status": "In development",
@@ -418,7 +418,7 @@
       {
         "title": "Microsoft Copilot (Microsoft 365): Branded footer in the Microsoft 365 Copilot app",
         "summary": "This update introduces a co-branding experience in the Microsoft 365 Copilot app that helps organizations present an admin approved visual identifier directly within the Chat screen. Specifically, the experience enables administrators to leverage the organization-supported logo already managed in the Microsoft Admin Center theming settings and display it in the footer of the Chat screen, paired with a fixed label: “Approved by”.\nGA date: May CY2026",
-        "source": "Microsoft 365",
+        "source": "M365",
         "url": "https://www.microsoft.com/microsoft-365/roadmap?id=555852",
         "date": "2026-02-24T00:15:57.000Z",
         "status": "Rolling out",
@@ -454,7 +454,7 @@
       {
         "title": "Microsoft Copilot (Microsoft 365): [Copilot Extensibility] IT Admins will be able to enable Anthropic models by specific users and groups in the tenant",
         "summary": "This feature introduces admin controls for managing Anthropic as a model provider for specific users and groups in the tenant. \nGA date: April CY2026",
-        "source": "Microsoft 365",
+        "source": "M365",
         "url": "https://www.microsoft.com/microsoft-365/roadmap?id=557371",
         "date": "2026-02-18T00:00:38.000Z",
         "status": "Launched",
@@ -570,7 +570,7 @@
       {
         "title": "Microsoft 365: New profile cards for buildings, rooms and desks",
         "summary": "Buildings, rooms and desks that are added to the Places directory will have new profile cards, accessible from Copilot Chat and across other Microsoft 365 entry points. \nGA date: June CY2026",
-        "source": "Microsoft 365",
+        "source": "M365",
         "url": "https://www.microsoft.com/microsoft-365/roadmap?id=553219",
         "date": "2026-01-30T23:15:49.000Z",
         "status": "In development",
@@ -686,7 +686,7 @@
       {
         "title": "Microsoft Copilot (Microsoft 365): Capture voice notes in the Microsoft 365 Copilot mobile app",
         "summary": "With a Microsoft 365 Copilot license, transform offline discussions into structured, actionable, and searchable content with voice notes in Copilot.\nGA date: May CY2026\nPreview date: January CY2026",
-        "source": "Microsoft 365",
+        "source": "M365",
         "url": "https://www.microsoft.com/microsoft-365/roadmap?id=498640",
         "date": "2025-12-23T00:00:28.000Z",
         "status": "In development",
@@ -798,7 +798,7 @@
       {
         "title": "Microsoft Copilot (Microsoft 365): Scatter image effect in Microsoft 365 Copilot",
         "summary": "Use scatter image effect directly in Copilot Chat and the create experience to further customize your visual artifacts generated with Copilot.\nGA date: February CY2026",
-        "source": "Microsoft 365",
+        "source": "M365",
         "url": "https://www.microsoft.com/microsoft-365/roadmap?id=537288",
         "date": "2025-12-09T00:00:24.000Z",
         "status": "Launched",
@@ -807,7 +807,7 @@
       {
         "title": "Microsoft Copilot (Microsoft 365): Relight images in Microsoft 365 Copilot",
         "summary": "Edit or enhance the lighting in uploaded or generated images directly in Copilot Chat and the Create experience.\nGA date: June CY2026",
-        "source": "Microsoft 365",
+        "source": "M365",
         "url": "https://www.microsoft.com/microsoft-365/roadmap?id=537286",
         "date": "2025-12-05T23:45:06.000Z",
         "status": "In development",
@@ -966,7 +966,7 @@
       {
         "title": "Microsoft Copilot (Microsoft 365): Your Command Center for AI Success",
         "summary": "The refreshed Copilot landing page in Microsoft 365 admin center gives an at-a-glance view of your Copilot journey across Chat, Agents, and M365 Copilot. It includes success metrics for each pillar, new metrics like active chat users, assisted hours, and satisfaction rate, plus multi-signal, personalized and actionable insights to drive adoption. We’ve added a security pivot for Purview actions and centralized Copilot usage reports under a new usage pivot.\nGA date: January CY2026\nPreview date: November CY2025",
-        "source": "Microsoft 365",
+        "source": "M365",
         "url": "https://www.microsoft.com/microsoft-365/roadmap?id=523222",
         "date": "2025-11-19T00:15:24.000Z",
         "status": "In development",
@@ -1016,7 +1016,7 @@
       {
         "title": "Microsoft Copilot (Microsoft 365): Semantic Goodbye word for voice in Microsoft 365 Copilot",
         "summary": "Now users can close a voice session on Windows by simply saying bye or goodbye when they want to close voice session. This, paired with \"Hey Copilot\" wake word, provides them with complete hands-free experience for voice in Microsoft 365 Copilot on Windows devices.\nGA date: December CY2025\nPreview date: November CY2025",
-        "source": "Microsoft 365",
+        "source": "M365",
         "url": "https://www.microsoft.com/microsoft-365/roadmap?id=529864",
         "date": "2025-11-18T17:15:10.000Z",
         "status": "In development",
@@ -1712,7 +1712,7 @@
       {
         "title": "Microsoft 365 app: Overview Page in Copilot Notebooks",
         "summary": "Users will find Copilot-powered Notebook summaries and insights as a landing page within their Copilot Notebook.\nGA date: February CY2026\nPreview date: November CY2025",
-        "source": "Microsoft 365",
+        "source": "M365",
         "url": "https://www.microsoft.com/microsoft-365/roadmap?id=512430",
         "date": "2025-10-08T23:15:04.000Z",
         "status": "Launched",
@@ -2028,7 +2028,7 @@
       {
         "title": "Microsoft 365 admin center: Agent metadata in inventory export",
         "summary": "Agent metadata export in Microsoft 365 admin center includes expanded metadata fields, covering Capabilities, Data Sources, Actions, Created In, and Created By. Enables enhanced visibility for auditing, governance, and lifecycle tracking. #copilotcontrolsystem\nGA date: October CY2025",
-        "source": "Microsoft 365",
+        "source": "M365",
         "url": "https://www.microsoft.com/microsoft-365/roadmap?id=502878",
         "date": "2025-09-09T23:15:14.000Z",
         "status": "Launched",
@@ -2046,7 +2046,7 @@
       {
         "title": "Microsoft Copilot (Microsoft 365): Image effects in Microsoft 365 Copilot",
         "summary": "We’re adding a new set of image effects to Microsoft 365 Copilot that make it easy to enhance your visuals. Whether you're using AI-generated images or uploading your own, you can apply these effects in the Create experience or directly in Copilot Chat to make your content stand out.\nGA date: October CY2025",
-        "source": "Microsoft 365",
+        "source": "M365",
         "url": "https://www.microsoft.com/microsoft-365/roadmap?id=502844",
         "date": "2025-09-08T23:45:21.000Z",
         "status": "Launched",
@@ -2868,7 +2868,7 @@
       {
         "title": "Microsoft 365: Use Copilot in your search tab in the Microsoft 365 Copilot mobile app",
         "summary": "Quickly find your files and leverage Copilot to get a better understanding within the search tab on the go.\nGA date: May CY2025",
-        "source": "Microsoft 365",
+        "source": "M365",
         "url": "https://www.microsoft.com/microsoft-365/roadmap?id=485731",
         "date": "2025-04-23T23:15:57.000Z",
         "status": "In development",
@@ -3179,7 +3179,7 @@
       {
         "title": "Microsoft Copilot (Microsoft 365): People connectors for Microsoft 365 Copilot",
         "summary": "People connectors for Microsoft 365 Copilot, based on top of Graph connectors, will integrate and enrich people data from various sources into Microsoft 365. This enriched data will enhance experiences in Microsoft 365 Copilot Chat, the profile card, and people search.\nMore info: https://aka.ms/peopleconnectors\nGA date: November CY2025\nPreview date: May CY2025",
-        "source": "Microsoft 365",
+        "source": "M365",
         "url": "https://www.microsoft.com/microsoft-365/roadmap?id=480736",
         "date": "2025-04-08T23:00:23.000Z",
         "status": "Launched",
@@ -3262,7 +3262,7 @@
       {
         "title": "Microsoft Copilot (Microsoft 365): Agents in Copilot Chat available on Edge Sidebar",
         "summary": "Use agents in Copilot Chat on Edge Sidebar to simplify tasks.\nGA date: September CY2025",
-        "source": "Microsoft 365",
+        "source": "M365",
         "url": "https://www.microsoft.com/microsoft-365/roadmap?id=482410",
         "date": "2025-04-03T23:45:17.000Z",
         "status": "Launched",
@@ -3298,7 +3298,7 @@
       {
         "title": "Microsoft 365: Copilot Prompt Gallery - Share a prompt to a Microsoft Teams team",
         "summary": "Share custom prompts with members of a Microsoft Teams team from the Copilot Prompt Gallery App, allowing team members to easily discover and utilize these prompts in Copilot Prompt Gallery App.\nGA date: May CY2025",
-        "source": "Microsoft 365",
+        "source": "M365",
         "url": "https://www.microsoft.com/microsoft-365/roadmap?id=485183",
         "date": "2025-03-31T23:45:24.000Z",
         "status": "In development",
@@ -3460,7 +3460,7 @@
       {
         "title": "Outlook: Schedule from email with Copilot",
         "summary": "Often you may want to transition a conversation from an email thread to a meeting. Copilot helps you do this by being able to start scheduling right from the email conversation. It saves you time and effort by generating a meeting invite that's ready for you to review and send. When you click on \"Schedule with Copilot\" a meeting form will appear with a Copilot generated meeting title, agenda, and conversation summary as well as a pre-filled attendee list from the email thread and an attachment of the original email thread. This feature will be available in the new Outlook for Windows, web, Mac",
-        "source": "Microsoft 365",
+        "source": "M365",
         "url": "https://www.microsoft.com/microsoft-365/roadmap?id=483007",
         "date": "2025-02-26T01:45:29.000Z",
         "status": "Launched"
@@ -3843,7 +3843,7 @@
       {
         "title": "Microsoft 365: Updated settings for the Microsoft 365 app on Windows",
         "summary": "The Microsoft 365 app on Windows added settings to pin the app to the taskbar.\nGA date: February CY2025",
-        "source": "Microsoft 365",
+        "source": "M365",
         "url": "https://www.microsoft.com/microsoft-365/roadmap?id=471004",
         "date": "2024-12-13T23:15:08.000Z",
         "status": "In development",
@@ -3871,7 +3871,7 @@
       {
         "title": "Microsoft Copilot (Microsoft 365): Updated welcome screen for the Microsoft 365 app on Windows",
         "summary": "The Microsoft 365 app welcome screen on Windows will be updated to display a welcome message and progress bar while the Microsoft 365 app loads.\nGA date: January CY2025",
-        "source": "Microsoft 365",
+        "source": "M365",
         "url": "https://www.microsoft.com/microsoft-365/roadmap?id=471447",
         "date": "2024-12-11T00:15:40.000Z",
         "status": "In development",
@@ -4772,7 +4772,7 @@
       {
         "title": "Microsoft 365 admin center: Agent metadata in inventory export",
         "summary": "Agent metadata export in Microsoft 365 admin center includes expanded metadata fields, covering Capabilities, Data Sources, Actions, Created In, and Created By. Enables enhanced visibility for auditing, governance, and lifecycle tracking. #copilotcontrolsystem\nGA date: October CY2025",
-        "source": "Microsoft 365",
+        "source": "M365",
         "url": "https://www.microsoft.com/microsoft-365/roadmap?id=502878",
         "date": "2025-09-09T23:15:14.000Z",
         "status": "Launched",
@@ -4933,7 +4933,7 @@
       {
         "title": "Microsoft Copilot (Microsoft 365): Agents in Copilot Chat available on Edge Sidebar",
         "summary": "Use agents in Copilot Chat on Edge Sidebar to simplify tasks.\nGA date: September CY2025",
-        "source": "Microsoft 365",
+        "source": "M365",
         "url": "https://www.microsoft.com/microsoft-365/roadmap?id=482410",
         "date": "2025-04-03T23:45:17.000Z",
         "status": "Launched",
