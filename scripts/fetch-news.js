@@ -321,6 +321,33 @@ function updateIndex(today) {
 
 // ── Fabric Roadmap scraper (Puppeteer) ───────────────────────────────────────
 
+// Known roadmap categories from roadmap.fabric.microsoft.com left sidebar.
+// These are deliberately hardcoded to avoid accidentally navigating forum pages.
+const FABRIC_ROADMAP_CATEGORIES = [
+  'Administration, Governance and Security',
+  'Cosmos DB',
+  'Data Engineering',
+  'Data Factory',
+  'Data Science',
+  'Data Warehouse',
+  'Fabric Developer Experiences',
+  'Fabric Ecosystem',
+  'IQ',
+  'OneLake',
+  'Power BI',
+  'Real-Time Intelligence',
+  'Databases',
+];
+
+// Titles that are actually UI labels / filter buttons — not real features
+const FABRIC_INVALID_TITLES = new Set([
+  'All features planned',
+  'All features planned and released',
+  'Planned',
+  'Try Now',
+  'All',
+]);
+
 async function fetchFabricRoadmap() {
   console.log('\n[fabricroadmap] Launching headless browser…');
   const browser = await puppeteer.launch({
@@ -340,190 +367,120 @@ async function fetchFabricRoadmap() {
       waitUntil: 'networkidle2',
       timeout: 45000,
     });
-
-    // Wait for sidebar categories to appear
-    await page.waitForSelector('ul li a, nav a, [class*="category"], [class*="sidebar"] a', {
-      timeout: 20000,
-    }).catch(() => console.warn('  [WARN] Sidebar selector timeout — continuing anyway'));
-
-    await sleep(2000); // Let JS fully render
-
-    // Extract all categories from the left sidebar
-    const categories = await page.evaluate(() => {
-      // The left sidebar typically has a list of plain text links
-      const candidates = [
-        ...document.querySelectorAll('aside a, nav li a, [class*="sidebar"] a, [class*="nav-item"] a, ul li a'),
-      ];
-      const seen = new Set();
-      const cats = [];
-      for (const el of candidates) {
-        const text = el.textContent.trim();
-        if (!text || seen.has(text) || text.length > 80) continue;
-        // Skip top-nav items like "Forums", "Ideas", "Blogs" etc.
-        const skip = ['forums','inspiration','ideas','communities','blogs','learning','support','home'];
-        if (skip.some(s => text.toLowerCase().includes(s))) continue;
-        seen.add(text);
-        cats.push({ text, href: el.href });
-      }
-      return cats;
-    });
-
-    console.log(`  → Found ${categories.length} categories: ${categories.map(c => c.text).join(', ')}`);
+    await sleep(3000); // Let JS fully render
 
     const allFeatures = [];
 
-    for (const cat of categories) {
-      console.log(`  → Scraping: ${cat.text}`);
-      try {
-        // Click the category link
-        await page.evaluate((href) => {
-          const links = [...document.querySelectorAll('a')];
-          const link = links.find(l => l.href === href || l.textContent.trim() === href);
-          if (link) link.click();
-        }, cat.href || cat.text);
+    for (const catName of FABRIC_ROADMAP_CATEGORIES) {
+      console.log(`  → Category: ${catName}`);
 
-        await sleep(1200); // Wait for features to load
+      // Find and click the sidebar link whose text exactly matches the category name
+      const clicked = await page.evaluate((name) => {
+        const all = [...document.querySelectorAll('a, button, li, [role="menuitem"]')];
+        const match = all.find(el => el.textContent.trim() === name);
+        if (match) { match.click(); return true; }
+        return false;
+      }, catName);
 
-        // Extract features from the main content area
-        const features = await page.evaluate((catName) => {
-          const results = [];
-
-          // Feature rows — try common patterns
-          const rows = document.querySelectorAll(
-            '[class*="feature-row"], [class*="roadmap-item"], [class*="item-row"], ' +
-            'table tr, [class*="list-item"], [class*="card"], [role="row"], ' +
-            '[class*="feature"] [class*="title"]'
-          );
-
-          // Fallback: look for rows that contain a status badge
-          const statusBadges = document.querySelectorAll(
-            '[class*="badge"], [class*="status"], [class*="tag"], [class*="pill"]'
-          );
-
-          // Try to find feature containers by badge proximity
-          const containers = new Set();
-          for (const badge of statusBadges) {
-            const badgeText = badge.textContent.trim();
-            if (!['planned','try now','in development','rolling out','launched'].some(
-              s => badgeText.toLowerCase().includes(s)
-            )) continue;
-            // Walk up to find the row container
-            let el = badge.parentElement;
-            for (let i = 0; i < 5; i++) {
-              if (!el) break;
-              const text = el.textContent.trim();
-              if (text.length > 20 && text.length < 2000) {
-                containers.add(el);
-                break;
-              }
-              el = el.parentElement;
-            }
-          }
-
-          for (const container of containers) {
-            // Extract title — largest/first text node that isn't a badge/date
-            const allText = container.innerText || container.textContent || '';
-            const lines = allText.split('\n').map(l => l.trim()).filter(Boolean);
-
-            // Title is typically the longest non-date, non-badge line
-            const isDate = s => /Q[1-4]\s*\d{4}|CY\d{4}|\d{4}/.test(s);
-            const isBadge = s => ['planned','try now','in development','rolling out','launched',
-              'public preview','general availability','preview','ga'].includes(s.toLowerCase());
-
-            const titleLine = lines.find(l => l.length > 10 && !isDate(l) && !isBadge(l));
-            if (!titleLine) continue;
-
-            // Status
-            const statusLine = lines.find(l => isBadge(l));
-            const status = statusLine
-              ? statusLine.charAt(0).toUpperCase() + statusLine.slice(1).toLowerCase()
-              : 'Planned';
-
-            // Dates — look for "Public preview Q1 2026" / "General availability Q1 2026"
-            const fullText = allText.toLowerCase();
-            const previewMatch = fullText.match(/public preview[:\s]*(q[1-4]\s*\d{4}|\d{4})/i);
-            const gaMatch      = fullText.match(/general availability[:\s]*(q[1-4]\s*\d{4}|\d{4})/i);
-
-            // Get URL if there's a link in the container
-            const link = container.querySelector('a');
-            const url = link ? link.href : '';
-
-            results.push({
-              title:       titleLine,
-              category:    catName,
-              status,
-              previewDate: previewMatch ? previewMatch[1].toUpperCase() : '',
-              gaDate:      gaMatch      ? gaMatch[1].toUpperCase()      : '',
-              url,
-            });
-          }
-
-          return results;
-        }, cat.text);
-
-        console.log(`    → ${features.length} features`);
-
-        for (const f of features) {
-          // Avoid duplicates (same title may appear in multiple categories)
-          if (!allFeatures.some(x => x.title === f.title && x.category === f.category)) {
-            allFeatures.push(f);
-          }
-        }
-      } catch (err) {
-        console.warn(`  [WARN] Failed to scrape category "${cat.text}": ${err.message}`);
+      if (!clicked) {
+        console.log(`    → Not found, skipping`);
+        continue;
       }
-    }
+      await sleep(1500);
 
-    // If category-by-category yielded nothing, fall back to full-page scrape
-    if (allFeatures.length === 0) {
-      console.log('  → Category scrape empty — falling back to full-page extraction…');
-      const fallback = await page.evaluate(() => {
-        const badges = document.querySelectorAll('*');
+      // Extract features: find every element whose text is EXACTLY "Planned" or "Try Now"
+      // (the status badge), then walk up to find the row, then extract the title.
+      const features = await page.evaluate((catName, invalidTitles) => {
         const results = [];
-        for (const el of badges) {
-          const text = (el.textContent || '').trim();
-          if (text === 'Planned' || text === 'Try Now') {
-            let row = el.parentElement;
-            for (let i = 0; i < 6; i++) {
-              if (!row) break;
-              const lines = (row.innerText || '').split('\n').map(s => s.trim()).filter(Boolean);
-              const title = lines.find(l => l.length > 10 &&
-                !['planned','try now'].includes(l.toLowerCase()) &&
-                !/Q[1-4]\s*\d{4}/.test(l)
-              );
-              if (title) {
-                results.push({ title, category: 'Fabric', status: text, previewDate: '', gaDate: '', url: '' });
-                break;
-              }
-              row = row.parentElement;
+        const seen = new Set();
+
+        // Find all status badge elements — text must be exactly "Planned" or "Try Now"
+        const allEls = [...document.querySelectorAll('*')];
+        const badges = allEls.filter(el => {
+          const t = el.textContent.trim();
+          return (t === 'Planned' || t === 'Try Now') && el.children.length === 0;
+        });
+
+        for (const badge of badges) {
+          const statusText = badge.textContent.trim(); // "Planned" or "Try Now"
+
+          // Walk up max 8 levels to find the row container
+          let row = badge.parentElement;
+          let found = false;
+          for (let i = 0; i < 8 && row; i++) {
+            const innerText = (row.innerText || '').trim();
+            // Row must have enough text to contain a real title
+            if (innerText.length > 30 && innerText.length < 1500) {
+              found = true;
+              break;
             }
+            row = row.parentElement;
           }
+          if (!found || !row) continue;
+
+          // Extract lines from the row
+          const lines = (row.innerText || '')
+            .split('\n')
+            .map(l => l.trim())
+            .filter(Boolean);
+
+          // Title: first line that is not a badge, date, or known invalid title
+          const isDateLike   = s => /^Q[1-4]\s*\d{4}$/.test(s) || /^\d{4}$/.test(s);
+          const isBadgeLike  = s => ['planned','try now','public preview','general availability'].includes(s.toLowerCase());
+
+          const title = lines.find(l =>
+            l.length > 8 &&
+            !isDateLike(l) &&
+            !isBadgeLike(l) &&
+            !invalidTitles.includes(l) &&
+            l !== catName
+          );
+          if (!title || seen.has(title)) continue;
+          seen.add(title);
+
+          // Dates
+          const fullText = (row.innerText || '').toLowerCase();
+          const previewM = fullText.match(/public preview\s*(q[1-4]\s*\d{4}|\d{4})/i);
+          const gaM      = fullText.match(/general availability\s*(q[1-4]\s*\d{4}|\d{4})/i);
+
+          const link = row.querySelector('a');
+
+          results.push({
+            title,
+            category:    catName,
+            status:      statusText,
+            previewDate: previewM ? previewM[1].toUpperCase().replace(/\s+/,'') : '',
+            gaDate:      gaM      ? gaM[1].toUpperCase().replace(/\s+/,'')      : '',
+            url:         link ? link.href : '',
+          });
         }
-        return [...new Map(results.map(r => [r.title, r])).values()];
-      });
-      allFeatures.push(...fallback);
+
+        return results;
+      }, catName, [...FABRIC_INVALID_TITLES]);
+
+      console.log(`    → ${features.length} features`);
+      allFeatures.push(...features);
     }
 
     console.log(`\n  → Total Fabric Roadmap features: ${allFeatures.length}`);
 
     // Convert to article format
-    const articles = allFeatures.map(f => ({
+    return allFeatures.map(f => ({
       title:   f.title,
       summary: [
-        f.category ? `Category: ${f.category}` : '',
         f.previewDate ? `Public Preview: ${f.previewDate}` : '',
         f.gaDate      ? `General Availability: ${f.gaDate}` : '',
-      ].filter(Boolean).join(' · ') || 'See Microsoft Fabric Roadmap for details.',
-      source:  f.category || 'Fabric Roadmap',
-      product: 'Fabric',
-      status:  f.status,
-      url:     f.url || 'https://roadmap.fabric.microsoft.com/',
-      date:    new Date().toISOString(),
+        `Category: ${f.category}`,
+      ].filter(Boolean).join(' · '),
+      source:      f.category,
+      product:     'Fabric',
+      status:      f.status,
+      url:         f.url || 'https://roadmap.fabric.microsoft.com/',
+      date:        new Date().toISOString(),
       previewDate: f.previewDate || undefined,
       gaDate:      f.gaDate      || undefined,
     }));
 
-    return articles;
   } catch (err) {
     console.warn(`  [WARN] Fabric Roadmap scrape failed: ${err.message}`);
     return [];
