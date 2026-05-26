@@ -49,7 +49,7 @@
   function setLoading(on) { spinner.classList.toggle('hidden', !on); }
 
   // ── CSS class helpers ────────────────────────────────────
-  function slugify(s) { return (s || '').toLowerCase().replace(/\s+/g, '-'); }
+  function slugify(s) { return (s || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''); }
 
   // ── Build a single card ──────────────────────────────────
   function createCard(article, isRoadmap) {

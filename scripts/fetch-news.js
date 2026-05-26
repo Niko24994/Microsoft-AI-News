@@ -473,15 +473,15 @@ async function fetchFabricRoadmap() {
     console.log(`\n  → Total Fabric Roadmap features: ${allFeatures.length}`);
 
     // Convert to article format
+    // product = category so the filter bar splits by Data Engineering, Power BI etc.
     return allFeatures.map(f => ({
       title:   f.title,
       summary: [
         f.previewDate ? `Public Preview: ${f.previewDate}` : '',
         f.gaDate      ? `General Availability: ${f.gaDate}` : '',
-        `Category: ${f.category}`,
-      ].filter(Boolean).join(' · '),
-      source:      f.category,
-      product:     'Fabric',
+      ].filter(Boolean).join(' · ') || 'See Microsoft Fabric Roadmap for details.',
+      source:      'Fabric Roadmap',
+      product:     f.category,
       status:      f.status,
       url:         f.url || 'https://roadmap.fabric.microsoft.com/',
       date:        new Date().toISOString(),
