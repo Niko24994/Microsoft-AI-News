@@ -19,12 +19,15 @@ const ROADMAP_FEEDS = {
 };
 
 // Release Notes tabs — product blog feeds, each tagged with a product label
+// skipFilter: true → show all posts (used for dedicated sub-product blogs where
+// every post is product-relevant; keeps the filter only on the broader main blogs)
 const RELEASE_FEEDS = [
-  { url: 'https://blog.fabric.microsoft.com/en-us/blog/feed/',                       product: 'Fabric' },
-  { url: 'https://powerbi.microsoft.com/en-us/blog/feed/',                           product: 'Power BI' },
-  { url: 'https://www.microsoft.com/en-us/power-platform/blog/feed/',                product: 'Power Platform' },
-  { url: 'https://www.microsoft.com/en-us/power-platform/blog/power-automate/feed/', product: 'Power Automate' },
-  { url: 'https://powerapps.microsoft.com/en-us/blog/feed/',                         product: 'Power Apps' },
+  { url: 'https://blog.fabric.microsoft.com/en-us/blog/feed/',                            product: 'Fabric' },
+  { url: 'https://powerbi.microsoft.com/en-us/blog/feed/',                                product: 'Power BI' },
+  { url: 'https://www.microsoft.com/en-us/power-platform/blog/feed/',                     product: 'Power Platform' },
+  { url: 'https://www.microsoft.com/en-us/power-platform/blog/power-automate/feed/',      product: 'Power Automate', skipFilter: true },
+  { url: 'https://www.microsoft.com/en-us/power-platform/blog/power-apps/feed/',          product: 'Power Apps',     skipFilter: true },
+  { url: 'https://www.microsoft.com/en-us/power-platform/blog/power-pages/feed/',         product: 'Power Pages',    skipFilter: true },
 ];
 
 // Keywords that must appear in title for release notes articles
@@ -36,10 +39,11 @@ const RELEASE_KEYWORDS = [
   'coming soon', 'now available', 'release notes', 'feature release',
   'monthly update', 'desktop update', 'service update', 'update',
   // Announcement-style titles (Power Automate / Power Apps style)
-  'introducing', 'announcing', 'announced', 'new in', 'now in',
+  'introducing', 'introduces', 'announcing', 'announced', 'new in', 'now in',
   'launching', 'launched', 'available in', 'rolling out', 'general availability',
   'new feature', 'new connector', 'new capability', 'new experience',
   'enhanced', 'enhancements', 'improved', 'improvements',
+  'release wave',
 ];
 
 const STATUS_VALUES = ['In development', 'Rolling out', 'Launched', 'Cancelled'];
@@ -144,12 +148,12 @@ async function fetchReleaseNotes() {
   console.log('\n[releasenotes] Loading blog feeds…');
   const allItems = [];
 
-  for (const { url, product } of RELEASE_FEEDS) {
-    console.log(`  → ${url} [${product}]`);
+  for (const { url, product, skipFilter } of RELEASE_FEEDS) {
+    console.log(`  → ${url} [${product}]${skipFilter ? ' (no filter)' : ''}`);
     const items = await fetchFeed(url);
     for (const item of items) {
       const title = (item.title || '').toLowerCase();
-      if (!RELEASE_KEYWORDS.some(kw => title.includes(kw))) continue;
+      if (!skipFilter && !RELEASE_KEYWORDS.some(kw => title.includes(kw))) continue;
       allItems.push({
         title:   (item.title || '').trim(),
         summary: (item.contentSnippet || item.summary || item.content || '')

@@ -255,6 +255,8 @@ main {
 .product-power-bi       { background: rgba(243,186,47,.15); color: #f3ba2f; }
 .product-power-platform { background: rgba(0,174,234,.15);  color: #00aeea; }
 .product-power-automate { background: rgba(0,128,255,.15);  color: #4da6ff; }
+.product-power-apps     { background: rgba(174,0,255,.15);  color: #c47bff; }
+.product-power-pages    { background: rgba(0,183,195,.15);  color: #00b7c3; }
 .product-microsoft-365  { background: rgba(234,67,53,.12);  color: #ea4335; }
 
 /* Filter bar product buttons inherit status-btn styling,
@@ -263,6 +265,8 @@ main {
 .product-btn.product-power-bi.active       { background: rgba(243,186,47,.15); border-color: #f3ba2f; color: #f3ba2f; }
 .product-btn.product-power-platform.active { background: rgba(0,174,234,.15);  border-color: #00aeea; color: #00aeea; }
 .product-btn.product-power-automate.active { background: rgba(0,128,255,.15);  border-color: #4da6ff; color: #4da6ff; }
+.product-btn.product-power-apps.active     { background: rgba(174,0,255,.15);  border-color: #c47bff; color: #c47bff; }
+.product-btn.product-power-pages.active    { background: rgba(0,183,195,.15);  border-color: #00b7c3; color: #00b7c3; }
 .product-btn.product-microsoft-365.active  { background: rgba(234,67,53,.12);  border-color: #ea4335; color: #ea4335; }
 
 /* ── News Card ────────────────────────────────────────────── */
