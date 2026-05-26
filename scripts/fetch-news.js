@@ -21,8 +21,8 @@ const ROADMAP_FEEDS = {
 // ── Release Notes: product blog feeds ───────────────────────────────────────
 // skipFilter: true → show all posts (focused sub-blogs only publish product content)
 const RELEASE_FEEDS = [
-  { url: 'https://blog.fabric.microsoft.com/en-us/blog/feed/',                            product: 'Fabric' },
-  { url: 'https://powerbi.microsoft.com/en-us/blog/feed/',                                product: 'Power BI' },
+  { url: 'https://community.fabric.microsoft.com/oxcrx34285/rss/board?board.id=fbc_fabricupdatesblogs', product: 'Fabric' },
+  { url: 'https://community.fabric.microsoft.com/oxcrx34285/rss/board?board.id=fbc_pbiupdatesblog',     product: 'Power BI' },
   { url: 'https://www.microsoft.com/en-us/power-platform/blog/feed/',                     product: 'Power Platform' },
   { url: 'https://www.microsoft.com/en-us/power-platform/blog/power-automate/feed/',      product: 'Power Automate', skipFilter: true },
   { url: 'https://www.microsoft.com/en-us/power-platform/blog/power-apps/feed/',          product: 'Power Apps',     skipFilter: true },
@@ -305,12 +305,17 @@ async function main() {
   const yesterdayUrls = loadUrlSet(yesterdayPath);
   console.log(`  [NEW] Comparing against ${yesterdayUrls.size} articles from yesterday`);
 
-  const releasePlan = await fetchReleasePlan();
+  // Fetch in priority order — release plan last so it can't block main data
+  const copilotItems      = await fetchRoadmapTab('copilot');
+  await sleep(800);                                 // breathing room between same-URL requests
+  const agentsItems       = await fetchRoadmapTab('agents');
+  const releaseNotesItems = await fetchReleaseNotes();
+  const releasePlan       = await fetchReleasePlan();
 
   const tabs = {
-    copilot:      await fetchRoadmapTab('copilot'),
-    agents:       await fetchRoadmapTab('agents'),
-    releasenotes: await fetchReleaseNotes(),
+    copilot:      copilotItems,
+    agents:       agentsItems,
+    releasenotes: releaseNotesItems,
     releasewave:  releasePlan.items,
   };
 
