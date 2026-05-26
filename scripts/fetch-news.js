@@ -385,51 +385,66 @@ const FABRIC_INVALID_PREFIXES = [
 // Extract feature items currently visible in the DOM for a given category.
 // Called repeatedly while scrolling to handle lazy-loaded / virtual-scrolled pages.
 function extractVisibleFeatures(catName, invalidTitles, invalidPrefixes) {
-  const results = [];
-  const STATUS  = new Set(['Planned', 'Try Now']);
-  const allEls  = [...document.querySelectorAll('*')];
+  const results    = [];
+  const STATUS_ARR = ['Planned', 'Try Now'];
 
-  // Find badge elements: text is exactly a status label.
-  // Allow up to 2 children so badge pills with an inner icon/span are not skipped.
-  const badges = allEls.filter(el => {
-    const t = el.textContent.trim();
-    return STATUS.has(t) && el.children.length <= 2;
+  // Use innerText (rendered text only, ignores SVG titles and display:none)
+  // so we reliably find only the visible badge elements.
+  const allEls = [...document.querySelectorAll('*')];
+
+  // Pre-filter by textContent (cheap), then verify with innerText (accurate)
+  const candidates = allEls.filter(el => {
+    const tc = el.textContent.trim();
+    return tc === 'Planned' || tc === 'Try Now';
   });
+
+  // Keep only the deepest element in each parent→child chain
+  // (avoids processing both a wrapper div AND its inner span for the same badge)
+  const badges = candidates.filter(el =>
+    !candidates.some(other => other !== el && el.contains(other))
+  );
 
   const seen = new Set();
 
   for (const badge of badges) {
-    const statusText = badge.textContent.trim();
+    // Use innerText for the status text — empty string means element is hidden
+    const statusText = (badge.innerText || '').trim();
+    if (!STATUS_ARR.includes(statusText)) continue; // hidden or mis-matched
 
-    // Walk up to find the immediate row container.
-    // Keep the upper text-length limit tight (≤ 800 chars) so we never
-    // accidentally latch onto a section or page-level wrapper.
+    // Walk up to find a row container that:
+    //   • has a link inside (feature titles are links on Fabric Roadmap)
+    //   • has reasonable innerText length (not a whole-section wrapper)
     let row = badge.parentElement;
     let found = false;
-    for (let i = 0; i < 10 && row; i++) {
-      const t = (row.innerText || '').trim();
-      if (t.length > 20 && t.length <= 800) { found = true; break; }
+    for (let i = 0; i < 14 && row; i++) {
+      const innerLen = (row.innerText || '').trim().length;
+      if (innerLen > 15 && innerLen < 2000 && row.querySelector('a[href]')) {
+        found = true;
+        break;
+      }
       row = row.parentElement;
     }
     if (!found || !row) continue;
 
-    // Prefer the title from the first anchor link inside the row — the most
-    // reliable source since the Fabric Roadmap renders each title as a link.
+    // Title: prefer the first link text in the row
     const rowLink = row.querySelector('a[href]');
     let title = null;
     if (rowLink) {
-      const lt = rowLink.textContent.trim();
-      if (lt.length > 8 && !STATUS.has(lt) && !invalidTitles.includes(lt) &&
-          !invalidPrefixes.some(p => lt.toLowerCase().startsWith(p)) && lt !== catName) {
+      const lt = (rowLink.innerText || rowLink.textContent || '').trim();
+      if (lt.length > 8 && !STATUS_ARR.includes(lt) &&
+          !invalidTitles.includes(lt) &&
+          !invalidPrefixes.some(p => lt.toLowerCase().startsWith(p)) &&
+          lt !== catName) {
         title = lt;
       }
     }
 
-    // Fallback: first meaningful text line in the row
+    // Fallback: first non-date, non-badge line in the row's innerText
     if (!title) {
-      const isDateLike = s => /^Q[1-4]\s*\d{4}$|^\d{4}$|^H[12]\s/.test(s);
+      const isDateLike = s => /^Q[1-4]\s*\d{4}$|^\d{4}$|^H[12]/.test(s);
       const isBadgeStr = s =>
-        ['planned','try now','public preview','general availability','preview','ga'].includes(s.toLowerCase());
+        ['planned','try now','public preview','general availability','preview','ga']
+          .includes(s.toLowerCase());
       const lines = (row.innerText || '').split('\n').map(l => l.trim()).filter(Boolean);
       title = lines.find(l =>
         l.length > 8 && !isDateLike(l) && !isBadgeStr(l) &&
@@ -493,7 +508,13 @@ async function fetchFabricRoadmap() {
 
       const clicked = await page.evaluate((name) => {
         const all = [...document.querySelectorAll('a, button, li, [role="menuitem"]')];
-        const match = all.find(el => el.textContent.trim() === name);
+        // Exact match first; then prefix match for "Category (22)" style labels
+        const match =
+          all.find(el => el.textContent.trim() === name) ||
+          all.find(el => {
+            const t = el.textContent.trim();
+            return t.startsWith(name) && (t.length === name.length || /^[\s(]/.test(t[name.length]));
+          });
         if (match) { match.click(); return true; }
         return false;
       }, catName);
