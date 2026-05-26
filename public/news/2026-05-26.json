@@ -1,6 +1,6 @@
 {
   "date": "2026-05-26",
-  "updated": "2026-05-26T18:32:38.781Z",
+  "updated": "2026-05-26T18:54:33.781Z",
   "wave": "261",
   "waveLabel": "2026 Release Wave 1",
   "tabs": {
@@ -5255,6 +5255,72 @@
         "isNew": true
       },
       {
+        "title": "Improve bulk delete user experience",
+        "summary": "Improves bulk delete in Microsoft Dataverse by making jobs portable across environments (solution aware) and enhancing error handling.",
+        "source": "Release Wave Plan",
+        "product": "Dataverse",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/data-platform/improve-bulk-delete-user-experience",
+        "date": "2026-05-21T20:20:00.000Z",
+        "planned": true,
+        "waveLabel": "2026 Release Wave 1",
+        "isNew": true
+      },
+      {
+        "title": "Guided table selection for first‑time Dataverse sync",
+        "summary": "Select specific tables for first-time syncing with Microsoft Dataverse and Microsoft Fabric.",
+        "source": "Release Wave Plan",
+        "product": "Dataverse",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/data-platform/guided-table-selection-firsttime-dataverse-sync",
+        "date": "2026-05-21T20:20:00.000Z",
+        "planned": true,
+        "waveLabel": "2026 Release Wave 1",
+        "isNew": true
+      },
+      {
+        "title": "Monitor data management framework with Azure Monitor Application Insights",
+        "summary": "Data management framework monitoring in Microsoft Dynamics 365 provides telemetry details to Azure Monitor Application Insights for monitoring.",
+        "source": "Release Wave Plan",
+        "product": "Dataverse",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/data-platform/monitor-data-management-framework-azure-monitor-application-insights",
+        "date": "2026-05-21T20:20:00.000Z",
+        "planned": true,
+        "waveLabel": "2026 Release Wave 1",
+        "isNew": true
+      },
+      {
+        "title": "Create Dataverse agent users with Microsoft Entra agent identity",
+        "summary": "Create Microsoft Dataverse agent users with role assignment, auditing, and lifecycle management, to enhance security and compliance for AI-powered agents.",
+        "source": "Release Wave Plan",
+        "product": "Dataverse",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/data-platform/create-dataverse-agent-users-entra-agent-identity",
+        "date": "2026-05-21T20:20:00.000Z",
+        "planned": true,
+        "waveLabel": "2026 Release Wave 1",
+        "isNew": true
+      },
+      {
+        "title": "GitHub support for source code integration in Power Platform",
+        "summary": "Source control integration lets teams sync solutions across one or more Microsoft Dataverse environments using a GitHub repository.",
+        "source": "Release Wave Plan",
+        "product": "Power Platform Admin",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-platform-governance-administration/github-support-source-code-integration-power-platform",
+        "date": "2026-05-21T20:20:00.000Z",
+        "planned": true,
+        "waveLabel": "2026 Release Wave 1",
+        "isNew": true
+      },
+      {
+        "title": "Detect operational health issues across Power Platform resources quickly",
+        "summary": "Maximize business continuity by quickly detecting when your organization's apps, flows, and agents degrade.",
+        "source": "Release Wave Plan",
+        "product": "Power Platform Admin",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-platform-governance-administration/detect-operational-health-issues-across-power-platform-resources-quickly",
+        "date": "2026-05-21T20:20:00.000Z",
+        "planned": true,
+        "waveLabel": "2026 Release Wave 1",
+        "isNew": true
+      },
+      {
         "title": "New metadata sync and more in SQL Analytics Endpoint (Preview)",
         "summary": "Author: Rakesh Krishnan, Principal Product Manager, Azure Data Exciting changes coming to SQL Analytics Endpoint",
         "source": "rakrish75",
@@ -5538,22 +5604,22 @@
         "isNew": true
       },
       {
-        "title": "Visualize desktop flows with flow chart view",
-        "summary": "The new flow‑chart view lets users build desktop flows visually with connected nodes, making complex automations easier to design, navigate, and understand.",
+        "title": "Connect to local AI models from desktop flows",
+        "summary": "Invoke locally hosted AI models through desktop flows using OpenAI-compatible APIs to create intelligent automation within your environment.",
         "source": "Release Wave Plan",
         "product": "Power Automate",
-        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-automate/visualize-desktop-flows-chart-view",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-automate/connect-local-ai-models-desktop-flows",
         "date": "2026-05-14T18:47:00.000Z",
         "planned": true,
         "waveLabel": "2026 Release Wave 1",
         "isNew": true
       },
       {
-        "title": "Connect to local AI models from desktop flows",
-        "summary": "Invoke locally hosted AI models through desktop flows using OpenAI-compatible APIs to create intelligent automation within your environment.",
+        "title": "Visualize desktop flows with flow chart view",
+        "summary": "The new flow‑chart view lets users build desktop flows visually with connected nodes, making complex automations easier to design, navigate, and understand.",
         "source": "Release Wave Plan",
         "product": "Power Automate",
-        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-automate/connect-local-ai-models-desktop-flows",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-automate/visualize-desktop-flows-chart-view",
         "date": "2026-05-14T18:47:00.000Z",
         "planned": true,
         "waveLabel": "2026 Release Wave 1",
@@ -5587,6 +5653,94 @@
         "source": "Release Wave Plan",
         "product": "Copilot Studio",
         "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/microsoft-copilot-studio/analyze-quality-responses-that-use-generative-ai",
+        "date": "2026-05-14T18:47:00.000Z",
+        "planned": true,
+        "waveLabel": "2026 Release Wave 1",
+        "isNew": true
+      },
+      {
+        "title": "Discover, build, customize, and extend with management MCP server",
+        "summary": "The management MCP server is an API-first, environment scoped endpoint for discovering, building, and customizing MCP servers using connectors, APIs, and tools.",
+        "source": "Release Wave Plan",
+        "product": "Dataverse",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/data-platform/discover-build-customize-extend-management-mcp-server",
+        "date": "2026-05-14T18:47:00.000Z",
+        "planned": true,
+        "waveLabel": "2026 Release Wave 1",
+        "isNew": true
+      },
+      {
+        "title": "Chat and reason over Dataverse business data in Microsoft 365 Copilot",
+        "summary": "Microsoft Dataverse business data is available for Microsoft 365 mainline chat.",
+        "source": "Release Wave Plan",
+        "product": "Dataverse",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/data-platform/chat-reason-over-dataverse-business-data-365-copilot",
+        "date": "2026-05-14T18:47:00.000Z",
+        "planned": true,
+        "waveLabel": "2026 Release Wave 1",
+        "isNew": true
+      },
+      {
+        "title": "Microsoft Dataverse - Activate Enterprise Data in Copilot",
+        "summary": "Realize more value for enterprise data in Microsoft Dataverse using Copilot.",
+        "source": "Release Wave Plan",
+        "product": "Dataverse",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/data-platform/activate-enterprise-data-copilot",
+        "date": "2026-05-14T18:47:00.000Z",
+        "planned": true,
+        "waveLabel": "2026 Release Wave 1",
+        "isNew": true
+      },
+      {
+        "title": "Microsoft Dataverse - Enable AI powered business workflows in Work IQ with Dataverse",
+        "summary": "Microsoft Dataverse in Work IQ enables intelligent business workflows in Microsoft 365 Copilot with reusable skills, adaptive learning, rich business context, and transparent agent identities.",
+        "source": "Release Wave Plan",
+        "product": "Dataverse",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/data-platform/enable-ai-powered-business-workflows-work-iq-dataverse",
+        "date": "2026-05-14T18:47:00.000Z",
+        "planned": true,
+        "waveLabel": "2026 Release Wave 1",
+        "isNew": true
+      },
+      {
+        "title": "Improve Dataverse MCP server quality with updated tools",
+        "summary": "Dataverse MCP streamlines its tool surface with unified discovery, separated data and metadata search, unstructured data access, and business skill management.",
+        "source": "Release Wave Plan",
+        "product": "Dataverse",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/data-platform/improve-dataverse-mcp-server-quality-updated-tools",
+        "date": "2026-05-14T18:47:00.000Z",
+        "planned": true,
+        "waveLabel": "2026 Release Wave 1",
+        "isNew": true
+      },
+      {
+        "title": "Build Dataverse solutions with coding agents using Dataverse skills",
+        "summary": "Use coding agents like GitHub Copilot and Claude Code to build Microsoft Dataverse solutions using Dataverse skills.",
+        "source": "Release Wave Plan",
+        "product": "Dataverse",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/data-platform/build-dataverse-solutions-coding-agents-using-dataverse-skills",
+        "date": "2026-05-14T18:47:00.000Z",
+        "planned": true,
+        "waveLabel": "2026 Release Wave 1",
+        "isNew": true
+      },
+      {
+        "title": "Automate governance with Agentic Center of Enablement",
+        "summary": "Power Platform admins get AI agents that scan tenants, detect governance issues, prioritize risks, and generate remediation plans.",
+        "source": "Release Wave Plan",
+        "product": "Power Platform Admin",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-platform-governance-administration/automate-governance-agentic-center-enablement",
+        "date": "2026-05-14T18:47:00.000Z",
+        "planned": true,
+        "waveLabel": "2026 Release Wave 1",
+        "isNew": true
+      },
+      {
+        "title": "Prevent sending sensitive data to Purview audit logs",
+        "summary": "This feature restricts customer business data in Dataverse audit logs from being sent to Purview auditing streams to enhance compliance and security.",
+        "source": "Release Wave Plan",
+        "product": "Power Platform Admin",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-platform-governance-administration/prevent-sending-sensitive-data-purview-audit-logs",
         "date": "2026-05-14T18:47:00.000Z",
         "planned": true,
         "waveLabel": "2026 Release Wave 1",
@@ -5725,6 +5879,28 @@
         "source": "Release Wave Plan",
         "product": "Copilot Studio",
         "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/microsoft-copilot-studio/use-code-interpreter-sharepoint-sources-agent-conversations",
+        "date": "2026-04-29T17:39:00.000Z",
+        "planned": true,
+        "waveLabel": "2026 Release Wave 1",
+        "isNew": true
+      },
+      {
+        "title": "Restore deleted records within a specified timeframe",
+        "summary": "Users with the system administrator security role can view and restore any deleted records from the Microsoft Dataverse tables within 30 days.",
+        "source": "Release Wave Plan",
+        "product": "Dataverse",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/data-platform/restore-deleted-records-within-specified-timeframe",
+        "date": "2026-04-29T17:39:00.000Z",
+        "planned": true,
+        "waveLabel": "2026 Release Wave 1",
+        "isNew": true
+      },
+      {
+        "title": "Build your agentic flows with Dataverse SDK for Python",
+        "summary": "Python developers can use the Dataverse SDK for Python for DDL and DML operations to access Dataverse data.",
+        "source": "Release Wave Plan",
+        "product": "Dataverse",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/data-platform/build-agentic-flows-dataverse-sdk-python",
         "date": "2026-04-29T17:39:00.000Z",
         "planned": true,
         "waveLabel": "2026 Release Wave 1",
@@ -6037,6 +6213,50 @@
         "isNew": true
       },
       {
+        "title": "Deploy from Git with pipelines in Power Platform",
+        "summary": "Pipelines in Power Platform and source code integration work together in tandem, allowing you to deploy from your release branch.",
+        "source": "Release Wave Plan",
+        "product": "Power Platform Admin",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-platform-governance-administration/deploy-git-pipelines-power-platform",
+        "date": "2026-04-22T23:15:00.000Z",
+        "planned": true,
+        "waveLabel": "2026 Release Wave 1",
+        "isNew": true
+      },
+      {
+        "title": "Manage agent security with enhanced admin controls",
+        "summary": "Use new security controls to govern Copilot use in Power Platform environments.",
+        "source": "Release Wave Plan",
+        "product": "Power Platform Admin",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-platform-governance-administration/manage-copilot-security-enhanced-admin-controls",
+        "date": "2026-04-22T23:15:00.000Z",
+        "planned": true,
+        "waveLabel": "2026 Release Wave 1",
+        "isNew": true
+      },
+      {
+        "title": "Take advantage of expanded Virtual Network support",
+        "summary": "Enhance data security by connecting Power Platform services with expanded Virtual Network support.",
+        "source": "Release Wave Plan",
+        "product": "Power Platform Admin",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-platform-governance-administration/take-advantage-expanded-virtual-network-support",
+        "date": "2026-04-22T23:15:00.000Z",
+        "planned": true,
+        "waveLabel": "2026 Release Wave 1",
+        "isNew": true
+      },
+      {
+        "title": "Intuitive inline deployments in Copilot Studio",
+        "summary": "Pipelines in Power Platform has a simplified, more intuitive experience available within Microsoft Copilot Studio's agent building interface.",
+        "source": "Release Wave Plan",
+        "product": "Power Platform Admin",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-platform-governance-administration/intuitive-inline-deployments-copilot-studio",
+        "date": "2026-04-22T23:15:00.000Z",
+        "planned": true,
+        "waveLabel": "2026 Release Wave 1",
+        "isNew": true
+      },
+      {
         "title": "Custom tools and rich UI for app-based conversations are now in Public Preview",
         "summary": "Discover how custom tools and rich, app‑powered UI experiences can elevate business app conversations in Microsoft 365 Copilot. This public preview introduces new ways to surface app intelligence, drive action, and deliver more contextual, intuitive interactions - directly within the flow of work.\nThe post Custom tools and rich UI for app-based conversations are now in Public Preview appeared first on Microsoft Power Platform Blog.",
         "source": "Hemant Gaur",
@@ -6128,6 +6348,17 @@
         "isNew": true
       },
       {
+        "title": "View sensitivity labels in connectors",
+        "summary": "Customers can use Power Platform connectors and Copilot connectors to transfer Microsoft Purview Information Protection sensitivity labels.",
+        "source": "Release Wave Plan",
+        "product": "Power Platform Admin",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-platform-governance-administration/view-sensitivity-labels-connectors",
+        "date": "2026-04-09T18:18:00.000Z",
+        "planned": true,
+        "waveLabel": "2026 Release Wave 1",
+        "isNew": true
+      },
+      {
         "title": "Power Platform Monitor Alerts Are Now Generally Available",
         "summary": "We are excited to announce that Power Platform Monitor alerts for apps, agents, and flows are now generally available! Monitor alerts meet the reliability and maturity standards required for general availability, following sustained investments to improve quality.\nThe post Power Platform Monitor Alerts Are Now Generally Available appeared first on Microsoft Power Platform Blog.",
         "source": "Arjun Mayur",
@@ -6177,6 +6408,17 @@
         "isNew": true
       },
       {
+        "title": "Enable makers to create Dataverse AI prompt columns",
+        "summary": "Makers create Microsoft Dataverse AI columns in their tables using AI prompts to enrich their data and to efficiently process or respond to customer feedback.",
+        "source": "Release Wave Plan",
+        "product": "Dataverse",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/data-platform/enable-makers-create-copilot-ai-columns-during-table-or-column-creation",
+        "date": "2026-04-02T17:21:00.000Z",
+        "planned": true,
+        "waveLabel": "2026 Release Wave 1",
+        "isNew": true
+      },
+      {
         "title": "​Building trustworthy AI: A practical framework for adaptive governance",
         "summary": "If governance is just a list of things people can’t do, that’s not governance—it's a backlog of workarounds waiting to happen.\nThe post ​Building trustworthy AI: A practical framework for adaptive governance appeared first on Microsoft Power Platform Blog.",
         "source": "Ryan Jones",
@@ -6210,6 +6452,28 @@
         "product": "Power BI",
         "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Chat-with-Copilot-inside-a-report-on-the-Power-BI-mobile-app/ba-p/5173913",
         "date": "2026-03-30T17:30:00.000Z"
+      },
+      {
+        "title": "Microsoft Dataverse - Extend your copilots with knowledge and actions",
+        "summary": "Extend your copilots by adding actions through plugins and grounding the source data in enterprise knowledge sources using Microsoft Dataverse.",
+        "source": "Release Wave Plan",
+        "product": "Dataverse",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/data-platform/extend-copilots-knowledge-actions",
+        "date": "2026-03-26T20:10:00.000Z",
+        "planned": true,
+        "waveLabel": "2026 Release Wave 1",
+        "isNew": true
+      },
+      {
+        "title": "Microsoft Dataverse - Build your low code hyperscale backend on Dataverse",
+        "summary": "Accelerate low code maker experiences for Power Apps built on Microsoft Dataverse.",
+        "source": "Release Wave Plan",
+        "product": "Dataverse",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/data-platform/build-low-code-hyperscale-backend-dataverse",
+        "date": "2026-03-26T20:10:00.000Z",
+        "planned": true,
+        "waveLabel": "2026 Release Wave 1",
+        "isNew": true
       },
       {
         "title": "Prevent accidental exposure of non-production Power Pages sites with new admin governance controls",
@@ -6400,6 +6664,127 @@
         "isNew": true
       },
       {
+        "title": "Microsoft Dataverse - Improved enterprise experiences in Power Platform",
+        "summary": "Create solutions and connect data for enterprises in Power Platform more easily.",
+        "source": "Release Wave Plan",
+        "product": "Dataverse",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/data-platform/improved-enterprise-experiences-power-platform",
+        "date": "2026-03-18T14:56:00.000Z",
+        "planned": true,
+        "waveLabel": "2026 Release Wave 1",
+        "isNew": true
+      },
+      {
+        "title": "Microsoft Dataverse - Finance and operations cross application integration",
+        "summary": "Enhancements to finance and operations apps platform with a unified experience for managing users, roles, licenses, and storage.",
+        "source": "Release Wave Plan",
+        "product": "Dataverse",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/data-platform/finance-operations-cross-application-integration",
+        "date": "2026-03-18T14:56:00.000Z",
+        "planned": true,
+        "waveLabel": "2026 Release Wave 1",
+        "isNew": true
+      },
+      {
+        "title": "Microsoft Dataverse - Microsoft 365 collaboration",
+        "summary": "Microsoft Dataverse applications collaborate with Microsoft 365 applications.",
+        "source": "Release Wave Plan",
+        "product": "Dataverse",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/data-platform/365-collaboration",
+        "date": "2026-03-18T14:56:00.000Z",
+        "planned": true,
+        "waveLabel": "2026 Release Wave 1",
+        "isNew": true
+      },
+      {
+        "title": "Move apps out of the default environment",
+        "summary": "This feature allows administrators to migrate canvas apps and SharePoint forms from the default environment to Managed Environments.",
+        "source": "Release Wave Plan",
+        "product": "Power Platform Admin",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-platform-governance-administration/move-apps-out-default-environment",
+        "date": "2026-03-18T14:56:00.000Z",
+        "planned": true,
+        "waveLabel": "2026 Release Wave 1",
+        "isNew": true
+      },
+      {
+        "title": "Discover and foster Power Platform adoption with the new Usage page",
+        "summary": "The Usage page in the Power Platform admin center provides analytics to track adoption trends across Power Apps, Power Automate, and Copilot Studio.",
+        "source": "Release Wave Plan",
+        "product": "Power Platform Admin",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-platform-governance-administration/discover-foster-power-platform-adoption-new-usage-page",
+        "date": "2026-03-18T14:56:00.000Z",
+        "planned": true,
+        "waveLabel": "2026 Release Wave 1",
+        "isNew": true
+      },
+      {
+        "title": "Permit or deny guest access to an environment",
+        "summary": "Use environment settings to permit or deny guest access to an environment.",
+        "source": "Release Wave Plan",
+        "product": "Power Platform Admin",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-platform-governance-administration/permit-or-deny-guest-access-environment",
+        "date": "2026-03-18T14:56:00.000Z",
+        "planned": true,
+        "waveLabel": "2026 Release Wave 1",
+        "isNew": true
+      },
+      {
+        "title": "View sensitivity labels in Microsoft Copilot Studio",
+        "summary": "Dataverse columns that are labeled with Microsoft Purview Information Protection sensitivity labels are displayed in Copilot Studio.",
+        "source": "Release Wave Plan",
+        "product": "Power Platform Admin",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-platform-governance-administration/view-sensitivity-labels-copilot-studio",
+        "date": "2026-03-18T14:56:00.000Z",
+        "planned": true,
+        "waveLabel": "2026 Release Wave 1",
+        "isNew": true
+      },
+      {
+        "title": "Microsoft Power Platform governance and administration - Application lifecycle management",
+        "summary": "Streamline deployment, version control, and lifecycle management of applications and environments with this unified set of tools.",
+        "source": "Release Wave Plan",
+        "product": "Power Platform Admin",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-platform-governance-administration/application-lifecycle-management",
+        "date": "2026-03-18T14:56:00.000Z",
+        "planned": true,
+        "waveLabel": "2026 Release Wave 1",
+        "isNew": true
+      },
+      {
+        "title": "Microsoft Power Platform governance and administration - Licensing and capacity",
+        "summary": "This feature offers enhanced license and capacity management with detailed insights, reports, and recommendations to optimize resources.",
+        "source": "Release Wave Plan",
+        "product": "Power Platform Admin",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-platform-governance-administration/licensing-capacity",
+        "date": "2026-03-18T14:56:00.000Z",
+        "planned": true,
+        "waveLabel": "2026 Release Wave 1",
+        "isNew": true
+      },
+      {
+        "title": "Microsoft Power Platform governance and administration - Monitoring operational health",
+        "summary": "Monitor and improve operational health with insights on usage, performance, and reliability through detailed reports and scalable data export.",
+        "source": "Release Wave Plan",
+        "product": "Power Platform Admin",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-platform-governance-administration/monitoring-operational-health",
+        "date": "2026-03-18T14:56:00.000Z",
+        "planned": true,
+        "waveLabel": "2026 Release Wave 1",
+        "isNew": true
+      },
+      {
+        "title": "Microsoft Power Platform governance and administration - Security and compliance",
+        "summary": "Provide robust, enterprise grade security for Power Platform and Dynamics 365, ensuring compliance and visibility through proactive solutions.",
+        "source": "Release Wave Plan",
+        "product": "Power Platform Admin",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/power-platform-governance-administration/security-compliance",
+        "date": "2026-03-18T14:56:00.000Z",
+        "planned": true,
+        "waveLabel": "2026 Release Wave 1",
+        "isNew": true
+      },
+      {
         "title": "Deep Dive into Modern Visual Defaults and Customizing Theme Improvements (Preview)",
         "summary": "If you haven’t already, check out Arun Ulag’s hero blog “FabCon and SQLCon 2026: Unifying databases and Fabric on a single, complete platform” for a complete look at all of our FabCon and SQLCon announcements across both Fabric and our database offerings. \r\n\r\n\r\n\r\nPower BI Desktop visuals now start with a modern look. This preview introduces an updated base theme aligned with Fluent 2, featuring subtitles, uniform padding, style presets, and a grey canvas background at 1920x1080 by default. Chart",
         "source": "DataZoe",
@@ -6558,6 +6943,768 @@
         "product": "Power Automate",
         "url": "https://www.microsoft.com/en-us/power-platform/blog/2025/06/16/empowering-a-new-era-of-agent-based-experiences-upwork-and-microsoft-power-platform-partnership/",
         "date": "2025-06-16T07:00:00.000Z",
+        "isNew": true
+      }
+    ],
+    "fabricroadmap": [
+      {
+        "title": "All features planned",
+        "summary": "Category: Contests",
+        "source": "Contests",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned and released",
+        "summary": "Category: Contests",
+        "source": "Contests",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned",
+        "summary": "Category: Power BI galleries",
+        "source": "Power BI galleries",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned and released",
+        "summary": "Category: Power BI galleries",
+        "source": "Power BI galleries",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned",
+        "summary": "Category: Data Engineering galleries",
+        "source": "Data Engineering galleries",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned and released",
+        "summary": "Category: Data Engineering galleries",
+        "source": "Data Engineering galleries",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned",
+        "summary": "Category: Data Warehouse galleries",
+        "source": "Data Warehouse galleries",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned and released",
+        "summary": "Category: Data Warehouse galleries",
+        "source": "Data Warehouse galleries",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned",
+        "summary": "Category: Data Science galleries",
+        "source": "Data Science galleries",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned and released",
+        "summary": "Category: Data Science galleries",
+        "source": "Data Science galleries",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned",
+        "summary": "Category: Data Factory galleries",
+        "source": "Data Factory galleries",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned and released",
+        "summary": "Category: Data Factory galleries",
+        "source": "Data Factory galleries",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned",
+        "summary": "Category: Real-Time Intelligence galleries",
+        "source": "Real-Time Intelligence galleries",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned and released",
+        "summary": "Category: Real-Time Intelligence galleries",
+        "source": "Real-Time Intelligence galleries",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned",
+        "summary": "Category: Databases galleries",
+        "source": "Databases galleries",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned and released",
+        "summary": "Category: Databases galleries",
+        "source": "Databases galleries",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned",
+        "summary": "Category: Fabric platform galleries",
+        "source": "Fabric platform galleries",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned and released",
+        "summary": "Category: Fabric platform galleries",
+        "source": "Fabric platform galleries",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned",
+        "summary": "Category: Fabric roadmap",
+        "source": "Fabric roadmap",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned and released",
+        "summary": "Category: Fabric roadmap",
+        "source": "Fabric roadmap",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned",
+        "summary": "Category: Join a user group",
+        "source": "Join a user group",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned and released",
+        "summary": "Category: Join a user group",
+        "source": "Join a user group",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned",
+        "summary": "Category: Find an event",
+        "source": "Find an event",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned and released",
+        "summary": "Category: Find an event",
+        "source": "Find an event",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned",
+        "summary": "Category: Become a Super User",
+        "source": "Become a Super User",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned and released",
+        "summary": "Category: Become a Super User",
+        "source": "Become a Super User",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned",
+        "summary": "Category: Azure Data Community",
+        "source": "Azure Data Community",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned and released",
+        "summary": "Category: Azure Data Community",
+        "source": "Azure Data Community",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned",
+        "summary": "Category: Power BI updates blog",
+        "source": "Power BI updates blog",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned and released",
+        "summary": "Category: Power BI updates blog",
+        "source": "Power BI updates blog",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned",
+        "summary": "Category: Fabric updates blog",
+        "source": "Fabric updates blog",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned and released",
+        "summary": "Category: Fabric updates blog",
+        "source": "Fabric updates blog",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned",
+        "summary": "Category: Community news",
+        "source": "Community news",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned and released",
+        "summary": "Category: Community news",
+        "source": "Community news",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned",
+        "summary": "Category: Certification offers",
+        "source": "Certification offers",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned and released",
+        "summary": "Category: Certification offers",
+        "source": "Certification offers",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned",
+        "summary": "Category: Career Hub",
+        "source": "Career Hub",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned and released",
+        "summary": "Category: Career Hub",
+        "source": "Career Hub",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned",
+        "summary": "Category: Career & learn forum",
+        "source": "Career & learn forum",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned and released",
+        "summary": "Category: Career & learn forum",
+        "source": "Career & learn forum",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned",
+        "summary": "Category: Learn Modules",
+        "source": "Learn Modules",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned and released",
+        "summary": "Category: Learn Modules",
+        "source": "Learn Modules",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned",
+        "summary": "Category: Tutorials",
+        "source": "Tutorials",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned and released",
+        "summary": "Category: Tutorials",
+        "source": "Tutorials",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned",
+        "summary": "Category: Documentation",
+        "source": "Documentation",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned and released",
+        "summary": "Category: Documentation",
+        "source": "Documentation",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned",
+        "summary": "Category: Learn modules",
+        "source": "Learn modules",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned and released",
+        "summary": "Category: Learn modules",
+        "source": "Learn modules",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned",
+        "summary": "Category: Administration, Governance and Security",
+        "source": "Administration, Governance and Security",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned and released",
+        "summary": "Category: Administration, Governance and Security",
+        "source": "Administration, Governance and Security",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned",
+        "summary": "Category: Cosmos DB",
+        "source": "Cosmos DB",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned and released",
+        "summary": "Category: Cosmos DB",
+        "source": "Cosmos DB",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned",
+        "summary": "Category: Data Engineering",
+        "source": "Data Engineering",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned and released",
+        "summary": "Category: Data Engineering",
+        "source": "Data Engineering",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned",
+        "summary": "Category: Data Factory",
+        "source": "Data Factory",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned and released",
+        "summary": "Category: Data Factory",
+        "source": "Data Factory",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned",
+        "summary": "Category: Data Science",
+        "source": "Data Science",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned and released",
+        "summary": "Category: Data Science",
+        "source": "Data Science",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned",
+        "summary": "Category: Data Warehouse",
+        "source": "Data Warehouse",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned and released",
+        "summary": "Category: Data Warehouse",
+        "source": "Data Warehouse",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned",
+        "summary": "Category: Fabric Developer Experiences",
+        "source": "Fabric Developer Experiences",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned and released",
+        "summary": "Category: Fabric Developer Experiences",
+        "source": "Fabric Developer Experiences",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned",
+        "summary": "Category: Fabric Ecosystem",
+        "source": "Fabric Ecosystem",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned and released",
+        "summary": "Category: Fabric Ecosystem",
+        "source": "Fabric Ecosystem",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned",
+        "summary": "Category: IQ",
+        "source": "IQ",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned and released",
+        "summary": "Category: IQ",
+        "source": "IQ",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned",
+        "summary": "Category: OneLake",
+        "source": "OneLake",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned and released",
+        "summary": "Category: OneLake",
+        "source": "OneLake",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned",
+        "summary": "Category: Power BI",
+        "source": "Power BI",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned and released",
+        "summary": "Category: Power BI",
+        "source": "Power BI",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned",
+        "summary": "Category: Real-Time Intelligence",
+        "source": "Real-Time Intelligence",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned and released",
+        "summary": "Category: Real-Time Intelligence",
+        "source": "Real-Time Intelligence",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned",
+        "summary": "Category: SQL database",
+        "source": "SQL database",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned and released",
+        "summary": "Category: SQL database",
+        "source": "SQL database",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned",
+        "summary": "Category: Manage Cookies",
+        "source": "Manage Cookies",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.506Z",
+        "isNew": true
+      },
+      {
+        "title": "All features planned and released",
+        "summary": "Category: Manage Cookies",
+        "source": "Manage Cookies",
+        "product": "Fabric",
+        "status": "Planned",
+        "url": "https://roadmap.fabric.microsoft.com/",
+        "date": "2026-05-26T18:54:33.507Z",
         "isNew": true
       }
     ]
