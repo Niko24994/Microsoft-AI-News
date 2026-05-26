@@ -4,7 +4,7 @@
   const INDEX_URL = './public/news/index.json';
   const cache = {};
   let currentDate = null;
-  let currentTab  = 'copilot';
+  let currentTab  = 'releasenotes';
 
   // Tabs with real M365 Roadmap data → status filter + search
   const ROADMAP_TABS  = new Set(['copilot', 'agents']);
