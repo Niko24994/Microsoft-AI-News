@@ -339,14 +339,21 @@ const FABRIC_ROADMAP_CATEGORIES = [
   'Databases',
 ];
 
-// Titles that are actually UI labels / filter buttons — not real features
+// Titles that are actually UI labels / filter buttons / empty-state messages — not real features
 const FABRIC_INVALID_TITLES = new Set([
   'All features planned',
   'All features planned and released',
+  'All features recently released',
   'Planned',
   'Try Now',
   'All',
 ]);
+// Prefix patterns that indicate non-feature content
+const FABRIC_INVALID_PREFIXES = [
+  "we didn't find any results",
+  "no results",
+  "no features",
+];
 
 async function fetchFabricRoadmap() {
   console.log('\n[fabricroadmap] Launching headless browser…');
@@ -390,7 +397,7 @@ async function fetchFabricRoadmap() {
 
       // Extract features: find every element whose text is EXACTLY "Planned" or "Try Now"
       // (the status badge), then walk up to find the row, then extract the title.
-      const features = await page.evaluate((catName, invalidTitles) => {
+      const features = await page.evaluate((catName, invalidTitles, invalidPrefixes) => {
         const results = [];
         const seen = new Set();
 
@@ -433,6 +440,7 @@ async function fetchFabricRoadmap() {
             !isDateLike(l) &&
             !isBadgeLike(l) &&
             !invalidTitles.includes(l) &&
+            !invalidPrefixes.some(p => l.toLowerCase().startsWith(p)) &&
             l !== catName
           );
           if (!title || seen.has(title)) continue;
@@ -449,14 +457,14 @@ async function fetchFabricRoadmap() {
             title,
             category:    catName,
             status:      statusText,
-            previewDate: previewM ? previewM[1].toUpperCase().replace(/\s+/,'') : '',
-            gaDate:      gaM      ? gaM[1].toUpperCase().replace(/\s+/,'')      : '',
+            previewDate: previewM ? previewM[1].toUpperCase() : '',
+            gaDate:      gaM      ? gaM[1].toUpperCase()      : '',
             url:         link ? link.href : '',
           });
         }
 
         return results;
-      }, catName, [...FABRIC_INVALID_TITLES]);
+      }, catName, [...FABRIC_INVALID_TITLES], FABRIC_INVALID_PREFIXES);
 
       console.log(`    → ${features.length} features`);
       allFeatures.push(...features);

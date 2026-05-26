@@ -357,6 +357,10 @@ main {
   border-radius: 20px;
   text-transform: lowercase;
   letter-spacing: .01em;
+  white-space: nowrap;
+  max-width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card-date {
