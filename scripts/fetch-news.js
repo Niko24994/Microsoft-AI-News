@@ -71,6 +71,27 @@ const NON_PRODUCT_CATS = new Set([
   'General Availability', 'Preview', 'Targeted Release', 'Current Channel',
 ]);
 
+// Sources not relevant for a Power Platform / Fabric audience — filtered from
+// both the Copilot and Agents roadmap tabs.
+const ROADMAP_EXCLUDE_SOURCES = new Set([
+  'Microsoft Viva',
+  'PowerPoint',
+  'Outlook',
+  'Microsoft Teams',
+  'Word',
+  'OneNote',
+  'Microsoft Edge',
+  'OneDrive',
+  'Microsoft Clipchamp',
+  'Forms',
+  'Microsoft Kaizala',
+  'Microsoft Whiteboard',
+  'Microsoft To Do',
+  'Microsoft Planner',
+  'Yammer',
+  'Stream',
+]);
+
 // ── Helpers ──────────────────────────────────────────────────────────────────
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -161,6 +182,9 @@ async function fetchRoadmapTab(tabKey) {
 
     const status = categories.find(c => STATUS_VALUES.includes(c)) || null;
     const source = categories.find(c => !NON_PRODUCT_CATS.has(c)) || 'Microsoft 365 Roadmap';
+
+    // Skip sources not relevant for Power Platform / Fabric audience
+    if (ROADMAP_EXCLUDE_SOURCES.has(source)) continue;
 
     const summary = (item.contentSnippet || item.description || '')
       .replace(/<[^>]+>/g, '').trim().slice(0, 600);
